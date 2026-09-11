@@ -14,6 +14,7 @@ Ein Thema pro Datei. Neue Dateien hier verlinken, damit die Übersicht nicht zer
 | Handel — Kanäle und Adressaten | [handel.md](handel.md) | 11.09.2026 |
 | Wer macht was | [rollen.md](rollen.md) | 11.09.2026 |
 | Themenplanung — das Arbeitswerkzeug | [themenplanung.md](themenplanung.md) | 11.09.2026 |
+| **Themenplanung — Struktur-Vorschlag** | [themen-struktur.md](themen-struktur.md) | 11.09.2026 |
 | **Offene Punkte** | [offene-punkte.md](offene-punkte.md) | 11.09.2026 |
 
 ## Quellen dieses Stands
