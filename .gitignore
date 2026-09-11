@@ -1,0 +1,14 @@
+# Secrets — gehören nie ins Repo
+.env
+.env.*
+*.key
+*.pem
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
+
+# Editoren
+.vscode/
+.idea/
+*.swp
