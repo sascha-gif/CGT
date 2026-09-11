@@ -1,70 +1,63 @@
 # CGT UG — Profil
 
-*Quellen: Wissensbasis (Sascha, 11.09.2026) · Themenplanung (Google Sheet, Stand 11.09.2026)*
+*Quellen: Strategiepapier 2026/2027 · Wissensbasis (Sascha) · Themenplanung ·
+Gespräche 11.09.2026*
 
 | Feld | Inhalt |
 |---|---|
-| Firma | CGT UG |
-| Inhaber / Ansprechpartner | Sascha |
-| Rolle | Dienstleister, Servicepartner und Projektpartner |
-| Wichtigste Kundenbeziehung | Deltex Handels GmbH |
-| Eigene Projekte bei Deltex | Deltex Miloy (eigenes Projekt), Deltex Pets Exklusiv (als Partner) |
+| Firma | CGT UG — Coldewey Goetz Trade |
+| Team | **drei Personen**, bewusst nicht größer |
+| Geschäftsführung | Sascha, Thomas |
+| Business Development | Martin |
+| Strategische Säulen | **DELTEX**, **Epsilon**, **Cubcoats** |
+| Größter Partner | DELTEX — nach Umsatz, Projekten und Potenzial |
 
-## Rollenverständnis
+## Was CGT tut
 
-CGT UG steht in der Struktur **über** Deltex — nicht als Muttergesellschaft, sondern
-als betreuende und beratende Instanz. **Deltex ist Kunde**, keine Tochter und keine
-Business Unit von CGT UG. Innerhalb der Deltex-Landschaft ist CGT gezielt in
-**zwei von sieben** Einheiten involviert, nicht überall.
+CGT ist der Ansprechpartner für spannende Lizenzen und attraktive Produkte, die
+sich wirklich verkaufen. Kerngeschäft ist das **internationale Netzwerk**: Zugang
+zu Lizenzen, Marken, Produkten und Partnern — gezielt verbunden mit den passenden
+Vertriebskanälen.
 
-## Was CGT leistet
+> **Die richtigen Themen erkennen – und erfolgreich ins Ziel bringen.**
 
 Zwei Richtungen, die zusammengehören:
 
-**Richtung 1 — Marken und Lizenzen beschaffen.** CGT verschafft Deltex und anderen
-Partnern Zugang zu interessanten Marken und Lizenzen. Das läuft über persönliche
-Kontakte zu Lizenzgebern, Agenturen und Markenvertretern.
+**Richtung 1 — Zugang zu Marken.** Über persönliche Kontakte zu Lizenzgebern,
+Agenturen und Markenvertretern. Deshalb steht in der Themenplanung bei diesen
+Themen ein *Personenname* als Partner.
 
-**Richtung 2 — Handel und Konzepte gewinnen.** CGT bringt Produkte und Konzepte in
-LEH, Discount und Fachhandel — also Listungen auf der Absatzseite.
+**Richtung 2 — Zugang zum Handel.** Listungen im LEH, Discount und Fachhandel.
+Dort steht eine *Firma*.
 
 ```
-Lizenzgeber / Marke  →  CGT  →  Partner (Deltex, Epsilon …)  →  Handel  →  Regal
-     Richtung 1                                       Richtung 2
+Lizenzgeber / Marke  ──►  Partner (DELTEX · Epsilon · Cubcoats)  ──►  Handel  ──►  Regal
+                 ▲                                          ▲
+              CGT öffnet dieses Gelenk        und dieses hier auch
 ```
 
-Eine Marke aus Richtung 1 ist das Konzept, das in Richtung 2 verkauft wird.
-**Hard Rock** ist das deutlichste Beispiel: Lizenz über Epsilon, daraus eine
-Listungskampagne durch den gesamten deutschen Lebensmittel- und Getränkehandel.
+CGT ist an keiner Stelle der Kette Eigentümer. Der Wert entsteht an den beiden
+Übergabestellen — **welche Marke passt zu welchem Händler, und wer entscheidet dort.**
 
-Das Kapital von CGT ist damit **weder die Marke noch der Händler**, sondern das
-Wissen dazwischen: welche Marke zu welchem Händler passt und wer dort entscheidet.
+## Die drei Säulen in einem Satz
 
-## Partner und ihr Gewicht
-
-**Deltex ist der größte Partner — nach Umsatz, nach Projekten und nach Potenzial.**
-(Sascha, 11.09.2026)
-
-Achtung beim Lesen der Themenplanung: **Zeilenzahl ist nicht Gewicht.**
-
-| Partner | Themen im Sheet | Gewicht |
+| Säule | Was | Federführung |
 |---|---|---|
-| **Deltex Handels GmbH** | 10 (+4 Cubcoats) | **größter Partner: Umsatz, Projekte, Potenzial** |
-| Epsilon | 22 | meiste Themen, geringeres Gewicht |
-| NETWORK | 1 | Posten |
-| CGT selbst | 1 | Lumoo-Abrechnung |
+| **DELTEX** | Lizenzen & Marken im LEH (Aldi, Lidl, Kaufland, Penny) | Thomas; PET-Lizenzen: Sascha & Martin |
+| **Epsilon** | lizenzierte Getränke + Pocket-Money-Toys, großes Vertriebsnetz | Thomas (High Level), Martin (beim Kunden) |
+| **Cubcoats** | neues Wachstumsfeld: LEH/Discount, Zalando, E-Com, stationär, Lizenzen | Sascha |
 
-Epsilon hat mehr als doppelt so viele Zeilen wie Deltex und ist trotzdem der
-kleinere Partner. Die Tabelle misst Aufwand, nicht Wert — wer nach Zeilenzahl
-priorisiert, priorisiert falsch. Details: [partner.md](partner.md).
+Ausführlich: [strategie.md](strategie.md).
 
-Offen bleibt das Vertragsmodell je Partner und was Epsilon genau ist.
+## Wichtig beim Lesen der Themenplanung
+
+**Zeilenzahl ist nicht Gewicht.** Epsilon hat 22 der 53 Themen, DELTEX nur 10
+(+4 Cubcoats) — und DELTEX ist trotzdem der größere Partner. Die Tabelle misst
+Aufwand, nicht Wert.
 
 ## Arbeitsweise und Präferenzen
 
-- **Visuell:** einfach und klassisch statt stilisiert. Weißer Hintergrund, klare
-  Hierarchie, keine Effekt-Optik.
-- **Sprache:** Deutsch.
-- **Ablauf:** erst Struktur klären, dann visualisieren. Rückfragen vorab erwünscht.
-- **Strategieregel** (aus der Themenplanung, Zeile Fressnapf): *erst fertig machen,
-  bevor Neues gestartet wird.*
+- **Deutsch**, sachlich, wenig Fachjargon.
+- **Visuell:** einfach und klassisch. Weißer Hintergrund, klare Hierarchie, keine
+  Effekt-Optik. Erst Struktur klären, dann visualisieren.
+- **Vom Ziel her denken**, nicht von der nächstbesten Gelegenheit.

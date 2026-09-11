@@ -1,81 +1,110 @@
 # Partner
 
-*Quellen: Wissensbasis (Sascha, 11.09.2026) · Themenplanung (Stand 11.09.2026) ·
-Ergänzung Sascha 11.09.2026*
+*Quellen: Strategiepapier 2026/2027 · Wissensbasis · Themenplanung (Stand 11.09.2026)*
 
-## Rangfolge
+Die Strategie kennt **drei Säulen**: DELTEX, Epsilon, Cubcoats. Alle drei sind
+CGT-Geschäft — auch wenn die Wissensbasis Epsilon gar nicht erwähnt und Cubcoats
+als Deltex-Einheit führt.
 
-**Deltex Handels GmbH ist der größte Partner — nach Umsatz, nach Projekten und
-nach Potenzial.** Alles andere ordnet sich dahinter ein.
+**DELTEX ist der größte Partner — nach Umsatz, Projekten und Potenzial** (Sascha,
+11.09.2026). Die Themenzahl im Sheet bildet das nicht ab:
 
-Wichtig beim Lesen der Themenplanung: **Die Zahl der Zeilen bildet das Gewicht
-nicht ab.** Epsilon hat dort mit Abstand die meisten Themen (22 von 53), Deltex
-nur 10 — trotzdem ist Deltex der größere Partner. Die Tabelle misst Aufwand, nicht
-Wert. Wer nach Zeilenzahl priorisiert, priorisiert falsch.
-
-| Partner | Themen im Sheet | Gewicht |
+| Partner | Themen im Sheet | Rolle laut Strategie |
 |---|---|---|
-| **Deltex Handels GmbH** | 10 (+4 Cubcoats) | **größter Partner: Umsatz, Projekte, Potenzial** |
-| Epsilon | 22 | meiste Themen, geringeres Gewicht |
-| NETWORK | 1 | Posten |
-| Einzelpersonen (Lizenzkontakte) | 11 | Richtung 1 |
+| **DELTEX** | 10 (+4 Cubcoats) | **strategischer Kernpartner**, größtes Gewicht |
+| **Epsilon** | 22 | strategische Säule, größte Reichweite |
+| **Cubcoats** | 4 | **neues Wachstumsfeld** |
+| NETWORK | 1 | Posten, keine Säule |
+| Einzelpersonen | 11 | Lizenzkontakte (Richtung 1) |
 | CGT selbst | 1 | Lumoo-Abrechnung |
 | ohne Partner | 3 | |
 
-## Deltex Handels GmbH
+---
 
-Wichtigste Kundenbeziehung und größtes Potenzial. Eigene Seite: [deltex.md](deltex.md).
+## DELTEX — strategischer Kernpartner
 
-In der Themenplanung unter „DELTEX"/„Deltex" bei 10 Themen: Pets-Listungen
-(Fressnapf, OBI, DEHNER), Lizenzen (Ernstings Family), NORMA-Textil, Werbemittel
-(Wella), Systemgastronomie, TK MAXX/Zalando, AI-Präsentations-Template,
-Cubcoats-Muster.
+Lizenzen und Marken im Lebensmitteleinzelhandel, unter anderem bei **Aldi, Lidl,
+Kaufland und Penny**. Tief in den Abläufen verankert. Eigene Seite:
+[deltex.md](deltex.md).
 
-### Cubcoats — läuft über Deltex
+**Nächster Entwicklungsschritt laut Strategie:** weiterhin attraktive Lizenzen
+organisieren **und bei Kundenterminen direkt dabei sein**, um neue Themen selbst
+vorzustellen.
 
-*Geklärt am 11.09.2026.* Cubcoats ist eine **Deltex Business Unit**; die vier
-Themen, die im Sheet „Cubcoats" als Partner führen, gehören damit in die
-Deltex-Welt. Der Vertragsstrang „Fastable – Deltex" passt dazu.
+| Wer | Fokus |
+|---|---|
+| Thomas | größter Teil der laufenden Zusammenarbeit; weitere Lizenzpartner, besonders **New York** |
+| Sascha & Martin | **PET-Lizenzen für Hund und Katze** |
 
-| Thema | Priorität | Status |
-|---|---|---|
-| Gemeinsame Ziele definieren | Niedrig | Offen |
-| Bereich LEH/Discount erschließen | Niedrig | Offen |
-| Bereich Zalando/E-Com erschließen | Niedrig | **Erledigt** (Vertrag Fastable – Deltex) |
-| Vertrieb im stationären Handel aufbauen | Niedrig | Offen |
-| Muster (Partner: Deltex) | Hoch | wartet auf echte Muster |
+**PET heißt Heimtier — bestätigt durch das Strategiepapier** („PET-Lizenzen für
+Hund und Katze"). Im Sheet ist das die Kategorie *PET* mit Fressnapf, OBI und
+DEHNER. Achtung: dieselbe Tabelle meint in einer Getränke-Notiz („Fruit Juice PET
+350 ml") die Kunststoffflasche.
 
-Vier der fünf stehen ohne Frist auf *Niedrig* — die einzige Themengruppe im
-gesamten Sheet mit dieser Einstufung. Das passt schlecht dazu, dass Deltex der
-Partner mit dem größten Potenzial ist.
+### Cubcoats läuft über Deltex
 
-## Epsilon
+*Geklärt 11.09.2026 (Sascha).* In der Deltex-Struktur ist Cubcoats eine der sieben
+Business Units; in CGTs Strategie ist es eine eigene Säule mit Saschas
+Federführung. Beides gilt — kommerziell läuft es über Deltex, strategisch ist es
+ein eigenes Feld.
 
-Nach Themenanzahl der größte Block (22), nach Gewicht nicht. Felder:
+---
 
-- **Hard Rock** — Getränke alkoholfrei und Spirituosen, 16 Themen
-- **Getränke alkoholfrei** — Mizu, Minions, Hello Kitty
-- **Toys** — Travel Retail (Gebr. Heinemann, Lagardere)
+## Epsilon — Reichweite gezielt nutzen
 
-Das Thema „Epsilon-Themen bei Kunden vertiefen und vor Ort vorstellen" hat Frist
-31.12.2026 — eine Jahresaufgabe, kein Einzelvorgang.
+Lizenzierte **Getränke** und **Pocket-Money-Toys**. Epsilon bringt ein sehr großes
+Vertriebsnetzwerk mit; die Partnerschaft funktioniert als **gegenseitiger
+Themengeber** — beide Seiten spielen sich attraktive Themen zu.
 
-*Offen: Was ist Epsilon genau — Kunde, Lieferant oder Lizenzgeber?* In der
-Wissensbasis kommt Epsilon nicht vor.
+Entscheidend laut Strategie: aus dieser Reichweite **konkrete Kundentermine und
+Platzierungschancen** machen.
+
+| Wer | Fokus |
+|---|---|
+| Thomas | Kommunikation auf hoher Ebene, steuert strategisch |
+| Martin | steigt tiefer ein, stellt die Themen direkt beim Kunden vor |
+
+Im Sheet: 16 Themen Hard Rock, 2 alkoholfreie Getränke, 2 Toys (Travel Retail:
+Gebr. Heinemann, Lagardere = die Pocket-Money-Toys), 2 übergreifend.
+
+---
+
+## Cubcoats — neues Wachstumsfeld
+
+Neue große Zusammenarbeit, **Sascha federführend**. Nächster Schritt laut
+Strategie: gemeinsam definieren, welche Ziele Priorität haben und in welcher
+Reihenfolge.
+
+Felder: **LEH/Discount · Zalando · E-Commerce · stationärer Handel · zusätzliche
+Lizenzen für das Produkt.**
+
+| Thema im Sheet | Priorität | Frist | Status |
+|---|---|---|---|
+| Gemeinsame Ziele definieren | Niedrig | — | Offen |
+| LEH/Discount erschließen | Niedrig | — | Offen |
+| Zalando/E-Com erschließen | Niedrig | — | **Erledigt** (Vertrag Fastable – Deltex) |
+| Stationären Vertrieb aufbauen | Niedrig | — | Offen |
+| Muster | Hoch | — | wartet auf echte Muster |
+
+**Das ist der auffälligste Widerspruch im ganzen Material:** Die Strategie nennt
+Cubcoats „unser neues Wachstumsfeld" und „unser neues großes Kapitel" — im
+Arbeitswerkzeug steht es auf *Niedrig*, ohne eine einzige Frist.
+
+---
 
 ## NETWORK
 
-Postengeschäft, ein Thema (SMATCH).
+Postengeschäft, ein Thema (SMATCH). Keine strategische Säule.
 
 ## Einzelpersonen als Partner
 
-Bei Thomas' Lizenzthemen steht in der Partner-Spalte durchgehend eine **Person**,
-keine Firma — die Lizenz- und Markenkontakte. Namen sind hier bewusst nicht
+Bei den Lizenzthemen steht durchgehend eine **Person** in der Partner-Spalte — die
+Lizenz- und Markenkontakte, Thomas' Netzwerk. Namen sind hier bewusst nicht
 abgelegt, siehe [offene-punkte.md](offene-punkte.md).
 
-Das ist kein Schönheitsfehler der Tabelle, sondern beschreibt das Geschäft: In
-Richtung 1 arbeitet CGT mit Menschen, in Richtung 2 mit Einkaufsabteilungen.
+Das beschreibt das Geschäft: In Richtung 1 arbeitet CGT mit Menschen, in Richtung 2
+mit Einkaufsabteilungen.
 
 ## CGT selbst
 
-Ein Thema: **Lumoo Abrechnung** (Quartalsabrechnung). Lumoo ist bisher nirgends erklärt.
+Ein Thema: **Lumoo Abrechnung** (Quartalsabrechnung). Lumoo ist nirgends erklärt.

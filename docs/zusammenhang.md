@@ -1,90 +1,118 @@
 # Wie alles zusammenhängt
 
-*Stand: 11.09.2026. Zusammenführung aus Wissensbasis, Themenplanung und
-Gesprächen mit Sascha.*
+*Stand: 11.09.2026. Zusammenführung aus Strategiepapier 2026/2027, Wissensbasis,
+Themenplanung und Gesprächen mit Sascha.*
 
-Die Kurzfassung in einem Satz: **CGT verdient daran, Marken und Händler
-zusammenzubringen — der Wert liegt nicht in der Marke und nicht im Händler,
-sondern in der Verbindung.**
+In einem Satz: **CGT verdient an der Verbindung — nicht an der Marke, nicht am
+Händler.**
 
-## Die Kette
+## Die Kette und die zwei Gelenke
 
 ```
-  Lizenzgeber          CGT UG            Deltex            Handel         Regal
-  & Marken       ───►  (Dienstleister)   (Kunde,     ───►  (LEH, Discount,
-  (Personen)           Richtung 1 ▲      7 Units)          Fachhandel)
-                       Richtung 2 ▼
+Lizenzgeber / Marke  ──►  Partner  ──►  Handel  ──►  Regal
+                    ▲              ▲
+              Richtung 1      Richtung 2
+              Zugang zu       Zugang zum
+              Marken          Handel
+                    └──── CGT UG ────┘
 ```
 
-**Richtung 1 — Zugang zu Marken.** Thomas arbeitet mit *Menschen*: Lizenzgebern,
-Agenturen, Markenvertretern. Deshalb steht in der Partner-Spalte seiner Themen ein
-Personenname.
+CGT besitzt keine Stufe dieser Kette. CGT sorgt dafür, dass die beiden
+Übergabestellen funktionieren. Drei Personen, bewusst klein:
 
-**Richtung 2 — Zugang zum Handel.** Martin arbeitet mit *Einkaufsabteilungen*:
-ALDI, LIDL, REWE, EDEKA, Fressnapf, Getränkefachhandel. Deshalb steht dort eine
-Firma.
+- **Thomas** arbeitet in Richtung 1 mit *Menschen* — Lizenzgebern, Agenturen,
+  Partnern in New York. Deshalb steht bei seinen Themen ein Personenname.
+- **Martin** arbeitet in Richtung 2 mit *Einkaufsabteilungen* — Aldi, Lidl, REWE,
+  Fressnapf, Getränkefachhandel. Dort steht eine Firma.
+- **Sascha** baut neue Felder auf (Cubcoats) und treibt mit Martin die PET-Lizenzen.
 
-**Sascha ist die Brücke** — Partnerbeziehungen, Struktur, Abrechnung. Seine Themen
-sind die einzigen ohne Druck von außen und fallen deshalb als erste hinten runter.
+## Die drei Säulen
 
-## Die Ebenen
-
-| Ebene | Wer / was | Anmerkung |
-|---|---|---|
-| 1 | **CGT UG** | Dienstleister, steht beratend über Deltex |
-| 2 | **Deltex Handels GmbH** | Kunde. Größter Partner: Umsatz, Projekte, Potenzial |
-| 3 | **7 Business Units** | CGT ist in **2** beteiligt: Miloy, Pets Exklusiv |
-| 4 | **Marken & Lizenzen** | z. B. Route 66, CR7, Peanuts, Pink Panther, Joop |
-| 5 | **Handelskanäle** | LEH, Discount, Getränkefachhandel, Heimtier, Travel Retail |
-
-Daneben, nicht unter Deltex: **Epsilon** (Hard Rock, Getränke, Toys) und
-**NETWORK** (Posten).
+| Säule | Was | Kanäle | Federführung |
+|---|---|---|---|
+| **DELTEX** | Lizenzen & Marken im LEH | Aldi, Lidl, Kaufland, Penny | Thomas · PET: Sascha & Martin |
+| **Epsilon** | Getränke + Pocket-Money-Toys | großes Vertriebsnetz, Travel Retail | Thomas (hoch), Martin (Kunde) |
+| **Cubcoats** | neues Wachstumsfeld | LEH/Discount, Zalando, E-Com, stationär | Sascha |
 
 ## Der zentrale Befund
 
-Drei Beobachtungen, die einzeln harmlos sind und zusammen ein Problem ergeben:
+Die Strategie definiert **fünf Kriterien**, die ein Thema erfüllen muss, bevor es
+aktiv wird. Gemessen an den 53 Themen der Planung hält die Tabelle **vier davon
+nicht ein**:
 
-**a) CGT ist in 2 von 7 Deltex-Einheiten beteiligt** — Miloy und Pets Exklusiv.
+| Kriterium der Strategie | Wirklichkeit in der Tabelle | |
+|---|---|---|
+| Ergebnis **klar beschrieben** | über 20 Themen sind nur ein Händlername: „PENNY", „REWE", „EDEKA", „LIDL" | ✗ |
+| **Eine** Person verantwortlich | erfüllt — bis auf ein Thema auf „Alle" | ✓ |
+| Nächster Schritt **konkret** | rund 17× steht dort „Nachfass", ein Thema hat gar nichts | ✗ |
+| **Realistische Frist** | 4 Fristen auf 2024, 13 Themen mit demselben Datum, 5 ohne | ✗ |
+| Klar, **warum jetzt wichtiger** | 46 von 53 stehen auf Priorität „Hoch" | ✗ |
 
-**b) Deltex ist der größte Partner nach Umsatz, Projekten und Potenzial.**
+Das Strategiepapier sagt es wörtlich — und die Tabelle tut genau das Gegenteil:
 
-**c) Genau diese beiden Einheiten sind in der Themenplanung fast unsichtbar:**
+> „Wenn unser Ziel lautet, PET-Produkte mit Lizenzen bei Fressnapf vorzustellen,
+> dann **reicht es nicht, das Thema ‚Fressnapf' auf einer Liste zu führen.**"
 
-| Einheit | CGT beteiligt | Themen | Bestand |
-|---|---|---|---|
-| Getränke Vertrieb (Epsilon/Hard Rock) | nein | ~19 | — |
-| Deltex Brands | nein | ~8 | 4 Marken |
-| Cubcoats | nein | 5 | — |
-| Posten | nein | ~2 | — |
-| **Pets Exklusiv** | **ja** | **3** | **8 Marken** |
-| **Miloy** | **ja** | **0** | unbekannt |
+Und zum Status:
 
-**Die Sichtbarkeit in der Planung ist ungefähr umgekehrt proportional zur
-wirtschaftlichen Bedeutung für CGT.** 36 % des Aufwands gehen in den
-Getränkeblock, an dem CGT nicht beteiligt ist. Das eigene Projekt Miloy kommt
-nicht vor. Pets hat das größte fertige Markenpaket (8 Lizenzen) und drei
-Händlerthemen, alle offen.
+> „Es gibt eine Handlung, die sofort ausgeführt werden kann — **keinen unscharfen
+> Status**."
 
-Wenn Deltex das größte Potenzial hat und CGT dort in zwei Einheiten sitzt, dann
-liegt der Wachstumspfad **tiefer in Deltex hinein**, nicht breiter in neue Partner.
+„Nachfass" ist genau so ein unscharfer Status. Er steht rund 17 Mal da.
+
+**Außerdem fehlt der Parkplatz.** Die Strategie sieht ausdrücklich vor, dass gute
+Themen bewusst auf „später" stehen dürfen. Die Status-Spalte kennt aber nur
+*Offen*, *In Arbeit* und *Erledigt*. Wer nichts parken kann, hat alles offen —
+und genau so sieht die Liste aus.
 
 ## Der immer gleiche Engpass
 
-Häufigster nächster Schritt im gesamten Sheet: **„Nachfass"** (~17 von 53). Kein
-einziges Thema hat „Angebot schicken", „Preis kalkulieren" oder „Termin am TT.MM.".
-Wo es konkret wird, hängt es an einer Person, die nicht antwortet — vier Themen
-sagen das wörtlich.
+Häufigster nächster Schritt: **„Nachfass"**. Wo es konkret wird, hängt es an einer
+Person, die nicht antwortet. Vier Themen sagen das wörtlich: *Neuen AP suchen* ·
+*Nachfass zuständiger Bereich* · *KAUFLAND-AP für Spirituosen finden* · *neuen AP
+anschreiben*.
 
-CGT verkauft Zugang und scheitert an Zugang. Ein **Ansprechpartner-Verzeichnis**
-(Händler × Warengruppe × wer entscheidet) wäre deshalb das wertvollste Dokument
-überhaupt. Es existiert nicht.
+Die Strategie hat dafür bereits ein eigenes Kapitel — **Kundenbeziehungen**:
+„Neue relevante Ansprechpartner und Entscheider aktiv erschließen", und im Maßstab:
+„Wir kennen die relevanten Ansprechpartner." Der Anspruch steht also längst
+geschrieben. Was fehlt, ist der Ort, an dem dieses Wissen liegt.
+
+**Ein Ansprechpartner-Verzeichnis — Händler × Warengruppe × wer entscheidet — ist
+damit kein Vorschlag von außen, sondern die einzige fehlende Umsetzung einer
+bereits beschlossenen Strategie.**
+
+## Wo Strategie und Tabelle auseinanderlaufen
+
+| Strategie sagt | Tabelle zeigt |
+|---|---|
+| Cubcoats ist „unser neues Wachstumsfeld" | 4 von 5 Cubcoats-Themen: Priorität **Niedrig**, keine Frist |
+| PET-Lizenzen treiben **Sascha & Martin** | alle drei PET-Themen laufen nur auf **Martin** |
+| Fressnapf ist **das Beispiel** für richtiges Arbeiten | steht auf *Offen*, nächster Schritt „Nachfass E-Mail" |
+| Bei Kundenterminen **direkt dabei sein** | kein einziges Thema hat einen Termin als nächsten Schritt |
+| „Weniger anfangen, mehr erreichen" | 53 Themen aktiv, 46 davon „Hoch" |
 
 ## Was daraus folgt
 
-1. **Miloy dokumentieren und starten.** Das CGT-eigene Projekt hat null Themen.
-2. **Pets nach vorne.** 8 Marken, 3 Händler, alle offen — bestes Verhältnis von
-   fertigem Bestand zu offenem Absatz.
-3. **Ansprechpartner systematisch erfassen.** Der Engpass ist strukturell, nicht
-   zufällig.
-4. **Hard Rock als eine Kampagne führen**, nicht als 15 Einzelthemen.
-5. **Zeilenzahl nie als Priorität lesen.** Siehe [themenplanung.md](themenplanung.md).
+1. **Die fünf Kriterien auf die bestehenden 53 Themen anwenden.** Was sie nicht
+   erfüllt, wird konkretisiert oder geparkt. Das ist keine neue Idee — es ist die
+   beschlossene Arbeitsweise.
+2. **Status „Später" einführen**, damit „was bewusst warten darf" einen Ort hat.
+3. **Ansprechpartner erfassen.** Der Engpass ist strukturell und steht im
+   Strategiepapier bereits als Anspruch.
+4. **Cubcoats auf die Priorität heben, die die Strategie ihm gibt** — oder
+   begründen, warum nicht.
+5. **Hard Rock als eine Kampagne führen**, nicht als 16 Einzelthemen mit
+   identischem nächsten Schritt.
+6. **Zeilenzahl nie als Priorität lesen.** Epsilon hat die meisten Themen, DELTEX
+   das meiste Gewicht.
+
+## Was NICHT das Problem ist
+
+Eine frühere Lesart dieses Materials lautete: „Der Aufwand liegt nicht dort, wo
+CGT beteiligt ist" — weil CGT nur in zwei von sieben Deltex-Einheiten sitzt und
+der Getränkeblock über Epsilon läuft. **Das war falsch.** Epsilon ist eine
+gleichrangige strategische Säule; die 22 Epsilon-Themen sind Kerngeschäft, kein
+Nebenschauplatz. Auch **Deltex Miloy**, das in der Wissensbasis als CGT-Projekt
+steht, kommt in keinem der vier Strategiepapiere vor — dass es keine Themen hat,
+ist deshalb kein Befund, sondern eine offene Frage (siehe
+[offene-punkte.md](offene-punkte.md)).

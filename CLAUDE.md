@@ -1,77 +1,85 @@
 # CLAUDE.md — CGT UG
 
-Wissens-Repo der **CGT UG**. Verantwortlich ist **Sascha**, Inhaber, ohne
-technisches Team im Rücken.
+Wissens-Repo der **CGT UG** (Coldewey Goetz Trade). Verantwortlich ist **Sascha**,
+Geschäftsführer, ohne technisches Team im Rücken.
 
 **Diese Datei zu Beginn jeder Session lesen.**
 
 ## Was CGT macht — die Kurzfassung
 
-CGT UG ist Dienstleister und Projektpartner. Zwei Richtungen:
+CGT ist der Ansprechpartner für Lizenzen und Produkte, die sich wirklich verkaufen.
+**Drei Personen:** Sascha und Thomas (Geschäftsführung), Martin (Business
+Development) — bewusst nicht mehr.
 
-1. **Marken und Lizenzen beschaffen** für Deltex und andere Partner — über
-   persönliche Kontakte zu Lizenzgebern und Markenvertretern.
-2. **Handel und Konzepte gewinnen** — Listungen im LEH, Discount und Fachhandel.
+Zwei Richtungen: **Marken und Lizenzen beschaffen** (über das internationale
+Netzwerk) und **Handel gewinnen** (LEH, Discount, Fachhandel). Der Wert entsteht in
+der Verbindung.
 
-Der Wert entsteht in der Verbindung: welche Marke passt zu welchem Händler, und
-wer entscheidet dort. Wichtigster Kunde ist die **Deltex Handels GmbH**; CGT ist
-in **2 von 7** Deltex-Einheiten beteiligt (Miloy, Pets Exklusiv).
+**Drei strategische Säulen:** **DELTEX** (Kernpartner, LEH — Aldi, Lidl, Kaufland,
+Penny), **Epsilon** (Getränke + Pocket-Money-Toys), **Cubcoats** (neues
+Wachstumsfeld).
 
-Ausführlich: [`docs/cgt-profil.md`](docs/cgt-profil.md) und [`docs/deltex.md`](docs/deltex.md).
+> Leitlinie: **Die richtigen Themen erkennen – und erfolgreich ins Ziel bringen.**
+
+Maßgeblich ist [`docs/strategie.md`](docs/strategie.md). Gesamtbild:
+[`docs/zusammenhang.md`](docs/zusammenhang.md).
 
 ## Was dieses Repo ist — und was nicht
 
 Eine **Ablage für Betriebswissen**, kein Software-Projekt. Kein Code, kein Build,
-kein Deployment. Wenn das dazukommt, wird diese Datei erweitert.
+kein Deployment.
 
 **Tagesaufgaben gehören nicht hierher.** Dafür gibt es das Google Sheet
-„CGT – Themenplanung" (Eigner Thomas Götz). Wie es aufgebaut ist und was es über
-das Geschäft verrät: [`docs/themenplanung.md`](docs/themenplanung.md).
+„CGT – Themenplanung" (Eigner Thomas Götz), siehe
+[`docs/themenplanung.md`](docs/themenplanung.md).
 
 ## Zusammenarbeit
 
 - **Deutsch, per Du.** Sachlich und auf den Punkt, wenig Fachjargon.
 - Technische Schritte einfach erklären — bei Unklarheiten direkt sagen: wann, wie, wo.
-- Kosten und Wirtschaftlichkeit mitdenken, auch bei KI-Aufrufen.
 - **Visuell:** einfach und klassisch. Weißer Hintergrund, klare Hierarchie, keine
   Effekt-Optik. Erst Struktur klären, dann visualisieren.
 - **Nichts erfinden.** Was nicht belegt ist, kommt nicht als Fakt ins Repo —
-  offene Fragen gehören nach [`docs/offene-punkte.md`](docs/offene-punkte.md),
-  nicht in einen plausibel klingenden Satz.
+  offene Fragen gehören nach [`docs/offene-punkte.md`](docs/offene-punkte.md).
 
 ## Regeln für Einträge
 
-1. **Quelle und Datum dazu.** Woher kommt die Information (Sheet, Mail, Telefonat,
-   Vertrag) und von wann? Ohne Datum ist eine Kondition wertlos.
+1. **Quelle und Datum dazu.** Ohne Datum ist eine Kondition wertlos.
 2. **Begründung mitschreiben**, nicht nur das Ergebnis.
-3. **Widersprüche stehen lassen und markieren**, statt sie glattzubügeln. Wo zwei
-   Quellen nicht zusammenpassen, ist genau das die wichtige Information —
-   siehe den Abschnitt *Widersprüche* in den offenen Punkten.
-4. **Keine Secrets.** Keine Passwörter, Zugangsdaten oder API-Schlüssel, auch nicht
-   in Beispielen. Notieren, *wo* sie liegen, nie *was* sie sind.
-5. **Keine Namen externer Ansprechpartner** und keine persönlichen Einschätzungen zu
-   ihnen — bis Sascha entschieden hat, wo das Ansprechpartner-Wissen leben soll.
-   Das ist bewusst so, kein Versehen.
+3. **Widersprüche stehen lassen und markieren.** Wo Strategie und Tabelle
+   auseinandergehen, gilt die Strategie als Maßstab — der Widerspruch wird benannt,
+   nicht geglättet.
+4. **Keine Secrets.** Notieren, *wo* sie liegen, nie *was* sie sind.
+5. **Keine Namen externer Ansprechpartner** und keine persönlichen Einschätzungen
+   zu ihnen, bis Sascha entschieden hat, wo dieses Wissen leben soll. Bewusst so.
 
 ## Fallstricke
 
-**„PET" heißt in der Themenplanung zweierlei.** Meistens **Pets (Heimtier)** —
-Fressnapf, OBI, DEHNER, also die Absatzseite von Deltex Pets Exklusiv. In einer
-Getränke-Notiz („Fruit Juice PET 350 ml") ist aber die Kunststoffflasche gemeint.
-Nie raten, welches gemeint ist — am Händler festmachen.
+**„PET" heißt Heimtier, nicht Kunststoff.** Das Strategiepapier sagt „PET-Lizenzen
+für **Hund und Katze**" — im Sheet sind das Fressnapf, OBI, DEHNER. Aber dieselbe
+Tabelle schreibt in einer Getränke-Notiz „Fruit Juice PET 350 ml" und meint die
+Flasche. Nie raten — am Händler festmachen.
 
-**Cubcoats läuft über Deltex** — ist also eine Deltex Business Unit, auch wenn das
-Sheet „Cubcoats" in der Partner-Spalte führt.
-
-**Zeilenzahl im Sheet ist nicht Gewicht.** Epsilon hat 22 Themen, Deltex 10 — aber
-**Deltex ist der größte Partner nach Umsatz, Projekten und Potenzial**. Nie nach
+**Zeilenzahl im Sheet ist nicht Gewicht.** Epsilon hat 22 Themen, DELTEX 10 — aber
+**DELTEX ist der größte Partner** nach Umsatz, Projekten und Potenzial. Nie nach
 Themenanzahl priorisieren.
 
-**Die Priorität-Spalte der Themenplanung ist wertlos** — 46 von 53 Themen stehen
-auf „Hoch". Nicht als Signal verwenden.
+**Die Priorität-Spalte ist wertlos** — 46 von 53 Themen stehen auf „Hoch". Nicht
+als Signal verwenden.
+
+**„Nachfass" ist kein nächster Schritt.** Der eigene Maßstab verlangt „eine
+Handlung, die sofort ausgeführt werden kann — keinen unscharfen Status". „Nachfass"
+steht rund 17 Mal da.
+
+**Cubcoats läuft über Deltex** und ist trotzdem eine eigene strategische Säule.
+Beides gilt.
+
+**Deltex Miloy** steht in der Wissensbasis als CGT-Projekt, kommt aber in keinem
+Strategiepapier vor. Nicht als laufendes Projekt behandeln, bevor das geklärt ist.
 
 ## Schreibweise
 
-- Firma **CGT UG**, ausgeschrieben **Coldewey Goetz Trade**. Kunde: **Deltex Handels GmbH**.
-- Dateinamen klein, mit Bindestrichen: `cgt-profil.md`, `marken-lizenzen.md`.
+- Firma **CGT UG**, ausgeschrieben **Coldewey Goetz Trade**.
+- Säulen: **DELTEX**, **Epsilon**, **Cubcoats**. Kunde/Kernpartner: Deltex Handels GmbH.
+- Dateinamen klein, mit Bindestrichen.
 - Markdown, Überschriften ab `##`. Lieber mehrere Dateien als Tabellen-Monster.

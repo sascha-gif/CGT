@@ -2,7 +2,10 @@
 
 *Quellen: Wissensbasis (Sascha, 11.09.2026) · Themenplanung (Stand 11.09.2026)*
 
-**Größter Partner der CGT UG — nach Umsatz, nach Projekten und nach Potenzial.**
+**Strategischer Kernpartner der CGT UG** und größter Partner nach Umsatz,
+Projekten und Potenzial. Gemeinsames Geschäft: Lizenzen und Marken im
+Lebensmitteleinzelhandel, unter anderem bei **Aldi, Lidl, Kaufland und Penny**.
+Rollen und nächster Entwicklungsschritt: [strategie.md](strategie.md).
 
 Full-Service-Anbieter — von Entwicklung über Produktion bis Vertrieb.
 
@@ -78,7 +81,12 @@ Sublabel unter Deltex, inhaltlich ein **direktes Projekt von CGT UG** — die Ei
 mit der höchsten eigenen Gestaltungstiefe für CGT.
 
 *Offen: inhaltlicher Kern (Fashion, Lifestyle, anderes), Sortiment, Zielgruppe,
-Status.* **Und: kein einziges Thema in der Themenplanung.**
+Status.*
+
+**Achtung:** Miloy kommt in **keinem** der vier Strategiepapiere vor und hat kein
+einziges Thema in der Planung. Entweder ist es nicht (mehr) aktuell, oder es ist
+das einzige CGT-Projekt ohne strategische Verankerung. Siehe
+[offene-punkte.md](offene-punkte.md).
 
 ### Deltex Pets Exklusiv — CGT als Partner
 
@@ -104,6 +112,11 @@ CGT ist **als Partner** beteiligt, nicht als Eigentümer des Bereichs.
 **Absatzseite:** In der Themenplanung stehen dafür genau drei Händler — Fressnapf,
 OBI, DEHNER — alle im Status *Offen*, alle mit nächstem Schritt *Nachfass*.
 Acht Marken, null Listungen im Heimtierkanal.
+
+**Das ist der Schwerpunkt, den die Strategie Sascha & Martin zuweist**
+(„PET-Lizenzen für Hund und Katze") — und Fressnapf ist im Strategiepapier *das*
+Beispiel dafür, wie richtig gearbeitet wird. Im Sheet läuft es nur auf Martin und
+steht offen.
 
 ## Artefakte
 

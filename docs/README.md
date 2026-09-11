@@ -4,40 +4,40 @@ Ein Thema pro Datei. Neue Dateien hier verlinken, damit die Übersicht nicht zer
 
 | Thema | Datei | Stand |
 |---|---|---|
-| CGT UG — Profil, Geschäftsmodell, Partner-Landschaft | [cgt-profil.md](cgt-profil.md) | 11.09.2026 |
-| Deltex Handels GmbH — Kundenprofil, 7 Business Units | [deltex.md](deltex.md) | 11.09.2026 |
-| Partner — Epsilon, Deltex, Cubcoats, NETWORK | [partner.md](partner.md) | 11.09.2026 |
+| **Strategie 2026/2027 — der Maßstab** | [strategie.md](strategie.md) | 11.09.2026 |
+| **Wie alles zusammenhängt** | [zusammenhang.md](zusammenhang.md) | 11.09.2026 |
+| CGT UG — Profil und Geschäftsmodell | [cgt-profil.md](cgt-profil.md) | 11.09.2026 |
+| Partner — DELTEX, Epsilon, Cubcoats | [partner.md](partner.md) | 11.09.2026 |
+| Deltex Handels GmbH — 7 Business Units | [deltex.md](deltex.md) | 11.09.2026 |
 | Marken und Lizenzen | [marken-lizenzen.md](marken-lizenzen.md) | 11.09.2026 |
 | Handel — Kanäle und Adressaten | [handel.md](handel.md) | 11.09.2026 |
 | Wer macht was | [rollen.md](rollen.md) | 11.09.2026 |
 | Themenplanung — das Arbeitswerkzeug | [themenplanung.md](themenplanung.md) | 11.09.2026 |
-| **Wie alles zusammenhängt** | [zusammenhang.md](zusammenhang.md) | 11.09.2026 |
 | **Offene Punkte** | [offene-punkte.md](offene-punkte.md) | 11.09.2026 |
 
 ## Quellen dieses Stands
 
-1. **Wissensbasis CGT UG** (Sascha, 11.09.2026) — Struktur, Business Units, Portfolios
-2. **Google Sheet „CGT – Themenplanung"** (Eigner Thomas Götz, Stand 11.09.2026) —
-   53 laufende Themen
-3. Gespräch mit Sascha, 11.09.2026
+1. **CGT · Strategiepapier 2026/2027** — maßgeblich. Dazu drei Vorstufen
+   (`CGT.docx`, `CGT_Unser_Kompass.docx`, `CGT_Unser_Kompass_2026_2027_neu.docx`)
+2. **Wissensbasis CGT UG** (Sascha) — Deltex-Struktur, Business Units, Portfolios
+3. **Google Sheet „CGT – Themenplanung"** (Eigner Thomas Götz) — 53 laufende Themen
+4. Gespräche mit Sascha, 11.09.2026
 
-Was aus welcher Quelle stammt, steht jeweils oben in der Datei. Abgeleitetes ist
-als solches gekennzeichnet.
+Was aus welcher Quelle stammt, steht oben in jeder Datei. Abgeleitetes ist als
+solches gekennzeichnet. **Wo Strategie und Tabelle sich widersprechen, gilt die
+Strategie als Maßstab und der Widerspruch wird benannt**, nicht geglättet.
 
 ## Was hier bewusst NICHT steht
 
-- **Tagesaufgaben.** Die leben in der Themenplanung, nicht hier.
-- **Namen externer Ansprechpartner** und persönliche Einschätzungen zu ihnen.
-  Siehe [offene-punkte.md](offene-punkte.md) — dazu steht eine Entscheidung aus.
+- **Tagesaufgaben.** Die leben in der Themenplanung.
+- **Namen externer Ansprechpartner** und persönliche Einschätzungen zu ihnen —
+  dazu steht eine Entscheidung aus, siehe [offene-punkte.md](offene-punkte.md).
 - **Zugangsdaten** jeder Art.
 
 ## Themen, die noch fehlen
 
-Anlegen, wenn es dazu etwas zu schreiben gibt:
-
-- **Deltex Miloy** — das CGT-eigene Projekt, bisher komplett undokumentiert
 - **Ansprechpartner** je Händler und Warengruppe (Entscheidung steht aus)
+- **Deltex Miloy** — undokumentiert, und in keinem Strategiepapier erwähnt
+- **Partner in New York** — laut Strategie Thomas' Bereich, sonst nichts bekannt
 - **Verträge** — was wurde wann mit wem vereinbart, wo liegt das Original
 - **Konditionen** — Margen, Lizenzgebühren, Laufzeiten
-- **Zoll und Einfuhr** — bei Produktion in der Türkei/Asien relevant
-- **Logistik** — Spediteure, Incoterms, Lager

@@ -5,6 +5,9 @@
 Die Absatzseite von CGT, nach Kanal sortiert. In der Themenplanung stehen diese
 Händler flach in einer Liste; die Gliederung hier ist ergänzt.
 
+Die Strategie nennt als LEH-Schwerpunkt mit DELTEX ausdrücklich **Aldi, Lidl,
+Kaufland und Penny**.
+
 ## LEH / Vollsortiment
 
 EDEKA · REWE · GLOBUS · HIT · Marktkauf (läuft über EDEKA Rhein-Ruhr) · KAUFLAND
@@ -28,14 +31,15 @@ Kompletter Block, ausschließlich Hard Rock, alle im Status *Offen*.
 
 Fressnapf · OBI · DEHNER
 
-Kategorie **„PET"** in der Tabelle. Das steht hier für **Pets (Heimtier)**, nicht
-für PET als Kunststoff — Beleg: die Zeile „Termin bei Fressnapf für
-PET-Lizenzprodukte bekommen". Verwirrend, weil dieselbe Tabelle in einer Notiz
-„Fruit Juice **PET** 350 ml" schreibt, wo tatsächlich die Flasche gemeint ist.
-→ Zwei Bedeutungen, eine Abkürzung. Siehe [offene-punkte.md](offene-punkte.md).
+Kategorie **„PET"** in der Tabelle. Das heißt **Heimtier**, nicht Kunststoff —
+bestätigt durch das Strategiepapier: „PET-Lizenzen für **Hund und Katze**".
+Verwirrend bleibt, dass dieselbe Tabelle in einer Getränke-Notiz „Fruit Juice
+**PET** 350 ml" schreibt, wo die Flasche gemeint ist. Zwei Bedeutungen, eine
+Abkürzung.
 
-Dieser Kanal ist die Absatzseite von **Deltex Pets Exklusiv** — einer der beiden
-Bereiche, in denen CGT überhaupt beteiligt ist.
+Dieser Kanal ist die Absatzseite von **Deltex Pets Exklusiv** und laut Strategie
+der Schwerpunkt von **Sascha & Martin**. Fressnapf ist im Strategiepapier das
+Musterbeispiel für sauberes Arbeiten — und steht im Sheet auf *Offen*.
 
 ## Textil / Mode
 
@@ -43,7 +47,8 @@ Ernstings Family · TK MAXX (UK/EU-Kontakt)
 
 ## Travel Retail
 
-Gebr. Heinemann · Lagardere — beide Kategorie „Toys", über Epsilon.
+Gebr. Heinemann · Lagardere — beide Kategorie „Toys", über Epsilon. Das sind die
+**Pocket-Money-Toys** aus der Epsilon-Säule.
 
 ## Posten / Sonderposten
 
@@ -69,5 +74,9 @@ sagen das wörtlich: „Neuen AP suchen", „Nachfass zuständiger Bereich",
 „KAUFLAND-AP für Spirituosen finden", „neuen AP anschreiben".
 
 Das ist genau die Leistung, die CGT verkauft — Zugang — und genau dort klemmt es.
-Ein gepflegtes Ansprechpartner-Verzeichnis wäre deshalb das wertvollste Dokument
-dieses Repos. Es existiert noch nicht.
+
+Die Strategie hat dafür bereits ein eigenes Kapitel: „Neue relevante
+Ansprechpartner und Entscheider aktiv erschließen", und im Maßstab „Wir kennen die
+relevanten Ansprechpartner". Ein gepflegtes **Ansprechpartner-Verzeichnis** ist
+damit kein Vorschlag von außen, sondern die fehlende Umsetzung einer bereits
+beschlossenen Strategie. Es existiert noch nicht.

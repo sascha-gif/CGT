@@ -1,27 +1,28 @@
 # Wer macht was
 
-*Abgeleitet aus der Themenplanung (Stand 11.09.2026).*
+*Quelle: Strategiepapier 2026/2027, abgeglichen mit der Themenplanung.*
 
-**Thomas beschafft, Martin verteilt, Sascha baut die Struktur.**
+CGT besteht aus **drei Personen** — und soll bewusst nicht größer werden.
 
-Die Aufteilung folgt exakt den beiden Richtungen des Geschäftsmodells
-(siehe [cgt-profil.md](cgt-profil.md)):
+| Wer | Rolle | Verantwortung laut Strategie | Themen im Sheet |
+|---|---|---|---|
+| **Sascha** | Geschäftsführung | Federführung **Cubcoats**; gemeinsam mit Martin **PET-Lizenzen Hund & Katze** | 11 |
+| **Thomas** | Geschäftsführung | größter Teil **DELTEX**; weitere Lizenzpartner, besonders **New York**; **Epsilon** auf hoher Ebene | 13 |
+| **Martin** | Business Development | **Epsilon** tief in den Themen und beim Kunden; **PET-Lizenzen** mit Sascha | 28 |
 
-| Wer | Richtung | Partner-Spalte enthält bei ihm |
-|---|---|---|
-| **Thomas** | 1 — Marken und Lizenzen beschaffen | Personen (Lizenzkontakte) |
-| **Martin** | 2 — Handel und Listungen gewinnen | Firmen (Epsilon, DELTEX, NETWORK) |
-| **Sascha** | Brücke zwischen beiden | gemischt |
+## Das Muster dahinter
 
-Thomas ist zugleich Eigner der Themenplanung.
+**Thomas beschafft, Martin verteilt, Sascha baut auf.** Die Aufteilung folgt den
+beiden Geschäftsrichtungen: Thomas arbeitet mit *Menschen* (Lizenzgeber), Martin
+mit *Einkaufsabteilungen* (Handel), Sascha an neuen Feldern und der Struktur.
 
-## Saschas Themen sind strukturell, nicht operativ
+## Abweichungen zwischen Strategie und Tabelle
 
-Im Unterschied zu den anderen beiden: Partnerbeziehung zu Cubcoats aufbauen,
-Kanäle für Cubcoats erschließen (LEH/Discount, Zalando/E-Com, stationär),
-AI-Präsentations-Template für Deltex, Quartalsabrechnung, Kontakte herstellen
-(TK MAXX ↔ Zalando), Werbemittel-Anfrage bei Wella/Unilever/Schwarzkopf.
+| Was die Strategie sagt | Was im Sheet steht |
+|---|---|
+| PET-Lizenzen treiben **Sascha & Martin** | alle drei PET-Themen (Fressnapf, OBI, DEHNER) laufen nur auf **Martin** |
+| **Cubcoats** ist das neue Wachstumsfeld, Sascha federführend | 4 von 5 Cubcoats-Themen stehen auf **Priorität Niedrig, ohne Frist** |
+| „Ein Ziel. **Ein** Hauptverantwortlicher." | ein Thema (McDonald's / Burger King) ist auf **„Alle"** gebucht |
+| Bei Kundenterminen **direkt dabei sein** | kein Thema im Sheet hat einen Termin als nächsten Schritt |
 
-Das ist die Brückenfunktion — und es ist der Teil, der am ehesten leidet, wenn
-Tagesgeschäft dazwischenkommt, weil nichts davon eine Deadline von außen hat.
-Vier der fünf Cubcoats-Themen stehen ohne Frist.
+Keine dieser Abweichungen ist zwingend falsch — aber sie sind nirgends begründet.
