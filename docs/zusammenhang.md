@@ -1,7 +1,7 @@
 # Wie alles zusammenhängt
 
-*Stand: 11.09.2026. Zusammenführung aus Strategiepapier 2026/2027, Wissensbasis,
-Themenplanung und Gesprächen mit Sascha.*
+*Stand: 11.09.2026. Zusammenführung aus Strategiepapier 2026/2027, Retail-Longlist
+Europa, Wissensbasis, Themenplanung und Gesprächen mit Sascha.*
 
 In einem Satz: **CGT verdient an der Verbindung — nicht an der Marke, nicht am
 Händler.**
@@ -17,102 +17,137 @@ Lizenzgeber / Marke  ──►  Partner  ──►  Handel  ──►  Regal
                     └──── CGT UG ────┘
 ```
 
-CGT besitzt keine Stufe dieser Kette. CGT sorgt dafür, dass die beiden
+CGT besitzt keine Stufe dieser Kette, sondern sorgt dafür, dass die beiden
 Übergabestellen funktionieren. Drei Personen, bewusst klein:
 
-- **Thomas** arbeitet in Richtung 1 mit *Menschen* — Lizenzgebern, Agenturen,
-  Partnern in New York. Deshalb steht bei seinen Themen ein Personenname.
-- **Martin** arbeitet in Richtung 2 mit *Einkaufsabteilungen* — Aldi, Lidl, REWE,
-  Fressnapf, Getränkefachhandel. Dort steht eine Firma.
-- **Sascha** baut neue Felder auf (Cubcoats) und treibt mit Martin die PET-Lizenzen.
+- **Thomas** arbeitet in Richtung 1 mit *Menschen* — Lizenzgebern, Agenturen und
+  den **Ambassadoren in New York**, die Türen zum US-Markt und zu US-Marken öffnen.
+- **Martin** arbeitet in Richtung 2 mit *Einkaufsabteilungen*.
+- **Sascha** verantwortet Cubcoats und treibt mit Martin die PET-Lizenzen.
 
-## Die drei Säulen
+## Die Struktur
 
-| Säule | Was | Kanäle | Federführung |
-|---|---|---|---|
-| **DELTEX** | Lizenzen & Marken im LEH | Aldi, Lidl, Kaufland, Penny | Thomas · PET: Sascha & Martin |
-| **Epsilon** | Getränke + Pocket-Money-Toys | großes Vertriebsnetz, Travel Retail | Thomas (hoch), Martin (Kunde) |
-| **Cubcoats** | neues Wachstumsfeld | LEH/Discount, Zalando, E-Com, stationär | Sascha |
+**DELTEX** ist strategischer Kernpartner und größter Partner nach Umsatz, Projekten
+und Potenzial. Darunter liegen die sieben Business Units — **Cubcoats und Miloy
+laufen beide unter Deltex**, beide aktuell.
+
+**Epsilon** ist die zweite Säule: lizenzierte Getränke und Pocket-Money-Toys.
+Getrennt von der Deltex-Unit „Getränke Vertrieb" — beide machen Getränke,
+überschneiden sich aber nicht.
+
+Daneben **Lumoo**: eine Software, für die CGT Kickback erhält. Eigene, wiederkehrende
+Erlösquelle, keine Säule.
 
 ## Der zentrale Befund
 
-Die Strategie definiert **fünf Kriterien**, die ein Thema erfüllen muss, bevor es
-aktiv wird. Gemessen an den 53 Themen der Planung hält die Tabelle **vier davon
-nicht ein**:
+**Das Wissen ist da. Die Übertragung ins Tagesgeschäft fehlt.**
 
-| Kriterium der Strategie | Wirklichkeit in der Tabelle | |
+Drei Ebenen, jede für sich sauber gebaut — und untereinander nicht verbunden:
+
+| Ebene | Stand | Zustand |
 |---|---|---|
-| Ergebnis **klar beschrieben** | über 20 Themen sind nur ein Händlername: „PENNY", „REWE", „EDEKA", „LIDL" | ✗ |
-| **Eine** Person verantwortlich | erfüllt — bis auf ein Thema auf „Alle" | ✓ |
-| Nächster Schritt **konkret** | rund 17× steht dort „Nachfass", ein Thema hat gar nichts | ✗ |
-| **Realistische Frist** | 4 Fristen auf 2024, 13 Themen mit demselben Datum, 5 ohne | ✗ |
-| Klar, **warum jetzt wichtiger** | 46 von 53 stehen auf Priorität „Hoch" | ✗ |
+| **Strategie** | 2026/2027 | vollständig: Säulen, Rollen, fünf Aktivierungskriterien, Maßstab |
+| **Retail-Longlist** | April 2026 | 187 Händler, 39 Prio A, 9 Marken zugeordnet, Pitch-Angles, Messekalender |
+| **Themenplanung** | laufend | 53 Themen — davon **3** aus der Longlist |
 
-Das Strategiepapier sagt es wörtlich — und die Tabelle tut genau das Gegenteil:
+### Ebene 2: die Arbeit ist gemacht, nur nie begonnen
+
+Die [Retail-Longlist](retail-longlist.md) ist das durchdachteste Werkzeug im
+Bestand. Recherchiert ist alles. Gearbeitet wurde damit fast nicht:
+
+| Was | Füllstand |
+|---|---|
+| Ziel-Marken je Prio-A-Account | 39 / 39 |
+| Pitch-Angle je Prio-A-Account | 36 / 39 |
+| **Meeting-Status, Sales-Lead, Follow-up** | **0 / 39** |
+| Sales Matrix: Zuweisung an Thomas/Sascha/Martin | 24 / 187 (13 %) |
+| **Buyer Name** | **1 / 142** |
+| **Buyer E-Mail, nächster Schritt, zuständiger Sales** | **0 / 142** |
+
+**Der Interzoo-Sprint wurde vorbereitet und nicht gelaufen.** 39 Accounts, 36
+ausformulierte Gesprächsstrategien, kein einziger eingetragener Termin. Interzoo
+2026 war am **19.–22.05.2026** — vier Monate vor dieser Auswertung. Die nächste ist
+erst **2028**.
+
+### Ebene 3: die Tabelle reißt vier von fünf eigenen Regeln
+
+| Kriterium der Strategie | Wirklichkeit | |
+|---|---|---|
+| Ergebnis **klar beschrieben** | über 20 Themen sind nur ein Händlername | ✗ |
+| **Eine** Person verantwortlich | erfüllt, bis auf ein Thema auf „Alle" | ✓ |
+| Nächster Schritt **konkret** | rund 17× „Nachfass" | ✗ |
+| **Realistische Frist** | 4 Fristen auf 2024, 13 auf demselben Tag, 5 ohne | ✗ |
+| Klar, **warum jetzt wichtiger** | 46 von 53 auf „Hoch" | ✗ |
+
+Das Strategiepapier sagt es wörtlich:
 
 > „Wenn unser Ziel lautet, PET-Produkte mit Lizenzen bei Fressnapf vorzustellen,
 > dann **reicht es nicht, das Thema ‚Fressnapf' auf einer Liste zu führen.**"
 
-Und zum Status:
-
 > „Es gibt eine Handlung, die sofort ausgeführt werden kann — **keinen unscharfen
 > Status**."
 
-„Nachfass" ist genau so ein unscharfer Status. Er steht rund 17 Mal da.
-
 **Außerdem fehlt der Parkplatz.** Die Strategie sieht ausdrücklich vor, dass gute
-Themen bewusst auf „später" stehen dürfen. Die Status-Spalte kennt aber nur
-*Offen*, *In Arbeit* und *Erledigt*. Wer nichts parken kann, hat alles offen —
-und genau so sieht die Liste aus.
+Themen bewusst auf „später" stehen dürfen. Die Status-Spalte kennt nur *Offen*,
+*In Arbeit*, *Erledigt*. Wer nichts parken kann, hat alles offen.
 
-## Der immer gleiche Engpass
+## Der Engpass — präzisiert
 
-Häufigster nächster Schritt: **„Nachfass"**. Wo es konkret wird, hängt es an einer
-Person, die nicht antwortet. Vier Themen sagen das wörtlich: *Neuen AP suchen* ·
-*Nachfass zuständiger Bereich* · *KAUFLAND-AP für Spirituosen finden* · *neuen AP
-anschreiben*.
+Häufigster nächster Schritt: **„Nachfass"**. Vier Themen sagen wörtlich, dass der
+Ansprechpartner fehlt.
 
-Die Strategie hat dafür bereits ein eigenes Kapitel — **Kundenbeziehungen**:
-„Neue relevante Ansprechpartner und Entscheider aktiv erschließen", und im Maßstab:
-„Wir kennen die relevanten Ansprechpartner." Der Anspruch steht also längst
-geschrieben. Was fehlt, ist der Ort, an dem dieses Wissen liegt.
+**Ein Ansprechpartner-Verzeichnis existiert bereits** — Blatt *Kontakte & Research*
+der Longlist, 142 Händler, mit Corporate Website (99), HQ (99), Supplier-Portal
+(66), dazu Recherche-Tools (LinkedIn Sales Navigator, Apollo.io/Cognism),
+E-Mail-Muster und ein 8-Schritte-Plan für die drei Vertriebler.
 
-**Ein Ansprechpartner-Verzeichnis — Händler × Warengruppe × wer entscheidet — ist
-damit kein Vorschlag von außen, sondern die einzige fehlende Umsetzung einer
-bereits beschlossenen Strategie.**
+Es ist **genau an der entscheidenden Stelle leer**: Buyer Name 1 von 142, Buyer
+E-Mail 0 von 142. Das Sheet erklärt das selbst:
+
+> „Namentliche Einkäufer-Kontakte wurden bewusst NICHT aus KI-Wissen pauschal in
+> diese Liste gesetzt."
+
+Der Rahmen wurde also bewusst leer gelassen, damit er recherchiert wird. Dieser
+Schritt ist nicht passiert. Deshalb steht in der Themenplanung 17× „Nachfass" statt
+eines Namens.
+
+**Es fehlt kein Werkzeug. Es fehlt die Recherchestunde, für die das Werkzeug gebaut
+wurde.**
 
 ## Wo Strategie und Tabelle auseinanderlaufen
 
 | Strategie sagt | Tabelle zeigt |
 |---|---|
-| Cubcoats ist „unser neues Wachstumsfeld" | 4 von 5 Cubcoats-Themen: Priorität **Niedrig**, keine Frist |
+| Cubcoats ist „unser neues Wachstumsfeld" | 4 von 5 Themen: Priorität **Niedrig**, keine Frist |
 | PET-Lizenzen treiben **Sascha & Martin** | alle drei PET-Themen laufen nur auf **Martin** |
-| Fressnapf ist **das Beispiel** für richtiges Arbeiten | steht auf *Offen*, nächster Schritt „Nachfass E-Mail" |
-| Bei Kundenterminen **direkt dabei sein** | kein einziges Thema hat einen Termin als nächsten Schritt |
-| „Weniger anfangen, mehr erreichen" | 53 Themen aktiv, 46 davon „Hoch" |
+| Fressnapf ist **das Beispiel** für richtiges Arbeiten | steht auf *Offen*, „Nachfass E-Mail" |
+| Bei Kundenterminen **direkt dabei sein** | kein Thema hat einen Termin als nächsten Schritt |
+| „Weniger anfangen. Mehr erreichen." | 53 Themen aktiv, 46 davon „Hoch" |
+| Miloy ist ein laufendes CGT-Projekt | **null Themen**, in keinem Strategiepapier erwähnt |
 
 ## Was daraus folgt
 
-1. **Die fünf Kriterien auf die bestehenden 53 Themen anwenden.** Was sie nicht
-   erfüllt, wird konkretisiert oder geparkt. Das ist keine neue Idee — es ist die
-   beschlossene Arbeitsweise.
-2. **Status „Später" einführen**, damit „was bewusst warten darf" einen Ort hat.
-3. **Ansprechpartner erfassen.** Der Engpass ist strukturell und steht im
-   Strategiepapier bereits als Anspruch.
-4. **Cubcoats auf die Priorität heben, die die Strategie ihm gibt** — oder
+1. **Die Longlist ins Tagesgeschäft holen.** 39 Prio-A-Accounts mit fertigen
+   Pitch-Angles liegen bereit; drei davon stehen in der Themenplanung.
+2. **Buyer-Recherche als eigenen, terminierten Block.** Nicht „Nachfass", sondern:
+   pro Woche X Prio-A-Accounts über LinkedIn Sales Navigator und die
+   Supplier-Portale auf einen Namen bringen. Das Werkzeug dafür steht.
+3. **Die fünf Kriterien auf die 53 Themen anwenden.** Was sie nicht erfüllt, wird
+   konkretisiert oder geparkt — die beschlossene Arbeitsweise.
+4. **Status „Später" einführen**, damit der Parkplatz einen Ort hat.
+5. **Messekalender aktiv nutzen.** Interzoo fällt bis 2028 aus; die nächsten Zugänge
+   sind **PATS Telford (UK, jährlich September)**, Salon Animal Expo (Paris,
+   November), Christmasworld (Januar) und **Ambiente (Februar — für LOOKS,
+   FYNCH HATTON, JASPER & JUNE)**.
+6. **Cubcoats auf die Priorität heben, die die Strategie ihm gibt** — oder
    begründen, warum nicht.
-5. **Hard Rock als eine Kampagne führen**, nicht als 16 Einzelthemen mit
-   identischem nächsten Schritt.
-6. **Zeilenzahl nie als Priorität lesen.** Epsilon hat die meisten Themen, DELTEX
+7. **Zeilenzahl nie als Priorität lesen.** Epsilon hat die meisten Themen, DELTEX
    das meiste Gewicht.
 
-## Was NICHT das Problem ist
+## Zwei Korrekturen in eigener Sache
 
-Eine frühere Lesart dieses Materials lautete: „Der Aufwand liegt nicht dort, wo
-CGT beteiligt ist" — weil CGT nur in zwei von sieben Deltex-Einheiten sitzt und
-der Getränkeblock über Epsilon läuft. **Das war falsch.** Epsilon ist eine
-gleichrangige strategische Säule; die 22 Epsilon-Themen sind Kerngeschäft, kein
-Nebenschauplatz. Auch **Deltex Miloy**, das in der Wissensbasis als CGT-Projekt
-steht, kommt in keinem der vier Strategiepapiere vor — dass es keine Themen hat,
-ist deshalb kein Befund, sondern eine offene Frage (siehe
-[offene-punkte.md](offene-punkte.md)).
+**„Der Aufwand liegt nicht dort, wo CGT beteiligt ist"** — war falsch. Epsilon ist
+eine gleichrangige strategische Säule; die 22 Epsilon-Themen sind Kerngeschäft.
+
+**„Ein Ansprechpartner-Verzeichnis existiert nicht"** — war ebenfalls falsch. Es
+existiert vollständig gebaut in der Retail-Longlist. Es ist nur nicht gefüllt.

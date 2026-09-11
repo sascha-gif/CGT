@@ -8,6 +8,10 @@ Händler flach in einer Liste; die Gliederung hier ist ergänzt.
 Die Strategie nennt als LEH-Schwerpunkt mit DELTEX ausdrücklich **Aldi, Lidl,
 Kaufland und Penny**.
 
+**Für die Pet-Seite gibt es bereits eine vollständige europaweite Zielliste mit 187
+Händlern**, davon 39 auf Priorität A — siehe [retail-longlist.md](retail-longlist.md).
+Die hier aufgeführten Händler aus der Themenplanung sind drei davon.
+
 ## LEH / Vollsortiment
 
 EDEKA · REWE · GLOBUS · HIT · Marktkauf (läuft über EDEKA Rhein-Ruhr) · KAUFLAND

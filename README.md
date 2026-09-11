@@ -11,6 +11,7 @@ Kein Code. Tagesaufgaben leben im Google Sheet „CGT – Themenplanung", nicht 
 | | |
 |---|---|
 | **Der Maßstab** | [docs/strategie.md](docs/strategie.md) |
+| **187 Zielhändler Europa** | [docs/retail-longlist.md](docs/retail-longlist.md) |
 | **Worum es geht** | [docs/cgt-profil.md](docs/cgt-profil.md) |
 | **Wichtigster Kunde** | [docs/deltex.md](docs/deltex.md) |
 | **Wie alles zusammenhängt** | [docs/zusammenhang.md](docs/zusammenhang.md) |

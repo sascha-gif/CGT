@@ -10,6 +10,7 @@ Ein Thema pro Datei. Neue Dateien hier verlinken, damit die Übersicht nicht zer
 | Partner — DELTEX, Epsilon, Cubcoats | [partner.md](partner.md) | 11.09.2026 |
 | Deltex Handels GmbH — 7 Business Units | [deltex.md](deltex.md) | 11.09.2026 |
 | Marken und Lizenzen | [marken-lizenzen.md](marken-lizenzen.md) | 11.09.2026 |
+| **Retail-Longlist Europa — 187 Händler** | [retail-longlist.md](retail-longlist.md) | 11.09.2026 |
 | Handel — Kanäle und Adressaten | [handel.md](handel.md) | 11.09.2026 |
 | Wer macht was | [rollen.md](rollen.md) | 11.09.2026 |
 | Themenplanung — das Arbeitswerkzeug | [themenplanung.md](themenplanung.md) | 11.09.2026 |
@@ -21,7 +22,9 @@ Ein Thema pro Datei. Neue Dateien hier verlinken, damit die Übersicht nicht zer
    (`CGT.docx`, `CGT_Unser_Kompass.docx`, `CGT_Unser_Kompass_2026_2027_neu.docx`)
 2. **Wissensbasis CGT UG** (Sascha) — Deltex-Struktur, Business Units, Portfolios
 3. **Google Sheet „CGT – Themenplanung"** (Eigner Thomas Götz) — 53 laufende Themen
-4. Gespräche mit Sascha, 11.09.2026
+4. **Google Sheet „DELTEX_Retail_Longlist_Europa"** (Sascha, Stand April 2026) —
+   187 Händler, Interzoo-Sprint, Sales Matrix, Kontakte & Research, Messekalender
+5. Gespräche mit Sascha, 11.09.2026
 
 Was aus welcher Quelle stammt, steht oben in jeder Datei. Abgeleitetes ist als
 solches gekennzeichnet. **Wo Strategie und Tabelle sich widersprechen, gilt die
@@ -36,8 +39,7 @@ Strategie als Maßstab und der Widerspruch wird benannt**, nicht geglättet.
 
 ## Themen, die noch fehlen
 
-- **Ansprechpartner** je Händler und Warengruppe (Entscheidung steht aus)
-- **Deltex Miloy** — undokumentiert, und in keinem Strategiepapier erwähnt
-- **Partner in New York** — laut Strategie Thomas' Bereich, sonst nichts bekannt
+- **Deltex Miloy** — aktuell, aber inhaltlich undokumentiert
+- **US-Markt / Ambassadoren New York** — welche Marken, welcher Stand
 - **Verträge** — was wurde wann mit wem vereinbart, wo liegt das Original
-- **Konditionen** — Margen, Lizenzgebühren, Laufzeiten
+- **Konditionen** — Margen, Lizenzgebühren, Laufzeiten, Lumoo-Kickback

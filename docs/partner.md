@@ -67,6 +67,10 @@ Platzierungschancen** machen.
 Im Sheet: 16 Themen Hard Rock, 2 alkoholfreie Getränke, 2 Toys (Travel Retail:
 Gebr. Heinemann, Lagardere = die Pocket-Money-Toys), 2 übergreifend.
 
+**Abgrenzung zu Deltex:** Epsilon und die Deltex-Unit „Getränke Vertrieb" machen
+beide Getränke, werden aber **getrennt geführt** und überschneiden sich nicht
+(Sascha, 11.09.2026).
+
 ---
 
 ## Cubcoats — neues Wachstumsfeld
@@ -107,4 +111,6 @@ mit Einkaufsabteilungen.
 
 ## CGT selbst
 
-Ein Thema: **Lumoo Abrechnung** (Quartalsabrechnung). Lumoo ist nirgends erklärt.
+Ein Thema: **Lumoo Abrechnung** (Quartalsabrechnung). **Lumoo ist eine Software;
+CGT bekommt dafür Kickback** (Sascha, 11.09.2026) — also eine eigene, wiederkehrende
+Erlösquelle neben den drei Säulen. Quartalsweise abzurechnen.

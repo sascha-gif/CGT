@@ -56,14 +56,16 @@ bestätigt ist — siehe [marken-lizenzen.md](marken-lizenzen.md).
 
 ### Getränke Vertrieb
 
-Getränke-Distribution und Handel. Der mit Abstand größte Themenblock der Planung
-(Hard Rock, Mizu, alkoholfreie Getränkelizenzen). *Offen: eigene Marken oder reine
+Getränke-Distribution und Handel. **Nicht zu verwechseln mit Epsilon:** beide machen
+Getränke, werden aber **getrennt geführt** und überschneiden sich nicht (Sascha,
+11.09.2026). Der große Getränkeblock der Themenplanung (Hard Rock, Mizu) läuft über
+**Epsilon**, nicht über diese Deltex-Einheit. *Offen: eigene Marken oder reine
 Fremdmarken-Distribution?*
 
 ### Cubcoats
 
-Kinder- und Lifestyle-Kollektion. **Läuft über Deltex** (bestätigt Sascha,
-11.09.2026) — die vier Themen, die im Sheet „Cubcoats" als Partner führen, gehören
+Kinder- und Lifestyle-Kollektion. **Läuft unter Deltex** (zweifach bestätigt durch
+Sascha, 11.09.2026) — die vier Themen, die im Sheet „Cubcoats" als Partner führen, gehören
 damit in die Deltex-Welt. Vertragsstrang: Fastable – Deltex.
 
 ### Herzbach-Home
@@ -83,10 +85,9 @@ mit der höchsten eigenen Gestaltungstiefe für CGT.
 *Offen: inhaltlicher Kern (Fashion, Lifestyle, anderes), Sortiment, Zielgruppe,
 Status.*
 
-**Achtung:** Miloy kommt in **keinem** der vier Strategiepapiere vor und hat kein
-einziges Thema in der Planung. Entweder ist es nicht (mehr) aktuell, oder es ist
-das einzige CGT-Projekt ohne strategische Verankerung. Siehe
-[offene-punkte.md](offene-punkte.md).
+**Aktuell** (bestätigt Sascha, 11.09.2026) — läuft unter Deltex. Auffällig bleibt:
+Miloy kommt in keinem der vier Strategiepapiere vor und hat **kein einziges Thema**
+in der Themenplanung. Ein laufendes CGT-Projekt ohne Spur im Arbeitswerkzeug.
 
 ### Deltex Pets Exklusiv — CGT als Partner
 

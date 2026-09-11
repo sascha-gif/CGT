@@ -46,7 +46,7 @@ Kundenterminen stärker direkt dabei sein**, um neue Themen selbst vorzustellen.
 
 | Wer | Fokus |
 |---|---|
-| **Thomas** | größter Teil der laufenden Zusammenarbeit; weitere Lizenzpartner, besonders die **Partner in New York** |
+| **Thomas** | größter Teil der laufenden Zusammenarbeit; weitere Lizenzpartner, besonders die **Partner in New York** — **Ambassadoren**, die Türen zum **US-Markt und zu US-Marken** öffnen (Sascha, 11.09.2026) |
 | **Sascha & Martin** | Schwerpunkt **PET-Lizenzen für Hund und Katze** |
 
 ### 2. Epsilon — Reichweite gezielt nutzen

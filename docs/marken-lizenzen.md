@@ -21,6 +21,7 @@ Deltex-Business-Unit, soweit belegt.
 | Pink Panther™ | Lizenz | Pets Exklusiv |
 | Peanuts / Snoopy | Lizenz | Pets Exklusiv |
 | S.W. Smiley Worldwide | Lizenz | Pets Exklusiv |
+| **JASPER & JUNE** | offen | Pets Exklusiv — steht in der Retail-Longlist bei 44 Händlern, fehlt in der Wissensbasis |
 
 ## Aus der Themenplanung — Unit-Zuordnung noch offen
 
@@ -49,6 +50,12 @@ Deltex-Business-Unit, soweit belegt.
 
 ## Was auffällt
 
-Das **Pets-Portfolio ist das größte geschlossene Markenpaket** (8 Marken) und
-gleichzeitig das am wenigsten bearbeitete: drei Händlerthemen, alle offen.
-Der Getränkeblock ist umgekehrt der kleinste an Marken und der größte an Aufwand.
+Das **Pets-Portfolio ist das größte geschlossene Markenpaket** — laut
+[Retail-Longlist](retail-longlist.md) **neun Marken**, nicht acht: dort kommt
+**JASPER & JUNE** dazu (44 Händler-Zuordnungen). Nach Reichweite in der Longlist:
+Peanuts (105), FOFOS (103), Ein Herz für Tiere (44), JASPER & JUNE (44),
+FYNCH HATTON (43), Martin Rütter (41), LOOKS (30), Pink Panther (15), S.W. SMILEY (11).
+
+Gleichzeitig ist es das am wenigsten bearbeitete: in der Themenplanung drei
+Händlerthemen, alle offen. Der Getränkeblock ist umgekehrt der kleinste an Marken
+und der größte an Aufwand.

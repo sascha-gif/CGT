@@ -47,6 +47,9 @@ CGT ist an keiner Stelle der Kette Eigentümer. Der Wert entsteht an den beiden
 | **Epsilon** | lizenzierte Getränke + Pocket-Money-Toys, großes Vertriebsnetz | Thomas (High Level), Martin (beim Kunden) |
 | **Cubcoats** | neues Wachstumsfeld: LEH/Discount, Zalando, E-Com, stationär, Lizenzen | Sascha |
 
+Daneben: **Lumoo** — eine Software, für die CGT **Kickback** erhält. Quartalsweise
+abgerechnet, keine der drei Säulen, aber eigener Erlös.
+
 Ausführlich: [strategie.md](strategie.md).
 
 ## Wichtig beim Lesen der Themenplanung

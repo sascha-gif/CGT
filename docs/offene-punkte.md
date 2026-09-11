@@ -6,25 +6,30 @@ Erledigtes mit Datum und Ergebnis nach unten schieben — nicht löschen.
 
 ## Wichtigste Lücke
 
-**Ansprechpartner-Verzeichnis.** Wer ist bei welchem Händler für welche Warengruppe
-zuständig? Das Strategiepapier fordert es bereits („Wir kennen die relevanten
-Ansprechpartner"), ein Ort dafür existiert nicht. Heute steht das Wissen verstreut
-in der Notizspalte und in Köpfen.
+**Die Buyer-Recherche.** Das Ansprechpartner-Verzeichnis **existiert** — Blatt
+*Kontakte & Research* der [Retail-Longlist](retail-longlist.md), 142 Händler mit
+Website, HQ und Supplier-Portal, dazu Tools, E-Mail-Muster und ein 8-Schritte-Plan.
+Gefüllt ist es an der entscheidenden Stelle nicht: **Buyer Name 1 von 142, Buyer
+E-Mail 0 von 142.** Das Sheet lässt diese Felder bewusst leer, damit sie
+recherchiert werden — genau das ist nicht passiert.
 
-Zu entscheiden: **wo es leben soll** — hier im Repo oder in einem CRM. Für das
-Repo spricht, dass es nichts kostet und sofort da ist; dagegen, dass Kontaktdaten
-von Einkäufern personenbezogene Daten sind und versioniert liegenbleiben. Deshalb
-stehen bisher **keine externen Personennamen** im Repo.
+Es fehlt also kein Werkzeug, sondern der terminierte Recherche-Block.
+
+Zu entscheiden bleibt: **wo die Namen liegen** — in der Longlist, in einem CRM,
+oder hier. Im Repo stehen bisher **keine externen Personennamen**; Einkäuferdaten
+sind personenbezogen und blieben versioniert liegen.
 
 ## Zu CGT
 
 - Gründungsjahr, Sitz, Rechtsform-Details
 - Vertragsmodell je Säule — Projektbasis, Retainer, Beteiligung?
-- **Deltex Miloy** — steht in der Wissensbasis als CGT-eigenes Projekt, kommt aber
-  in **keinem** der vier Strategiepapiere vor und hat null Themen. Noch aktuell?
-- **Lumoo** — CGT-eigenes Abrechnungsthema, nirgends erklärt
-- **Partner in New York** — laut Strategie betreut Thomas sie; wer ist das, welche Lizenzen?
+- **Deltex Miloy** — aktuell und unter Deltex (Sascha). Aber: kein Thema in der
+  Planung, keine Erwähnung in den Strategiepapieren, kein Inhalt dokumentiert.
+  Woran wird gearbeitet?
 - **Roberto** (Epsilon, „Fokus Hard Rock!!!") — Rolle unklar
+- **JASPER & JUNE** — steht in der Retail-Longlist bei 44 Händlern, fehlt im
+  Portfolio der Wissensbasis. Lizenz, Eigenmarke oder Testimonial?
+- **Lumoo** — Kickback-Modell steht; Höhe, Laufzeit und Abrechnungsrhythmus fehlen
 
 ## Zu Deltex
 
@@ -59,14 +64,33 @@ stehen bisher **keine externen Personennamen** im Repo.
 - Cubcoats: Strategie sagt „neues Wachstumsfeld", Tabelle sagt *Niedrig, ohne Frist* —
   was gilt?
 
+## Zur Retail-Longlist
+
+- **Interzoo-Sprint ist verstrichen.** 39 Prio-A-Accounts vorbereitet, 36
+  Pitch-Angles geschrieben, null Meetings eingetragen. Messe war 19.–22.05.2026,
+  die nächste erst 2028. Was ist der Ersatzweg zu diesen 39 Accounts?
+- **PATS Telford** läuft jährlich im September — nächster Messe-Zugang zu
+  Pets at Home. Termin prüfen.
+- **Sales Matrix**: nur 24 von 187 Händlern einem der drei zugewiesen. Absicht oder
+  liegengeblieben?
+- Longlist-Stand ist **April 2026** — Umsatz- und Filialzahlen ggf. veraltet.
+
 ## Zugang
 
 - Das zweite Google Sheet (`15jYIfd0rx58…`) ist über den verbundenen
   Google-Account **nicht erreichbar** — „not found". Freigeben oder Inhalt anders liefern.
-- **`DELTEX_Retail_Longlist_Europa`** liegt in Saschas Drive (zuletzt 02.09.2026)
-  und ist bisher nicht ausgewertet. Vermutlich direkt relevant für die Handelsseite.
 
 ## Erledigt
+
+- **11.09.2026 — Ist Deltex Miloy noch aktuell?** Ja, läuft unter Deltex. (Sascha)
+- **11.09.2026 — Wer sind die Partner in New York?** **Ambassadoren**, die Türen zum
+  **US-Markt und zu US-Marken** öffnen. (Sascha)
+- **11.09.2026 — Überschneiden sich Epsilon und die Deltex-Unit „Getränke Vertrieb"?**
+  Nein, beide werden getrennt geführt. (Sascha)
+- **11.09.2026 — Was ist Lumoo?** Eine Software; CGT bekommt **Kickback** dafür.
+  Eigene Erlösquelle neben den Säulen, quartalsweise abzurechnen. (Sascha)
+- **11.09.2026 — Gibt es ein Ansprechpartner-Verzeichnis?** Ja, in der Retail-Longlist
+  (Blatt *Kontakte & Research*, 142 Händler). Nur die Buyer-Felder sind leer.
 
 - **11.09.2026 — Was ist Epsilon?** Eine der **drei strategischen Säulen**:
   lizenzierte Getränke und Pocket-Money-Toys, großes Vertriebsnetz, gegenseitiger

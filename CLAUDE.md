@@ -71,11 +71,18 @@ als Signal verwenden.
 Handlung, die sofort ausgeführt werden kann — keinen unscharfen Status". „Nachfass"
 steht rund 17 Mal da.
 
-**Cubcoats läuft über Deltex** und ist trotzdem eine eigene strategische Säule.
-Beides gilt.
+**Cubcoats und Miloy laufen beide unter Deltex** — Cubcoats ist trotzdem eine eigene
+strategische Säule. Beides gilt. Miloy ist aktuell, aber inhaltlich undokumentiert.
 
-**Deltex Miloy** steht in der Wissensbasis als CGT-Projekt, kommt aber in keinem
-Strategiepapier vor. Nicht als laufendes Projekt behandeln, bevor das geklärt ist.
+**Epsilon ist nicht die Deltex-Unit „Getränke Vertrieb".** Beide machen Getränke,
+werden getrennt geführt, überschneiden sich nicht.
+
+**Das Ansprechpartner-Verzeichnis existiert bereits** — Blatt *Kontakte & Research*
+der Retail-Longlist, 142 Händler. Es ist nur an der wichtigen Stelle leer (Buyer
+Name 1/142). Nie behaupten, es fehle ein Werkzeug — es fehlt die Recherche.
+
+**Die Retail-Longlist ist die Pet-Absatzliste**: 187 Händler europaweit, 39 auf
+Priorität A, neun Marken zugeordnet. In der Themenplanung stehen davon **drei**.
 
 ## Schreibweise
 
