@@ -34,6 +34,13 @@ Details und Bewertung: [mercedes-lizenz.md](mercedes-lizenz.md).
 - **Produzenten-Provision**: offenlegen oder als Leistung bepreisen?
 - **BLE-Minimum**: Was muss bis 03.10. stehen, wenn der Styleguide nicht fertig wird?
 
+## Entscheidet über die Ideen ([ideen.md](ideen.md))
+
+- **Wie verdient CGT heute?** Provision, Retainer, Marge oder Beteiligung — je Säule?
+  Ohne das lässt sich nicht beurteilen, welcher Hebel wirklich etwas ändert.
+- **Wem gehört die Retail-Longlist?** Sie ist für DELTEX gebaut. Darf CGT sie
+  Dritten als Leistung anbieten?
+
 ## Zu CGT
 
 - Gründungsjahr
