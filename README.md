@@ -12,6 +12,7 @@ Kein Code. Tagesaufgaben leben im Google Sheet „CGT – Themenplanung", nicht 
 |---|---|
 | **Worum es geht** | [docs/cgt-profil.md](docs/cgt-profil.md) |
 | **Wichtigster Kunde** | [docs/deltex.md](docs/deltex.md) |
+| **Wie alles zusammenhängt** | [docs/zusammenhang.md](docs/zusammenhang.md) |
 | **Was noch zu klären ist** | [docs/offene-punkte.md](docs/offene-punkte.md) |
 | **Alles andere** | [docs/README.md](docs/README.md) |
 

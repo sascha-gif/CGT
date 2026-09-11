@@ -2,6 +2,8 @@
 
 *Quellen: Wissensbasis (Sascha, 11.09.2026) · Themenplanung (Stand 11.09.2026)*
 
+**Größter Partner der CGT UG — nach Umsatz, nach Projekten und nach Potenzial.**
+
 Full-Service-Anbieter — von Entwicklung über Produktion bis Vertrieb.
 
 - über **35 Jahre** Branchenerfahrung
@@ -57,9 +59,9 @@ Fremdmarken-Distribution?*
 
 ### Cubcoats
 
-Kinder- und Lifestyle-Kollektion. Achtung: In der Themenplanung taucht Cubcoats
-**als eigenständiger Partner** auf, nicht als Deltex-Einheit — siehe
-[offene-punkte.md](offene-punkte.md).
+Kinder- und Lifestyle-Kollektion. **Läuft über Deltex** (bestätigt Sascha,
+11.09.2026) — die vier Themen, die im Sheet „Cubcoats" als Partner führen, gehören
+damit in die Deltex-Welt. Vertragsstrang: Fastable – Deltex.
 
 ### Herzbach-Home
 

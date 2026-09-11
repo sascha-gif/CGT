@@ -44,16 +44,22 @@ CGT ist in 2 von 7 Deltex-Einheiten involviert — Miloy und Pets Exklusiv.
 Rund 36 % aller Themen entfallen auf den Getränkeblock (Hard Rock), an dem CGT
 laut Struktur nicht beteiligt ist. Das CGT-eigene Projekt Miloy kommt nicht vor.
 
-**3. Hard Rock ist kein Thema, sondern eine Kampagne.**
+**3. Die Zeilenzahl bildet das Gewicht nicht ab.**
+Epsilon hat 22 Themen, Deltex 10 (+4 Cubcoats) — aber **Deltex ist der größte
+Partner nach Umsatz, Projekten und Potenzial** (Sascha, 11.09.2026). Die Tabelle
+misst Aufwand, nicht Wert. Zusammen mit Punkt 2 heißt das: Die Sichtbarkeit in der
+Planung ist ungefähr umgekehrt proportional zur wirtschaftlichen Bedeutung.
+
+**4. Hard Rock ist kein Thema, sondern eine Kampagne.**
 15 der 28 Martin-Themen sind Hard Rock — mehr als die Hälfte seiner Liste, alle
 mit demselben nächsten Schritt („Nachfass"), fast alle auf *Offen*. Das sind nicht
 15 Baustellen, sondern **ein Vorgang mit 15 Adressaten**. In der flachen Liste
 sieht es nach 15-fachem Aufwand aus.
 
-**4. Der Engpass ist durchgehend der Zugang zum richtigen Ansprechpartner** —
+**5. Der Engpass ist durchgehend der Zugang zum richtigen Ansprechpartner** —
 nicht Produkt, nicht Preis. Siehe [handel.md](handel.md).
 
-**5. Muster sind die eigentliche Vorgangsstufe.**
+**6. Muster sind die eigentliche Vorgangsstufe.**
 Fünf Themen drehen sich um Muster (NORMA Getränkelizenzen, NORMA Sell-in/Sell-out,
 Cubcoats, Mizu, Getränke Hoffmann). Musterstand wäre eine sinnvolle Statusstufe
 statt Freitext.

@@ -40,11 +40,8 @@ geschrieben. Sag Bescheid, wie du es willst.
 
 ## Widersprüche zwischen den Quellen
 
-- **Cubcoats** ist in der Wissensbasis eine Deltex Business Unit, in der
-  Themenplanung ein eigenständiger Partner mit eigenem Vertragsstrang
-  („Vertrag Fastable – Deltex"). Was stimmt — oder gilt beides?
-- **Epsilon** ist nach Themenanzahl der größte Partner (~19), fehlt in der
-  Wissensbasis komplett. Kunde, Lieferant oder Lizenzgeber?
+- **Epsilon** hat nach Themenanzahl den größten Block (22 von 53), fehlt in der
+  Wissensbasis aber komplett. Kunde, Lieferant oder Lizenzgeber?
 
 ## Unklare Kürzel und Themen aus der Themenplanung
 
@@ -69,4 +66,9 @@ geschrieben. Sag Bescheid, wie du es willst.
 
 ## Erledigt
 
-- *(noch nichts)*
+- **11.09.2026 — Cubcoats: Unit oder Partner?** Geklärt: Cubcoats läuft über
+  Deltex, ist also eine Deltex Business Unit. Die Partner-Angabe „Cubcoats" im
+  Sheet meint die Unit, nicht eine eigenständige Firma. (Quelle: Sascha)
+- **11.09.2026 — Wer ist der größte Partner?** Deltex, nach Umsatz, Projekten und
+  Potenzial. Die höhere Themenzahl bei Epsilon (22 vs. 10) bildet das Gewicht
+  nicht ab. (Quelle: Sascha)

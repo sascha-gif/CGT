@@ -60,8 +60,12 @@ Fressnapf, OBI, DEHNER, also die Absatzseite von Deltex Pets Exklusiv. In einer
 Getränke-Notiz („Fruit Juice PET 350 ml") ist aber die Kunststoffflasche gemeint.
 Nie raten, welches gemeint ist — am Händler festmachen.
 
-**Cubcoats ist doppelt belegt:** in der Wissensbasis eine Deltex Business Unit, in
-der Themenplanung ein eigenständiger Partner. Ungeklärt, siehe offene Punkte.
+**Cubcoats läuft über Deltex** — ist also eine Deltex Business Unit, auch wenn das
+Sheet „Cubcoats" in der Partner-Spalte führt.
+
+**Zeilenzahl im Sheet ist nicht Gewicht.** Epsilon hat 22 Themen, Deltex 10 — aber
+**Deltex ist der größte Partner nach Umsatz, Projekten und Potenzial**. Nie nach
+Themenanzahl priorisieren.
 
 **Die Priorität-Spalte der Themenplanung ist wertlos** — 46 von 53 Themen stehen
 auf „Hoch". Nicht als Signal verwenden.

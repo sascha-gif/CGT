@@ -40,19 +40,25 @@ Listungskampagne durch den gesamten deutschen Lebensmittel- und Getränkehandel.
 Das Kapital von CGT ist damit **weder die Marke noch der Händler**, sondern das
 Wissen dazwischen: welche Marke zu welchem Händler passt und wer dort entscheidet.
 
-## Kunden und Partner neben Deltex
+## Partner und ihr Gewicht
 
-Aus der Themenplanung ablesbar (in der Wissensbasis bisher nicht erfasst):
+**Deltex ist der größte Partner — nach Umsatz, nach Projekten und nach Potenzial.**
+(Sascha, 11.09.2026)
 
-| Partner | Themen | Feld |
+Achtung beim Lesen der Themenplanung: **Zeilenzahl ist nicht Gewicht.**
+
+| Partner | Themen im Sheet | Gewicht |
 |---|---|---|
-| **Epsilon** | ~19 | Getränke (Hard Rock, alkoholfrei), Toys |
-| **DELTEX** | ~10 | Lizenzen, Pets, LEH-Textil, Werbemittel |
-| **Cubcoats** | 5 | Kanalerschließung (siehe [partner.md](partner.md)) |
-| **NETWORK** | 1 | Posten |
+| **Deltex Handels GmbH** | 10 (+4 Cubcoats) | **größter Partner: Umsatz, Projekte, Potenzial** |
+| Epsilon | 22 | meiste Themen, geringeres Gewicht |
+| NETWORK | 1 | Posten |
+| CGT selbst | 1 | Lumoo-Abrechnung |
 
-→ Damit ist die offene Frage „Weitere Kunden neben Deltex?" aus der Wissensbasis
-teilweise beantwortet. Offen bleibt das Vertragsmodell je Partner.
+Epsilon hat mehr als doppelt so viele Zeilen wie Deltex und ist trotzdem der
+kleinere Partner. Die Tabelle misst Aufwand, nicht Wert — wer nach Zeilenzahl
+priorisiert, priorisiert falsch. Details: [partner.md](partner.md).
+
+Offen bleibt das Vertragsmodell je Partner und was Epsilon genau ist.
 
 ## Arbeitsweise und Präferenzen
 
