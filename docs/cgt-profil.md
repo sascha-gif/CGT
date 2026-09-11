@@ -5,7 +5,10 @@ Gespräche 11.09.2026*
 
 | Feld | Inhalt |
 |---|---|
-| Firma | CGT UG — Coldewey Goetz Trade |
+| Firma | CGT UG (haftungsbeschränkt) — Coldewey Goetz Trade |
+| Sitz | Biebricher Allee 36, 65187 Wiesbaden |
+| Register | Amtsgericht Wiesbaden, HRB 35897 |
+| Geschäftsführung | Sascha Coldewey, Thomas Goetz |
 | Team | **drei Personen**, bewusst nicht größer |
 | Geschäftsführung | Sascha, Thomas |
 | Business Development | Martin |

@@ -10,6 +10,7 @@ Ein Thema pro Datei. Neue Dateien hier verlinken, damit die Übersicht nicht zer
 | Partner — DELTEX, Epsilon, Cubcoats | [partner.md](partner.md) | 11.09.2026 |
 | Deltex Handels GmbH — 7 Business Units | [deltex.md](deltex.md) | 11.09.2026 |
 | Marken und Lizenzen | [marken-lizenzen.md](marken-lizenzen.md) | 11.09.2026 |
+| **Mercedes-Lizenz — Modell & BLE** | [mercedes-lizenz.md](mercedes-lizenz.md) | 11.09.2026 |
 | **Retail-Longlist Europa — 187 Händler** | [retail-longlist.md](retail-longlist.md) | 11.09.2026 |
 | Handel — Kanäle und Adressaten | [handel.md](handel.md) | 11.09.2026 |
 | Wer macht was | [rollen.md](rollen.md) | 11.09.2026 |

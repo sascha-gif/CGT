@@ -19,9 +19,24 @@ Zu entscheiden bleibt: **wo die Namen liegen** — in der Longlist, in einem CRM
 oder hier. Im Repo stehen bisher **keine externen Personennamen**; Einkäuferdaten
 sind personenbezogen und blieben versioniert liegen.
 
+## Mercedes-Lizenz (neu, 11.09.2026)
+
+Details und Bewertung: [mercedes-lizenz.md](mercedes-lizenz.md).
+
+- **Was darf CGT vergeben?** Umfang der Master-Lizenz — Territorien, Kategorien,
+  Laufzeit — ist nicht dokumentiert. Vor der BLE zu klären.
+- **Rolle von Marc und Marko** — Lizenzgeber, Mitgesellschafter, Partner?
+- **Royalty-Basis** einheitlich definieren (Net Sales, was ist abzugsfähig)
+- **Kategorien-Grid** statt pauschaler 10 % über alle Warengruppen
+- **Leistungsschwelle für Exklusivität** im Kurzfristmodell
+- **Approval-Prozess** für Designs, Muster, Verpackung
+- **Verhältnis Online-Lizenz ↔ Territorial-Exklusivität**
+- **Produzenten-Provision**: offenlegen oder als Leistung bepreisen?
+- **BLE-Minimum**: Was muss bis 03.10. stehen, wenn der Styleguide nicht fertig wird?
+
 ## Zu CGT
 
-- Gründungsjahr, Sitz, Rechtsform-Details
+- Gründungsjahr
 - Vertragsmodell je Säule — Projektbasis, Retainer, Beteiligung?
 - **Deltex Miloy** — aktuell und unter Deltex (Sascha). Aber: kein Thema in der
   Planung, keine Erwähnung in den Strategiepapieren, kein Inhalt dokumentiert.
@@ -44,7 +59,8 @@ sind personenbezogen und blieben versioniert liegen.
 
 ## Unklare Themen aus der Planung
 
-- **BLE** — nur eine Namensliste hinterlegt, kein Inhalt
+- ~~**BLE**~~ — geklärt: **Brand Licensing Europe**, Messe am 6.–7.10.2026 in London.
+  Die Namensliste sind die Gesprächspartner dort.
 - **SM Penny** — wofür steht SM?
 - **Demet** — NDA in Vorbereitung, Gegenstand unbekannt
 - **Coolthings Box** — was ist das, welche Verträge müssen „passen"?

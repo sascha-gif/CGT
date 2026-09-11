@@ -34,7 +34,7 @@ Deltex-Business-Unit, soweit belegt.
 | **Cubcoats** | eigener Partner | Kanäle: LEH/Discount, Zalando/E-Com, stationär |
 | **CR7** | Deltex Brands | läuft; aktuell: ALDI in den Vertrag aufnehmen |
 | **Otto Kern** | offen | angefragt als Lizenz für ALDI Denim |
-| **Mercedes** | offen | Schuhe; Notiz „Bugatti"; Styleguide ausstehend |
+| **Mercedes** | eigenes Lizenzprogramm im Aufbau | Schuhe; Notiz „Bugatti". Styleguide bei John in Arbeit, Vorstellung auf der BLE 6.–7.10.2026 → [mercedes-lizenz.md](mercedes-lizenz.md) |
 | **Lotto** | offen | Sportmarke |
 | **Puma** | offen | Plus-Size-Posten |
 | **RBX** | offen | Plus Size, Moodboard |
