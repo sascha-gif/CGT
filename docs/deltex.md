@@ -80,14 +80,29 @@ dahinter oder eigenständig?*
 ### Deltex Miloy — CGT-Projekt
 
 Sublabel unter Deltex, inhaltlich ein **direktes Projekt von CGT UG** — die Einheit
-mit der höchsten eigenen Gestaltungstiefe für CGT.
+mit der höchsten eigenen Gestaltungstiefe.
 
-*Offen: inhaltlicher Kern (Fashion, Lifestyle, anderes), Sortiment, Zielgruppe,
-Status.*
+**Stand: zweite Kollektion mit TK Maxx** (Sascha, 13.09.2026).
 
-**Aktuell** (bestätigt Sascha, 11.09.2026) — läuft unter Deltex. Auffällig bleibt:
-Miloy kommt in keinem der vier Strategiepapiere vor und hat **kein einziges Thema**
-in der Themenplanung. Ein laufendes CGT-Projekt ohne Spur im Arbeitswerkzeug.
+Das ist die wichtigste Einzelinformation im ganzen Bestand, und sie stand bisher
+nirgends:
+
+- **Miloy ist kein Konzept, sondern ein laufendes Geschäft.** Kollektion 1 ist
+  gelaufen, Kollektion 2 ist in Arbeit.
+- **TK Maxx kauft ein zweites Mal.** Ein Wiederholungskauf ist der einzige echte
+  Qualitätsbeweis im gesamten Material — alles andere in der Themenplanung steht im
+  Erstkontakt.
+- **Trotzdem: null Themen in der Planung**, keine Erwähnung in den vier
+  Strategiepapieren. Der einzige Vorgang mit bewiesenem Kunden läuft komplett
+  außerhalb des Arbeitswerkzeugs.
+
+**Warum das für die BLE zählt:** In London wollt ihr Lizenzgebern erklären, dass CGT
+ein Markenprogramm aufbauen und führen kann. Miloy ist genau dieser Beweis —
+entwickelt, produziert, zweimal ausgeliefert. Der Referenzfall existiert und kommt
+in der Präsentation bisher nicht vor.
+
+*Offen: Warengruppe und Sortiment, Zahlen zu Kollektion 1, Exklusivität mit TK Maxx,
+in welchen Ländern.*
 
 ### Deltex Pets Exklusiv — CGT als Partner
 

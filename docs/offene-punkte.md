@@ -45,9 +45,10 @@ Details und Bewertung: [mercedes-lizenz.md](mercedes-lizenz.md).
 
 - Gründungsjahr
 - Vertragsmodell je Säule — Projektbasis, Retainer, Beteiligung?
-- **Deltex Miloy** — aktuell und unter Deltex (Sascha). Aber: kein Thema in der
-  Planung, keine Erwähnung in den Strategiepapieren, kein Inhalt dokumentiert.
-  Woran wird gearbeitet?
+- **Deltex Miloy / TK Maxx** — läuft, zweite Kollektion. Offen bleibt:
+  Warengruppe und Sortiment · Zahlen zu Kollektion 1 (Menge, Marge, Nachbestellung) ·
+  ist TK Maxx exklusiv oder darf Miloy auch woanders hin · welche Länder ·
+  **und warum steht der einzige Wiederholungskunde mit null Themen in der Planung?**
 - **Roberto** (Epsilon, „Fokus Hard Rock!!!") — Rolle unklar
 - **JASPER & JUNE** — steht in der Retail-Longlist bei 44 Händlern, fehlt im
   Portfolio der Wissensbasis. Lizenz, Eigenmarke oder Testimonial?
@@ -105,6 +106,10 @@ Details und Bewertung: [mercedes-lizenz.md](mercedes-lizenz.md).
 
 ## Erledigt
 
+- **13.09.2026 — Woran arbeitet Deltex Miloy?** An der **zweiten Kollektion mit
+  TK Maxx**. Damit ist Miloy das einzige laufende Geschäft mit einem
+  Wiederholungskunden — und gleichzeitig das einzige ohne Spur in der
+  Themenplanung. (Sascha)
 - **11.09.2026 — Ist Deltex Miloy noch aktuell?** Ja, läuft unter Deltex. (Sascha)
 - **11.09.2026 — Wer sind die Partner in New York?** **Ambassadoren**, die Türen zum
   **US-Markt und zu US-Marken** öffnen. (Sascha)

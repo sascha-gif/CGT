@@ -66,6 +66,12 @@ die passenden Marken bereits zu.
 Regel: **Jede gewonnene Listung erzeugt binnen 30 Tagen ein Zweitmarken-Thema.**
 In der aktuellen Planung gibt es kein einziges.
 
+**Der beste Fall dafür ist TK Maxx.** Miloy liefert dort die zweite Kollektion —
+der Zugang ist nicht nur bezahlt, er ist erprobt. TK Maxx ist europaweit aufgestellt
+(UK, IE, DE, AT, PL, NL und weitere). Zwei Fragen, die daraus folgen: Was kann außer
+Miloy noch dorthin? Und: In welche Länder lässt sich dieselbe Kollektion ausweiten?
+Ein bestehender Einkaufsverbund ist der billigste Wachstumsschritt, den es gibt.
+
 *Ertrag: Wachstum ohne Akquisekosten · Aufwand: minimal · Owner: Martin*
 
 ## 5. Werbemittel als eigener Kanal
@@ -131,6 +137,21 @@ Agenturfrage bei Mercedes (wiederkehrender Ertrag). Die Hebel 2, 3, 4 und 7 sind
 keine Projekte, sondern **Gewohnheiten**: eine Frage im Kundengespräch, eine Regel
 nach jeder Listung, eine Liste, die auf der Messe nebenbei entsteht. Die kosten
 keine Kapazität. Hebel 6 erst nach der Eigentumsfrage.
+
+## 8. Off-Price als Abverkaufskanal mitverkaufen
+
+*Nachgetragen 13.09.2026.*
+
+Jedes Lizenzprogramm und jede Saisonkollektion produziert Überhänge — und die Angst
+davor ist eines der häufigsten Argumente gegen einen Lizenzabschluss. CGT hat beide
+Kanäle dafür bereits: **NETWORK/SMATCH für Posten** und **TK Maxx** als
+Off-Price-Kunde, der schon zweimal gekauft hat.
+
+Das als Teil des Lizenzangebots zu nennen — „für Restmengen haben wir einen Weg" —
+kostet nichts, nimmt dem Lizenznehmer ein Risiko und verkürzt die Verhandlung. Und
+es erzeugt einen zweiten Umsatz auf derselben Ware.
+
+*Ertrag: schließt Abschlüsse schneller · Aufwand: keiner, Kanäle bestehen · Owner: Martin*
 
 ## Was dafür fehlt
 
