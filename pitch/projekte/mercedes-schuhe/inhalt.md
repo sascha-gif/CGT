@@ -41,6 +41,25 @@ Volumengeschäft nicht nachträglich dazurechnet, sondern von Anfang an kennt.
 :::
 
 
+## Die Marktlage spricht dafür {hell}
+
+!! Der deutsche Schuhmarkt schrumpft, die Verbraucher sind vorsichtig — und
+ausgerechnet Sneaker wachsen. Eine bekannte Marke zu einem Preis, den man ohne
+Nachdenken mitnimmt, trifft genau diese Lücke.
+
+::: belege
+Schuhmarkt Deutschland 2025, dritter Rückgang in Folge | 9,3 Mrd. € | IFH Köln, Branchenbericht Schuhe 2026
+Sneaker-Anteil am Schuhmarkt, Prognose 2025 — die einzige wachsende Warengruppe | 29,5 % | IFH Köln, 2025 (2024: 28,2 %)
+Marktanteil Schuh-Fachhandel und Filialisten, 2024 | 57 % | IFH Köln, 2025
+Verbraucher, die in zwölf Monaten unter 100 € für Fashion ausgegeben haben | 30 % | IFH Köln, Verbraucherbefragung 2025
+:::
+
+**Was das für Sie heißt:** Der Fachhandel hält noch 57 Prozent — der
+Lebensmittel- und Discountkanal ist bei Schuhen kaum besetzt. Wer dort eine
+echte Marke zum Mitnahmepreis anbietet, konkurriert nicht mit dem Schuhhaus,
+sondern besetzt eine freie Fläche.
+
+
 ::: kapitel bilder/detail-innensohle.jpg
 nummer: Kollektion eins — Members Only
 ## Signiert, nicht geschrien.
@@ -68,6 +87,25 @@ Eine Welt, zu der man gehören möchte. Verkauft wird das Gefühl von Clubhaus u
 Unser Kunde bewegt sich mühelos zwischen Clubhaus und Stadt. Er schätzt Handwerk mehr als Logos und Herkunft mehr als Hype. Sport ist Teil seines Lebens, kein Kostüm.
 -- Mercedes Brand Guidelines, Kapitel „Our Customer"
 :::
+
+
+## Woher die Marke kommt
+
+!! 1909 ist kein Marketingdatum. Die Marke ist in Bad Cannstatt entstanden und
+hat mehrere Eigentümer überdauert — das ist öffentlich dokumentiert, nicht nur
+im Styleguide behauptet.
+
+::: zeitplan
+1909 | Gründung der Mercedes Schuhfabriken AG in Bad Cannstatt, deutsche Markenanmeldung im selben Jahr
+1974 | Die Schuhfabrik Manz AG in Bamberg übernimmt die Markenrechte
+2010 | EU-Marke und britische Marke eingetragen — der Schutz wird europaweit nachgezogen
+2026 | Styleguide V2 fertiggestellt: zwei Kollektionen, Logo-System, Preisarchitektur
+2027 | Neue Kollektion, Einstieg über den Volumenkanal
+:::
+
+Quellen: Mercedes Brand Guidelines V2 (03.10.2026) für Markenschutz und
+Kollektionen; Firmen- und Markenhistorie aus öffentlichen Quellen,
+Recherchestand 09.10.2026.
 
 
 ## Das Sortiment
@@ -156,6 +194,31 @@ Die linke Spalte ist Ihre — sie heißt dort *Sports and value retail*.
 UVP-Bänder in Euro, inklusive Mehrwertsteuer. Quelle: Mercedes Brand Guidelines
 2026, V2. **Das sind Verkaufspreise, keine Einkaufspreise** — die Kalkulation
 kommt mit dem Angebot.
+
+
+## So sähe das im Handzettel aus
+
+!! Damit die Vorstellung konkret wird: eine Simulation der Aktionsseite mit
+Preisen aus dem Volumenband. Kein fertiges Angebot — eine Arbeitsgrundlage für
+das Gespräch.
+
+::: prospekt
+zeile: Aktionswoche · Simulation
+### Court Classic, Navy
+bild: bilder/artikel-court-navy.jpg
+zusatz: Gr. 40–46 · Wildleder
+preis: 39,99
+
+### Court Classic, Bone
+bild: bilder/artikel-court-cream.jpg
+zusatz: Gr. 40–46 · Leder
+preis: 39,99
+
+### Run Club Trail
+bild: bilder/artikel-trail-orange.jpg
+zusatz: Gr. 40–47 · Mesh
+preis: 44,99
+:::
 
 
 ## Markenschutz

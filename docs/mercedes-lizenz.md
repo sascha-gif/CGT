@@ -62,6 +62,43 @@ optional ist.
   Cigar Brown (Wildleder 100 %, Kalbslederfutter, Gummisohle).
 - **Approval-Prozess** steht weiterhin nirgends.
 
+## Markenhistorie aus öffentlichen Quellen (09.10.2026)
+
+*Quelle: Websuche vom 09.10.2026. **Die Einzelseiten konnten nicht geöffnet
+werden** — die Netzwerkfreigabe des Arbeitscontainers lässt das nicht zu.
+Die Angaben stammen aus Suchergebnis-Zusammenfassungen und sind entsprechend
+als unbestätigt zu behandeln.*
+
+Die Marke ist real und öffentlich dokumentiert — das stützt den Styleguide:
+
+| Zeitpunkt | Was |
+|---|---|
+| ab 1909 | **Mercedes Schuhfabriken AG**, Bad Cannstatt. Eine Quelle ordnet sie dem Salamander-Verbund zu, eine andere nennt die Cannstatter Schuhfabrik Haueisen & Cie AG, die nach dem Ersten Weltkrieg unter der Marke Mercedes vertrieb. **Widersprüchlich.** |
+| 1974 | **Schuhfabrik Manz AG**, Bamberg, übernimmt die Markenrechte |
+| vor 2005 | Die Herrenschuh-Kollektion liegt bei der **Manz-Fortuna Schuhfabrik GmbH**, Gremsdorf |
+| Dezember 2005 | Die **HR Group** (aus den Schuhhandelsunternehmen Hamm und RENO) erwirbt die Marke |
+| 2006–2010 | Wiedereinführung mit einer Kampagne von Scholz & Friends, Sport-Sponsoring, Vertrieb vor allem über **RENO** |
+| heute | **Inhaber nicht feststellbar.** Die jüngste auffindbare Zuordnung ist „HR Group GmbH & Co. KG", Stand 2010. |
+
+**Der Slogan der Wiedereinführung lautete „Mercedes · Schuhe seit 1909" —
+wörtlich das, was heute im Logo der gestapelten Fassung steht.** Das ist ein
+starkes Indiz dafür, dass der aktuelle Styleguide auf derselben Marke aufsetzt.
+
+### Daraus folgt ein harter offener Punkt
+
+**Wenn die HR Group die Marke 2005 erworben hat — wer vergibt dann heute die
+Lizenz, die CGT anbietet?** Das ist die Frage „Was darf CGT überhaupt
+vergeben?" in konkreter Form. Sie ist vor jedem Angebot an einen Händler oder
+Lizenznehmer zu klären.
+
+**Nächster Schritt, sofort ausführbar:** Im DPMA-Register (`register.dpma.de`)
+und im EUIPO-Register nach der Wortmarke *Mercedes* in **Nizza-Klasse 25**
+(Schuhwaren) suchen und den eingetragenen Inhaber ablesen. Das kostet nichts
+und beantwortet die Frage abschließend. Der Styleguide nennt als
+Eintragungsjahre 1909 (DE, national), 1964 (international), 1999 (China),
+2010 (UK national und EU-Marke) — diese Nummern lassen sich im Register
+gegenprüfen.
+
 ### Absender: CGT, nicht DELTEX
 
 *Entschieden von Sascha, 09.10.2026.* Mercedes ist eine **CGT-Lizenz**, also ist

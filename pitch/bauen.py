@@ -519,6 +519,103 @@ def block_rendern(name, argument, zeilen):
             % (bild, text_rendern(zeilen))
         )
 
+    # --- Belege: Zahl, Aussage, Quelle. Ohne Quelle keine Zahl.
+    #     Schema je Zeile:  Beschriftung | Wert | Quelle und Datum
+    if name in ("belege", "marktdaten"):
+        reihen = []
+        for idx, zeile in enumerate(zeilen):
+            if zeile.count("|") < 2:
+                if zeile.strip():
+                    sys.stderr.write("  ! Beleg ohne Quelle \u00fcbersprungen: %s\n"
+                                     % zeile.strip()[:60])
+                continue
+            was, wert, quelle = [x.strip() for x in zeile.split("|", 2)]
+            reihen.append(
+                '<div class="beleg" data-auftritt style="--verzug:%dms">'
+                '<div class="beleg__wert">%s</div>'
+                '<div class="beleg__text"><span class="beleg__was">%s</span>'
+                '<span class="beleg__quelle">%s</span></div></div>'
+                % (idx * 70, inline(wert), inline(was), inline(quelle))
+            )
+        if not reihen:
+            return ""
+        return '<div class="belege">%s</div>' % "".join(reihen)
+
+    # --- Prospektsimulation: wie der Artikel im Handzettel aussehen wuerde.
+    #     Bewusst als Simulation gekennzeichnet, nie als Angebot des Haendlers.
+    if name in ("prospekt", "handzettel"):
+        haendler = FELDER.get("kunde", "")
+        zeile_oben = ""
+        hinweis = ("Simulation zur Veranschaulichung. Preise aus dem Volumenband "
+                   "des Styleguides abgeleitet \u2014 kein Angebot des H\u00e4ndlers.")
+        artikel = []
+        aktuell = None
+
+        for zeile in zeilen:
+            m = re.match(r"^\s*(haendler|zeile|hinweis):\s*(.+)$", zeile, re.I)
+            if m and aktuell is None:
+                schluessel, wert = m.group(1).lower(), m.group(2).strip()
+                if schluessel == "haendler":
+                    haendler = wert
+                elif schluessel == "zeile":
+                    zeile_oben = wert
+                else:
+                    hinweis = wert
+                continue
+            if zeile.strip().startswith("### "):
+                if aktuell:
+                    artikel.append(aktuell)
+                aktuell = {"titel": zeile.strip()[4:].strip(), "bild": "",
+                           "preis": "", "statt": "", "zusatz": ""}
+                continue
+            if aktuell is None:
+                continue
+            m = re.match(r"^\s*(bild|preis|statt|zusatz):\s*(.+)$", zeile, re.I)
+            if m:
+                aktuell[m.group(1).lower()] = m.group(2).strip()
+        if aktuell:
+            artikel.append(aktuell)
+        if not artikel:
+            return ""
+
+        kacheln = []
+        for a in artikel:
+            bild = ""
+            if a["bild"]:
+                bild = ('<div class="zettel__bild"><img src="%s" alt="%s" '
+                        'loading="lazy" decoding="async"></div>'
+                        % (sicher(a["bild"]), sicher(a["titel"])))
+            statt = ('<span class="zettel__statt">statt %s</span>' % inline(a["statt"])) \
+                if a["statt"] else ""
+            preis = ""
+            if a["preis"]:
+                teile = a["preis"].replace(".", ",").split(",")
+                gross = teile[0]
+                klein = (teile[1] if len(teile) > 1 else "00")[:2].ljust(2, "0")
+                preis = ('<div class="zettel__preis"><span class="zettel__euro">%s</span>'
+                         '<span class="zettel__cent">%s</span></div>'
+                         % (sicher(gross), sicher(klein)))
+            zusatz = ('<span class="zettel__zusatz">%s</span>' % inline(a["zusatz"])) \
+                if a["zusatz"] else ""
+            kacheln.append(
+                '<article class="zettel">%s<div class="zettel__text">'
+                '<h3>%s</h3>%s%s%s</div></article>'
+                % (bild, inline(a["titel"]), zusatz, statt, preis)
+            )
+
+        kopf = ""
+        if haendler or zeile_oben:
+            kopf = ('<div class="prospekt__kopf"><span class="prospekt__haendler">%s</span>'
+                    '<span class="prospekt__zeile">%s</span></div>'
+                    % (inline(haendler), inline(zeile_oben)))
+
+        return (
+            '<div class="prospekt" data-auftritt>%s'
+            '<div class="prospekt__blatt">%s</div>'
+            '<p class="prospekt__hinweis">%s</p></div>'
+            % (kopf, "".join(kacheln), inline(hinweis))
+        )
+
     # --- Kontaktformular
     # Ohne Server kann eine Seite nichts verschicken. Das Formular setzt
     # deshalb eine fertige E-Mail im Mailprogramm des Einkaeufers auf.

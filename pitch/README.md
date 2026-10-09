@@ -220,6 +220,32 @@ Die Antwort.
 :::
 ```
 
+**Belege** — Zahlen mit Quelle. **Ohne Quelle fällt die Zeile raus**, der
+Generator meldet das beim Bauen:
+```
+::: belege
+Schuhmarkt Deutschland 2025 | 9,3 Mrd. € | IFH Köln, Branchenbericht Schuhe 2026
+Sneaker-Anteil, Prognose 2025 | 29,5 % | IFH Köln, 2025
+:::
+```
+Schema: `Aussage | Wert | Quelle und Datum`.
+
+**Prospekt** — Simulation der Aktionsseite, damit sich ein Einkäufer das
+Produkt im eigenen Handzettel vorstellen kann. Der Händlername kommt
+automatisch aus `kunde:`:
+```
+::: prospekt
+zeile: Aktionswoche · Simulation
+### Court Classic, Navy
+bild: bilder/artikel-court-navy.jpg
+zusatz: Gr. 40–46 · Wildleder
+preis: 39,99
+:::
+```
+Unter dem Blatt steht immer ein Hinweis, dass es eine Simulation ist und kein
+Angebot des Händlers. Der lässt sich mit `hinweis:` anpassen, aber nicht
+abschalten — aus gutem Grund.
+
 **Kontaktformular** — öffnet eine fertige E-Mail im Mailprogramm des
 Einkäufers. Kein Server, keine Daten an Dritte:
 ```
@@ -274,6 +300,31 @@ Eine Änderung in `vorlage/` wirkt nach dem nächsten Build auf **alle** Seiten.
 - **Die Übersicht `site/index.html` ist intern.** Wird sie öffentlich
   gestellt, sieht jeder Kunde, wem sonst noch etwas angeboten wird. Deshalb
   entsteht sie nur auf ausdrückliche Anforderung (`--uebersicht`).
+
+---
+
+## Zahlen, Daten, Fakten recherchieren
+
+Gib mir eine **Website, ein Instagram-Profil oder einen Markennamen**, und ich
+suche, was für einen Einkäufer zählt: Marktzahlen der Warengruppe,
+Markenhistorie, Reichweite, bekannte Handelspartner.
+
+**Drei Regeln, damit das nichts kaputtmacht:**
+
+1. **Jede Zahl bekommt Quelle und Datum.** Dafür ist `::: belege` da. Was ich
+   nicht belegen kann, kommt nicht auf die Seite — ich sage dann, was ich
+   nicht gefunden habe.
+2. **Widersprüchliche Quellen werden benannt, nicht geglättet.** Wenn zwei
+   Institute unterschiedliche Marktgrößen nennen, steht beides da.
+3. **Alles, was ich finde, landet auch im Wissens-Repo** — in der passenden
+   Datei unter `docs/`, mit Datum. Sonst ist die Recherche nach dem Pitch weg.
+
+**Einschränkung dieses Containers:** Die Websuche funktioniert, aber einzelne
+Seiten direkt abrufen darf er nicht — die Netzwerkfreigabe lässt nur wenige
+Hosts zu. Ich arbeite deshalb mit Suchergebnissen und kennzeichne, was ich
+nicht am Original prüfen konnte. Wer das ändern will: in der
+Umgebungs-Einstellung unter *Network access* entweder eine breitere Stufe
+wählen oder die gebrauchten Domains unter *Allowed domains* eintragen.
 
 ---
 

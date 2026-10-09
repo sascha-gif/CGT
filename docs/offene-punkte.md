@@ -82,6 +82,14 @@ Das Baukastensystem steht: [`../pitch/README.md`](../pitch/README.md).
 
 **Weiter offen:**
 
+- **WER IST HEUTE INHABER DER MARKE?** Die Websuche vom 09.10.2026 zeigt:
+  Die Marke wurde im Dezember 2005 von der **HR Group** erworben (aus den
+  Schuhhandelsunternehmen Hamm und RENO), davor lag sie bei Manz in Bamberg.
+  Ein heutiger Inhaber ließ sich nicht feststellen. **Damit ist die Frage
+  „Was darf CGT vergeben?" nicht mehr abstrakt.** Sofort ausführbar:
+  DPMA- und EUIPO-Register nach der Wortmarke *Mercedes* in Nizza-Klasse 25
+  durchsuchen und den Inhaber ablesen. Details in
+  [mercedes-lizenz.md](mercedes-lizenz.md).
 - **Für wen genau ist die Mercedes-Seite?** Der Entwurf adressiert generisch
   „Lebensmittelhandel & Discount". Sobald ein Händler feststeht, wird daraus
   eine eigene Seite mit eigener Adresse.

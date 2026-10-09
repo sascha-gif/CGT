@@ -114,6 +114,13 @@ Kopf, Fuß, Farben und Effekte sind für alle Seiten gleich und stehen in
 `pitch/vorlage/`. Dort wird geändert, wenn sich das Aussehen ändern soll —
 nie in einer einzelnen Projektseite.
 
+**Recherche für eine Pitch-Seite.** Kommt eine URL, ein Instagram-Profil oder
+ein Markenname dazu: suchen, was einen Einkäufer interessiert — Marktzahlen,
+Markenhistorie, Reichweite, Handelspartner. Jede Zahl mit `::: belege` und
+**Quelle plus Datum**; ohne Quelle lässt der Generator die Zeile weg.
+Gefundenes gehört zusätzlich nach `docs/`, sonst ist es nach dem Pitch weg.
+Die Websuche geht in diesem Container, einzelne Seiten abrufen nicht.
+
 **Auch hier gilt Regel 1: nichts erfinden.** Fehlt eine Kondition, eine EAN
 oder ein Termin, bleibt der Block weg oder es wird nachgefragt. Eine erfundene
 Zahl vor einem Einkäufer kostet mehr als eine kürzere Seite.

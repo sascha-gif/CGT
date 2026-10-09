@@ -566,6 +566,103 @@ th {
 .bild figcaption { font-size: .8rem; color: var(--gedimmt); margin-top: 12px; }
 
 /* --------------------------------------------------------------------------
+   Belege — Zahl, Aussage, Quelle. Ohne Quelle gehoert die Zahl nicht auf
+   die Seite; der Generator laesst solche Zeilen weg.
+   -------------------------------------------------------------------------- */
+
+.belege { margin: 40px 0; border-top: 1px solid var(--linie); }
+.beleg {
+  display: grid; grid-template-columns: 1fr; gap: 6px;
+  padding: 22px 0; border-bottom: 1px solid var(--linie);
+}
+.beleg__wert {
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(1.9rem, 7vw, 2.6rem);
+  line-height: 1; letter-spacing: -0.025em;
+  color: var(--akzent);
+  font-variant-numeric: tabular-nums lining-nums;
+}
+.beleg__text { display: flex; flex-direction: column; gap: 5px; }
+.beleg__was { font-size: 1rem; line-height: 1.35; }
+.beleg__quelle {
+  font-size: .74rem; letter-spacing: .04em; color: var(--gedimmt);
+}
+.beleg__quelle::before { content: "Quelle: "; }
+.abschnitt--dunkel .belege { border-top-color: rgba(255,255,255,.18); }
+.abschnitt--dunkel .beleg { border-bottom-color: rgba(255,255,255,.18); }
+.abschnitt--dunkel .beleg__wert { color: #fff; }
+.abschnitt--dunkel .beleg__quelle { color: #9b938a; }
+
+/* --------------------------------------------------------------------------
+   Prospektsimulation — wie der Artikel im Handzettel aussaehe.
+   Bewusst eigene Anmutung: Handelsname als Text, kein Logo, keine
+   Nachahmung einer bestimmten Hausfarbe, immer mit Hinweis darunter.
+   -------------------------------------------------------------------------- */
+
+.prospekt { margin: 40px 0; --signal: #c0202a; }
+
+.prospekt__kopf {
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  justify-content: space-between; gap: 8px 20px;
+  background: var(--tinte); color: #fff;
+  padding: 16px 20px;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.prospekt__haendler {
+  font-size: 1rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase;
+}
+.prospekt__zeile { font-size: .78rem; letter-spacing: .1em; color: rgba(255,255,255,.72); }
+
+.prospekt__blatt {
+  display: grid; grid-template-columns: 1fr;
+  gap: 1px; background: var(--linie);
+  border: 1px solid var(--linie); border-top: 0;
+  border-radius: 0 0 var(--radius) var(--radius);
+  overflow: hidden;
+}
+
+.zettel {
+  background: var(--rein);
+  padding: 22px 20px 26px;
+  display: flex; flex-direction: column;
+}
+.zettel__bild { margin-bottom: 14px; }
+.zettel__bild img {
+  width: 100%; aspect-ratio: 4/3; object-fit: contain;
+  background: var(--rein);
+}
+.zettel__text { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
+.zettel h3 {
+  font-family: var(--schrift); font-weight: 700;
+  font-size: 1.05rem; letter-spacing: -0.01em; margin: 0;
+}
+.zettel__zusatz { font-size: .82rem; color: var(--gedimmt); }
+.zettel__statt {
+  font-size: .85rem; color: var(--gedimmt);
+  text-decoration: line-through; text-decoration-thickness: 1px;
+}
+.zettel__preis {
+  display: inline-flex; align-items: flex-start; gap: 2px;
+  color: var(--signal); margin-top: 8px;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.zettel__euro {
+  font-family: var(--schrift); font-weight: 700;
+  font-size: 3.2rem; line-height: .86; letter-spacing: -0.04em;
+}
+.zettel__cent {
+  font-family: var(--schrift); font-weight: 700;
+  font-size: 1.4rem; line-height: 1; letter-spacing: -0.02em;
+  padding-top: 2px;
+}
+.zettel__cent::before { content: ","; }
+
+.prospekt__hinweis {
+  font-size: .76rem; line-height: 1.45; color: var(--gedimmt);
+  margin: 12px 0 0; max-width: 52ch;
+}
+
+/* --------------------------------------------------------------------------
    Aufklapp — Details ohne JavaScript
    -------------------------------------------------------------------------- */
 
@@ -807,6 +904,8 @@ th {
   .kontakt { padding: 56px 48px; }
   .knopf { flex: 0 0 auto; }
   .fakt { grid-template-columns: 260px 1fr; gap: 24px; align-items: baseline; }
+  .beleg { grid-template-columns: 200px 1fr; gap: 28px; align-items: baseline; }
+  .prospekt__blatt { grid-template-columns: repeat(2, 1fr); }
   .feld--doppelt { grid-template-columns: 1fr 1fr; }
   .fuss__zeile { grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; }
   .bildwand__bild img { aspect-ratio: 16/10; }
@@ -823,6 +922,8 @@ th {
   .slider__steuer { display: flex; }
   .slider__hinweis { display: none; }
   .galerie { grid-template-columns: repeat(4, 1fr); }
+  .prospekt__blatt { grid-template-columns: repeat(3, 1fr); }
+  .beleg { grid-template-columns: 240px 1fr; }
 
   /* Bildwand: Bild bleibt links stehen, Text läuft rechts vorbei */
   .bildwand {
