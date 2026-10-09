@@ -983,6 +983,39 @@ def seite_bauen(felder, koerper, vorlage_html, sprungmarken=()):
 # Dateien
 # ===========================================================================
 
+# Kantenlaenge und Qualitaet der Bilder in der Vorschaudatei. Eingebettete
+# Bilder werden durch die Kodierung ein Drittel groesser, und eine Datei
+# ueber rund zwei Megabyte laedt in Dateivorschauen nicht mehr zuverlaessig.
+# WEBP halbiert gegenueber JPEG bei gleicher Anmutung.
+VORSCHAU_BREITE = 1000
+VORSCHAU_GUETE = 72
+
+
+def bild_fuer_vorschau(pfad, endung):
+    """Verkleinert ein Bild fuer die Einzeldatei und wandelt es in WEBP.
+    Ohne Pillow wird das Bild unveraendert eingebettet -- dann ist die
+    Vorschaudatei eben groesser, kaputt geht nichts."""
+    if endung in (".svg", ".gif"):
+        with open(pfad, "rb") as f:
+            return f.read(), MIME[endung]
+    try:
+        from PIL import Image
+    except ImportError:
+        with open(pfad, "rb") as f:
+            return f.read(), MIME[endung]
+
+    import io as _io
+    with Image.open(pfad) as im:
+        hat_alpha = im.mode in ("RGBA", "LA", "P")
+        if im.width > VORSCHAU_BREITE:
+            hoehe = round(im.height * VORSCHAU_BREITE / im.width)
+            im = im.resize((VORSCHAU_BREITE, hoehe), Image.LANCZOS)
+        puffer = _io.BytesIO()
+        im.convert("RGBA" if hat_alpha else "RGB").save(
+            puffer, "WEBP", quality=VORSCHAU_GUETE, method=6)
+        return puffer.getvalue(), "image/webp"
+
+
 def einzeldatei_schreiben(seite, projektordner, slug):
     """Schreibt eine Fassung, in der ALLES in einer Datei steckt: Stylesheet,
     Skript und jedes Bild als eingebettete Daten. Die laesst sich per Doppel-
@@ -1007,7 +1040,11 @@ def einzeldatei_schreiben(seite, projektordner, slug):
         "<script>\n%s\n</script>" % datei(os.path.join(VORLAGE, "assets", "bewegung.js")),
     )
 
-    # Jedes Bild als Datenblock einsetzen
+    # Jedes Bild als Datenblock einsetzen. Eingebettete Bilder werden durch
+    # die Kodierung ein Drittel groesser, deshalb werden sie fuer die
+    # Vorschau verkleinert -- eine Datei ueber ein paar Megabyte laedt in
+    # Dateivorschauen nicht mehr zuverlaessig. Die Fassung in site/ bleibt
+    # unangetastet und behaelt die volle Aufloesung.
     bilderordner = os.path.join(projektordner, "bilder")
     eingebettet = 0
     if os.path.isdir(bilderordner):
@@ -1019,9 +1056,9 @@ def einzeldatei_schreiben(seite, projektordner, slug):
             verweis = "bilder/" + name
             if verweis not in seite:
                 continue
-            with open(pfad, "rb") as f:
-                roh = base64.b64encode(f.read()).decode("ascii")
-            seite = seite.replace(verweis, "data:%s;base64,%s" % (MIME[endung], roh))
+            daten, typ = bild_fuer_vorschau(pfad, endung)
+            roh = base64.b64encode(daten).decode("ascii")
+            seite = seite.replace(verweis, "data:%s;base64,%s" % (typ, roh))
             eingebettet += 1
 
     os.makedirs(VORSCHAU, exist_ok=True)
