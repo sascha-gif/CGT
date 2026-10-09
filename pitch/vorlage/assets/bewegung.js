@@ -12,9 +12,16 @@
 
   var ruhig = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  /* Kann der Browser Animationen selbst an die Scrollposition haengen?
+     Dann macht er Einblendungen, Parallax und Fortschritt allein -- und das
+     Skript laesst die Finger davon. */
+  var cssScrollt = !!(window.CSS && CSS.supports &&
+                      CSS.supports("animation-timeline: view()"));
+
   /* ---------------------------------------------------------------- Auftritt
      Alles mit data-auftritt blendet ein, sobald es ins Bild kommt. */
   function auftritteStarten() {
+    if (cssScrollt) return;
     var teile = document.querySelectorAll("[data-auftritt]");
     if (ruhig || !("IntersectionObserver" in window)) {
       teile.forEach(function (el) { el.classList.add("ist-sichtbar"); });
@@ -38,7 +45,7 @@
     var ebenen = Array.prototype.slice.call(
       document.querySelectorAll("[data-parallax]")
     );
-    if (ruhig || !ebenen.length) return;
+    if (cssScrollt || ruhig || !ebenen.length) return;
     if (window.matchMedia("(pointer: coarse)").matches && window.innerWidth < 600) {
       /* Auf kleinen Touch-Geräten kostet Parallax mehr als es bringt. */
       return;
@@ -132,7 +139,7 @@
       laeuft = false;
       var y = window.scrollY || window.pageYOffset;
       kopf.classList.toggle("ist-geklebt", y > window.innerHeight * 0.55);
-      if (balken) {
+      if (balken && !cssScrollt) {
         var gesamt = document.documentElement.scrollHeight - window.innerHeight;
         var anteil = gesamt > 0 ? Math.min(y / gesamt, 1) : 0;
         balken.style.width = (anteil * 100).toFixed(1) + "%";
@@ -187,6 +194,39 @@
     });
   }
 
+  /* --------------------------------------------------------------- Formular
+     Ohne Server kann die Seite nichts verschicken. Das Formular setzt deshalb
+     eine fertige E-Mail im Mailprogramm auf -- mit Betreff und sauber
+     untereinander stehenden Angaben. Ohne JavaScript greift die mailto-Aktion
+     des Formulars, dann eben ohne die schoene Formatierung. */
+  function formulareStarten() {
+    document.querySelectorAll("form[data-mailto]").forEach(function (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        var zeilen = [];
+        form.querySelectorAll("input, select, textarea").forEach(function (feld) {
+          if (!feld.name) return;
+          var wert = (feld.value || "").trim();
+          if (wert) zeilen.push(feld.name + ": " + wert);
+        });
+
+        var ziel = form.getAttribute("data-mailto");
+        var betreff = form.getAttribute("data-betreff") || "Anfrage";
+        window.location.href = "mailto:" + encodeURIComponent(ziel) +
+          "?subject=" + encodeURIComponent(betreff) +
+          "&body=" + encodeURIComponent(zeilen.join("\n"));
+
+        var knopf = form.querySelector("button[type=submit]");
+        if (knopf) {
+          var alt = knopf.textContent;
+          knopf.textContent = "E-Mail-Programm geöffnet";
+          window.setTimeout(function () { knopf.textContent = alt; }, 4000);
+        }
+      });
+    });
+  }
+
   /* --------------------------------------------------------------- Startschuss */
   function los() {
     auftritteStarten();
@@ -194,6 +234,7 @@
     kennzahlenStarten();
     kopfStarten();
     sliderStarten();
+    formulareStarten();
   }
 
   if (document.readyState === "loading") {

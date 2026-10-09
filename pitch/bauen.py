@@ -58,6 +58,10 @@ VERCEL_JSON = """{
 }
 """
 
+# Kopfdaten des Projekts, das gerade gebaut wird. Bausteine wie das
+# Kontaktformular brauchen daraus die Empfaengeradresse.
+FELDER = {}
+
 MONATE = ("Januar", "Februar", "Maerz", "April", "Mai", "Juni", "Juli",
           "August", "September", "Oktober", "November", "Dezember")
 
@@ -515,6 +519,127 @@ def block_rendern(name, argument, zeilen):
             % (bild, text_rendern(zeilen))
         )
 
+    # --- Kontaktformular
+    # Ohne Server kann eine Seite nichts verschicken. Das Formular setzt
+    # deshalb eine fertige E-Mail im Mailprogramm des Einkaeufers auf.
+    # Vorteil: keine Daten an Dritte, funktioniert auch offline.
+    if name in ("formular", "kontaktformular"):
+        werte = {}
+        rest = []
+        for zeile in zeilen:
+            m = re.match(r"^\s*(empfaenger|titel|text|knopf):\s*(.+)$", zeile, re.I)
+            if m:
+                werte[m.group(1).lower()] = m.group(2).strip()
+            elif zeile.strip():
+                rest.append(zeile)
+
+        empf = werte.get("empfaenger") or FELDER.get("mail", "")
+        if not empf:
+            sys.stderr.write("  ! Formular ohne Empfaenger - weggelassen.\n")
+            return ""
+
+        titel = werte.get("titel", "Anfrage senden")
+        knopf = werte.get("knopf", "Anfrage senden")
+        betreff = "%s \u2014 Anfrage" % FELDER.get("projekt", "Anfrage")
+
+        felder_html = (
+            '<div class="feld feld--doppelt">'
+            '<div><label for="f-firma">Unternehmen</label>'
+            '<input id="f-firma" name="Unternehmen" type="text" autocomplete="organization" required></div>'
+            '<div><label for="f-name">Ihr Name</label>'
+            '<input id="f-name" name="Name" type="text" autocomplete="name" required></div>'
+            "</div>"
+            '<div class="feld feld--doppelt">'
+            '<div><label for="f-mail">E-Mail</label>'
+            '<input id="f-mail" name="E-Mail" type="email" autocomplete="email" required></div>'
+            '<div><label for="f-tel">Telefon <span style="text-transform:none;letter-spacing:0">(optional)</span></label>'
+            '<input id="f-tel" name="Telefon" type="tel" autocomplete="tel"></div>'
+            "</div>"
+            '<div class="feld"><label for="f-anliegen">Worum geht es?</label>'
+            '<select id="f-anliegen" name="Anliegen">'
+            "<option>Muster anfordern</option>"
+            "<option>Kalkulation und Konditionen</option>"
+            "<option>Termin vereinbaren</option>"
+            "<option>Allgemeine Frage</option>"
+            "</select></div>"
+            '<div class="feld"><label for="f-text">Ihre Nachricht</label>'
+            '<textarea id="f-text" name="Nachricht" rows="5"></textarea></div>'
+        )
+
+        return (
+            '<form class="formular" data-auftritt data-mailto="%s" data-betreff="%s" '
+            'action="mailto:%s" method="post" enctype="text/plain">'
+            "<h3>%s</h3>%s%s"
+            '<div class="knopfreihe">'
+            '<button class="knopf knopf--voll" type="submit">%s</button></div>'
+            '<p class="formular__hinweis">Mit dem Absenden \u00f6ffnet sich Ihr '
+            "E-Mail-Programm mit einer fertigen Nachricht an %s. "
+            "Es werden keine Daten an Dritte \u00fcbertragen.</p>"
+            "</form>"
+            % (sicher(empf), sicher(betreff), sicher(empf), inline(titel),
+               text_rendern(rest), felder_html, inline(knopf), sicher(empf))
+        )
+
+    # --- Kapitel: bildfuellende Trennseite mit grosser Schrift
+    if name == "kapitel":
+        bild = ""
+        if argument:
+            bild = ('<div class="kapitel__bild" style="background-image:url(\'%s\')"></div>'
+                    % sicher(argument))
+        nummer = schrift = ""
+        rest = []
+        for zeile in zeilen:
+            m = re.match(r"^\s*(nummer|script):\s*(.+)$", zeile, re.I)
+            if m:
+                if m.group(1).lower() == "nummer":
+                    nummer = m.group(2).strip()
+                else:
+                    schrift = m.group(2).strip()
+                continue
+            rest.append(zeile)
+        kopf = ""
+        if nummer:
+            kopf += '<span class="kapitel__nummer">%s</span>' % inline(nummer)
+        if schrift:
+            kopf += '<span class="kapitel__script">%s</span>' % inline(schrift)
+        return (
+            '<section class="kapitel">%s<div class="kapitel__schleier"></div>'
+            '<div class="bahn"><div data-auftritt>%s%s</div></div></section>'
+            % (bild, kopf, text_rendern(rest))
+        )
+
+    # --- Bildwand: Bild bleibt stehen, Text laeuft vorbei
+    if name == "bildwand":
+        schritte = karten_lesen(zeilen)
+        if not argument or not schritte:
+            return text_rendern(zeilen)
+        inner = "".join(
+            '<div class="bildwand__schritt" data-auftritt>'
+            '<span class="bildwand__zahl">%02d</span><h3>%s</h3>%s</div>'
+            % (i + 1, inline(k["titel"]), text_rendern(k["text"]))
+            for i, k in enumerate(schritte)
+        )
+        return (
+            '<div class="bildwand">'
+            '<figure class="bildwand__bild"><img src="%s" alt="" '
+            'loading="lazy" decoding="async"></figure>'
+            '<div class="bildwand__schritte">%s</div></div>'
+            % (sicher(argument), inner)
+        )
+
+    # --- Aufklapp: Details, die ohne JavaScript funktionieren
+    if name in ("aufklapp", "fragen"):
+        punkte = karten_lesen(zeilen)
+        if not punkte:
+            return ""
+        inner = "".join(
+            "<details><summary>%s</summary>"
+            '<div class="aufklapp__inhalt">%s</div></details>'
+            % (inline(k["titel"]), text_rendern(k["text"]))
+            for k in punkte
+        )
+        return '<div class="aufklapp" data-auftritt>%s</div>' % inner
+
     # --- Hinweiskasten
     if name in ("hinweis", "vertraulich"):
         return '<p class="vertraulich" data-auftritt>%s</p>' % inline(
@@ -535,6 +660,7 @@ def koerper_bauen(bloecke):
     teile = []
     offen = False
     nummer = [0]          # laufende Abschnittsnummer fuer die kleine Marke
+    sprungmarken = []     # Titel und Kennung fuer die Fusszeile
 
     def abschnitt_schliessen():
         nonlocal offen
@@ -550,6 +676,8 @@ def koerper_bauen(bloecke):
             if m in ("hell", "dunkel", "akzent", "versetzt"):
                 klassen.append("abschnitt--" + m)
         kennung = re.sub(r"[^a-z0-9]+", "-", titel.lower()).strip("-")[:40]
+        if titel:
+            sprungmarken.append((kennung or "abschnitt", titel))
         kopf = ""
         if titel:
             nummer[0] += 1
@@ -576,7 +704,7 @@ def koerper_bauen(bloecke):
             abschnitt_oeffnen(daten[0], daten[1])
         elif art == "block":
             name, argument, zeilen = daten
-            if name in ("parallax", "band"):
+            if name in ("parallax", "band", "kapitel"):
                 # Volle Breite: ausserhalb eines Abschnitts
                 abschnitt_schliessen()
                 teile.append(block_rendern(name, argument, zeilen))
@@ -594,10 +722,10 @@ def koerper_bauen(bloecke):
             teile.append(text_rendern(daten))
 
     abschnitt_schliessen()
-    return "\n".join(teile)
+    return "\n".join(teile), sprungmarken
 
 
-def seite_bauen(felder, koerper, vorlage_html):
+def seite_bauen(felder, koerper, vorlage_html, sprungmarken=()):
     kunde   = felder.get("kunde", "")
     projekt = felder.get("projekt", "Pitch")
     claim   = felder.get("claim", "")
@@ -626,11 +754,6 @@ def seite_bauen(felder, koerper, vorlage_html):
 
     kopf_absender = ('<a class="kopf__logo" href="#">%s <span>%s</span></a>'
                      % (sicher(ab_kurz), sicher(ab_zusatz)))
-
-    fuss_absender = '<span class="fuss__marke">%s</span>%s' % (
-        sicher(ab_name),
-        "<br>".join(inline(z.strip()) for z in ab_zeilen.split("|") if z.strip()),
-    )
 
 
     # Hero
@@ -713,14 +836,31 @@ def seite_bauen(felder, koerper, vorlage_html):
             % (inline(a_titel), inline(a_text), "".join(knoepfe), zeile)
         )
 
-    fuss_kontakt = inline(ab_fuehrung)
+    # Fusszeile: Anschrift, Sprungmarken, Kontakt
+    fuss_anschrift = (
+        '<span class="fuss__marke">%s</span>%s'
+        % (sicher(ab_name),
+           "<br>".join(inline(z.strip()) for z in ab_zeilen.split("|") if z.strip()))
+    )
+
+    fuss_navigation = ""
+    if sprungmarken:
+        punkte = "".join('<li><a href="#%s">%s</a></li>' % (sicher(k), inline(t))
+                         for k, t in sprungmarken[:8])
+        fuss_navigation = ("<h4>Auf dieser Seite</h4><ul>%s</ul>" % punkte)
+
+    fuss_kontakt = "<h4>Kontakt</h4>" + inline(ab_fuehrung)
     if mail:
         fuss_kontakt += '<br><a href="mailto:%s">%s</a>' % (sicher(mail), sicher(mail))
+    if tel:
+        fuss_kontakt += '<br><a href="tel:%s">%s</a>' % (
+            sicher(re.sub(r"[^\d+]", "", tel)), sicher(tel))
 
     ersatz = {
-        "KOPF_ABSENDER": kopf_absender,
-        "FUSS_ABSENDER": fuss_absender,
-        "FUSS_KONTAKT":  fuss_kontakt,
+        "KOPF_ABSENDER":   kopf_absender,
+        "FUSS_ANSCHRIFT":  fuss_anschrift,
+        "FUSS_NAVIGATION": fuss_navigation,
+        "FUSS_KONTAKT":    fuss_kontakt,
         "TITEL":        sicher(titel),
         "BESCHREIBUNG": sicher(felder.get("beschreibung", claim or projekt)),
         "AKZENT":       ('<style>:root{--akzent:%s;--akzent-dunkel:%s;}</style>'
@@ -758,10 +898,13 @@ def einzeldatei_schreiben(seite, projektordner, slug):
             return f.read()
 
     # Stylesheet und Skript hineinziehen
-    seite = seite.replace(
-        '<link rel="stylesheet" href="assets/stil.css">',
-        "<style>\n%s\n</style>" % datei(os.path.join(VORLAGE, "assets", "stil.css")),
-    )
+    for blatt in ("schriften.css", "stil.css"):
+        pfad = os.path.join(VORLAGE, "assets", blatt)
+        if os.path.isfile(pfad):
+            seite = seite.replace(
+                '<link rel="stylesheet" href="assets/%s">' % blatt,
+                "<style>\n%s\n</style>" % datei(pfad),
+            )
     seite = seite.replace(
         '<script src="assets/bewegung.js" defer></script>',
         "<script>\n%s\n</script>" % datei(os.path.join(VORLAGE, "assets", "bewegung.js")),
@@ -858,9 +1001,12 @@ def projekt_bauen(slug, vorlage_html):
     for pfad in fehlend:
         sys.stderr.write("  ! %s: Bild fehlt — %s\n" % (slug, pfad))
 
+    global FELDER
+    FELDER = felder
+
     bloecke = bloecke_teilen(koerpertext.splitlines())
-    koerper = koerper_bauen(bloecke)
-    seite = seite_bauen(felder, koerper, vorlage_html)
+    koerper, sprungmarken = koerper_bauen(bloecke)
+    seite = seite_bauen(felder, koerper, vorlage_html, sprungmarken)
 
     ziel = os.path.join(AUSGABE, zielslug)
     os.makedirs(ziel, exist_ok=True)

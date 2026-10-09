@@ -190,8 +190,50 @@ Ein, zwei Sätze dazu.
 :::
 ```
 
+**Kapitel** — bildfüllende Trennseite über die volle Breite, gibt der Seite
+Rhythmus. Ein bis zwei pro Seite, mehr nutzt sich ab:
+```
+::: kapitel bilder/stimmung.jpg
+nummer: Kollektion eins
+script: Members Only
+## Ein Satz, der hängen bleibt.
+Zwei Zeilen dazu.
+:::
+```
+
+**Bildwand** — das Bild bleibt am Desktop stehen, der Text läuft daran vorbei:
+```
+::: bildwand bilder/welt.jpg
+### Qualität
+Was dahintersteckt.
+
+### Stil
+Was dahintersteckt.
+:::
+```
+
+**Aufklapper** — für Einwände und Rückfragen. Funktioniert **ohne JavaScript**:
+```
+::: aufklapp
+### Verwässert das die Marke?
+Die Antwort.
+:::
+```
+
+**Kontaktformular** — öffnet eine fertige E-Mail im Mailprogramm des
+Einkäufers. Kein Server, keine Daten an Dritte:
+```
+::: formular
+titel: Was brauchen Sie als Nächstes?
+knopf: Anfrage absenden
+Einleitender Satz.
+:::
+```
+Empfänger ist `mail:` aus den Kopfdaten, überschreibbar mit `empfaenger:`.
+
 **Weiter:** `::: zitat` (mit `-- Quelle` in der letzten Zeile),
-`::: galerie` (nur Bildzeilen), `::: hinweis` (gelber Kasten).
+`::: galerie` (nur Bildzeilen), `::: hinweis` (Kasten mit Rand),
+`::: parallax`, `::: fakten`, `::: zeitplan`, `::: karten`, `::: slider`.
 
 Normales Markdown geht überall: Absätze, `- Aufzählungen`, Tabellen mit `|`,
 `**fett**`, `[Links](...)`, `![Bildtext](bilder/x.jpg)`. Ein Absatz, der mit
@@ -214,9 +256,14 @@ Eine Änderung in `vorlage/` wirkt nach dem nächsten Build auf **alle** Seiten.
 
 ## Bewusste Entscheidungen
 
-- **Keine externen Schriften und keine fremden Server.** Alles liegt im
-  Verzeichnis. Damit entsteht kein Datenschutzthema bei Google Fonts, und die
-  Seite lädt auch bei schlechtem Netz im Markt.
+- **Keine fremden Server.** Die Schriften (Instrument Serif, Instrument Sans,
+  Pinyon Script — alle frei lizenziert) liegen eingebettet in
+  `vorlage/assets/schriften.css`. Nichts wird nachgeladen: kein
+  Google-Fonts-Thema, und die Seite lädt auch bei schlechtem Netz im Markt.
+- **Die Effekte laufen auch ohne JavaScript.** Einblenden, Parallax und
+  Lesefortschritt hängen über CSS direkt an der Scrollposition. Das Skript
+  erkennt das und hält sich heraus; es kümmert sich nur noch um die
+  hochzählenden Zahlen, die Slider-Pfeile und das Formular.
 - **Kein Framework, kein Build-Werkzeug, kein `npm`.** Nur Python aus der
   Standardinstallation. Das läuft in fünf Jahren noch.
 - **`noindex` in jeder Seite.** Pitch-Seiten gehören nicht in Google.
