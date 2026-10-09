@@ -4,7 +4,11 @@
 // Schema: name: wert.  Was nicht gebraucht wird, einfach leer lassen.
 // ===========================================================================
 
-slug:            neues-projekt
+// slug = das Verzeichnis im Netz. Der Zufallsteil am Ende sorgt dafuer,
+// dass niemand die Seite durch Raten findet. "bauen.py --neu" setzt ihn
+// automatisch. Einmal vergeben nicht mehr aendern - sonst sterben alle
+// bereits verschickten Links.
+slug:            neues-projekt-xxxxxx
 kunde:           ALDI SÜD
 projekt:         Produkt- oder Lizenzname
 claim:           Ein Satz, der dem Einkäufer sagt, was er davon hat.

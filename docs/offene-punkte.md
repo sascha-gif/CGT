@@ -36,21 +36,38 @@ Details und Bewertung: [mercedes-lizenz.md](mercedes-lizenz.md).
 
 ## Pitch-Seiten (neu, 09.10.2026)
 
-Das Baukastensystem steht: [`../pitch/README.md`](../pitch/README.md). Offen
-ist alles, was nicht aus dem Repo beantwortbar war:
+Das Baukastensystem steht: [`../pitch/README.md`](../pitch/README.md).
 
-- **Wo liegen die Seiten?** Heute entstehen reine Dateien ohne Serverbedarf.
-  GitHub Pages, eigener Webspace oder ein Dienst wie Vercel — nicht entschieden.
-  **Achtung:** Liegen die Seiten in diesem Repo und wird GitHub Pages dafür
-  eingeschaltet, wird der gesamte Repo-Inhalt öffentlich. Das Wissensrepo
-  gehört nicht ins Netz.
-- **Unter welcher Adresse?** Eigene Domain oder Unterverzeichnis einer
-  bestehenden.
-- **Geschützt oder offen?** Ohne Schutz kann jeder Einkäufer die Adresse
-  weitergeben. Möglich wären ein Zufallsteil im Link oder ein Passwort.
+**Entschieden am 09.10.2026 (Sascha):**
+
+- **Hosting: Vercel**, angebunden an das Repo, eigene Domain. Begründung:
+  nach dem Push ist die Seite ohne weiteres Zutun live — bei drei Personen
+  ohne technisches Team zählt das mehr als die Ersparnis bei eigenem
+  Webspace. Die Einrichtung ist in `pitch/README.md` Schritt für Schritt
+  beschrieben; sie ist **noch nicht ausgeführt** und braucht einmal ein
+  Vercel-Konto.
+- **Zugriff: Adresse mit Zufallsteil**, kein Passwort. Begründung: ein
+  Passwort ist eine Hürde, an der Einkäufer abspringen. Der Zufallsteil
+  verhindert das Durchprobieren von `/aldi-sued/`, `/lidl/`, `/netto/`.
+  Wer den Link hat, kommt rein — und kann ihn weitergeben. Das ist der
+  bewusst in Kauf genommene Rest.
+
+**Damit verbunden, noch nicht geklärt:**
+
+- **Welche Domain?** `pitch.cgt-ug.de` ist ein Vorschlag, keine
+  vorhandene Adresse.
+- **Vercel bekommt beim Git-Anschluss eine Kopie des gesamten Repos**,
+  nicht nur der Pitch-Seiten — auch `docs/`. Das Repo bleibt privat und
+  veröffentlicht wird nur `pitch/site`, aber die Dateien liegen auf
+  Vercels Build-Servern. Wenn das nicht gewollt ist: zweites Repo nur
+  für die Seiten, oder manuelles Hochladen.
+
+**Weiter offen:**
+
 - **Verbindliche CGT-Farben und ein Logo.** Im Repo steht dazu nichts. Das
   Grün in `pitch/vorlage/assets/stil.css` ist ein **Vorschlag**, keine
-  belegte Hausfarbe, und die Kopfzeile trägt bisher nur den Schriftzug „CGT".
+  belegte Hausfarbe, und die Kopfzeile trägt bisher nur den Schriftzug
+  „CGT".
 - **Wer gibt eine Pitch-Seite frei**, bevor sie an einen Einkäufer geht?
   Solange `status: entwurf` steht, zeigt die Seite einen roten Balken.
 

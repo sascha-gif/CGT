@@ -8,8 +8,9 @@ Liest je Projekt eine Datei `projekte/<slug>/inhalt.md` und schreibt daraus
 `vorlage/` und sind fuer alle Projekte gleich.
 
 Aufruf:
+    python3 bauen.py --neu <name>    # neues Projekt aus der Blankovorlage
     python3 bauen.py                 # alle Projekte bauen
-    python3 bauen.py <slug> [<slug>] # nur diese bauen
+    python3 bauen.py <name> [<name>] # nur diese bauen
     python3 bauen.py --uebersicht    # zusaetzlich site/index.html (NUR INTERN!)
 
 Nur Python-Standardbibliothek. Kein pip, kein Node, kein Build-Werkzeug.
@@ -18,6 +19,7 @@ Nur Python-Standardbibliothek. Kein pip, kein Node, kein Build-Werkzeug.
 import html
 import os
 import re
+import secrets
 import shutil
 import sys
 from datetime import date
@@ -30,6 +32,23 @@ AUSGABE  = os.path.join(WURZEL, "site")
 
 BILD_ENDUNGEN = (".jpg", ".jpeg", ".png", ".webp", ".avif", ".gif", ".svg")
 
+# Wird nach site/vercel.json geschrieben. X-Robots-Tag haelt die Seiten
+# zusaetzlich zum Meta-Tag aus den Suchmaschinen heraus.
+VERCEL_JSON = """{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ]
+}
+"""
+
 MONATE = ("Januar", "Februar", "Maerz", "April", "Mai", "Juni", "Juli",
           "August", "September", "Oktober", "November", "Dezember")
 
@@ -37,6 +56,16 @@ MONATE = ("Januar", "Februar", "Maerz", "April", "Mai", "Juni", "Juli",
 # ===========================================================================
 # Kleine Helfer
 # ===========================================================================
+
+# Zeichen ohne Verwechslungsgefahr: kein 0/O, kein 1/l/I.
+ZUFALLSZEICHEN = "abcdefghjkmnpqrstuvwxyz23456789"
+
+
+def zufallsteil(laenge=6):
+    """Zufaelliger Anhang fuer die Adresse. Damit ist eine Pitch-Seite nicht
+    zu erraten: wer den Link nicht hat, findet sie nicht."""
+    return "".join(secrets.choice(ZUFALLSZEICHEN) for _ in range(laenge))
+
 
 def sicher(text):
     """Text so absichern, dass er gefahrlos in HTML landet."""
@@ -785,7 +814,50 @@ def uebersicht_bauen(slugs, vorlage_html):
 # Einstieg
 # ===========================================================================
 
+def projekt_anlegen(name):
+    """Legt ein neues Projekt aus der Blankovorlage an und vergibt eine
+    Adresse mit Zufallsteil, damit die Seite nicht zu erraten ist."""
+    name = name.lower()
+    for von, nach in (("\u00e4", "ae"), ("\u00f6", "oe"), ("\u00fc", "ue"),
+                      ("\u00df", "ss")):
+        name = name.replace(von, nach)
+    name = re.sub(r"[^a-z0-9-]+", "-", name).strip("-")
+    if not name:
+        sys.stderr.write("Bitte einen Projektnamen angeben.\n")
+        return 1
+
+    ziel = os.path.join(PROJEKTE, name)
+    if os.path.exists(ziel):
+        sys.stderr.write("Es gibt schon ein Projekt '%s'.\n" % name)
+        return 1
+
+    shutil.copytree(os.path.join(PROJEKTE, "_vorlage"), ziel)
+
+    slug = "%s-%s" % (name, zufallsteil())
+    datei = os.path.join(ziel, "inhalt.md")
+    with open(datei, encoding="utf-8") as f:
+        text = f.read()
+    text = re.sub(r"^slug:.*$", "slug:            " + slug, text, count=1, flags=re.M)
+    with open(datei, "w", encoding="utf-8") as f:
+        f.write(text)
+
+    print("Projekt angelegt:")
+    print("  Inhalt:  projekte/%s/inhalt.md" % name)
+    print("  Bilder:  projekte/%s/bilder/" % name)
+    print("  Adresse: /%s/   (Zufallsteil, damit niemand sie erraten kann)" % slug)
+    print("\nJetzt inhalt.md fuellen, Bilder ablegen, dann:")
+    print("  python3 bauen.py %s" % name)
+    return 0
+
+
 def main(argumente):
+    if "--neu" in argumente:
+        rest = [a for a in argumente if not a.startswith("--")]
+        if not rest:
+            sys.stderr.write("Aufruf: python3 bauen.py --neu <projektname>\n")
+            return 1
+        return projekt_anlegen(rest[0])
+
     mit_uebersicht = "--uebersicht" in argumente
     gewuenscht = [a for a in argumente if not a.startswith("--")]
 
@@ -810,9 +882,13 @@ def main(argumente):
         if projekt_bauen(slug, vorlage_html):
             gebaut += 1
 
-    # Damit GitHub Pages die Ordner nicht durch Jekyll schickt
     os.makedirs(AUSGABE, exist_ok=True)
+    # Damit GitHub Pages die Ordner nicht durch Jekyll schickt
     open(os.path.join(AUSGABE, ".nojekyll"), "w").close()
+    # Einstellungen fuer Vercel. Wird bei jedem Bauen neu geschrieben,
+    # damit sie nicht versehentlich verloren geht.
+    with open(os.path.join(AUSGABE, "vercel.json"), "w", encoding="utf-8") as f:
+        f.write(VERCEL_JSON)
 
     if mit_uebersicht:
         uebersicht_bauen(slugs, vorlage_html)

@@ -95,11 +95,16 @@ Priorität A, neun Marken zugeordnet. In der Themenplanung stehen davon **drei**
 Fragt jemand nach einer **neuen Pitch-Seite für einen Kunden**, gilt
 [`pitch/README.md`](pitch/README.md). Kurz:
 
-1. `pitch/projekte/_vorlage/` nach `pitch/projekte/<projektname>/` kopieren
+1. `cd pitch && python3 bauen.py --neu <projektname>` — legt den Ordner an
+   und vergibt eine Adresse mit Zufallsteil
 2. Bilder nach `pitch/projekte/<projektname>/bilder/` legen
 3. `inhalt.md` aus den gelieferten Texten und Zahlen füllen
-4. `cd pitch && python3 bauen.py <projektname>`
+4. `python3 bauen.py <projektname>`
 5. Ergebnis liegt in `pitch/site/<slug>/index.html`
+
+Den **Zufallsteil im `slug` nie nachträglich ändern** — sonst sind bereits
+verschickte Links tot. Vor dem Versand an einen Einkäufer `status:` von
+`entwurf` auf `freigegeben` setzen, sonst steht ein roter Balken auf der Seite.
 
 Kopf, Fuß, Farben und Effekte sind für alle Seiten gleich und stehen in
 `pitch/vorlage/`. Dort wird geändert, wenn sich das Aussehen ändern soll —
