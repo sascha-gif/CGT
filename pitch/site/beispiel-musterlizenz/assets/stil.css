@@ -1,0 +1,817 @@
+/* ==========================================================================
+   CGT Pitch — gemeinsames Stylesheet
+   Gilt für ALLE Projektseiten. Hier wird das Aussehen geändert, nie in der
+   einzelnen Projektseite. Mobile first: Basis = Handy, danach Breakpoints.
+   Keine externen Schriften, keine Fremd-Server — alles liegt im Verzeichnis.
+   ========================================================================== */
+
+:root {
+  /* Farben — pro Projekt überschreibbar über "akzent:" in inhalt.md */
+  --akzent:        #0e6e5c;
+  --akzent-dunkel: #0a5346;
+  --akzent-hell:   #e7f2ef;
+
+  --tinte:   #101418;
+  --gedimmt: #5b6270;
+  --linie:   #e4e7ec;
+  --papier:  #ffffff;
+  --sanft:   #f6f7f9;
+  --nacht:   #0d1117;
+
+  /* Typografie — Systemschriften, laden sofort, kein Drittanbieter */
+  --schrift: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+             "Helvetica Neue", Arial, sans-serif;
+
+  /* Raster */
+  --rand: 20px;
+  --max:  1140px;
+  --max-text: 720px;
+
+  --radius: 14px;
+  --schatten: 0 1px 2px rgba(16,20,24,.04), 0 8px 30px rgba(16,20,24,.07);
+  --schatten-hoch: 0 2px 4px rgba(16,20,24,.05), 0 18px 50px rgba(16,20,24,.12);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--schrift);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--tinte);
+  background: var(--papier);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--akzent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* --------------------------------------------------------------------------
+   Lesebreite und Abschnitte
+   -------------------------------------------------------------------------- */
+
+.bahn {
+  width: 100%;
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: var(--rand);
+}
+
+.abschnitt {
+  padding-block: 64px;
+  position: relative;
+}
+
+.abschnitt > .bahn > *:first-child { margin-top: 0; }
+.abschnitt > .bahn > *:last-child  { margin-bottom: 0; }
+
+.abschnitt--hell  { background: var(--sanft); }
+.abschnitt--akzent{ background: var(--akzent-hell); }
+
+.abschnitt--dunkel {
+  background: var(--nacht);
+  color: #e9edf3;
+}
+.abschnitt--dunkel h2,
+.abschnitt--dunkel h3 { color: #ffffff; }
+.abschnitt--dunkel .fuehrung,
+.abschnitt--dunkel p  { color: #b9c1cd; }
+.abschnitt--dunkel .karte {
+  background: rgba(255,255,255,.05);
+  border-color: rgba(255,255,255,.12);
+}
+.abschnitt--dunkel .kennzahl__wert { color: #fff; }
+.abschnitt--dunkel .kennzahl__text { color: #9aa4b2; }
+
+/* --------------------------------------------------------------------------
+   Typografie
+   -------------------------------------------------------------------------- */
+
+h1, h2, h3, h4 {
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  margin: 0 0 .5em;
+  text-wrap: balance;
+}
+
+h1 { font-size: clamp(2.1rem, 8vw, 4.2rem); letter-spacing: -0.035em; }
+h2 { font-size: clamp(1.6rem, 5.5vw, 2.6rem); }
+h3 { font-size: clamp(1.15rem, 3.6vw, 1.45rem); }
+
+p { margin: 0 0 1.1em; max-width: var(--max-text); }
+
+.abschnitt__kopf { margin-bottom: 36px; }
+
+.marke {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--akzent);
+  margin-bottom: 14px;
+}
+.marke::before {
+  content: "";
+  width: 22px; height: 2px;
+  background: var(--akzent);
+  display: inline-block;
+}
+.abschnitt--dunkel .marke { color: #fff; }
+.abschnitt--dunkel .marke::before { background: #fff; }
+
+.fuehrung {
+  font-size: clamp(1.05rem, 3.4vw, 1.3rem);
+  color: var(--gedimmt);
+  max-width: var(--max-text);
+  line-height: 1.55;
+}
+
+ul, ol { margin: 0 0 1.1em; padding-left: 1.15em; max-width: var(--max-text); }
+li { margin-bottom: .45em; }
+
+ul.haken { list-style: none; padding-left: 0; }
+ul.haken li {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: .7em;
+}
+ul.haken li::before {
+  content: "";
+  position: absolute; left: 0; top: .42em;
+  width: 18px; height: 10px;
+  border-left: 2.5px solid var(--akzent);
+  border-bottom: 2.5px solid var(--akzent);
+  transform: rotate(-45deg);
+}
+
+blockquote {
+  margin: 28px 0;
+  padding: 4px 0 4px 20px;
+  border-left: 3px solid var(--akzent);
+  font-size: 1.1rem;
+  color: var(--tinte);
+}
+
+hr { border: 0; border-top: 1px solid var(--linie); margin: 40px 0; }
+
+/* --------------------------------------------------------------------------
+   Kopfzeile — identisch auf allen Projektseiten
+   -------------------------------------------------------------------------- */
+
+.kopf {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 50;
+  background: rgba(255,255,255,0);
+  border-bottom: 1px solid transparent;
+  transition: background .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+.kopf.ist-geklebt {
+  background: rgba(255,255,255,.92);
+  backdrop-filter: saturate(160%) blur(12px);
+  -webkit-backdrop-filter: saturate(160%) blur(12px);
+  border-bottom-color: var(--linie);
+  box-shadow: 0 1px 20px rgba(16,20,24,.05);
+}
+
+.kopf__bahn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 60px;
+}
+
+.kopf__logo {
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  transition: color .3s ease;
+}
+.kopf__logo span {
+  font-weight: 500;
+  font-size: .76rem;
+  letter-spacing: .06em;
+  opacity: .72;
+  display: none;
+}
+.kopf.ist-geklebt .kopf__logo { color: var(--tinte); }
+.kopf__logo:hover { text-decoration: none; }
+
+.kopf__kunde {
+  font-size: .76rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.78);
+  transition: color .3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.kopf.ist-geklebt .kopf__kunde { color: var(--gedimmt); }
+
+/* Lesefortschritt */
+.fortschritt {
+  position: absolute;
+  left: 0; bottom: -1px;
+  height: 2px;
+  width: 0%;
+  background: var(--akzent);
+  transition: width .1s linear;
+}
+
+/* --------------------------------------------------------------------------
+   Hero — Vollbild, Parallax-Bild, gestaffelte Einblendung
+   -------------------------------------------------------------------------- */
+
+.hero {
+  position: relative;
+  min-height: 92svh;
+  min-height: 92vh;
+  display: flex;
+  align-items: flex-end;
+  padding-block: 120px 56px;
+  overflow: hidden;
+  background: var(--nacht);
+  color: #fff;
+  isolation: isolate;
+}
+
+.hero__bild {
+  position: absolute;
+  inset: -12% 0 -12% 0;
+  z-index: -2;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+}
+
+.hero__schleier {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(to top, rgba(8,11,15,.94) 0%, rgba(8,11,15,.62) 45%, rgba(8,11,15,.35) 100%);
+}
+
+.hero h1 { color: #fff; margin-bottom: .35em; }
+
+.hero__claim {
+  font-size: clamp(1.05rem, 4vw, 1.5rem);
+  color: rgba(255,255,255,.88);
+  max-width: 34ch;
+  margin-bottom: 28px;
+  line-height: 1.45;
+}
+
+.hero__schild {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.22);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 7px 15px;
+  border-radius: 100px;
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.hero__schild::before {
+  content: "";
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--akzent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--akzent) 35%, transparent);
+}
+
+.hero__fuss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 26px;
+  font-size: .85rem;
+  color: rgba(255,255,255,.7);
+  border-top: 1px solid rgba(255,255,255,.16);
+  padding-top: 20px;
+  margin-top: 32px;
+}
+
+.hero__runter {
+  position: absolute;
+  right: var(--rand); bottom: 26px;
+  transform: none;
+  width: 26px; height: 42px;
+  border: 2px solid rgba(255,255,255,.35);
+  border-radius: 14px;
+  display: none;
+}
+.hero__runter::after {
+  content: "";
+  position: absolute;
+  left: 50%; top: 8px;
+  width: 3px; height: 7px;
+  border-radius: 2px;
+  background: rgba(255,255,255,.8);
+  transform: translateX(-50%);
+  animation: rollen 1.9s ease-in-out infinite;
+}
+@keyframes rollen {
+  0%, 100% { opacity: 0; transform: translate(-50%, 0); }
+  35%      { opacity: 1; }
+  70%      { opacity: 0; transform: translate(-50%, 14px); }
+}
+.hero__runter::after { left: 50%; }
+
+/* --------------------------------------------------------------------------
+   Kennzahlen — zählen beim Scrollen hoch
+   -------------------------------------------------------------------------- */
+
+.kennzahlen {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--linie);
+  border: 1px solid var(--linie);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin: 32px 0;
+}
+.abschnitt--dunkel .kennzahlen {
+  background: rgba(255,255,255,.1);
+  border-color: rgba(255,255,255,.1);
+}
+
+.kennzahl {
+  background: var(--papier);
+  padding: 22px 18px;
+  text-align: left;
+}
+.abschnitt--dunkel .kennzahl,
+.abschnitt--hell .kennzahl { background: var(--papier); }
+.abschnitt--dunkel .kennzahl { background: #131922; }
+
+.kennzahl__wert {
+  display: block;
+  font-size: clamp(1.9rem, 7.5vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  color: var(--akzent);
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 8px;
+}
+.kennzahl__text {
+  font-size: .86rem;
+  color: var(--gedimmt);
+  line-height: 1.4;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   Karten + Slider
+   -------------------------------------------------------------------------- */
+
+.karten {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.karte {
+  background: var(--papier);
+  border: 1px solid var(--linie);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform .35s cubic-bezier(.2,.7,.3,1), box-shadow .35s ease;
+}
+.karte:hover { transform: translateY(-4px); box-shadow: var(--schatten-hoch); }
+
+.karte__bild {
+  aspect-ratio: 4 / 3;
+  background: var(--sanft);
+  overflow: hidden;
+}
+.karte__bild img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .6s cubic-bezier(.2,.7,.3,1);
+}
+.karte:hover .karte__bild img { transform: scale(1.05); }
+
+.karte__text { padding: 20px; flex: 1; }
+.karte__text h3 { margin-bottom: .4em; }
+.karte__text p { font-size: .95rem; color: var(--gedimmt); margin-bottom: .6em; }
+.karte__text > *:last-child { margin-bottom: 0; }
+
+.karte__nummer {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  color: var(--akzent);
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Horizontaler Slider — auf dem Handy wischen, am Desktop Pfeile */
+.slider { margin: 32px 0; position: relative; }
+
+.slider__spur {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 78%;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--rand);
+  padding-inline: var(--rand);
+  margin-inline: calc(var(--rand) * -1);
+  padding-bottom: 12px;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.slider__spur::-webkit-scrollbar { display: none; }
+.slider__spur > * { scroll-snap-align: start; }
+
+.slider__steuer {
+  display: none;
+  gap: 10px;
+  margin-top: 16px;
+}
+.slider__knopf {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--linie);
+  background: var(--papier);
+  color: var(--tinte);
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+  transition: background .2s ease, border-color .2s ease, opacity .2s ease;
+}
+.slider__knopf:hover { background: var(--sanft); border-color: var(--akzent); }
+.slider__knopf[disabled] { opacity: .35; cursor: default; }
+
+.slider__hinweis {
+  font-size: .8rem;
+  color: var(--gedimmt);
+  margin-top: 10px;
+}
+
+/* --------------------------------------------------------------------------
+   Fakten / Konditionen — Liste auf dem Handy, Raster am Desktop
+   -------------------------------------------------------------------------- */
+
+.fakten {
+  margin: 32px 0;
+  border-top: 1px solid var(--linie);
+}
+.fakt {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--linie);
+}
+.fakt__name {
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--gedimmt);
+}
+.fakt__wert { font-size: 1.05rem; font-weight: 600; }
+
+/* Tabellen (aus Markdown) — rollen auf dem Handy seitlich */
+.tabellenrahmen {
+  overflow-x: auto;
+  margin: 28px 0;
+  border: 1px solid var(--linie);
+  border-radius: var(--radius);
+  -webkit-overflow-scrolling: touch;
+}
+table { border-collapse: collapse; width: 100%; font-size: .93rem; min-width: 480px; }
+th, td { padding: 13px 16px; text-align: left; border-bottom: 1px solid var(--linie); }
+th {
+  background: var(--sanft);
+  font-size: .76rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--gedimmt);
+  white-space: nowrap;
+}
+tr:last-child td { border-bottom: 0; }
+
+/* --------------------------------------------------------------------------
+   Zeitplan
+   -------------------------------------------------------------------------- */
+
+.zeitplan { margin: 32px 0; padding-left: 26px; position: relative; }
+.zeitplan::before {
+  content: "";
+  position: absolute; left: 5px; top: 8px; bottom: 8px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--akzent), var(--linie));
+}
+.schritt { position: relative; padding-bottom: 28px; }
+.schritt:last-child { padding-bottom: 0; }
+.schritt::before {
+  content: "";
+  position: absolute; left: -26px; top: 7px;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--papier);
+  border: 2.5px solid var(--akzent);
+}
+.schritt__zeit {
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--akzent);
+  display: block;
+  margin-bottom: 3px;
+}
+.schritt__was { font-size: 1.02rem; }
+
+/* --------------------------------------------------------------------------
+   Parallax-Band
+   -------------------------------------------------------------------------- */
+
+.band {
+  position: relative;
+  min-height: 62svh;
+  min-height: 62vh;
+  display: flex;
+  align-items: center;
+  padding-block: 72px;
+  overflow: hidden;
+  color: #fff;
+  background: var(--nacht);
+  isolation: isolate;
+}
+.band__bild {
+  position: absolute;
+  inset: -15% 0 -15% 0;
+  z-index: -2;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+}
+.band__schleier {
+  position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(105deg, rgba(8,11,15,.88) 0%, rgba(8,11,15,.55) 100%);
+}
+.band h2 { color: #fff; max-width: 18ch; margin-bottom: .45em; }
+.band > .bahn > *:first-child { margin-top: 0; }
+.band > .bahn > *:last-child  { margin-bottom: 0; }
+.band p  { color: rgba(255,255,255,.84); max-width: 48ch; }
+
+/* --------------------------------------------------------------------------
+   Zitat
+   -------------------------------------------------------------------------- */
+
+.zitat { margin: 44px 0; max-width: 760px; }
+.zitat__text {
+  font-size: clamp(1.25rem, 4.6vw, 1.85rem);
+  line-height: 1.38;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  text-wrap: balance;
+}
+.zitat__text::before { content: "„"; color: var(--akzent); }
+.zitat__text::after  { content: "“"; color: var(--akzent); }
+.zitat__quelle {
+  font-size: .86rem;
+  color: var(--gedimmt);
+  letter-spacing: .04em;
+}
+
+/* --------------------------------------------------------------------------
+   Galerie
+   -------------------------------------------------------------------------- */
+
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 32px 0;
+}
+.galerie figure { margin: 0; border-radius: 10px; overflow: hidden; background: var(--sanft); }
+.galerie img { width: 100%; aspect-ratio: 1/1; object-fit: cover; transition: transform .6s ease; }
+.galerie figure:hover img { transform: scale(1.06); }
+.galerie figcaption {
+  font-size: .78rem; color: var(--gedimmt); padding: 8px 2px 0;
+}
+
+/* Einzelbild im Textfluss */
+.bild { margin: 32px 0; }
+.bild img { border-radius: var(--radius); width: 100%; }
+.bild figcaption { font-size: .82rem; color: var(--gedimmt); margin-top: 10px; }
+
+/* --------------------------------------------------------------------------
+   Kontakt / Handlungsaufruf
+   -------------------------------------------------------------------------- */
+
+.kontakt {
+  background: var(--nacht);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  margin: 32px 0;
+}
+.kontakt h3 { color: #fff; font-size: clamp(1.3rem, 5vw, 1.9rem); }
+.kontakt p { color: rgba(255,255,255,.8); }
+
+.knopfreihe { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+
+.knopf {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 52px;
+  padding: 0 26px;
+  border-radius: 100px;
+  font-weight: 650;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  transition: transform .2s ease, background .2s ease, border-color .2s ease;
+  flex: 1 1 auto;
+}
+.knopf:hover { text-decoration: none; transform: translateY(-2px); }
+.knopf--voll { background: var(--akzent); color: #fff; }
+.knopf--voll:hover { background: var(--akzent-dunkel); }
+.knopf--rand { border-color: rgba(255,255,255,.35); color: #fff; }
+.knopf--rand:hover { border-color: #fff; background: rgba(255,255,255,.08); }
+
+.abschnitt .knopf--rand { border-color: var(--linie); color: var(--tinte); }
+.abschnitt .knopf--rand:hover { border-color: var(--akzent); background: var(--sanft); }
+
+/* --------------------------------------------------------------------------
+   Fußzeile — identisch auf allen Projektseiten
+   -------------------------------------------------------------------------- */
+
+.fuss {
+  background: var(--nacht);
+  color: #8a94a3;
+  padding-block: 44px 36px;
+  font-size: .88rem;
+}
+.fuss a { color: #c7cfdb; }
+.fuss__marke {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 4px;
+}
+.fuss__zeile {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.fuss__recht {
+  border-top: 1px solid rgba(255,255,255,.1);
+  margin-top: 28px;
+  padding-top: 20px;
+  font-size: .78rem;
+  color: #6b7482;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+
+/* Vertraulichkeitshinweis */
+.vertraulich {
+  background: #fff8e6;
+  border: 1px solid #f0dca8;
+  color: #6b5312;
+  border-radius: 10px;
+  padding: 13px 16px;
+  font-size: .85rem;
+  margin: 0 0 24px;
+}
+/* Sitzt in der Kopfzeile und bleibt damit beim Scrollen sichtbar. */
+.entwurfsbalken {
+  background: #b4232a;
+  color: #fff;
+  text-align: center;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 6px var(--rand);
+}
+
+/* --------------------------------------------------------------------------
+   Scroll-Animationen — Grundzustand
+   JS setzt .ist-sichtbar, sobald das Element ins Bild kommt.
+   -------------------------------------------------------------------------- */
+
+[data-auftritt] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity .7s cubic-bezier(.2,.7,.3,1),
+              transform .7s cubic-bezier(.2,.7,.3,1);
+  transition-delay: var(--verzug, 0ms);
+}
+[data-auftritt].ist-sichtbar { opacity: 1; transform: none; }
+
+[data-auftritt="seite"]  { transform: translateX(-28px); }
+[data-auftritt="zoom"]   { transform: scale(.94); }
+
+/* Wenn kein JS läuft, muss trotzdem alles lesbar sein. */
+.kein-js [data-auftritt] { opacity: 1; transform: none; }
+
+/* --------------------------------------------------------------------------
+   Breakpoints
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 600px) {
+  :root { --rand: 32px; }
+  body { font-size: 18px; }
+  .abschnitt { padding-block: 88px; }
+  .hero { padding-bottom: 92px; }
+  .kennzahlen { grid-template-columns: repeat(2, 1fr); }
+  .kennzahl { padding: 30px 26px; }
+  .karten { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .galerie { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .slider__spur { grid-auto-columns: 46%; }
+  .kontakt { padding: 44px 40px; }
+  .knopf { flex: 0 0 auto; }
+  .fakt { grid-template-columns: 240px 1fr; gap: 20px; align-items: baseline; }
+  .hero__runter { display: block; }
+  .kopf__logo span { display: inline; }
+}
+
+@media (min-width: 900px) {
+  :root { --rand: 40px; }
+  .abschnitt { padding-block: 112px; }
+  .kopf__bahn { height: 72px; }
+  .kennzahlen { grid-template-columns: repeat(4, 1fr); }
+  .karten { grid-template-columns: repeat(3, 1fr); }
+  .karten--zwei { grid-template-columns: repeat(2, 1fr); }
+  .slider__spur { grid-auto-columns: 31%; }
+  .slider__steuer { display: flex; }
+  .slider__hinweis { display: none; }
+  .galerie { grid-template-columns: repeat(4, 1fr); }
+  .fuss__zeile { flex-direction: row; justify-content: space-between; align-items: flex-start; }
+  .zeitplan--breit { columns: 2; column-gap: 48px; }
+}
+
+@media (min-width: 1200px) {
+  .abschnitt--versetzt .bahn { display: grid; grid-template-columns: 1fr 1.35fr; gap: 56px; }
+  .abschnitt--versetzt .abschnitt__kopf { margin-bottom: 0; position: sticky; top: 112px; align-self: start; }
+}
+
+/* --------------------------------------------------------------------------
+   Rücksicht, Druck, Dunkelmodus-Geräte
+   -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+  }
+  [data-auftritt] { opacity: 1 !important; transform: none !important; }
+  .hero__bild, .band__bild { transform: none !important; }
+}
+
+@media print {
+  .kopf, .hero__runter, .slider__steuer, .entwurfsbalken { display: none !important; }
+  body { font-size: 11pt; }
+  .hero, .band, .kontakt, .fuss { background: #fff !important; color: #000 !important; }
+  .hero__bild, .band__bild, .hero__schleier, .band__schleier { display: none !important; }
+  .hero h1, .band h2, .kontakt h3, .fuss__marke { color: #000 !important; }
+  .abschnitt { padding-block: 18pt; page-break-inside: avoid; }
+  [data-auftritt] { opacity: 1 !important; transform: none !important; }
+  .slider__spur { grid-auto-columns: 1fr; overflow: visible; }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#1a2430"/><stop offset="1" stop-color="#394a5e"/></linearGradient></defs>
+<rect width="1600" height="900" fill="url(#g)"/>
+<g fill="rgba(255,255,255,.08)">
+<circle cx="1248" cy="234" r="297"/><circle cx="256" cy="738" r="216"/></g>
+<text x="50%" y="50%" fill="rgba(255,255,255,.55)" font-family="Arial, sans-serif"
+ font-size="67" font-weight="bold" letter-spacing="6" text-anchor="middle"
+ dominant-baseline="middle">STIMMUNGSBILD</text>
+<text x="50%" y="526" fill="rgba(255,255,255,.3)" font-family="Arial, sans-serif"
+ font-size="25" letter-spacing="2" text-anchor="middle">PLATZHALTER &#183; 1600&#215;900</text>
+</svg>

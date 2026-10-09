@@ -29,6 +29,12 @@ Maßgeblich ist [`docs/strategie.md`](docs/strategie.md). Gesamtbild:
 Eine **Ablage für Betriebswissen**, kein Software-Projekt. Kein Code, kein Build,
 kein Deployment.
 
+**Eine bewusste Ausnahme:** [`pitch/`](pitch/README.md) — das Baukastensystem
+für Pitch-Seiten. Das ist Code und widerspricht dem Satz darüber. Der
+Widerspruch bleibt stehen, weil die Entscheidung so gefallen ist: Sascha
+braucht pro Kunde eine eigene Seite, und sie soll aus einer Vorlage entstehen,
+nicht jedes Mal neu. Für alles andere gilt der Satz weiter.
+
 **Tagesaufgaben gehören nicht hierher.** Dafür gibt es das Google Sheet
 „CGT – Themenplanung" (Eigner Thomas Götz), siehe
 [`docs/themenplanung.md`](docs/themenplanung.md).
@@ -83,6 +89,25 @@ Name 1/142). Nie behaupten, es fehle ein Werkzeug — es fehlt die Recherche.
 
 **Die Retail-Longlist ist die Pet-Absatzliste**: 187 Händler europaweit, 39 auf
 Priorität A, neun Marken zugeordnet. In der Themenplanung stehen davon **drei**.
+
+## Pitch-Seiten bauen
+
+Fragt jemand nach einer **neuen Pitch-Seite für einen Kunden**, gilt
+[`pitch/README.md`](pitch/README.md). Kurz:
+
+1. `pitch/projekte/_vorlage/` nach `pitch/projekte/<projektname>/` kopieren
+2. Bilder nach `pitch/projekte/<projektname>/bilder/` legen
+3. `inhalt.md` aus den gelieferten Texten und Zahlen füllen
+4. `cd pitch && python3 bauen.py <projektname>`
+5. Ergebnis liegt in `pitch/site/<slug>/index.html`
+
+Kopf, Fuß, Farben und Effekte sind für alle Seiten gleich und stehen in
+`pitch/vorlage/`. Dort wird geändert, wenn sich das Aussehen ändern soll —
+nie in einer einzelnen Projektseite.
+
+**Auch hier gilt Regel 1: nichts erfinden.** Fehlt eine Kondition, eine EAN
+oder ein Termin, bleibt der Block weg oder es wird nachgefragt. Eine erfundene
+Zahl vor einem Einkäufer kostet mehr als eine kürzere Seite.
 
 ## Schreibweise
 

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="de" class="kein-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{TITEL}}</title>
+<meta name="description" content="{{BESCHREIBUNG}}">
+
+<!-- Pitch-Seiten gehoeren nicht in Suchmaschinen. -->
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Vorschau, wenn der Link per Mail oder Messenger geteilt wird -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{TITEL}}">
+<meta property="og:description" content="{{BESCHREIBUNG}}">
+<meta name="theme-color" content="#0d1117">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230e6e5c'/><text x='16' y='22' font-family='Arial,sans-serif' font-size='14' font-weight='bold' fill='white' text-anchor='middle'>C</text></svg>">
+<link rel="stylesheet" href="assets/stil.css">
+{{AKZENT}}
+</head>
+<body>
+
+<a href="#inhalt" class="knopf" style="position:absolute;left:-9999px;top:0"
+   onfocus="this.style.left='8px';this.style.top='8px';this.style.zIndex='99'"
+   onblur="this.style.left='-9999px'">Zum Inhalt springen</a>
+
+<!-- ===== Kopfzeile: auf allen Projektseiten gleich ===== -->
+<header class="kopf">
+  {{ENTWURFSBALKEN}}
+  <div class="bahn kopf__bahn">
+    <a class="kopf__logo" href="#">CGT <span>Coldewey Goetz Trade</span></a>
+    <div class="kopf__kunde">{{KUNDE}}</div>
+  </div>
+  <div class="fortschritt"></div>
+</header>
+
+{{HERO}}
+
+<main id="inhalt">
+{{KOERPER}}
+
+{{KONTAKT}}
+</main>
+
+<!-- ===== Fusszeile: auf allen Projektseiten gleich ===== -->
+<footer class="fuss">
+  <div class="bahn">
+    <div class="fuss__zeile">
+      <div>
+        <span class="fuss__marke">CGT UG</span>
+        Coldewey Goetz Trade<br>
+        Biebricher Allee 36 &middot; 65187 Wiesbaden<br>
+        Amtsgericht Wiesbaden &middot; HRB 35897
+      </div>
+      <div>
+        Geschäftsführung: Sascha Coldewey, Thomas Goetz<br>
+        {{KONTAKTMAIL}}
+      </div>
+    </div>
+    <div class="fuss__recht">
+      <span>&copy; {{JAHR}} CGT UG (haftungsbeschränkt)</span>
+      <span>Vertraulich — nur für den genannten Empfänger</span>
+      <span>{{STAND}}</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/bewegung.js" defer></script>
+</body>
+</html>

@@ -34,6 +34,26 @@ Details und Bewertung: [mercedes-lizenz.md](mercedes-lizenz.md).
 - **Produzenten-Provision**: offenlegen oder als Leistung bepreisen?
 - **BLE-Minimum**: Was muss bis 03.10. stehen, wenn der Styleguide nicht fertig wird?
 
+## Pitch-Seiten (neu, 09.10.2026)
+
+Das Baukastensystem steht: [`../pitch/README.md`](../pitch/README.md). Offen
+ist alles, was nicht aus dem Repo beantwortbar war:
+
+- **Wo liegen die Seiten?** Heute entstehen reine Dateien ohne Serverbedarf.
+  GitHub Pages, eigener Webspace oder ein Dienst wie Vercel — nicht entschieden.
+  **Achtung:** Liegen die Seiten in diesem Repo und wird GitHub Pages dafür
+  eingeschaltet, wird der gesamte Repo-Inhalt öffentlich. Das Wissensrepo
+  gehört nicht ins Netz.
+- **Unter welcher Adresse?** Eigene Domain oder Unterverzeichnis einer
+  bestehenden.
+- **Geschützt oder offen?** Ohne Schutz kann jeder Einkäufer die Adresse
+  weitergeben. Möglich wären ein Zufallsteil im Link oder ein Passwort.
+- **Verbindliche CGT-Farben und ein Logo.** Im Repo steht dazu nichts. Das
+  Grün in `pitch/vorlage/assets/stil.css` ist ein **Vorschlag**, keine
+  belegte Hausfarbe, und die Kopfzeile trägt bisher nur den Schriftzug „CGT".
+- **Wer gibt eine Pitch-Seite frei**, bevor sie an einen Einkäufer geht?
+  Solange `status: entwurf` steht, zeigt die Seite einen roten Balken.
+
 ## Entscheidet über die Ideen ([ideen.md](ideen.md))
 
 - **Wie verdient CGT heute?** Provision, Retainer, Marge oder Beteiligung — je Säule?

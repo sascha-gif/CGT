@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#5a4632"/><stop offset="1" stop-color="#8a6c4c"/></linearGradient></defs>
+<rect width="800" height="600" fill="url(#g)"/>
+<g fill="rgba(255,255,255,.08)">
+<circle cx="624" cy="156" r="198"/><circle cx="128" cy="491" r="144"/></g>
+<text x="50%" y="50%" fill="rgba(255,255,255,.55)" font-family="Arial, sans-serif"
+ font-size="45" font-weight="bold" letter-spacing="6" text-anchor="middle"
+ dominant-baseline="middle">ARTIKEL 3</text>
+<text x="50%" y="351" fill="rgba(255,255,255,.3)" font-family="Arial, sans-serif"
+ font-size="16" letter-spacing="2" text-anchor="middle">PLATZHALTER &#183; 800&#215;600</text>
+</svg>

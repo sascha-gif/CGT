@@ -4,7 +4,9 @@ Wissens-Repo der **CGT UG**. Hier steht, was dauerhaft gilt: Geschäftsmodell,
 Partner, Marken und Lizenzen, Handelskanäle, Zuständigkeiten — und was noch
 offen ist.
 
-Kein Code. Tagesaufgaben leben im Google Sheet „CGT – Themenplanung", nicht hier.
+Kein Code — mit einer Ausnahme: [`pitch/`](pitch/README.md), das Baukastensystem
+für Kunden-Pitchseiten. Tagesaufgaben leben im Google Sheet
+„CGT – Themenplanung", nicht hier.
 
 ## Einstieg
 
@@ -17,6 +19,7 @@ Kein Code. Tagesaufgaben leben im Google Sheet „CGT – Themenplanung", nicht 
 | **Wie alles zusammenhängt** | [docs/zusammenhang.md](docs/zusammenhang.md) |
 | **Was noch zu klären ist** | [docs/offene-punkte.md](docs/offene-punkte.md) |
 | **Alles andere** | [docs/README.md](docs/README.md) |
+| **Pitch-Seiten bauen** | [pitch/README.md](pitch/README.md) |
 
 ## Wie schreiben
 
