@@ -89,6 +89,8 @@ a:hover { text-decoration: underline; }
   border-color: rgba(255,255,255,.12);
 }
 .abschnitt--dunkel .kennzahl__wert { color: #fff; }
+.abschnitt--dunkel ul.haken li::before { border-color: #7fd8bf; }
+.abschnitt--dunkel strong { color: #fff; }
 .abschnitt--dunkel .kennzahl__text { color: #9aa4b2; }
 
 /* --------------------------------------------------------------------------
@@ -216,6 +218,7 @@ hr { border: 0; border-top: 1px solid var(--linie); margin: 40px 0; }
 .kopf__logo:hover { text-decoration: none; }
 
 .kopf__kunde {
+  display: none;
   font-size: .76rem;
   font-weight: 600;
   letter-spacing: .1em;
@@ -269,7 +272,16 @@ hr { border: 0; border-top: 1px solid var(--linie); margin: 40px 0; }
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(to top, rgba(8,11,15,.94) 0%, rgba(8,11,15,.62) 45%, rgba(8,11,15,.35) 100%);
+    linear-gradient(to top, rgba(8,11,15,.94) 0%, rgba(8,11,15,.60) 45%, rgba(8,11,15,.30) 100%),
+    linear-gradient(to right, rgba(8,11,15,.55) 0%, rgba(8,11,15,.12) 55%, rgba(8,11,15,0) 100%);
+}
+
+/* Markenlogo im Hero - z. B. das Logo der Lizenzmarke, um die es geht. */
+.hero__logo {
+  height: 48px;
+  width: auto;
+  margin-bottom: 26px;
+  opacity: .96;
 }
 
 .hero h1 { color: #fff; margin-bottom: .35em; }
@@ -409,6 +421,11 @@ hr { border: 0; border-top: 1px solid var(--linie); margin: 40px 0; }
   transition: transform .35s cubic-bezier(.2,.7,.3,1), box-shadow .35s ease;
 }
 .karte:hover { transform: translateY(-4px); box-shadow: var(--schatten-hoch); }
+
+/* Im Raster sollen nebeneinanderliegende Karten gleich hoch sein. */
+.karten > *      { height: 100%; }
+.karten > .karte,
+.karten > * > .karte { height: 100%; }
 
 .karte__bild {
   aspect-ratio: 4 / 3;
@@ -583,7 +600,8 @@ tr:last-child td { border-bottom: 0; }
 }
 .band__schleier {
   position: absolute; inset: 0; z-index: -1;
-  background: linear-gradient(105deg, rgba(8,11,15,.88) 0%, rgba(8,11,15,.55) 100%);
+  background: linear-gradient(100deg,
+      rgba(8,11,15,.93) 0%, rgba(8,11,15,.74) 38%, rgba(8,11,15,.20) 100%);
 }
 .band h2 { color: #fff; max-width: 18ch; margin-bottom: .45em; }
 .band > .bahn > *:first-child { margin-top: 0; }
@@ -758,6 +776,7 @@ tr:last-child td { border-bottom: 0; }
   body { font-size: 18px; }
   .abschnitt { padding-block: 88px; }
   .hero { padding-bottom: 92px; }
+  .hero__logo { height: 62px; }
   .kennzahlen { grid-template-columns: repeat(2, 1fr); }
   .kennzahl { padding: 30px 26px; }
   .karten { grid-template-columns: repeat(2, 1fr); gap: 20px; }
@@ -768,6 +787,7 @@ tr:last-child td { border-bottom: 0; }
   .fakt { grid-template-columns: 240px 1fr; gap: 20px; align-items: baseline; }
   .hero__runter { display: block; }
   .kopf__logo span { display: inline; }
+  .kopf__kunde { display: block; }
 }
 
 @media (min-width: 900px) {

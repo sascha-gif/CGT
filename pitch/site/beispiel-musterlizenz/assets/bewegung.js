@@ -94,7 +94,8 @@
         var aktuell = zahl * weich;
         el.textContent = vor + aktuell.toLocaleString("de-DE", {
           minimumFractionDigits: nachkomma,
-          maximumFractionDigits: nachkomma
+          maximumFractionDigits: nachkomma,
+          useGrouping: el.getAttribute("data-gruppiert") === "1"
         }) + nach;
         if (p < 1) window.requestAnimationFrame(schritt);
       }

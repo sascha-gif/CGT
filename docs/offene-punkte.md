@@ -19,9 +19,28 @@ Zu entscheiden bleibt: **wo die Namen liegen** — in der Longlist, in einem CRM
 oder hier. Im Repo stehen bisher **keine externen Personennamen**; Einkäuferdaten
 sind personenbezogen und blieben versioniert liegen.
 
-## Mercedes-Lizenz (neu, 11.09.2026)
+## Mercedes-Lizenz (11.09.2026, ergänzt 09.10.2026)
 
 Details und Bewertung: [mercedes-lizenz.md](mercedes-lizenz.md).
+
+**Neu nach Auswertung des Styleguides (V2, 03.10.2026):**
+
+- **Ist Mercedes eine Schuhmarke oder eine Automobilmarke?** Der Styleguide
+  beschreibt durchgehend eine **Schuhmarke** mit Wortmarke im Oval und dem
+  Zusatz „Schuhe seit 1909" — kein Bezug zu Mercedes-Benz. Diese Ablage ging
+  bisher von einer Automobilmarke aus. **Der Widerspruch muss aufgelöst
+  werden**, er verändert das Approval-Risiko und die Argumentation gegenüber
+  Lizenznehmern grundlegend.
+- **Farbwerte fehlen.** Der Styleguide nennt die Palette nur in Worten (Cigar
+  Brown, Racing Green, Oxblood, Navy, Bone) und zeigt sie über Produktfotos.
+  Ohne HEX, Pantone und CMYK ist keine Verpackung produzierbar.
+- **Einkaufspreise fehlen.** Es gibt UVP-Bänder je Kanal, keine Kalkulation.
+- **Nur ein Artikel ist vollständig spezifiziert** (Court Classic, Cigar Brown).
+  Für ein Handelsangebot braucht es Artikelnummern, EAN, Größenläufe und
+  Liefereinheiten.
+- **Zwei verschiedene Kontaktadressen im Umlauf:** der Styleguide nennt
+  `thomas.goetz@cg-trade.de`, die DELTEX-Präsentation `thomas.goetz@deltex.de`.
+  Welche gilt für Lizenzanfragen, welche für Handelsanfragen?
 
 - **Was darf CGT vergeben?** Umfang der Master-Lizenz — Territorien, Kategorien,
   Laufzeit — ist nicht dokumentiert. Vor der BLE zu klären.
@@ -64,6 +83,9 @@ Das Baukastensystem steht: [`../pitch/README.md`](../pitch/README.md).
 
 **Weiter offen:**
 
+- **Für wen genau ist die Mercedes-Seite?** Der Entwurf adressiert generisch
+  „Lebensmittelhandel & Discount". Sobald ein Händler feststeht, wird daraus
+  eine eigene Seite mit eigener Adresse.
 - **Verbindliche CGT-Farben und ein Logo.** Im Repo steht dazu nichts. Das
   Grün in `pitch/vorlage/assets/stil.css` ist ein **Vorschlag**, keine
   belegte Hausfarbe, und die Kopfzeile trägt bisher nur den Schriftzug

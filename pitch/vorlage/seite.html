@@ -29,7 +29,7 @@
 <header class="kopf">
   {{ENTWURFSBALKEN}}
   <div class="bahn kopf__bahn">
-    <a class="kopf__logo" href="#">CGT <span>Coldewey Goetz Trade</span></a>
+    {{KOPF_ABSENDER}}
     <div class="kopf__kunde">{{KUNDE}}</div>
   </div>
   <div class="fortschritt"></div>
@@ -47,19 +47,11 @@
 <footer class="fuss">
   <div class="bahn">
     <div class="fuss__zeile">
-      <div>
-        <span class="fuss__marke">CGT UG</span>
-        Coldewey Goetz Trade<br>
-        Biebricher Allee 36 &middot; 65187 Wiesbaden<br>
-        Amtsgericht Wiesbaden &middot; HRB 35897
-      </div>
-      <div>
-        Geschäftsführung: Sascha Coldewey, Thomas Goetz<br>
-        {{KONTAKTMAIL}}
-      </div>
+      <div>{{FUSS_ABSENDER}}</div>
+      <div>{{FUSS_KONTAKT}}</div>
     </div>
     <div class="fuss__recht">
-      <span>&copy; {{JAHR}} CGT UG (haftungsbeschränkt)</span>
+      <span>&copy; {{JAHR}} {{COPYRIGHT}}</span>
       <span>Vertraulich — nur für den genannten Empfänger</span>
       <span>{{STAND}}</span>
     </div>

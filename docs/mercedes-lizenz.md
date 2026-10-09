@@ -13,10 +13,56 @@ wir die Mercedes-Lizenz künftig strukturieren und entwickeln können").*
 | Zieltermin | **Brand Licensing Europe (BLE), 6.–7. Oktober 2026, London** |
 | Ziel bis dahin | überzeugende Markenpräsentation **und** klar definiertes Lizenzmodell |
 | Produkt bisher bekannt | Schuhe (Themenplanung: „Mercedes Schuhe", Notiz „Bugatti") |
+| Styleguide | **liegt vor**, V2 vom 03.10.2026 — siehe unten |
 | Abstimmung | Vorschlag: zweiwöchentliches Update-Meeting |
 
 **BLE ist eine Messe, kein Kontaktkreis.** In der Themenplanung steht „BLE — Termine
 ausmachen" mit einer Namensliste — das sind die Gesprächspartner für London.
+
+## Styleguide liegt vor (09.10.2026)
+
+*Quelle: „Mercedes Shoes — Brand Guidelines", V2, erstellt 03.10.2026, 31 Seiten.
+Von Sascha bereitgestellt am 09.10.2026.*
+
+Der in KW 38 angekündigte Styleguide **existiert** und war vor der BLE fertig.
+Damit ist der oben als Risiko notierte Punkt „was, wenn der Styleguide nicht
+fertig wird" erledigt.
+
+**Widerspruch zur bisherigen Annahme.** Diese Datei ging von einer
+**Automobilmarke** aus („bei einer Automobilmarke der größte operative Punkt").
+Der Styleguide beschreibt etwas anderes: **Mercedes ist eine Schuhmarke** —
+Wortmarke im Oval, Zusatz „Schuhe seit 1909", Markenkern „luxury lifestyle with
+heritage sports". Kein Stern, kein Bezug zu Mercedes-Benz. Der Widerspruch
+bleibt hier stehen, bis Thomas oder Marc ihn ausräumt; er ändert die Bewertung
+des Approval-Risikos erheblich.
+
+### Was der Styleguide beantwortet
+
+| Frage | Antwort laut Styleguide |
+|---|---|
+| Markenschutz | **eingetragen**: DE national 1909 · AT, Benelux, CZ, FR, IT, ES, CH international 1964 · CN international 1999 · UK national 2010 · EU-Marke 2010. Anmeldung in Indien läuft. |
+| Gesuchte Lizenzpartner | EU, UK, China, Indien, Golfstaaten |
+| Kollektionen | **Members Only** (Heritage, Court bis Loafer) und **Run Club** (Performance, Signalorange) |
+| Preisarchitektur | drei Bänder mit Kanalzuordnung — Volume = *Sports and value retail*, Contemporary = Multi-brand fashion, Premium = Department & E-Commerce |
+| UVP Volumenband | Sneakers 35–50 € · Leder-Schnürer 40–55 € · Loafer 40–55 € · Boots 45–65 € · Run Club 35–50 € (inkl. MwSt.) |
+| Schriften | Forma (primär), Snell Roundhand (nur Kollektionsnamen und Kampagnentitel) |
+| Farben | Cigar Brown, Racing Green, Oxblood, Navy, Bone — als Materialbeschreibung, **ohne Farbwerte** |
+| Anfragen | thomas.goetz@cg-trade.de |
+
+### Was der Styleguide nicht beantwortet
+
+- **Keine Farbwerte** (HEX, Pantone, CMYK) — die Palette wird nur über
+  Produktfotos gezeigt. Für Verpackung und Druck fehlt das.
+- **Keine Einkaufspreise**, nur UVP-Bänder.
+- **Keine Artikelnummern, EAN, Größenläufe, Liefereinheiten.**
+- **Vollständig spezifiziert ist genau ein Artikel** — der Court Classic in
+  Cigar Brown (Wildleder 100 %, Kalbslederfutter, Gummisohle).
+- **Approval-Prozess** steht weiterhin nirgends.
+
+### Erste Pitch-Seite dazu
+
+[`../pitch/projekte/deltex-mercedes-schuhe/`](../pitch/README.md) — Entwurf für
+den LEH- und Discountkanal, Absender DELTEX. Klickdummy, noch nicht freigegeben.
 
 ## Thomas' Vorschlag im Überblick
 
@@ -58,6 +104,8 @@ Siehe [offene-punkte.md](offene-punkte.md), Abschnitt Mercedes. Die wichtigsten:
    angesetzt, wenn er die eigene Zahlung bestimmt.
 5. **Online-Lizenz kollidiert mit Territorial-Exklusivität**, wenn Online nicht als
    eigener Kanal ausgenommen wird.
-6. **Approval-Prozess fehlt** — bei einer Automobilmarke der größte operative Punkt.
+6. **Approval-Prozess fehlt** — wer gibt Designs, Muster und Verpackung frei, in
+   welcher Frist. (Die frühere Begründung „bei einer Automobilmarke" trägt nicht
+   mehr, siehe Styleguide-Abschnitt oben — der Punkt selbst bleibt offen.)
 7. **Produzenten-Provision**: Interessenkonflikt, wenn CGT am empfohlenen Produzenten
    verdient. Offenlegen oder als Leistung bepreisen.

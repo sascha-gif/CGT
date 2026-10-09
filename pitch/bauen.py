@@ -372,10 +372,15 @@ def block_rendern(name, argument, zeilen):
             if zahl is None:
                 wertspan = '<span class="kennzahl__wert">%s</span>' % inline(wert)
             else:
+                # Jahreszahlen wie 1909 bekommen keinen Tausenderpunkt,
+                # "13.000" behaelt ihn. Massgeblich ist die Schreibweise
+                # in der inhalt.md.
+                gruppiert = "1" if "." in zahl else "0"
                 wertspan = (
                     '<span class="kennzahl__wert" data-zaehlen="%s" data-vor="%s" '
-                    'data-nach="%s" data-fertig="%s">%s</span>'
-                    % (sicher(zahl), sicher(vor), sicher(nach), sicher(wert), sicher(wert))
+                    'data-nach="%s" data-fertig="%s" data-gruppiert="%s">%s</span>'
+                    % (sicher(zahl), sicher(vor), sicher(nach), sicher(wert),
+                       gruppiert, sicher(wert))
                 )
             felder.append(
                 '<div class="kennzahl">%s<span class="kennzahl__text">%s</span></div>'
@@ -592,11 +597,44 @@ def seite_bauen(felder, koerper, vorlage_html):
     herobild = felder.get("hero-bild", felder.get("herobild", "")).strip()
     entwurf  = felder.get("status", "").strip().lower() in ("entwurf", "draft")
 
+    # Absender der Seite. Voreinstellung ist CGT; ein Projekt, das im Namen
+    # eines Partners verschickt wird, setzt die Felder in seiner inhalt.md.
+    ab_kurz   = felder.get("absender", "CGT")
+    ab_zusatz = felder.get("absender-zusatz", "Coldewey Goetz Trade")
+    ab_name   = felder.get("absender-name", "CGT UG")
+    ab_zeilen = felder.get(
+        "absender-zeilen",
+        "Coldewey Goetz Trade | Biebricher Allee 36 \u00b7 65187 Wiesbaden | "
+        "Amtsgericht Wiesbaden \u00b7 HRB 35897",
+    )
+    ab_fuehrung = felder.get("absender-fuehrung",
+                             "Gesch\u00e4ftsf\u00fchrung: Sascha Coldewey, Thomas Goetz")
+
+    ab_recht = felder.get(
+        "absender-recht",
+        "CGT UG (haftungsbeschr\u00e4nkt)" if ab_name == "CGT UG" else ab_name,
+    )
+
+    kopf_absender = ('<a class="kopf__logo" href="#">%s <span>%s</span></a>'
+                     % (sicher(ab_kurz), sicher(ab_zusatz)))
+
+    fuss_absender = '<span class="fuss__marke">%s</span>%s' % (
+        sicher(ab_name),
+        "<br>".join(inline(z.strip()) for z in ab_zeilen.split("|") if z.strip()),
+    )
+
+
     # Hero
     hero_bild_html = ""
     if herobild:
         hero_bild_html = ('<div class="hero__bild" data-parallax="0.22" '
                           'style="background-image:url(\'%s\')"></div>' % sicher(herobild))
+
+    markenlogo = felder.get("marken-logo", "").strip()
+    logo_html = ""
+    if markenlogo:
+        logo_html = ('<img class="hero__logo" src="%s" alt="%s" data-auftritt>'
+                     % (sicher(markenlogo), sicher(felder.get("marke", projekt))))
 
     schild = ""
     if kunde:
@@ -609,7 +647,7 @@ def seite_bauen(felder, koerper, vorlage_html):
     if felder.get("datum"):
         fusszeilen.append("Stand: " + datum_lang(felder["datum"]))
     if felder.get("ansprechpartner"):
-        fusszeilen.append(felder["ansprechpartner"] + ", CGT UG")
+        fusszeilen.append("%s, %s" % (felder["ansprechpartner"], ab_name))
     hero_fuss = ""
     if fusszeilen:
         hero_fuss = ('<div class="hero__fuss" data-auftritt style="--verzug:320ms">%s</div>'
@@ -617,10 +655,11 @@ def seite_bauen(felder, koerper, vorlage_html):
 
     hero = (
         '<header class="hero">%s<div class="hero__schleier"></div>'
-        '<div class="bahn">%s<h1 data-auftritt style="--verzug:80ms">%s</h1>'
+        '<div class="bahn">%s%s<h1 data-auftritt style="--verzug:80ms">%s</h1>'
         '%s%s</div><div class="hero__runter" aria-hidden="true"></div></header>'
         % (
             hero_bild_html,
+            logo_html,
             schild,
             inline(projekt),
             ('<p class="hero__claim" data-auftritt style="--verzug:200ms">%s</p>' % inline(claim))
@@ -653,7 +692,7 @@ def seite_bauen(felder, koerper, vorlage_html):
             "kurzfristig und ohne Umwege.",
         )
         zeile = " &middot; ".join(
-            x for x in (sicher(name), ("CGT UG" if name else ""), sicher(tel)) if x
+            x for x in (sicher(name), (sicher(ab_name) if name else ""), sicher(tel)) if x
         )
         kontakt_html = (
             '<section class="abschnitt abschnitt--hell" id="kontakt"><div class="bahn">'
@@ -665,7 +704,14 @@ def seite_bauen(felder, koerper, vorlage_html):
             % (inline(a_titel), inline(a_text), "".join(knoepfe), zeile)
         )
 
+    fuss_kontakt = inline(ab_fuehrung)
+    if mail:
+        fuss_kontakt += '<br><a href="mailto:%s">%s</a>' % (sicher(mail), sicher(mail))
+
     ersatz = {
+        "KOPF_ABSENDER": kopf_absender,
+        "FUSS_ABSENDER": fuss_absender,
+        "FUSS_KONTAKT":  fuss_kontakt,
         "TITEL":        sicher(titel),
         "BESCHREIBUNG": sicher(felder.get("beschreibung", claim or projekt)),
         "AKZENT":       ('<style>:root{--akzent:%s;--akzent-dunkel:%s;}</style>'
@@ -676,7 +722,7 @@ def seite_bauen(felder, koerper, vorlage_html):
         "HERO":         hero,
         "KOERPER":      koerper,
         "KONTAKT":      kontakt_html,
-        "KONTAKTMAIL":  ('<a href="mailto:%s">%s</a>' % (sicher(mail), sicher(mail))) if mail else "",
+        "COPYRIGHT":    sicher(ab_recht),
         "JAHR":         str(date.today().year),
         "STAND":        datum_lang(felder.get("datum", "")) if felder.get("datum") else "",
     }
@@ -720,7 +766,7 @@ def bilder_pruefen(projektordner, felder, roh):
     """Warnt, wenn eine Bilddatei referenziert wird, die es nicht gibt."""
     verwiesen = set(re.findall(r"!\[[^\]]*\]\(([^)]+)\)", roh))
     verwiesen |= set(re.findall(r"^\s*bild:\s*(.+)$", roh, re.I | re.M))
-    for schluessel in ("hero-bild", "herobild"):
+    for schluessel in ("hero-bild", "herobild", "marken-logo"):
         if felder.get(schluessel):
             verwiesen.add(felder[schluessel])
     for block in re.findall(r":::\s*(?:parallax|band)\s+(\S+)", roh):
