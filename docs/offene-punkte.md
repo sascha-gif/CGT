@@ -25,12 +25,10 @@ Details und Bewertung: [mercedes-lizenz.md](mercedes-lizenz.md).
 
 **Neu nach Auswertung des Styleguides (V2, 03.10.2026):**
 
-- **Ist Mercedes eine Schuhmarke oder eine Automobilmarke?** Der Styleguide
-  beschreibt durchgehend eine **Schuhmarke** mit Wortmarke im Oval und dem
-  Zusatz „Schuhe seit 1909" — kein Bezug zu Mercedes-Benz. Diese Ablage ging
-  bisher von einer Automobilmarke aus. **Der Widerspruch muss aufgelöst
-  werden**, er verändert das Approval-Risiko und die Argumentation gegenüber
-  Lizenznehmern grundlegend.
+- ~~Ist Mercedes eine Schuhmarke oder eine Automobilmarke?~~ **Erledigt
+  09.10.2026 (Sascha): Schuhmarke.** Die Lizenz ist eine Schuhmarken-Lizenz.
+  Die frühere Annahme einer Automobilmarke stammte allein aus dem Namen und ist
+  in [mercedes-lizenz.md](mercedes-lizenz.md) korrigiert.
 - **Farbwerte fehlen.** Der Styleguide nennt die Palette nur in Worten (Cigar
   Brown, Racing Green, Oxblood, Navy, Bone) und zeigt sie über Produktfotos.
   Ohne HEX, Pantone und CMYK ist keine Verpackung produzierbar.
@@ -38,9 +36,10 @@ Details und Bewertung: [mercedes-lizenz.md](mercedes-lizenz.md).
 - **Nur ein Artikel ist vollständig spezifiziert** (Court Classic, Cigar Brown).
   Für ein Handelsangebot braucht es Artikelnummern, EAN, Größenläufe und
   Liefereinheiten.
-- **Zwei verschiedene Kontaktadressen im Umlauf:** der Styleguide nennt
-  `thomas.goetz@cg-trade.de`, die DELTEX-Präsentation `thomas.goetz@deltex.de`.
-  Welche gilt für Lizenzanfragen, welche für Handelsanfragen?
+- ~~Zwei verschiedene Kontaktadressen im Umlauf.~~ **Erledigt 09.10.2026
+  (Sascha):** Mercedes ist eine CGT-Lizenz, die Präsentation ist eine
+  CGT-Präsentation — es gilt `thomas.goetz@cg-trade.de`. `deltex.de` nur dort,
+  wo DELTEX selbst absendet.
 
 - **Was darf CGT vergeben?** Umfang der Master-Lizenz — Territorien, Kategorien,
   Laufzeit — ist nicht dokumentiert. Vor der BLE zu klären.

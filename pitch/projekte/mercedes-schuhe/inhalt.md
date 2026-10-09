@@ -1,5 +1,5 @@
 ---
-slug:              deltex-mercedes-schuhe-mqcwqd
+slug:              mercedes-schuhe-mqcwqd
 kunde:             LEBENSMITTELHANDEL & DISCOUNT
 projekt:           Mercedes — Schuhe seit 1909
 marke:             Mercedes
@@ -9,17 +9,11 @@ datum:             2026-10-09
 status:            entwurf
 
 ansprechpartner:   Thomas Goetz
-mail:              thomas.goetz@deltex.de
+mail:              thomas.goetz@cg-trade.de
 
 hero-bild:         bilder/hero.jpg
 marken-logo:       bilder/mercedes-oval-weiss.png
 akzent:            #0d4a3d
-
-absender:          DELTEX
-absender-zusatz:   Handels GmbH
-absender-name:     DELTEX Handels GmbH
-absender-zeilen:   Tarpen 40, Gebäude 10A | 22419 Hamburg | www.deltex.de
-absender-fuehrung: Business Development: Thomas Goetz
 
 abschluss-titel:   Reden wir über die Listung.
 abschluss-text:    Muster, Kalkulation und Liefertermine klären wir in einem Termin — kurzfristig und ohne Umwege.
@@ -153,10 +147,11 @@ Die Marke ist in allen für den europäischen Handel relevanten Gebieten
 Für Indien läuft eine Anmeldung.
 
 
-## Warum über DELTEX {dunkel}
+## Der Weg ins Regal {dunkel}
 
-DELTEX platziert Marken im Lebensmittel- und Discounthandel. Das ist kein
-Nebengeschäft, sondern das Geschäft.
+CGT bringt die Lizenz. Für die Umsetzung im Lebensmittel- und Discounthandel
+arbeiten wir mit **DELTEX Handels GmbH** in Hamburg — einem Partner, der genau
+das seit Jahren macht und nichts anderes.
 
 ::: kennzahlen
 13.000 | ALDI Süd und Nord, Filialen
@@ -165,7 +160,8 @@ Nebengeschäft, sondern das Geschäft.
 1.600 | Kaufland, Filialen
 :::
 
-Dazu Edeka mit 6.500, REWE mit 3.800 und Penny mit 3.500 Filialen.
+Dazu Edeka mit 6.500, REWE mit 3.800 und Penny mit 3.500 Filialen — Stand der
+DELTEX-Partnerübersicht vom August 2026.
 
 **So läuft eine Platzierung:**
 
@@ -178,7 +174,8 @@ Dazu Edeka mit 6.500, REWE mit 3.800 und Penny mit 3.500 Filialen.
 
 ## Diese Marken stehen schon im Regal {hell}
 
-Auszug aus den von DELTEX platzierten Marken und den jeweiligen Handelspartnern:
+Was der Weg über DELTEX wert ist, zeigt sich an den Marken, die dort bereits
+stehen — Auszug mit den jeweiligen Handelspartnern:
 
 | Marke | Handelspartner |
 |---|---|

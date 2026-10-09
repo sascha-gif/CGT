@@ -16,6 +16,7 @@ Aufruf:
 Nur Python-Standardbibliothek. Kein pip, kein Node, kein Build-Werkzeug.
 """
 
+import base64
 import html
 import os
 import re
@@ -29,8 +30,16 @@ WURZEL   = os.path.dirname(os.path.abspath(__file__))
 VORLAGE  = os.path.join(WURZEL, "vorlage")
 PROJEKTE = os.path.join(WURZEL, "projekte")
 AUSGABE  = os.path.join(WURZEL, "site")
+VORSCHAU = os.path.join(WURZEL, "vorschau")
 
 BILD_ENDUNGEN = (".jpg", ".jpeg", ".png", ".webp", ".avif", ".gif", ".svg")
+
+# Fuer die Einzeldatei: welcher Dateityp wird wie eingebettet
+MIME = {
+    ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png",
+    ".webp": "image/webp", ".avif": "image/avif", ".gif": "image/gif",
+    ".svg": "image/svg+xml",
+}
 
 # Wird nach site/vercel.json geschrieben. X-Robots-Tag haelt die Seiten
 # zusaetzlich zum Meta-Tag aus den Suchmaschinen heraus.
@@ -737,6 +746,51 @@ def seite_bauen(felder, koerper, vorlage_html):
 # Dateien
 # ===========================================================================
 
+def einzeldatei_schreiben(seite, projektordner, slug):
+    """Schreibt eine Fassung, in der ALLES in einer Datei steckt: Stylesheet,
+    Skript und jedes Bild als eingebettete Daten. Die laesst sich per Doppel-
+    klick oeffnen, per Mail verschicken und funktioniert ohne Internet.
+
+    Die Fassung in site/ bleibt davon unberuehrt - die ist fuer den Server."""
+
+    def datei(pfad):
+        with open(pfad, encoding="utf-8") as f:
+            return f.read()
+
+    # Stylesheet und Skript hineinziehen
+    seite = seite.replace(
+        '<link rel="stylesheet" href="assets/stil.css">',
+        "<style>\n%s\n</style>" % datei(os.path.join(VORLAGE, "assets", "stil.css")),
+    )
+    seite = seite.replace(
+        '<script src="assets/bewegung.js" defer></script>',
+        "<script>\n%s\n</script>" % datei(os.path.join(VORLAGE, "assets", "bewegung.js")),
+    )
+
+    # Jedes Bild als Datenblock einsetzen
+    bilderordner = os.path.join(projektordner, "bilder")
+    eingebettet = 0
+    if os.path.isdir(bilderordner):
+        for name in sorted(os.listdir(bilderordner)):
+            pfad = os.path.join(bilderordner, name)
+            endung = os.path.splitext(name)[1].lower()
+            if not os.path.isfile(pfad) or endung not in MIME:
+                continue
+            verweis = "bilder/" + name
+            if verweis not in seite:
+                continue
+            with open(pfad, "rb") as f:
+                roh = base64.b64encode(f.read()).decode("ascii")
+            seite = seite.replace(verweis, "data:%s;base64,%s" % (MIME[endung], roh))
+            eingebettet += 1
+
+    os.makedirs(VORSCHAU, exist_ok=True)
+    ziel = os.path.join(VORSCHAU, slug + ".html")
+    with open(ziel, "w", encoding="utf-8") as f:
+        f.write(seite)
+    return ziel, eingebettet, os.path.getsize(ziel)
+
+
 def assets_kopieren(ziel):
     quelle = os.path.join(VORLAGE, "assets")
     zielordner = os.path.join(ziel, "assets")
@@ -815,7 +869,11 @@ def projekt_bauen(slug, vorlage_html):
     assets_kopieren(ziel)
     anzahl = bilder_kopieren(projektordner, ziel)
 
-    print("  + %-28s -> site/%s/index.html  (%d Bilder)" % (slug, zielslug, anzahl))
+    _, _, groesse = einzeldatei_schreiben(seite, projektordner, zielslug)
+
+    print("  + %-24s -> site/%s/index.html  (%d Bilder)" % (slug, zielslug, anzahl))
+    print("    %-24s    vorschau/%s.html  (alles in einer Datei, %.1f MB)"
+          % ("", zielslug, groesse / 1048576))
     return True
 
 

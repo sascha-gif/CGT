@@ -28,13 +28,16 @@ Der in KW 38 angekündigte Styleguide **existiert** und war vor der BLE fertig.
 Damit ist der oben als Risiko notierte Punkt „was, wenn der Styleguide nicht
 fertig wird" erledigt.
 
-**Widerspruch zur bisherigen Annahme.** Diese Datei ging von einer
-**Automobilmarke** aus („bei einer Automobilmarke der größte operative Punkt").
-Der Styleguide beschreibt etwas anderes: **Mercedes ist eine Schuhmarke** —
-Wortmarke im Oval, Zusatz „Schuhe seit 1909", Markenkern „luxury lifestyle with
-heritage sports". Kein Stern, kein Bezug zu Mercedes-Benz. Der Widerspruch
-bleibt hier stehen, bis Thomas oder Marc ihn ausräumt; er ändert die Bewertung
-des Approval-Risikos erheblich.
+**Geklärt am 09.10.2026 durch Sascha: Mercedes ist eine Schuhmarke.** Die
+Lizenz ist eine Schuhmarken-Lizenz — Wortmarke im Oval, Zusatz „Schuhe seit
+1909", Markenkern „luxury lifestyle with heritage sports". Kein Bezug zu
+Mercedes-Benz.
+
+Diese Datei ging vorher von einer **Automobilmarke** aus („bei einer
+Automobilmarke der größte operative Punkt"). Das war falsch und ist hier
+korrigiert. Die Annahme stammte aus dem Markennamen allein, nicht aus einer
+Quelle — ein Beispiel dafür, warum Regel 1 (Quelle dazuschreiben) nicht
+optional ist.
 
 ### Was der Styleguide beantwortet
 
@@ -47,7 +50,7 @@ des Approval-Risikos erheblich.
 | UVP Volumenband | Sneakers 35–50 € · Leder-Schnürer 40–55 € · Loafer 40–55 € · Boots 45–65 € · Run Club 35–50 € (inkl. MwSt.) |
 | Schriften | Forma (primär), Snell Roundhand (nur Kollektionsnamen und Kampagnentitel) |
 | Farben | Cigar Brown, Racing Green, Oxblood, Navy, Bone — als Materialbeschreibung, **ohne Farbwerte** |
-| Anfragen | thomas.goetz@cg-trade.de |
+| Anfragen | thomas.goetz@cg-trade.de — **gilt**, siehe unten |
 
 ### Was der Styleguide nicht beantwortet
 
@@ -59,10 +62,23 @@ des Approval-Risikos erheblich.
   Cigar Brown (Wildleder 100 %, Kalbslederfutter, Gummisohle).
 - **Approval-Prozess** steht weiterhin nirgends.
 
+### Absender: CGT, nicht DELTEX
+
+*Entschieden von Sascha, 09.10.2026.* Mercedes ist eine **CGT-Lizenz**, also ist
+die Präsentation eine **CGT-Präsentation** — Absender CGT UG, Kontaktadresse
+`thomas.goetz@cg-trade.de`.
+
+DELTEX bleibt im Spiel, aber als **Umsetzungspartner**: CGT bringt die Lizenz,
+DELTEX bringt sie ins Regal. Genau das Gelenk, das
+[cgt-profil.md](cgt-profil.md) als Wertschöpfung beschreibt.
+
+Damit ist auch die Adressfrage beantwortet: `cg-trade.de` für Lizenz- und
+CGT-Themen, `deltex.de` nur dort, wo DELTEX selbst absendet.
+
 ### Erste Pitch-Seite dazu
 
-[`../pitch/projekte/deltex-mercedes-schuhe/`](../pitch/README.md) — Entwurf für
-den LEH- und Discountkanal, Absender DELTEX. Klickdummy, noch nicht freigegeben.
+[`../pitch/projekte/mercedes-schuhe/`](../pitch/README.md) — Entwurf für den
+LEH- und Discountkanal, Absender CGT. Klickdummy, noch nicht freigegeben.
 
 ## Thomas' Vorschlag im Überblick
 

@@ -1,0 +1,1137 @@
+<!doctype html>
+<html lang="de" class="kein-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Musterlizenz Pflegeserie — MUSTERMARKT</title>
+<meta name="description" content="So sieht eine CGT-Pitch-Seite aus. Alle Zahlen hier sind erfunden.">
+
+<!-- Pitch-Seiten gehoeren nicht in Suchmaschinen. -->
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Vorschau, wenn der Link per Mail oder Messenger geteilt wird -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Musterlizenz Pflegeserie — MUSTERMARKT">
+<meta property="og:description" content="So sieht eine CGT-Pitch-Seite aus. Alle Zahlen hier sind erfunden.">
+<meta name="theme-color" content="#0d1117">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230e6e5c'/><text x='16' y='22' font-family='Arial,sans-serif' font-size='14' font-weight='bold' fill='white' text-anchor='middle'>C</text></svg>">
+<style>
+/* ==========================================================================
+   CGT Pitch — gemeinsames Stylesheet
+   Gilt für ALLE Projektseiten. Hier wird das Aussehen geändert, nie in der
+   einzelnen Projektseite. Mobile first: Basis = Handy, danach Breakpoints.
+   Keine externen Schriften, keine Fremd-Server — alles liegt im Verzeichnis.
+   ========================================================================== */
+
+:root {
+  /* Farben — pro Projekt überschreibbar über "akzent:" in inhalt.md */
+  --akzent:        #0e6e5c;
+  --akzent-dunkel: #0a5346;
+  --akzent-hell:   #e7f2ef;
+
+  --tinte:   #101418;
+  --gedimmt: #5b6270;
+  --linie:   #e4e7ec;
+  --papier:  #ffffff;
+  --sanft:   #f6f7f9;
+  --nacht:   #0d1117;
+
+  /* Typografie — Systemschriften, laden sofort, kein Drittanbieter */
+  --schrift: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+             "Helvetica Neue", Arial, sans-serif;
+
+  /* Raster */
+  --rand: 20px;
+  --max:  1140px;
+  --max-text: 720px;
+
+  --radius: 14px;
+  --schatten: 0 1px 2px rgba(16,20,24,.04), 0 8px 30px rgba(16,20,24,.07);
+  --schatten-hoch: 0 2px 4px rgba(16,20,24,.05), 0 18px 50px rgba(16,20,24,.12);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--schrift);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--tinte);
+  background: var(--papier);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--akzent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* --------------------------------------------------------------------------
+   Lesebreite und Abschnitte
+   -------------------------------------------------------------------------- */
+
+.bahn {
+  width: 100%;
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: var(--rand);
+}
+
+.abschnitt {
+  padding-block: 64px;
+  position: relative;
+}
+
+.abschnitt > .bahn > *:first-child { margin-top: 0; }
+.abschnitt > .bahn > *:last-child  { margin-bottom: 0; }
+
+.abschnitt--hell  { background: var(--sanft); }
+.abschnitt--akzent{ background: var(--akzent-hell); }
+
+.abschnitt--dunkel {
+  background: var(--nacht);
+  color: #e9edf3;
+}
+.abschnitt--dunkel h2,
+.abschnitt--dunkel h3 { color: #ffffff; }
+.abschnitt--dunkel .fuehrung,
+.abschnitt--dunkel p  { color: #b9c1cd; }
+.abschnitt--dunkel .karte {
+  background: rgba(255,255,255,.05);
+  border-color: rgba(255,255,255,.12);
+}
+.abschnitt--dunkel .kennzahl__wert { color: #fff; }
+.abschnitt--dunkel ul.haken li::before { border-color: #7fd8bf; }
+.abschnitt--dunkel strong { color: #fff; }
+.abschnitt--dunkel .kennzahl__text { color: #9aa4b2; }
+
+/* --------------------------------------------------------------------------
+   Typografie
+   -------------------------------------------------------------------------- */
+
+h1, h2, h3, h4 {
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  margin: 0 0 .5em;
+  text-wrap: balance;
+}
+
+h1 { font-size: clamp(2.1rem, 8vw, 4.2rem); letter-spacing: -0.035em; }
+h2 { font-size: clamp(1.6rem, 5.5vw, 2.6rem); }
+h3 { font-size: clamp(1.15rem, 3.6vw, 1.45rem); }
+
+p { margin: 0 0 1.1em; max-width: var(--max-text); }
+
+.abschnitt__kopf { margin-bottom: 36px; }
+
+.marke {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--akzent);
+  margin-bottom: 14px;
+}
+.marke::before {
+  content: "";
+  width: 22px; height: 2px;
+  background: var(--akzent);
+  display: inline-block;
+}
+.abschnitt--dunkel .marke { color: #fff; }
+.abschnitt--dunkel .marke::before { background: #fff; }
+
+.fuehrung {
+  font-size: clamp(1.05rem, 3.4vw, 1.3rem);
+  color: var(--gedimmt);
+  max-width: var(--max-text);
+  line-height: 1.55;
+}
+
+ul, ol { margin: 0 0 1.1em; padding-left: 1.15em; max-width: var(--max-text); }
+li { margin-bottom: .45em; }
+
+ul.haken { list-style: none; padding-left: 0; }
+ul.haken li {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: .7em;
+}
+ul.haken li::before {
+  content: "";
+  position: absolute; left: 0; top: .42em;
+  width: 18px; height: 10px;
+  border-left: 2.5px solid var(--akzent);
+  border-bottom: 2.5px solid var(--akzent);
+  transform: rotate(-45deg);
+}
+
+blockquote {
+  margin: 28px 0;
+  padding: 4px 0 4px 20px;
+  border-left: 3px solid var(--akzent);
+  font-size: 1.1rem;
+  color: var(--tinte);
+}
+
+hr { border: 0; border-top: 1px solid var(--linie); margin: 40px 0; }
+
+/* --------------------------------------------------------------------------
+   Kopfzeile — identisch auf allen Projektseiten
+   -------------------------------------------------------------------------- */
+
+.kopf {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 50;
+  background: rgba(255,255,255,0);
+  border-bottom: 1px solid transparent;
+  transition: background .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+.kopf.ist-geklebt {
+  background: rgba(255,255,255,.92);
+  backdrop-filter: saturate(160%) blur(12px);
+  -webkit-backdrop-filter: saturate(160%) blur(12px);
+  border-bottom-color: var(--linie);
+  box-shadow: 0 1px 20px rgba(16,20,24,.05);
+}
+
+.kopf__bahn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 60px;
+}
+
+.kopf__logo {
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  transition: color .3s ease;
+}
+.kopf__logo span {
+  font-weight: 500;
+  font-size: .76rem;
+  letter-spacing: .06em;
+  opacity: .72;
+  display: none;
+}
+.kopf.ist-geklebt .kopf__logo { color: var(--tinte); }
+.kopf__logo:hover { text-decoration: none; }
+
+.kopf__kunde {
+  display: none;
+  font-size: .76rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.78);
+  transition: color .3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.kopf.ist-geklebt .kopf__kunde { color: var(--gedimmt); }
+
+/* Lesefortschritt */
+.fortschritt {
+  position: absolute;
+  left: 0; bottom: -1px;
+  height: 2px;
+  width: 0%;
+  background: var(--akzent);
+  transition: width .1s linear;
+}
+
+/* --------------------------------------------------------------------------
+   Hero — Vollbild, Parallax-Bild, gestaffelte Einblendung
+   -------------------------------------------------------------------------- */
+
+.hero {
+  position: relative;
+  min-height: 92svh;
+  min-height: 92vh;
+  display: flex;
+  align-items: flex-end;
+  padding-block: 120px 56px;
+  overflow: hidden;
+  background: var(--nacht);
+  color: #fff;
+  isolation: isolate;
+}
+
+.hero__bild {
+  position: absolute;
+  inset: -12% 0 -12% 0;
+  z-index: -2;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+}
+
+.hero__schleier {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(to top, rgba(8,11,15,.94) 0%, rgba(8,11,15,.60) 45%, rgba(8,11,15,.30) 100%),
+    linear-gradient(to right, rgba(8,11,15,.55) 0%, rgba(8,11,15,.12) 55%, rgba(8,11,15,0) 100%);
+}
+
+/* Markenlogo im Hero - z. B. das Logo der Lizenzmarke, um die es geht. */
+.hero__logo {
+  height: 48px;
+  width: auto;
+  margin-bottom: 26px;
+  opacity: .96;
+}
+
+.hero h1 { color: #fff; margin-bottom: .35em; }
+
+.hero__claim {
+  font-size: clamp(1.05rem, 4vw, 1.5rem);
+  color: rgba(255,255,255,.88);
+  max-width: 34ch;
+  margin-bottom: 28px;
+  line-height: 1.45;
+}
+
+.hero__schild {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.22);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 7px 15px;
+  border-radius: 100px;
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.hero__schild::before {
+  content: "";
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--akzent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--akzent) 35%, transparent);
+}
+
+.hero__fuss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 26px;
+  font-size: .85rem;
+  color: rgba(255,255,255,.7);
+  border-top: 1px solid rgba(255,255,255,.16);
+  padding-top: 20px;
+  margin-top: 32px;
+}
+
+.hero__runter {
+  position: absolute;
+  right: var(--rand); bottom: 26px;
+  transform: none;
+  width: 26px; height: 42px;
+  border: 2px solid rgba(255,255,255,.35);
+  border-radius: 14px;
+  display: none;
+}
+.hero__runter::after {
+  content: "";
+  position: absolute;
+  left: 50%; top: 8px;
+  width: 3px; height: 7px;
+  border-radius: 2px;
+  background: rgba(255,255,255,.8);
+  transform: translateX(-50%);
+  animation: rollen 1.9s ease-in-out infinite;
+}
+@keyframes rollen {
+  0%, 100% { opacity: 0; transform: translate(-50%, 0); }
+  35%      { opacity: 1; }
+  70%      { opacity: 0; transform: translate(-50%, 14px); }
+}
+.hero__runter::after { left: 50%; }
+
+/* --------------------------------------------------------------------------
+   Kennzahlen — zählen beim Scrollen hoch
+   -------------------------------------------------------------------------- */
+
+.kennzahlen {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--linie);
+  border: 1px solid var(--linie);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin: 32px 0;
+}
+.abschnitt--dunkel .kennzahlen {
+  background: rgba(255,255,255,.1);
+  border-color: rgba(255,255,255,.1);
+}
+
+.kennzahl {
+  background: var(--papier);
+  padding: 22px 18px;
+  text-align: left;
+}
+.abschnitt--dunkel .kennzahl,
+.abschnitt--hell .kennzahl { background: var(--papier); }
+.abschnitt--dunkel .kennzahl { background: #131922; }
+
+.kennzahl__wert {
+  display: block;
+  font-size: clamp(1.9rem, 7.5vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  color: var(--akzent);
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 8px;
+}
+.kennzahl__text {
+  font-size: .86rem;
+  color: var(--gedimmt);
+  line-height: 1.4;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   Karten + Slider
+   -------------------------------------------------------------------------- */
+
+.karten {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.karte {
+  background: var(--papier);
+  border: 1px solid var(--linie);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform .35s cubic-bezier(.2,.7,.3,1), box-shadow .35s ease;
+}
+.karte:hover { transform: translateY(-4px); box-shadow: var(--schatten-hoch); }
+
+/* Im Raster sollen nebeneinanderliegende Karten gleich hoch sein. */
+.karten > *      { height: 100%; }
+.karten > .karte,
+.karten > * > .karte { height: 100%; }
+
+.karte__bild {
+  aspect-ratio: 4 / 3;
+  background: var(--sanft);
+  overflow: hidden;
+}
+.karte__bild img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .6s cubic-bezier(.2,.7,.3,1);
+}
+.karte:hover .karte__bild img { transform: scale(1.05); }
+
+.karte__text { padding: 20px; flex: 1; }
+.karte__text h3 { margin-bottom: .4em; }
+.karte__text p { font-size: .95rem; color: var(--gedimmt); margin-bottom: .6em; }
+.karte__text > *:last-child { margin-bottom: 0; }
+
+.karte__nummer {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  color: var(--akzent);
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Horizontaler Slider — auf dem Handy wischen, am Desktop Pfeile */
+.slider { margin: 32px 0; position: relative; }
+
+.slider__spur {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 78%;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--rand);
+  padding-inline: var(--rand);
+  margin-inline: calc(var(--rand) * -1);
+  padding-bottom: 12px;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.slider__spur::-webkit-scrollbar { display: none; }
+.slider__spur > * { scroll-snap-align: start; }
+
+.slider__steuer {
+  display: none;
+  gap: 10px;
+  margin-top: 16px;
+}
+.slider__knopf {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--linie);
+  background: var(--papier);
+  color: var(--tinte);
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+  transition: background .2s ease, border-color .2s ease, opacity .2s ease;
+}
+.slider__knopf:hover { background: var(--sanft); border-color: var(--akzent); }
+.slider__knopf[disabled] { opacity: .35; cursor: default; }
+
+.slider__hinweis {
+  font-size: .8rem;
+  color: var(--gedimmt);
+  margin-top: 10px;
+}
+
+/* --------------------------------------------------------------------------
+   Fakten / Konditionen — Liste auf dem Handy, Raster am Desktop
+   -------------------------------------------------------------------------- */
+
+.fakten {
+  margin: 32px 0;
+  border-top: 1px solid var(--linie);
+}
+.fakt {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--linie);
+}
+.fakt__name {
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--gedimmt);
+}
+.fakt__wert { font-size: 1.05rem; font-weight: 600; }
+
+/* Tabellen (aus Markdown) — rollen auf dem Handy seitlich */
+.tabellenrahmen {
+  overflow-x: auto;
+  margin: 28px 0;
+  border: 1px solid var(--linie);
+  border-radius: var(--radius);
+  -webkit-overflow-scrolling: touch;
+}
+table { border-collapse: collapse; width: 100%; font-size: .93rem; min-width: 480px; }
+th, td { padding: 13px 16px; text-align: left; border-bottom: 1px solid var(--linie); }
+th {
+  background: var(--sanft);
+  font-size: .76rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--gedimmt);
+  white-space: nowrap;
+}
+tr:last-child td { border-bottom: 0; }
+
+/* --------------------------------------------------------------------------
+   Zeitplan
+   -------------------------------------------------------------------------- */
+
+.zeitplan { margin: 32px 0; padding-left: 26px; position: relative; }
+.zeitplan::before {
+  content: "";
+  position: absolute; left: 5px; top: 8px; bottom: 8px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--akzent), var(--linie));
+}
+.schritt { position: relative; padding-bottom: 28px; }
+.schritt:last-child { padding-bottom: 0; }
+.schritt::before {
+  content: "";
+  position: absolute; left: -26px; top: 7px;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--papier);
+  border: 2.5px solid var(--akzent);
+}
+.schritt__zeit {
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--akzent);
+  display: block;
+  margin-bottom: 3px;
+}
+.schritt__was { font-size: 1.02rem; }
+
+/* --------------------------------------------------------------------------
+   Parallax-Band
+   -------------------------------------------------------------------------- */
+
+.band {
+  position: relative;
+  min-height: 62svh;
+  min-height: 62vh;
+  display: flex;
+  align-items: center;
+  padding-block: 72px;
+  overflow: hidden;
+  color: #fff;
+  background: var(--nacht);
+  isolation: isolate;
+}
+.band__bild {
+  position: absolute;
+  inset: -15% 0 -15% 0;
+  z-index: -2;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+}
+.band__schleier {
+  position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(100deg,
+      rgba(8,11,15,.93) 0%, rgba(8,11,15,.74) 38%, rgba(8,11,15,.20) 100%);
+}
+.band h2 { color: #fff; max-width: 18ch; margin-bottom: .45em; }
+.band > .bahn > *:first-child { margin-top: 0; }
+.band > .bahn > *:last-child  { margin-bottom: 0; }
+.band p  { color: rgba(255,255,255,.84); max-width: 48ch; }
+
+/* --------------------------------------------------------------------------
+   Zitat
+   -------------------------------------------------------------------------- */
+
+.zitat { margin: 44px 0; max-width: 760px; }
+.zitat__text {
+  font-size: clamp(1.25rem, 4.6vw, 1.85rem);
+  line-height: 1.38;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  text-wrap: balance;
+}
+.zitat__text::before { content: "„"; color: var(--akzent); }
+.zitat__text::after  { content: "“"; color: var(--akzent); }
+.zitat__quelle {
+  font-size: .86rem;
+  color: var(--gedimmt);
+  letter-spacing: .04em;
+}
+
+/* --------------------------------------------------------------------------
+   Galerie
+   -------------------------------------------------------------------------- */
+
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 32px 0;
+}
+.galerie figure { margin: 0; border-radius: 10px; overflow: hidden; background: var(--sanft); }
+.galerie img { width: 100%; aspect-ratio: 1/1; object-fit: cover; transition: transform .6s ease; }
+.galerie figure:hover img { transform: scale(1.06); }
+.galerie figcaption {
+  font-size: .78rem; color: var(--gedimmt); padding: 8px 2px 0;
+}
+
+/* Einzelbild im Textfluss */
+.bild { margin: 32px 0; }
+.bild img { border-radius: var(--radius); width: 100%; }
+.bild figcaption { font-size: .82rem; color: var(--gedimmt); margin-top: 10px; }
+
+/* --------------------------------------------------------------------------
+   Kontakt / Handlungsaufruf
+   -------------------------------------------------------------------------- */
+
+.kontakt {
+  background: var(--nacht);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  margin: 32px 0;
+}
+.kontakt h3 { color: #fff; font-size: clamp(1.3rem, 5vw, 1.9rem); }
+.kontakt p { color: rgba(255,255,255,.8); }
+
+.knopfreihe { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+
+.knopf {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 52px;
+  padding: 0 26px;
+  border-radius: 100px;
+  font-weight: 650;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  transition: transform .2s ease, background .2s ease, border-color .2s ease;
+  flex: 1 1 auto;
+}
+.knopf:hover { text-decoration: none; transform: translateY(-2px); }
+.knopf--voll { background: var(--akzent); color: #fff; }
+.knopf--voll:hover { background: var(--akzent-dunkel); }
+.knopf--rand { border-color: rgba(255,255,255,.35); color: #fff; }
+.knopf--rand:hover { border-color: #fff; background: rgba(255,255,255,.08); }
+
+.abschnitt .knopf--rand { border-color: var(--linie); color: var(--tinte); }
+.abschnitt .knopf--rand:hover { border-color: var(--akzent); background: var(--sanft); }
+
+/* --------------------------------------------------------------------------
+   Fußzeile — identisch auf allen Projektseiten
+   -------------------------------------------------------------------------- */
+
+.fuss {
+  background: var(--nacht);
+  color: #8a94a3;
+  padding-block: 44px 36px;
+  font-size: .88rem;
+}
+.fuss a { color: #c7cfdb; }
+.fuss__marke {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 4px;
+}
+.fuss__zeile {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.fuss__recht {
+  border-top: 1px solid rgba(255,255,255,.1);
+  margin-top: 28px;
+  padding-top: 20px;
+  font-size: .78rem;
+  color: #6b7482;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+
+/* Vertraulichkeitshinweis */
+.vertraulich {
+  background: #fff8e6;
+  border: 1px solid #f0dca8;
+  color: #6b5312;
+  border-radius: 10px;
+  padding: 13px 16px;
+  font-size: .85rem;
+  margin: 0 0 24px;
+}
+/* Sitzt in der Kopfzeile und bleibt damit beim Scrollen sichtbar. */
+.entwurfsbalken {
+  background: #b4232a;
+  color: #fff;
+  text-align: center;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 6px var(--rand);
+}
+
+/* --------------------------------------------------------------------------
+   Scroll-Animationen — Grundzustand
+   JS setzt .ist-sichtbar, sobald das Element ins Bild kommt.
+   -------------------------------------------------------------------------- */
+
+[data-auftritt] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity .7s cubic-bezier(.2,.7,.3,1),
+              transform .7s cubic-bezier(.2,.7,.3,1);
+  transition-delay: var(--verzug, 0ms);
+}
+[data-auftritt].ist-sichtbar { opacity: 1; transform: none; }
+
+[data-auftritt="seite"]  { transform: translateX(-28px); }
+[data-auftritt="zoom"]   { transform: scale(.94); }
+
+/* Wenn kein JS läuft, muss trotzdem alles lesbar sein. */
+.kein-js [data-auftritt] { opacity: 1; transform: none; }
+
+/* --------------------------------------------------------------------------
+   Breakpoints
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 600px) {
+  :root { --rand: 32px; }
+  body { font-size: 18px; }
+  .abschnitt { padding-block: 88px; }
+  .hero { padding-bottom: 92px; }
+  .hero__logo { height: 62px; }
+  .kennzahlen { grid-template-columns: repeat(2, 1fr); }
+  .kennzahl { padding: 30px 26px; }
+  .karten { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .galerie { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .slider__spur { grid-auto-columns: 46%; }
+  .kontakt { padding: 44px 40px; }
+  .knopf { flex: 0 0 auto; }
+  .fakt { grid-template-columns: 240px 1fr; gap: 20px; align-items: baseline; }
+  .hero__runter { display: block; }
+  .kopf__logo span { display: inline; }
+  .kopf__kunde { display: block; }
+}
+
+@media (min-width: 900px) {
+  :root { --rand: 40px; }
+  .abschnitt { padding-block: 112px; }
+  .kopf__bahn { height: 72px; }
+  .kennzahlen { grid-template-columns: repeat(4, 1fr); }
+  .karten { grid-template-columns: repeat(3, 1fr); }
+  .karten--zwei { grid-template-columns: repeat(2, 1fr); }
+  .slider__spur { grid-auto-columns: 31%; }
+  .slider__steuer { display: flex; }
+  .slider__hinweis { display: none; }
+  .galerie { grid-template-columns: repeat(4, 1fr); }
+  .fuss__zeile { flex-direction: row; justify-content: space-between; align-items: flex-start; }
+  .zeitplan--breit { columns: 2; column-gap: 48px; }
+}
+
+@media (min-width: 1200px) {
+  .abschnitt--versetzt .bahn { display: grid; grid-template-columns: 1fr 1.35fr; gap: 56px; }
+  .abschnitt--versetzt .abschnitt__kopf { margin-bottom: 0; position: sticky; top: 112px; align-self: start; }
+}
+
+/* --------------------------------------------------------------------------
+   Rücksicht, Druck, Dunkelmodus-Geräte
+   -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+  }
+  [data-auftritt] { opacity: 1 !important; transform: none !important; }
+  .hero__bild, .band__bild { transform: none !important; }
+}
+
+@media print {
+  .kopf, .hero__runter, .slider__steuer, .entwurfsbalken { display: none !important; }
+  body { font-size: 11pt; }
+  .hero, .band, .kontakt, .fuss { background: #fff !important; color: #000 !important; }
+  .hero__bild, .band__bild, .hero__schleier, .band__schleier { display: none !important; }
+  .hero h1, .band h2, .kontakt h3, .fuss__marke { color: #000 !important; }
+  .abschnitt { padding-block: 18pt; page-break-inside: avoid; }
+  [data-auftritt] { opacity: 1 !important; transform: none !important; }
+  .slider__spur { grid-auto-columns: 1fr; overflow: visible; }
+}
+
+</style>
+
+</head>
+<body>
+
+<a href="#inhalt" class="knopf" style="position:absolute;left:-9999px;top:0"
+   onfocus="this.style.left='8px';this.style.top='8px';this.style.zIndex='99'"
+   onblur="this.style.left='-9999px'">Zum Inhalt springen</a>
+
+<!-- ===== Kopfzeile: auf allen Projektseiten gleich ===== -->
+<header class="kopf">
+  <div class="entwurfsbalken">Entwurf — noch nicht freigegeben</div>
+  <div class="bahn kopf__bahn">
+    <a class="kopf__logo" href="#">CGT <span>Coldewey Goetz Trade</span></a>
+    <div class="kopf__kunde">MUSTERMARKT</div>
+  </div>
+  <div class="fortschritt"></div>
+</header>
+
+<header class="hero"><div class="hero__bild" data-parallax="0.22" style="background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNjAwIDkwMCIgd2lkdGg9IjE2MDAiIGhlaWdodD0iOTAwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzBmM2IzMyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzBlNmU1YyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9InVybCgjZykiLz4KPGcgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwuMDgpIj4KPGNpcmNsZSBjeD0iMTI0OCIgY3k9IjIzNCIgcj0iMjk3Ii8+PGNpcmNsZSBjeD0iMjU2IiBjeT0iNzM4IiByPSIyMTYiLz48L2c+Cjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LC41NSkiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIKIGZvbnQtc2l6ZT0iNjciIGZvbnQtd2VpZ2h0PSJib2xkIiBsZXR0ZXItc3BhY2luZz0iNiIgdGV4dC1hbmNob3I9Im1pZGRsZSIKIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPkhFUk8tQklMRDwvdGV4dD4KPHRleHQgeD0iNTAlIiB5PSI1MjYiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsLjMpIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiCiBmb250LXNpemU9IjI1IiBsZXR0ZXItc3BhY2luZz0iMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UExBVFpIQUxURVIgJiMxODM7IDE2MDAmIzIxNTs5MDA8L3RleHQ+Cjwvc3ZnPg==')"></div><div class="hero__schleier"></div><div class="bahn"><div class="hero__schild" data-auftritt>Pitch für MUSTERMARKT</div><h1 data-auftritt style="--verzug:80ms">Musterlizenz Pflegeserie</h1><p class="hero__claim" data-auftritt style="--verzug:200ms">So sieht eine CGT-Pitch-Seite aus. Alle Zahlen hier sind erfunden.</p><div class="hero__fuss" data-auftritt style="--verzug:320ms"><span>Kanal: Beispiel — kein echtes Projekt</span><span>Stand: 9. Oktober 2026</span><span>Sascha Coldewey, CGT UG</span></div></div><div class="hero__runter" aria-hidden="true"></div></header>
+
+<main id="inhalt">
+<section class="abschnitt"><div class="bahn">
+<p class="vertraulich" data-auftritt><strong>Beispielseite.</strong> Diese Seite zeigt nur, wie die Vorlage aussieht. Marke, Zahlen, Artikel und Termine sind frei erfunden und stammen aus keiner Quelle.</p>
+</div></section>
+<section class="abschnitt" id="das-thema-in-30-sekunden"><div class="bahn"><header class="abschnitt__kopf" data-auftritt><span class="marke">01</span><h2>Das Thema in 30 Sekunden</h2></header>
+<p class="fuehrung" data-auftritt>Eine lizenzierte Pflegeserie für das Non-Food-Regal. Fertig entwickelt, abrufbereit, mit Display und Handzettel.</p>
+<div class="kennzahlen" data-auftritt><div class="kennzahl"><span class="kennzahl__wert" data-zaehlen="187" data-vor="" data-nach="" data-fertig="187" data-gruppiert="0">187</span><span class="kennzahl__text">Zielhändler in Europa</span></div><div class="kennzahl"><span class="kennzahl__wert" data-zaehlen="39" data-vor="" data-nach="" data-fertig="39" data-gruppiert="0">39</span><span class="kennzahl__text">davon Priorität A</span></div><div class="kennzahl"><span class="kennzahl__wert" data-zaehlen="9" data-vor="" data-nach="" data-fertig="9" data-gruppiert="0">9</span><span class="kennzahl__text">zugeordnete Marken</span></div><div class="kennzahl"><span class="kennzahl__wert" data-zaehlen="6" data-vor="" data-nach="" data-fertig="6" data-gruppiert="0">6</span><span class="kennzahl__text">Wochen Lieferzeit</span></div></div>
+</div></section>
+<section class="abschnitt abschnitt--hell" id="warum-jetzt"><div class="bahn"><header class="abschnitt__kopf" data-auftritt><span class="marke">02</span><h2>Warum jetzt</h2></header>
+<p data-auftritt>Hier steht in zwei bis vier Sätzen, was am Markt passiert — belegbar, ohne Werbesprache. Ein Einkäufer prüft als Erstes, ob die Begründung trägt.</p>
+<ul class="haken" data-auftritt><li>Erster belegbarer Punkt mit Quelle</li><li>Zweiter belegbarer Punkt mit Quelle</li><li>Dritter belegbarer Punkt mit Quelle</li></ul>
+</div></section>
+<section class="band"><div class="band__bild" data-parallax="0.18" style="background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNjAwIDkwMCIgd2lkdGg9IjE2MDAiIGhlaWdodD0iOTAwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzFhMjQzMCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzM5NGE1ZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9InVybCgjZykiLz4KPGcgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwuMDgpIj4KPGNpcmNsZSBjeD0iMTI0OCIgY3k9IjIzNCIgcj0iMjk3Ii8+PGNpcmNsZSBjeD0iMjU2IiBjeT0iNzM4IiByPSIyMTYiLz48L2c+Cjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LC41NSkiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIKIGZvbnQtc2l6ZT0iNjciIGZvbnQtd2VpZ2h0PSJib2xkIiBsZXR0ZXItc3BhY2luZz0iNiIgdGV4dC1hbmNob3I9Im1pZGRsZSIKIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPlNUSU1NVU5HU0JJTEQ8L3RleHQ+Cjx0ZXh0IHg9IjUwJSIgeT0iNTI2IiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LC4zKSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIgogZm9udC1zaXplPSIyNSIgbGV0dGVyLXNwYWNpbmc9IjIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlBMQVRaSEFMVEVSICYjMTgzOyAxNjAwJiMyMTU7OTAwPC90ZXh0Pgo8L3N2Zz4=')"></div><div class="band__schleier"></div><div class="bahn"><h2 data-auftritt>Ein Satz, der hängen bleibt.</h2>
+<p data-auftritt>Das Band läuft über die volle Breite, das Bild bewegt sich langsamer als die Seite. Einmal pro Seite reicht — sonst nutzt sich der Effekt ab.</p></div></section>
+<section class="abschnitt" id="das-sortiment"><div class="bahn"><header class="abschnitt__kopf" data-auftritt><span class="marke">03</span><h2>Das Sortiment</h2></header>
+<div class="slider" data-auftritt><div class="slider__spur"><article class="karte"><div class="karte__bild"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNjAwIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCI+CjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgo8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwZTZlNWMiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxOWExODMiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIGZpbGw9InVybCgjZykiLz4KPGcgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwuMDgpIj4KPGNpcmNsZSBjeD0iNjI0IiBjeT0iMTU2IiByPSIxOTgiLz48Y2lyY2xlIGN4PSIxMjgiIGN5PSI0OTEiIHI9IjE0NCIvPjwvZz4KPHRleHQgeD0iNTAlIiB5PSI1MCUiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsLjU1KSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIgogZm9udC1zaXplPSI0NSIgZm9udC13ZWlnaHQ9ImJvbGQiIGxldHRlci1zcGFjaW5nPSI2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+QVJUSUtFTCAxPC90ZXh0Pgo8dGV4dCB4PSI1MCUiIHk9IjM1MSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwuMykiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIKIGZvbnQtc2l6ZT0iMTYiIGxldHRlci1zcGFjaW5nPSIyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QTEFUWkhBTFRFUiAmIzE4MzsgODAwJiMyMTU7NjAwPC90ZXh0Pgo8L3N2Zz4=" alt="Artikel eins" loading="lazy" decoding="async"></div><div class="karte__text"><span class="karte__nummer">01</span><h3>Artikel eins</h3><p data-auftritt>Kurzbeschreibung: was es ist, für wen, in welcher Einheit.</p></div></article><article class="karte"><div class="karte__bild"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNjAwIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCI+CjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgo8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMyYTNiNTIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM0YTZhOTAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIGZpbGw9InVybCgjZykiLz4KPGcgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwuMDgpIj4KPGNpcmNsZSBjeD0iNjI0IiBjeT0iMTU2IiByPSIxOTgiLz48Y2lyY2xlIGN4PSIxMjgiIGN5PSI0OTEiIHI9IjE0NCIvPjwvZz4KPHRleHQgeD0iNTAlIiB5PSI1MCUiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsLjU1KSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIgogZm9udC1zaXplPSI0NSIgZm9udC13ZWlnaHQ9ImJvbGQiIGxldHRlci1zcGFjaW5nPSI2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+QVJUSUtFTCAyPC90ZXh0Pgo8dGV4dCB4PSI1MCUiIHk9IjM1MSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwuMykiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIKIGZvbnQtc2l6ZT0iMTYiIGxldHRlci1zcGFjaW5nPSIyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QTEFUWkhBTFRFUiAmIzE4MzsgODAwJiMyMTU7NjAwPC90ZXh0Pgo8L3N2Zz4=" alt="Artikel zwei" loading="lazy" decoding="async"></div><div class="karte__text"><span class="karte__nummer">02</span><h3>Artikel zwei</h3><p data-auftritt>Kurzbeschreibung: was es ist, für wen, in welcher Einheit.</p></div></article><article class="karte"><div class="karte__bild"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNjAwIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCI+CjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgo8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM1YTQ2MzIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4YTZjNGMiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIGZpbGw9InVybCgjZykiLz4KPGcgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwuMDgpIj4KPGNpcmNsZSBjeD0iNjI0IiBjeT0iMTU2IiByPSIxOTgiLz48Y2lyY2xlIGN4PSIxMjgiIGN5PSI0OTEiIHI9IjE0NCIvPjwvZz4KPHRleHQgeD0iNTAlIiB5PSI1MCUiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsLjU1KSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIgogZm9udC1zaXplPSI0NSIgZm9udC13ZWlnaHQ9ImJvbGQiIGxldHRlci1zcGFjaW5nPSI2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+QVJUSUtFTCAzPC90ZXh0Pgo8dGV4dCB4PSI1MCUiIHk9IjM1MSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwuMykiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIKIGZvbnQtc2l6ZT0iMTYiIGxldHRlci1zcGFjaW5nPSIyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QTEFUWkhBTFRFUiAmIzE4MzsgODAwJiMyMTU7NjAwPC90ZXh0Pgo8L3N2Zz4=" alt="Artikel drei" loading="lazy" decoding="async"></div><div class="karte__text"><span class="karte__nummer">03</span><h3>Artikel drei</h3><p data-auftritt>Kurzbeschreibung: was es ist, für wen, in welcher Einheit.</p></div></article></div><p class="slider__hinweis">Zum Blättern seitlich wischen &rarr;</p><div class="slider__steuer"><button class="slider__knopf" data-slider="zurueck" type="button" aria-label="Vorheriges">&#8592;</button><button class="slider__knopf" data-slider="vor" type="button" aria-label="Nächstes">&#8594;</button></div></div>
+</div></section>
+<section class="abschnitt abschnitt--versetzt" id="konditionen-und-logistik"><div class="bahn"><header class="abschnitt__kopf" data-auftritt><span class="marke">04</span><h2>Konditionen und Logistik</h2></header>
+<div class="fakten"><div class="fakt" data-auftritt style="--verzug:0ms"><span class="fakt__name">Liefereinheit</span><span class="fakt__wert">12 Stück im Display</span></div><div class="fakt" data-auftritt style="--verzug:60ms"><span class="fakt__name">Palette</span><span class="fakt__wert">48 Displays, eine Lage</span></div><div class="fakt" data-auftritt style="--verzug:120ms"><span class="fakt__name">Mindesthaltbarkeit</span><span class="fakt__wert">24 Monate</span></div><div class="fakt" data-auftritt style="--verzug:180ms"><span class="fakt__name">Lieferzeit ab Abruf</span><span class="fakt__wert">6 Wochen</span></div><div class="fakt" data-auftritt style="--verzug:240ms"><span class="fakt__name">Verpackung</span><span class="fakt__wert">FSC-zertifiziert, recyclingfähig</span></div></div>
+<div class="tabellenrahmen" data-auftritt><table><thead><tr><th>Artikel</th><th>EAN</th><th>VK-Empfehlung</th><th>Einheit</th></tr></thead><tbody><tr><td>Artikel eins</td><td>4000000000001</td><td>3,99 €</td><td>12er-Display</td></tr><tr><td>Artikel zwei</td><td>4000000000002</td><td>4,99 €</td><td>12er-Display</td></tr><tr><td>Artikel drei</td><td>4000000000003</td><td>5,99 €</td><td>6er-Display</td></tr></tbody></table></div>
+</div></section>
+<section class="abschnitt abschnitt--hell" id="unterst-tzung-am-regal"><div class="bahn"><header class="abschnitt__kopf" data-auftritt><span class="marke">05</span><h2>Unterstützung am Regal</h2></header>
+<div class="karten"><div data-auftritt style="--verzug:0ms"><article class="karte"><div class="karte__bild"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNjAwIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCI+CjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgo8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzYTNhM2EiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2YjZiNmIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIGZpbGw9InVybCgjZykiLz4KPGcgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwuMDgpIj4KPGNpcmNsZSBjeD0iNjI0IiBjeT0iMTU2IiByPSIxOTgiLz48Y2lyY2xlIGN4PSIxMjgiIGN5PSI0OTEiIHI9IjE0NCIvPjwvZz4KPHRleHQgeD0iNTAlIiB5PSI1MCUiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsLjU1KSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIgogZm9udC1zaXplPSI0NSIgZm9udC13ZWlnaHQ9ImJvbGQiIGxldHRlci1zcGFjaW5nPSI2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+RElTUExBWTwvdGV4dD4KPHRleHQgeD0iNTAlIiB5PSIzNTEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsLjMpIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiCiBmb250LXNpemU9IjE2IiBsZXR0ZXItc3BhY2luZz0iMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UExBVFpIQUxURVIgJiMxODM7IDgwMCYjMjE1OzYwMDwvdGV4dD4KPC9zdmc+" alt="Zweitplatzierung" loading="lazy" decoding="async"></div><div class="karte__text"><h3>Zweitplatzierung</h3><p data-auftritt>Display wird mitgeliefert, aufbaufertig, ohne Zusatzkosten.</p></div></article></div><div data-auftritt style="--verzug:90ms"><article class="karte"><div class="karte__text"><h3>Handzettel</h3><p data-auftritt>Druckfertige Motive, rechtzeitig vor dem Aktionstermin.</p></div></article></div><div data-auftritt style="--verzug:180ms"><article class="karte"><div class="karte__text"><h3>Nachschub</h3><p data-auftritt>Nachlieferung innerhalb von zwei Wochen ab Abruf.</p></div></article></div></div>
+</div></section>
+<section class="abschnitt" id="fahrplan-bis-zur-listung"><div class="bahn"><header class="abschnitt__kopf" data-auftritt><span class="marke">06</span><h2>Fahrplan bis zur Listung</h2></header>
+<div class="zeitplan"><div class="schritt" data-auftritt="seite" style="--verzug:0ms"><span class="schritt__zeit">KW 42</span><span class="schritt__was">Muster und Kalkulation beim Einkauf</span></div><div class="schritt" data-auftritt="seite" style="--verzug:110ms"><span class="schritt__zeit">KW 44</span><span class="schritt__was">Rückmeldung, Anpassung der Ausstattung</span></div><div class="schritt" data-auftritt="seite" style="--verzug:220ms"><span class="schritt__zeit">KW 47</span><span class="schritt__was">Listungsentscheidung</span></div><div class="schritt" data-auftritt="seite" style="--verzug:330ms"><span class="schritt__zeit">KW 02</span><span class="schritt__was">Anlieferung Zentrallager</span></div></div>
+</div></section>
+<section class="abschnitt abschnitt--dunkel" id="warum-cgt"><div class="bahn"><header class="abschnitt__kopf" data-auftritt><span class="marke">07</span><h2>Warum CGT</h2></header>
+<p data-auftritt>CGT bringt Lizenz, Produktion und Handel zusammen — und bleibt Ansprechpartner, bis die Ware im Regal steht.</p>
+<figure class="zitat" data-auftritt><div class="zitat__text">Die richtigen Themen erkennen – und erfolgreich ins Ziel bringen.</div><div class="zitat__quelle">Leitlinie CGT UG</div></figure>
+</div></section>
+
+<section class="abschnitt abschnitt--hell" id="kontakt"><div class="bahn"><div class="kontakt" data-auftritt><h3>Reden wir über die Listung.</h3><p>Muster, Kalkulation und Liefertermine klären wir in einem Termin — kurzfristig und ohne Umwege.</p><div class="knopfreihe"><a class="knopf knopf--voll" href="mailto:sascha@helpingbrands.de?subject=Musterlizenz%20Pflegeserie%20%E2%80%94%20R%C3%BCckfrage">Gespräch vereinbaren</a></div><p style="margin-top:22px;font-size:.88rem">Sascha Coldewey &middot; CGT UG</p></div></div></section>
+</main>
+
+<!-- ===== Fusszeile: auf allen Projektseiten gleich ===== -->
+<footer class="fuss">
+  <div class="bahn">
+    <div class="fuss__zeile">
+      <div><span class="fuss__marke">CGT UG</span>Coldewey Goetz Trade<br>Biebricher Allee 36 · 65187 Wiesbaden<br>Amtsgericht Wiesbaden · HRB 35897</div>
+      <div>Geschäftsführung: Sascha Coldewey, Thomas Goetz<br><a href="mailto:sascha@helpingbrands.de">sascha@helpingbrands.de</a></div>
+    </div>
+    <div class="fuss__recht">
+      <span>&copy; 2026 CGT UG (haftungsbeschränkt)</span>
+      <span>Vertraulich — nur für den genannten Empfänger</span>
+      <span>9. Oktober 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ==========================================================================
+   CGT Pitch — Bewegung
+   Scroll-Einblendungen, Parallax, hochzählende Kennzahlen, Slider, Fortschritt.
+   Kein Framework, keine externen Abhängigkeiten.
+   Wer "Bewegung reduzieren" im Betriebssystem eingestellt hat, bekommt alles
+   sofort und statisch — das ist Absicht.
+   ========================================================================== */
+(function () {
+  "use strict";
+
+  document.documentElement.classList.remove("kein-js");
+
+  var ruhig = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------------------------------------------------------------- Auftritt
+     Alles mit data-auftritt blendet ein, sobald es ins Bild kommt. */
+  function auftritteStarten() {
+    var teile = document.querySelectorAll("[data-auftritt]");
+    if (ruhig || !("IntersectionObserver" in window)) {
+      teile.forEach(function (el) { el.classList.add("ist-sichtbar"); });
+      return;
+    }
+    var beobachter = new IntersectionObserver(function (eintraege) {
+      eintraege.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.classList.add("ist-sichtbar");
+        beobachter.unobserve(e.target);
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+
+    teile.forEach(function (el) { beobachter.observe(el); });
+  }
+
+  /* ---------------------------------------------------------------- Parallax
+     Hero- und Bandbilder laufen langsamer als die Seite.
+     Läuft über requestAnimationFrame, nicht im Scroll-Ereignis. */
+  function parallaxStarten() {
+    var ebenen = Array.prototype.slice.call(
+      document.querySelectorAll("[data-parallax]")
+    );
+    if (ruhig || !ebenen.length) return;
+    if (window.matchMedia("(pointer: coarse)").matches && window.innerWidth < 600) {
+      /* Auf kleinen Touch-Geräten kostet Parallax mehr als es bringt. */
+      return;
+    }
+
+    var laeuft = false;
+
+    function zeichnen() {
+      laeuft = false;
+      var hoehe = window.innerHeight;
+      ebenen.forEach(function (ebene) {
+        var kasten = ebene.parentElement.getBoundingClientRect();
+        if (kasten.bottom < -200 || kasten.top > hoehe + 200) return;
+        var tempo = parseFloat(ebene.getAttribute("data-parallax")) || 0.25;
+        var mitte = kasten.top + kasten.height / 2 - hoehe / 2;
+        ebene.style.transform = "translate3d(0," + (-mitte * tempo).toFixed(2) + "px,0)";
+      });
+    }
+
+    function anstossen() {
+      if (laeuft) return;
+      laeuft = true;
+      window.requestAnimationFrame(zeichnen);
+    }
+
+    window.addEventListener("scroll", anstossen, { passive: true });
+    window.addEventListener("resize", anstossen);
+    zeichnen();
+  }
+
+  /* -------------------------------------------------------------- Kennzahlen
+     Zahlen zählen beim ersten Sichtkontakt hoch. Alles, was keine reine Zahl
+     ist (z. B. "ab 2027"), bleibt wie es ist. */
+  function kennzahlenStarten() {
+    var werte = document.querySelectorAll("[data-zaehlen]");
+    if (!werte.length) return;
+
+    function zaehlen(el) {
+      var roh = el.getAttribute("data-zaehlen");
+      var zahl = parseFloat(roh.replace(/\./g, "").replace(",", "."));
+      if (isNaN(zahl)) { el.textContent = el.getAttribute("data-fertig"); return; }
+
+      var vor = el.getAttribute("data-vor") || "";
+      var nach = el.getAttribute("data-nach") || "";
+      var nachkomma = (roh.split(",")[1] || "").length;
+      var dauer = 1100;
+      var start = null;
+
+      function schritt(jetzt) {
+        if (start === null) start = jetzt;
+        var p = Math.min((jetzt - start) / dauer, 1);
+        var weich = 1 - Math.pow(1 - p, 3);
+        var aktuell = zahl * weich;
+        el.textContent = vor + aktuell.toLocaleString("de-DE", {
+          minimumFractionDigits: nachkomma,
+          maximumFractionDigits: nachkomma,
+          useGrouping: el.getAttribute("data-gruppiert") === "1"
+        }) + nach;
+        if (p < 1) window.requestAnimationFrame(schritt);
+      }
+      window.requestAnimationFrame(schritt);
+    }
+
+    if (ruhig || !("IntersectionObserver" in window)) {
+      werte.forEach(function (el) { el.textContent = el.getAttribute("data-fertig"); });
+      return;
+    }
+
+    var beobachter = new IntersectionObserver(function (eintraege) {
+      eintraege.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        zaehlen(e.target);
+        beobachter.unobserve(e.target);
+      });
+    }, { threshold: 0.5 });
+
+    werte.forEach(function (el) { beobachter.observe(el); });
+  }
+
+  /* ------------------------------------------------------------------- Kopf
+     Kopfzeile wird fest, sobald man den Hero verlässt. Dazu der
+     Lesefortschritt als dünner Balken. */
+  function kopfStarten() {
+    var kopf = document.querySelector(".kopf");
+    var balken = document.querySelector(".fortschritt");
+    if (!kopf) return;
+
+    var laeuft = false;
+
+    function zeichnen() {
+      laeuft = false;
+      var y = window.scrollY || window.pageYOffset;
+      kopf.classList.toggle("ist-geklebt", y > window.innerHeight * 0.55);
+      if (balken) {
+        var gesamt = document.documentElement.scrollHeight - window.innerHeight;
+        var anteil = gesamt > 0 ? Math.min(y / gesamt, 1) : 0;
+        balken.style.width = (anteil * 100).toFixed(1) + "%";
+      }
+    }
+
+    function anstossen() {
+      if (laeuft) return;
+      laeuft = true;
+      window.requestAnimationFrame(zeichnen);
+    }
+
+    window.addEventListener("scroll", anstossen, { passive: true });
+    window.addEventListener("resize", anstossen);
+    zeichnen();
+  }
+
+  /* ----------------------------------------------------------------- Slider
+     Auf dem Handy wischt man. Am Desktop gibt es zwei Pfeile. */
+  function sliderStarten() {
+    document.querySelectorAll(".slider").forEach(function (slider) {
+      var spur = slider.querySelector(".slider__spur");
+      var zurueck = slider.querySelector("[data-slider='zurueck']");
+      var vor = slider.querySelector("[data-slider='vor']");
+      if (!spur || !zurueck || !vor) return;
+
+      function schrittweite() {
+        var erstes = spur.firstElementChild;
+        if (!erstes) return spur.clientWidth;
+        var luecke = parseFloat(getComputedStyle(spur).columnGap) || 16;
+        return erstes.getBoundingClientRect().width + luecke;
+      }
+
+      function knoepfePruefen() {
+        var maximal = spur.scrollWidth - spur.clientWidth - 2;
+        var steuer = slider.querySelector(".slider__steuer");
+        /* Passt alles ins Bild, braucht es keine Pfeile. */
+        if (steuer) steuer.style.display = maximal > 2 ? "" : "none";
+        zurueck.disabled = spur.scrollLeft <= 2;
+        vor.disabled = spur.scrollLeft >= maximal;
+      }
+
+      zurueck.addEventListener("click", function () {
+        spur.scrollBy({ left: -schrittweite(), behavior: ruhig ? "auto" : "smooth" });
+      });
+      vor.addEventListener("click", function () {
+        spur.scrollBy({ left: schrittweite(), behavior: ruhig ? "auto" : "smooth" });
+      });
+      spur.addEventListener("scroll", knoepfePruefen, { passive: true });
+      window.addEventListener("resize", knoepfePruefen);
+      knoepfePruefen();
+    });
+  }
+
+  /* --------------------------------------------------------------- Startschuss */
+  function los() {
+    auftritteStarten();
+    parallaxStarten();
+    kennzahlenStarten();
+    kopfStarten();
+    sliderStarten();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", los);
+  } else {
+    los();
+  }
+})();
+
+</script>
+</body>
+</html>

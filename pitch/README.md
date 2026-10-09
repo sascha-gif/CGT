@@ -69,8 +69,10 @@ pitch/
 │   └── <projektname>/
 │       ├── inhalt.md            der ganze Inhalt dieses Projekts
 │       └── bilder/              die Bilder dieses Projekts
-└── site/                        ERZEUGT — hier liegt das Ergebnis
-    └── <slug>/index.html
+├── site/                        ERZEUGT — Fassung für den Server
+│   └── <slug>/index.html        (+ assets/ und bilder/ daneben)
+└── vorschau/                    ERZEUGT — alles in je einer Datei
+    └── <slug>.html              (zum Anschauen und Verschicken)
 ```
 
 Die Seite bauen:
@@ -83,8 +85,17 @@ python3 bauen.py mein-projekt         # nur eines bauen
 python3 bauen.py --uebersicht         # zusätzlich interne Startseite
 ```
 
-Ansehen: `pitch/site/<slug>/index.html` im Browser öffnen. Es braucht keinen
-Server.
+**Ansehen — zwei Dateien, und nur eine funktioniert per Doppelklick:**
+
+| Datei | wofür |
+|---|---|
+| **`pitch/vorschau/<slug>.html`** | **Zum Anschauen und Verschicken.** Eine einzige Datei, in der Stylesheet, Skript und alle Bilder eingebacken sind. Doppelklick genügt, funktioniert ohne Internet, lässt sich per Mail anhängen. |
+| `pitch/site/<slug>/index.html` | Für den Server. Braucht die Ordner `assets/` und `bilder/` daneben — allein geöffnet fehlt das Aussehen. |
+
+Wer `site/index.html` allein öffnet oder einzeln herunterlädt, sieht nur den
+nackten Text. Das ist kein Fehler: CSS und Bilder liegen bewusst als eigene
+Dateien daneben, weil ein Server sie einzeln und zwischengespeichert
+ausliefert. **Zum Anschauen also immer die Datei aus `vorschau/`.**
 
 **`site/` nie von Hand bearbeiten.** Der nächste Build überschreibt alles.
 Geändert wird immer `inhalt.md`.

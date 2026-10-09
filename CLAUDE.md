@@ -100,7 +100,11 @@ Fragt jemand nach einer **neuen Pitch-Seite für einen Kunden**, gilt
 2. Bilder nach `pitch/projekte/<projektname>/bilder/` legen
 3. `inhalt.md` aus den gelieferten Texten und Zahlen füllen
 4. `python3 bauen.py <projektname>`
-5. Ergebnis liegt in `pitch/site/<slug>/index.html`
+5. Ergebnis liegt zweifach vor:
+   - `pitch/vorschau/<slug>.html` — **alles in einer Datei**, zum Anschauen und
+     Verschicken. Diese Datei nennen, wenn jemand die Seite sehen will.
+   - `pitch/site/<slug>/index.html` — Fassung für den Server, braucht die
+     Ordner `assets/` und `bilder/` daneben
 
 Den **Zufallsteil im `slug` nie nachträglich ändern** — sonst sind bereits
 verschickte Links tot. Vor dem Versand an einen Einkäufer `status:` von
