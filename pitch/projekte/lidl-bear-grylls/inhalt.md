@@ -16,6 +16,7 @@ mail:              thomas.goetz@cg-trade.de
 hero-bild:         bilder/keyart-hero.jpg
 hero-position:     22% center
 marken-logo:       bilder/bgya-logo-weiss.png
+partner-logo:      bilder/lidl-marke.png
 akzent:            #F3712C
 
 abschluss-titel:   Lassen Sie uns das gemeinsam bauen.
@@ -36,22 +37,43 @@ das Produkt macht sie greifbar, das Erlebnis gibt der Familie einen Grund
 mitzumachen.
 
 
-## Warum Bear Grylls {hell, versetzt}
+## Wer Bear Grylls ist {hell}
 
-::: belege
-Fernsehreichweite kumuliert, in über 200 Ländern und Territorien | 2 Mrd. | Bear Grylls Young Adventurer, Lizenzunterlagen YBG Films Ltd, 2025
-Pfadfinder weltweit, deren erster Global Scout Ambassador er ist | 60 Mio. | YBG Films Ltd, 2025
-Follower über alle Plattformen, Schwerpunkte UK, USA, Indien, China | 23 Mio. | YBG Films Ltd, 2025
-Verkaufte Bücher in 30 Sprachen | 20 Mio. | YBG Films Ltd, 2025
+::: reiter
+### Der Mann
+bild: bilder/bear-live.jpg
+Ehemaliger Soldat einer britischen Spezialeinheit, Everest-Besteiger, Autor und Fernsehabenteurer. Seit zwanzig Jahren dieselbe Rolle: der Mann, der zeigt, wie man durchkommt.
+
+Von Juli 2009 bis September 2024 **Chief Scout des Vereinigten Königreichs** — der jüngste je ernannte, nach Baden-Powell der am zweitlängsten amtierende. Seit 2018 **erster Chief Ambassador of World Scouting**.
+
+Botschafter des Tusk Trust. Sein Satz unter jeder Unterschrift: *Never give up.*
+
+### Die Reichweite
+Über **zwei Milliarden** Fernsehzuschauer in mehr als **200 Ländern und Territorien**. **23 Millionen** Follower über alle Plattformen, mit Schwerpunkten in Großbritannien, den USA, Indien und China. **20 Millionen** verkaufte Bücher in 30 Sprachen.
+
+Ausgestrahlt wurde er unter anderem bei Netflix, BBC, Discovery, National Geographic, NBC, ITV, Disney und Apple TV+.
+
+### Warum das für Familien zählt
+Als Galionsfigur für **60 Millionen Pfadfinder** weltweit steht er nicht für Hype, sondern für Haltung: Draußen sein, nicht aufgeben, einander helfen.
+
+Das ist der Unterschied zu einer beliebigen Lizenzfigur. Eltern müssen bei dieser Marke nicht überlegen, ob sie dazu passt — sie kennen sie und sie vertrauen ihr.
 :::
 
-Ausgestrahlt wurde er unter anderem bei Netflix, BBC, Discovery, National
-Geographic, NBC, ITV, Disney und Apple TV+. „Man vs. Wild" allein erreichte
-1,2 Milliarden Zuschauer.
 
-**Wichtiger als jede Reichweite:** Als Chief Scout und erster Global Scout
-Ambassador steht er für Haltung, nicht für Hype. Eltern müssen bei dieser Marke
-nicht überlegen.
+## Was er gedreht hat
+
+::: galerie drei
+![Man vs Wild — 1,2 Mrd. Zuschauer weltweit](bilder/show-manvswild.jpg)
+![Running Wild — 120 Mio. Zuschauer in den USA](bilder/show-runningwild.jpg)
+![Absolute China — drittplatzierte Sendung in China](bilder/show-china.jpg)
+![You vs Wild — 25 Mio. Abrufe in 28 Tagen, zwei Emmys](bilder/show-youvswild.jpg)
+![World's Toughest Race — zum Start Platz 1 auf Amazon Prime](bilder/show-toughestrace.jpg)
+![The Island — 110 Mio. Zuschauer in Europa](bilder/show-island.jpg)
+:::
+
+Dazu zwei Netflix-Produktionen, die zum Start jeweils auf **Platz 1** standen:
+*Celebrity Bear Hunt* und *Animals on the Loose*. Eine einzige YouTube-Folge mit
+dem indischen Premierminister erreichte **3,6 Milliarden Online-Impressionen**.
 
 
 ::: kapitel bilder/keyart-band.jpg
@@ -63,19 +85,30 @@ Animationsfilme, die auf einen Starttermin warten.
 :::
 
 
-## Was die Filme erzählen
+## Die Geschichte
 
-**Bear Grylls Young Adventurer** erzählt von der *Green Squad* — einem
-fünfköpfigen Einsatzteam in einer verdeckten Rettungsorganisation, die
-ausschließlich von Kindern geführt wird: dem Secret Ops Squad. Der neueste
-Rekrut ist ein vierzehnjähriger Bear Grylls.
+!! **Green Squad** — ein fünfköpfiges Einsatzteam in einer verdeckten
+Rettungsorganisation, die ausschließlich von Kindern geführt wird: dem
+**Secret Ops Squad**.
+
+Der neueste Rekrut ist ein vierzehnjähriger Bear Grylls. Ein eher gewöhnlicher
+Junge — unsicher, in der Schule gelangweilt —, bis er rekrutiert wird. Erzählt
+wird, wie er seinen Platz im Team findet: waghalsige Rettungen, extreme
+Schauplätze, knappes Überleben und Freundschaften, die halten.
+
+Schnell, komisch und spannend. Für Bears junge Fans die Vorgeschichte zu dem
+Mann, den sie aus dem Fernsehen kennen.
 
 ::: karten zwei
-### Endangered — 91 Minuten
-Schauplatz: die Dschungel von Borneo und Sumatra. Bear tauscht das Klassenzimmer gegen den Regenwald und steht an vorderster Front gegen Abholzung und Artensterben. Nashörner, Raubtiere und ein paar zu freundliche Orang-Utans.
+### Endangered · 91 Minuten
+Schauplatz: die Dschungel von Borneo und Sumatra. Bear tauscht das Klassenzimmer gegen den Regenwald und steht an vorderster Front gegen Abholzung und Artensterben. Tödliche Raubtiere, ein wütendes Nashorn und ein paar zu freundliche Orang-Utans.
 
-### Icebreaker — 96 Minuten
-Schauplatz: Sibirien und der Polarkreis. Ein abgestürztes Frachtflugzeug, Menschenleben in Gefahr, Whiteout-Stürme und Wölfe. Diesmal muss die Green Squad vor allem sich selbst retten.
+Die härteste Prüfung ist eine andere: Bear muss seine Teamkameraden — und sich selbst — davon überzeugen, dass er in die Truppe gehört.
+
+### Icebreaker · 96 Minuten
+Schauplatz: Sibirien und der Polarkreis. Ein abgestürztes Frachtflugzeug, Menschenleben in Gefahr und die Uhr läuft, bei Temperaturen weit unter null.
+
+Dazu Whiteout-Stürme, Wölfe und eine Lawine. Diesmal muss die Green Squad vor allem eines: sich selbst retten.
 :::
 
 !! **Der Vorschlag:** ein exklusives Ansichtsfenster für Lidl-Kundinnen und
@@ -94,12 +127,21 @@ Schauplatz: Sibirien und der Polarkreis. Ein abgestürztes Frachtflugzeug, Mensc
 !! Hier entsteht der eigentliche Wert. Nicht in der Lizenz, sondern in der
 Verbindung von Regal, App und Film.
 
-::: zeitplan
-Schritt 1 | Die Kampagne im Markt entdecken — Aktionsfläche, Handzettel, Regal
-Schritt 2 | Aktionsprodukte kaufen
-Schritt 3 | QR-Code einlösen und den Zugang über Lidl Plus erhalten
-Schritt 4 | Den Film zu Hause gemeinsam ansehen
-Schritt 5 | Zurückkommen für das nächste Abenteuer
+::: bildwand bilder/lidl-plus-foto.jpg
+### Entdecken
+Die Kampagne im Markt: Aktionsfläche, Handzettel, Regal.
+
+### Kaufen
+Aktionsprodukte mitnehmen — die Schwelle entscheidet über die Wirkung.
+
+### Freischalten
+QR-Code einlösen, Zugang über Lidl Plus erhalten.
+
+### Ansehen
+Den Film zu Hause gemeinsam schauen. Kein Streamingdienst dazwischen.
+
+### Wiederkommen
+Zurück in den Markt für das nächste Abenteuer.
 :::
 
 ::: belege
@@ -140,6 +182,37 @@ Gemessen wird der Pilot an inkrementellen Ergebnissen — nicht an Reichweitenza
 :::
 
 
+## Die Marke steht nicht allein
+
+::: reiter
+### Das Franchise
+Hinter den beiden Filmen steht ein ausgearbeitetes Franchise: Animationsserie, Live-Action-Film, Spielzeug und Konstruktionsspielzeug, Bekleidung und Schuhe, Outdoor-Ausrüstung, Verlagsprogramm, Gaming, robuste Smartphones, Food und Nutrition, Musik, Adventure Travel sowie Erlebniszentren und Themenparks.
+
+Für Lidl heißt das: Eine Aktion kann wachsen, statt nach einer Saison zu verpuffen.
+
+### Bestehende Partner
+**Jack Wolfskin** — eine globale Zusammenarbeit mit eigenem „Discovery Team". Eine deutsche Outdoor-Marke, die dieselbe Zielgruppe anspricht.
+
+**Luminox** — offizieller Uhrenpartner, Schweizer Abenteueruhren.
+
+Beide zeigen, dass die Marke im Handel funktioniert und Partner findet, die etwas zu verlieren haben.
+
+### Erlebnisse, die es gibt
+Die **Survival Academy** arbeitet weltweit. In Großbritannien laufen **The Bear Grylls Adventure** und das Festival **Gone Wild**. In China ist ein Themenpark in Planung.
+
+Das ist keine Idee für später, sondern eine bestehende Infrastruktur, an die sich eine Handelskampagne anhängen kann.
+:::
+
+::: belege
+Europäischer Markt für Outdoor-Ausrüstung, 2025 | 21,7 Mrd. € | Lizenzunterlagen YBG Films Ltd, 2025; Prognose +7,5 % jährlich bis 2030
+Globaler Markt für Fertiggerichte, Prognose 2031 | 231 Mrd. $ | Lizenzunterlagen YBG Films Ltd, 2025 (2022: 140 Mrd. £)
+:::
+
+Für die Lebensmittelschiene laufen bereits Gespräche mit großen Supermärkten;
+der Start ist in Großbritannien vorgesehen. **Wer früh einsteigt, bestimmt
+mit, wie die Marke im Handel aussieht.**
+
+
 ## Was wir vorschlagen
 
 ::: zeitplan
@@ -151,9 +224,3 @@ Fünftens | Einen kommerziell belastbaren Launchplan bauen
 :::
 
 Ein Familienabenteuer, das bei Lidl beginnt — und weit darüber hinausgeht.
-
-::: formular
-titel: Sagen Sie uns, was Sie brauchen
-knopf: Nachricht senden
-Einen Termin, die Unterlagen zur Lizenz oder eine Rechteauskunft — schreiben Sie kurz, worum es geht.
-:::

@@ -274,6 +274,19 @@ body.schema-dunkel::selection, body.schema-dunkel *::selection {
 
 .hero__logo { height: 46px; width: auto; margin-bottom: 30px; }
 
+/* Doppel aus Empfaenger- und Markenlogo */
+.hero__paar {
+  display: flex; align-items: center; flex-wrap: wrap;
+  gap: 14px 18px; margin-bottom: 30px;
+}
+.hero__paar .hero__logo { margin-bottom: 0; }
+.hero__logo--partner { height: 60px; border-radius: 6px; }
+.hero__mal {
+  font-family: var(--schrift); font-weight: 300;
+  font-size: 1.5rem; line-height: 1;
+  color: rgba(255,255,255,.45);
+}
+
 .hero h1 { color: #fff; margin-bottom: .25em; }
 
 .hero__claim {
@@ -943,7 +956,9 @@ th {
   body { font-size: 18px; }
   .abschnitt { padding-block: 76px; }
   .hero { padding-bottom: 92px; }
-  .hero__logo { height: 60px; }
+  .hero__logo { height: 56px; }
+  .hero__logo--partner { height: 78px; }
+  .hero__mal { font-size: 1.9rem; }
   .hero__fuss { flex-direction: row; gap: 10px 32px; }
   .hero__runter { display: block; }
   .kopf__logo span { display: inline; }
@@ -975,6 +990,8 @@ th {
   .slider__steuer { display: flex; }
   .slider__hinweis { display: none; }
   .galerie { grid-template-columns: repeat(4, 1fr); }
+  .galerie--drei { grid-template-columns: repeat(3, 1fr); }
+  .galerie--zwei { grid-template-columns: repeat(2, 1fr); }
   .prospekt__blatt { grid-template-columns: repeat(3, 1fr); }
   .beleg { grid-template-columns: 240px 1fr; }
 

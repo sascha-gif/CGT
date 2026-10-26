@@ -508,7 +508,12 @@ def block_rendern(name, argument, zeilen):
             )
         if not bilder:
             return ""
-        return '<div class="galerie">%s</div>' % "".join(bilder)
+        zusatz = ""
+        if argument.strip() in ("drei", "3"):
+            zusatz = " galerie--drei"
+        elif argument.strip() in ("zwei", "2"):
+            zusatz = " galerie--zwei"
+        return '<div class="galerie%s">%s</div>' % (zusatz, "".join(bilder))
 
     # --- Parallaxband:  ::: parallax bilder/x.jpg
     if name in ("parallax", "band"):
@@ -940,9 +945,21 @@ def seite_bauen(felder, koerper, vorlage_html, sprungmarken=()):
                (";background-position:%s" % sicher(hero_pos)) if hero_pos else "")
         )
 
+    # Markenlogo im Hero. Ist zusaetzlich ein Partnerlogo gesetzt, entsteht
+    # ein Doppel: Partner (der Empfaenger) links, Marke rechts.
     markenlogo = felder.get("marken-logo", "").strip()
+    partnerlogo = felder.get("partner-logo", "").strip()
     logo_html = ""
-    if markenlogo:
+    if markenlogo and partnerlogo:
+        logo_html = (
+            '<div class="hero__paar" data-auftritt>'
+            '<img class="hero__logo hero__logo--partner" src="%s" alt="%s">'
+            '<span class="hero__mal" aria-hidden="true">&times;</span>'
+            '<img class="hero__logo" src="%s" alt="%s"></div>'
+            % (sicher(partnerlogo), sicher(kunde or "Partner"),
+               sicher(markenlogo), sicher(felder.get("marke", projekt)))
+        )
+    elif markenlogo:
         logo_html = ('<img class="hero__logo" src="%s" alt="%s" data-auftritt>'
                      % (sicher(markenlogo), sicher(felder.get("marke", projekt))))
 
@@ -1190,7 +1207,7 @@ def bilder_pruefen(projektordner, felder, roh):
     """Warnt, wenn eine Bilddatei referenziert wird, die es nicht gibt."""
     verwiesen = set(re.findall(r"!\[[^\]]*\]\(([^)]+)\)", roh))
     verwiesen |= set(re.findall(r"^\s*bild:\s*(.+)$", roh, re.I | re.M))
-    for schluessel in ("hero-bild", "herobild", "marken-logo"):
+    for schluessel in ("hero-bild", "herobild", "marken-logo", "partner-logo"):
         if felder.get(schluessel):
             verwiesen.add(felder[schluessel])
     for block in re.findall(r":::\s*(?:parallax|band)\s+(\S+)", roh):
