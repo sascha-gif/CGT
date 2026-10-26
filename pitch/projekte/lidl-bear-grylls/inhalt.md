@@ -7,7 +7,7 @@ marke:             Bear Grylls Young Adventurer
 claim:             Zwei fertige Animationsfilme, eine weltbekannte Figur — und Lidl Plus als Schlüssel. Ein Abenteuer, das Familien sehen, kaufen und erleben.
 kanal:             Strategische Partnerschaft · Konzeptentwurf
 datum:             2026-10-26
-status:            entwurf
+status:            freigegeben
 schema:            dunkel
 
 ansprechpartner:   Thomas Goetz
@@ -21,13 +21,6 @@ akzent:            #F3712C
 abschluss-titel:   Lassen Sie uns das gemeinsam bauen.
 abschluss-text:    Eine fokussierte Arbeitssitzung mit Ihrem Team — strategische Passung klären, Rechteprüfung beauftragen, Pilotmarkt festlegen.
 ---
-
-::: hinweis
-**Vertraulich · Diskussionsentwurf, Stand 26. Oktober 2026.** Grundlage sind die
-Lizenzunterlagen zu *Bear Grylls Young Adventurer* (YBG Films Ltd, 2025) und das
-Partnerschaftskonzept der CGT UG. Nicht zur Weitergabe bestimmt.
-:::
-
 
 ## Die Gelegenheit
 
@@ -43,7 +36,7 @@ das Produkt macht sie greifbar, das Erlebnis gibt der Familie einen Grund
 mitzumachen.
 
 
-## Warum Bear Grylls {hell}
+## Warum Bear Grylls {hell, versetzt}
 
 ::: belege
 Fernsehreichweite kumuliert, in über 200 Ländern und Territorien | 2 Mrd. | Bear Grylls Young Adventurer, Lizenzunterlagen YBG Films Ltd, 2025
@@ -88,6 +81,13 @@ Schauplatz: Sibirien und der Polarkreis. Ein abgestürztes Frachtflugzeug, Mensc
 !! **Der Vorschlag:** ein exklusives Ansichtsfenster für Lidl-Kundinnen und
 -Kunden — vorbehaltlich Rechten, Territorien und technischer Machbarkeit.
 
+// VIDEO: Sobald eine Trailerdatei vorliegt, hier die beiden Schraegstriche
+// entfernen und die Datei als bilder/trailer.mp4 ablegen.
+// ::: video bilder/trailer.mp4
+// poster: bilder/keyart-hero.jpg
+// titel: Endangered — Trailer
+// :::
+
 
 ## Der Mechanismus: Lidl Plus
 
@@ -111,49 +111,33 @@ Einkaufsschwellen, Teilnahmebedingungen und der Schutz von Kinderdaten. Das
 gehört in die Machbarkeitsprüfung, nicht in eine Präsentation.
 
 
-## Die Produkte {hell}
+## Was daraus entsteht {hell}
 
-!! Schmal starten, nicht breit. Eine eng kuratierte Kollektion schlägt ein
-großes Sortiment ohne Haltung.
+::: reiter
+### Die Produkte
+Schmal starten, nicht breit. Eine eng kuratierte Kollektion schlägt ein großes Sortiment ohne Haltung.
 
 - **Kinder-Explorerjacken** und praktische Familienbekleidung
 - **Rucksäcke** und **Trinkflaschen**
 - **Camping-Basics** und **Outdoor-Spiele**
 - **Ausgewählte Snacks** aus der Mission-Food-Linie
 
-Jedes Produkt braucht einen klaren Preispunkt und einen glaubwürdigen Grund zu
-existieren. Was beides nicht hat, kommt nicht in die Kollektion.
+Jedes Produkt braucht einen klaren Preispunkt und einen glaubwürdigen Grund zu existieren. Gemeinsame Entwicklung ist ausdrücklich vorgesehen: Lidl kennt Preislagen und Fläche, die Lizenzseite bringt Figur, Bildwelt und Geschichte.
 
-Gemeinsame Entwicklung ist dabei ausdrücklich vorgesehen: Lidl kennt die
-Preislagen und die Fläche, die Lizenzseite bringt Figur, Bildwelt und Geschichte.
-
-
-## Raus aus dem Markt
-
-Familien-Abenteuerwochenenden. Naturchallenges. Ferienaktionen. Sorgfältig
-gestaltete Gewinnerlebnisse.
+### Das Erlebnis
+Familien-Abenteuerwochenenden. Naturchallenges. Ferienaktionen. Sorgfältig gestaltete Gewinnerlebnisse.
 
 Die Kampagne soll Erinnerungen schaffen, nicht Impressionen zählen.
 
-Darüber hinaus — ausdrücklich als Zusatz, nicht als Fundament — ließe sich das
-Thema mit bestehenden Lidl-Initiativen zu Nachhaltigkeit und Familie verbinden.
-Ein konkretes Programm wäre mit Ihrem CSR-Team zu entwickeln, mit messbaren
-Ergebnissen und belegbaren Umweltaussagen. Das Kerngeschäft aus Film, Produkt
-und Erlebnis trägt auch ohne das.
+Darüber hinaus — ausdrücklich als Zusatz, nicht als Fundament — ließe sich das Thema mit bestehenden Lidl-Initiativen zu Nachhaltigkeit und Familie verbinden. Ein konkretes Programm wäre mit Ihrem CSR-Team zu entwickeln, mit messbaren Ergebnissen und belegbaren Umweltaussagen.
 
+### Der Geschäftsnutzen
+**Für Lidl:** Kategorieumsatz und Frequenz. Kundenbindung über Lidl Plus. Eine unverwechselbare Markenerzählung in den Schlüsselmärkten — etwas, das kein Wettbewerber einfach nachkaufen kann.
 
-## Was das für Lidl bringt {dunkel}
+**Für die Rechteinhaber:** Lizenzwert, Filmreichweite und die Perspektive auf ein dauerhaftes Franchise statt einer einmaligen Aktion.
 
-::: karten zwei
-### Für Lidl
-Kategorieumsatz und Frequenz. Kundenbindung über Lidl Plus. Eine unverwechselbare Markenerzählung in den Schlüsselmärkten — etwas, das kein Wettbewerber einfach nachkaufen kann.
-
-### Für die Rechteinhaber
-Lizenzwert, Filmreichweite und die Perspektive auf ein dauerhaftes Franchise statt einer einmaligen Aktion.
+Gemessen wird der Pilot an inkrementellen Ergebnissen — nicht an Reichweitenzahlen in einer Abschlusspräsentation.
 :::
-
-**Gemessen wird der Pilot an inkrementellen Ergebnissen** — nicht an
-Reichweitenzahlen in einer Abschlusspräsentation.
 
 
 ## Was wir vorschlagen
@@ -167,9 +151,6 @@ Fünftens | Einen kommerziell belastbaren Launchplan bauen
 :::
 
 Ein Familienabenteuer, das bei Lidl beginnt — und weit darüber hinausgeht.
-
-
-## Rückmeldung
 
 ::: formular
 titel: Sagen Sie uns, was Sie brauchen

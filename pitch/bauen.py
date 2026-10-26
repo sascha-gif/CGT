@@ -32,14 +32,17 @@ PROJEKTE = os.path.join(WURZEL, "projekte")
 AUSGABE  = os.path.join(WURZEL, "site")
 VORSCHAU = os.path.join(WURZEL, "vorschau")
 
-BILD_ENDUNGEN = (".jpg", ".jpeg", ".png", ".webp", ".avif", ".gif", ".svg")
+BILD_ENDUNGEN = (".jpg", ".jpeg", ".png", ".webp", ".avif", ".gif", ".svg",
+                 ".mp4", ".webm", ".m4v")
 
 # Fuer die Einzeldatei: welcher Dateityp wird wie eingebettet
 MIME = {
     ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png",
     ".webp": "image/webp", ".avif": "image/avif", ".gif": "image/gif",
     ".svg": "image/svg+xml",
+    ".mp4": "video/mp4", ".webm": "video/webm", ".m4v": "video/mp4",
 }
+VIDEO_ENDUNGEN = (".mp4", ".webm", ".m4v")
 
 # Wird nach site/vercel.json geschrieben. X-Robots-Tag haelt die Seiten
 # zusaetzlich zum Meta-Tag aus den Suchmaschinen heraus.
@@ -517,6 +520,76 @@ def block_rendern(name, argument, zeilen):
             '<section class="band">%s<div class="band__schleier"></div>'
             '<div class="bahn">%s</div></section>'
             % (bild, text_rendern(zeilen))
+        )
+
+    # --- Reiter: Inhalte nebeneinander statt untereinander. Spart Hoehe.
+    #     Funktioniert ohne JavaScript ueber versteckte Radioschalter.
+    if name in ("reiter", "tabs"):
+        punkte = karten_lesen(zeilen)
+        if not punkte:
+            return ""
+        block_rendern.zaehler = getattr(block_rendern, "zaehler", 0) + 1
+        gruppe = "rt%d" % block_rendern.zaehler
+
+        # Die Schalter muessen direkte Geschwister der Blaetter sein, sonst
+        # findet die ~-Regel sie nicht. Beschriftungen stehen getrennt davon
+        # in der Leiste und greifen ueber "for" auf die Schalter zu.
+        schalter, knoepfe, blaetter, regeln = [], [], [], []
+        for i, k in enumerate(punkte):
+            kennung = "%s-%d" % (gruppe, i)
+            schalter.append(
+                '<input class="reiter__schalter" type="radio" name="%s" id="%s"%s>'
+                % (gruppe, kennung, " checked" if i == 0 else "")
+            )
+            knoepfe.append(
+                '<label class="reiter__knopf" for="%s">%s</label>'
+                % (kennung, inline(k["titel"]))
+            )
+            bild = ""
+            if k["bild"]:
+                bild = ('<figure class="reiter__bild"><img src="%s" alt="%s" '
+                        'loading="lazy" decoding="async"></figure>'
+                        % (sicher(k["bild"]), sicher(k["titel"])))
+            # Zwei Spalten nur, wenn es ein Bild gibt - sonst stuende rechts
+            # eine leere Haelfte.
+            blaetter.append(
+                '<div class="reiter__blatt%s" data-fuer="%s">%s<div>%s</div></div>'
+                % (" reiter__blatt--mit-bild" if bild else "", kennung, bild,
+                   text_rendern(k["text"]))
+            )
+            regeln.append('#%s:checked~[data-fuer="%s"]{display:grid}' % (kennung, kennung))
+            regeln.append('#%s:checked~.reiter__leiste label[for="%s"]'
+                          '{color:var(--tinte);border-color:var(--akzent)}'
+                          % (kennung, kennung))
+
+        return (
+            '<div class="reiter" data-auftritt><style>%s</style>%s'
+            '<div class="reiter__leiste">%s</div>%s</div>'
+            % ("".join(regeln), "".join(schalter), "".join(knoepfe),
+               "".join(blaetter))
+        )
+
+    # --- Video. Liegt die Datei in bilder/, wird sie eingebunden.
+    if name == "video":
+        if not argument:
+            return ""
+        werte = {}
+        rest = []
+        for zeile in zeilen:
+            m = re.match(r"^\s*(poster|titel|text):\s*(.+)$", zeile, re.I)
+            if m:
+                werte[m.group(1).lower()] = m.group(2).strip()
+            elif zeile.strip():
+                rest.append(zeile)
+        poster = (' poster="%s"' % sicher(werte["poster"])) if werte.get("poster") else ""
+        kopf = ('<h3>%s</h3>' % inline(werte["titel"])) if werte.get("titel") else ""
+        return (
+            '<figure class="video" data-auftritt>%s'
+            '<video controls preload="none" playsinline%s>'
+            '<source src="%s" type="video/mp4">'
+            "Ihr Browser kann dieses Video nicht abspielen."
+            "</video>%s</figure>"
+            % (kopf, poster, sicher(argument), text_rendern(rest))
         )
 
     # --- Belege: Zahl, Aussage, Quelle. Ohne Quelle keine Zahl.
@@ -1003,11 +1076,14 @@ VORSCHAU_BREITE = 1000
 VORSCHAU_GUETE = 72
 
 
+EINBETT_GRENZE = 5 * 1024 * 1024    # groesseres wird nicht in die Einzeldatei gelegt
+
+
 def bild_fuer_vorschau(pfad, endung):
     """Verkleinert ein Bild fuer die Einzeldatei und wandelt es in WEBP.
     Ohne Pillow wird das Bild unveraendert eingebettet -- dann ist die
     Vorschaudatei eben groesser, kaputt geht nichts."""
-    if endung in (".svg", ".gif"):
+    if endung in (".svg", ".gif") or endung in VIDEO_ENDUNGEN:
         with open(pfad, "rb") as f:
             return f.read(), MIME[endung]
     try:
@@ -1067,6 +1143,11 @@ def einzeldatei_schreiben(seite, projektordner, slug):
                 continue
             verweis = "bilder/" + name
             if verweis not in seite:
+                continue
+            if endung in VIDEO_ENDUNGEN and os.path.getsize(pfad) > EINBETT_GRENZE:
+                sys.stderr.write(
+                    "  ! %s ist zu gross fuer die Einzeldatei - in vorschau/ "
+                    "fehlt das Video, in site/ ist es da.\n" % name)
                 continue
             daten, typ = bild_fuer_vorschau(pfad, endung)
             roh = base64.b64encode(daten).decode("ascii")

@@ -220,6 +220,29 @@ Die Antwort.
 :::
 ```
 
+**Reiter** — mehrere Themen auf einer Höhe statt untereinander. **Der
+wirksamste Hebel gegen zu lange Seiten.** Funktioniert ohne JavaScript:
+```
+::: reiter
+### Die Produkte
+Text, Listen, alles erlaubt.
+
+### Das Erlebnis
+bild: bilder/foto.jpg
+Mit "bild:" steht das Bild rechts daneben, ohne steht der Text allein.
+:::
+```
+
+**Video** — Datei nach `bilder/` legen, Pfad angeben:
+```
+::: video bilder/trailer.mp4
+poster: bilder/standbild.jpg
+titel: Endangered — Trailer
+:::
+```
+Über 5 MB wird das Video nicht in die Vorschau-Einzeldatei eingebettet — in
+`site/` ist es trotzdem da. Der Generator sagt das beim Bauen.
+
 **Belege** — Zahlen mit Quelle. **Ohne Quelle fällt die Zeile raus**, der
 Generator meldet das beim Bauen:
 ```
