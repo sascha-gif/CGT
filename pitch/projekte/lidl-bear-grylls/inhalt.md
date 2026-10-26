@@ -42,16 +42,18 @@ mitzumachen.
 ::: reiter
 ### Der Mann
 bild: bilder/bear-live.jpg
-Ehemaliger Soldat einer britischen Spezialeinheit, Everest-Besteiger, Autor und Fernsehabenteurer. Seit zwanzig Jahren dieselbe Rolle: der Mann, der zeigt, wie man durchkommt.
+Soldat der 21 SAS, Everest-Besteiger, Ehrenoberst, Nummer-1-Bestsellerautor und Fernsehabenteurer. Seit zwanzig Jahren dieselbe Rolle: der Mann, der zeigt, wie man durchkommt.
 
 Von Juli 2009 bis September 2024 **Chief Scout des Vereinigten Königreichs** — der jüngste je ernannte, nach Baden-Powell der am zweitlängsten amtierende. Seit 2018 **erster Chief Ambassador of World Scouting**.
 
 Botschafter des Tusk Trust. Sein Satz unter jeder Unterschrift: *Never give up.*
 
 ### Die Reichweite
-Über **zwei Milliarden** Fernsehzuschauer in mehr als **200 Ländern und Territorien**. **23 Millionen** Follower über alle Plattformen, mit Schwerpunkten in Großbritannien, den USA, Indien und China. **20 Millionen** verkaufte Bücher in 30 Sprachen.
+Über **zwei Milliarden** Fernsehzuschauer in mehr als **200 Ländern und Territorien**. **20 Millionen** verkaufte Bücher in 30 Sprachen.
 
 Ausgestrahlt wurde er unter anderem bei Netflix, BBC, Discovery, National Geographic, NBC, ITV, Disney und Apple TV+.
+
+Die aktuellen Social-Media-Zahlen stehen im nächsten Abschnitt.
 
 ### Warum das für Familien zählt
 Als Galionsfigur für **60 Millionen Pfadfinder** weltweit steht er nicht für Hype, sondern für Haltung: Draußen sein, nicht aufgeben, einander helfen.
@@ -72,8 +74,36 @@ Das ist der Unterschied zu einer beliebigen Lizenzfigur. Eltern müssen bei dies
 :::
 
 Dazu zwei Netflix-Produktionen, die zum Start jeweils auf **Platz 1** standen:
-*Celebrity Bear Hunt* und *Animals on the Loose*. Eine einzige YouTube-Folge mit
-dem indischen Premierminister erreichte **3,6 Milliarden Online-Impressionen**.
+*Celebrity Bear Hunt* und *Animals on the Loose*.
+
+
+## Die Reichweite heute {hell}
+
+!! Eine Lizenzfigur ist nur so viel wert wie die Aufmerksamkeit, die sie
+mitbringt. Diese hier bringt ein eigenes Publikum mit — jeden Tag, ohne
+Mediabudget.
+
+::: belege
+Facebook, verifizierte Seite | 13 Mio. | Facebook-Seite, abgerufen am 26.10.2026
+Instagram, verifiziertes Profil @beargrylls | 8,6 Mio. | Instagram-Profil, abgerufen am 26.10.2026
+YouTube @beargrylls, dazu 255 Videos | 635.000 | YouTube-Kanal, abgerufen am 26.10.2026
+TikTok @beargrylls, dazu 2,6 Mio. Likes | 428.900 | TikTok-Profil, abgerufen am 26.10.2026
+:::
+
+**Vier Plattformen, nachgezählt: rund 22,7 Millionen Follower.** X und Weibo
+sind darin noch nicht enthalten. Der Lizenzgeber nennt 23 Millionen über alle
+Kanäle — die Einzelzahlen bestätigen das, statt es nur zu behaupten.
+
+Dazu kommt Reichweite, die keine Followerzahl abbildet: Eine einzige
+YouTube-Folge mit dem indischen Premierminister erreichte **3,6 Milliarden
+Online-Impressionen**, das offizielle Promo zu *Into the Wild* mit Akshay Kumar
+allein **24,5 Millionen Aufrufe**. Die Schwerpunkte liegen in Großbritannien,
+den USA, **Indien und China**.
+
+**Was das für eine Kampagne bedeutet:** Reichweite muss nicht eingekauft
+werden, sie ist vorhanden. Bear wäre laut Konzept über Premieren, Interviews,
+PR-Termine und seine eigenen Kanäle eingebunden — vorausgesetzt, seine
+persönliche Mitwirkung wird vertraglich gesichert.
 
 
 ::: kapitel bilder/keyart-band.jpg

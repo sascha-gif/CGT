@@ -59,7 +59,25 @@ die Drittanbieter-Schätzungen der ersten Fassung.*
 | „The Island with Bear Grylls" | 110 Mio. in Europa |
 | „You vs. Wild" (Netflix) | 25 Mio. Abrufe in 28 Tagen, zwei Emmys (Best Show, Best Host) |
 | „World's Toughest Race" | zum Start Platz 1 auf Amazon Prime (August 2020) |
-| Social Media | **23 Mio.** Follower über alle Plattformen; Schwerpunkte UK, USA, Indien, China |
+| Social Media, Lizenzgeberangabe | **23 Mio.** über alle Plattformen; Schwerpunkte UK, USA, Indien, China |
+
+**Einzeln nachgezählt am 26.10.2026** (Profilaufrufe durch Sascha, verifizierte
+Konten):
+
+| Plattform | Follower |
+|---|---|
+| Facebook | 13 Mio. |
+| Instagram `@beargrylls` | 8,6 Mio. |
+| YouTube `@beargrylls` | 635.000, dazu 255 Videos |
+| TikTok `@beargrylls` | 428.900, dazu 2,6 Mio. Likes |
+| **Summe dieser vier** | **rund 22,7 Mio.** |
+
+X und Weibo fehlen in dieser Rechnung. Die Angabe des Lizenzgebers von
+23 Millionen ist damit **bestätigt und nicht nur behauptet** — ein seltener
+Fall, in dem eine Verkaufszahl die Nachprüfung übersteht.
+
+Aus der Instagram-Biografie außerdem: **21 SAS**, Ehrenoberst,
+Nummer-1-Bestsellerautor. Verlinkt ist `modernsavage.co`.
 | Bücher | **20 Mio.** verkauft, 30 Sprachen |
 | Pfadfinder | **60 Mio.**, erster Global Scout Ambassador |
 | Einzelbeispiel Reichweite | „Man vs Wild" mit Premierminister Modi: 3,6 Mrd. Online-Impressionen |
