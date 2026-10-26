@@ -192,6 +192,38 @@ blockquote {
 hr { border: 0; border-top: 1px solid var(--linie); margin: 48px 0; }
 
 /* --------------------------------------------------------------------------
+   Dunkles Schema
+   Wird pro Projekt mit "schema: dunkel" in der inhalt.md eingeschaltet.
+   Geaendert werden nur die Farbmarken -- alle Bausteine rechnen damit und
+   sehen automatisch richtig aus. Die paar Stellen, die hell voraussetzen,
+   stehen darunter.
+   -------------------------------------------------------------------------- */
+
+body.schema-dunkel {
+  --tinte:   #f3f1ee;
+  --gedimmt: #9d9d9d;
+  --linie:   rgba(255,255,255,.15);
+  --papier:  #0b0b0e;
+  --rein:    #16161c;
+  --sanft:   #121217;
+  --nacht:   #000000;
+}
+
+body.schema-dunkel .kopf.ist-geklebt { background: rgba(11,11,14,.92); }
+body.schema-dunkel .prospekt__kopf { background: #000; }
+body.schema-dunkel .zettel { background: #fff; color: #111; }
+body.schema-dunkel .zettel h3 { color: #111; }
+body.schema-dunkel .slider__knopf:hover { background: #fff; color: #000; border-color: #fff; }
+body.schema-dunkel .abschnitt .knopf--rand { color: var(--tinte); }
+body.schema-dunkel .abschnitt .knopf--rand:hover { border-color: var(--akzent); }
+body.schema-dunkel .karte__bild { background: #000; }
+body.schema-dunkel .vertraulich { background: rgba(255,255,255,.03); }
+body.schema-dunkel .aufklapp summary { color: var(--tinte); }
+body.schema-dunkel::selection, body.schema-dunkel *::selection {
+  background: var(--akzent); color: #fff;
+}
+
+/* --------------------------------------------------------------------------
    Kopfzeile
    -------------------------------------------------------------------------- */
 

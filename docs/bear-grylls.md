@@ -45,37 +45,84 @@ Daneben gibt es **Drittanbieter mit eigener Lizenz** — `beargryllsgear.com`
 (Schlafsäcke, Zelte, Messer) und ein Insektenschutz-Shop. Die Marke wird also
 bereits in Warengruppen vergeben, die für den Discount interessant wären.
 
-## Reichweite
+## Reichweite — jetzt aus den Lizenzunterlagen
 
-*Alle Zahlen aus Drittanbieter-Analysen, nicht von den Plattformen selbst.
-Die Werte weichen je nach Dienst und Datum ab.*
+*Quelle: „Bear Grylls Young Adventurer", Lizenzunterlagen YBG Films Ltd, 2025,
+von Sascha am 26.10.2026 bereitgestellt. **Vertraulich.** Diese Zahlen ersetzen
+die Drittanbieter-Schätzungen der ersten Fassung.*
 
-| Kanal | Wert | Quelle und Stand |
-|---|---|---|
-| Instagram `@beargrylls` | **8,6 Mio** Follower | HypeAuditor, Oktober 2026 |
-| Instagram, zweite Messung | 8,46 Mio | Social Blade |
-| Instagram, dritte Messung | 8,3 Mio | Qoruz, März 2026 |
-| Instagram-Wachstum | 5,2 Mio (2022) → 8,3–8,6 Mio (2026) | SpeakRJ / HypeAuditor |
-| Instagram-Interaktion | ca. 15.800 Likes je Beitrag | HypeAuditor |
-| YouTube | ca. 570.000 Abonnenten, 19,1 Mio Views | SpeakRJ, Stand September 2025 |
-| TV „Man vs. Wild", kumuliert | **1,2 Mrd** Zuschauer über sieben Staffeln | mehrfach zitiert, u. a. Scouting-Pressematerial |
+| Was | Wert |
+|---|---|
+| Fernsehreichweite kumuliert | **über 2 Mrd.** in über **200 Ländern und Territorien** |
+| davon „Man vs. Wild" | 1,2 Mrd. weltweit |
+| „Running Wild" | 120 Mio. in den USA |
+| „The Island with Bear Grylls" | 110 Mio. in Europa |
+| „You vs. Wild" (Netflix) | 25 Mio. Abrufe in 28 Tagen, zwei Emmys (Best Show, Best Host) |
+| „World's Toughest Race" | zum Start Platz 1 auf Amazon Prime (August 2020) |
+| Social Media | **23 Mio.** Follower über alle Plattformen; Schwerpunkte UK, USA, Indien, China |
+| Bücher | **20 Mio.** verkauft, 30 Sprachen |
+| Pfadfinder | **60 Mio.**, erster Global Scout Ambassador |
+| Einzelbeispiel Reichweite | „Man vs Wild" mit Premierminister Modi: 3,6 Mrd. Online-Impressionen |
 
-**Widerspruch markiert:** Eine Biografie-Seite nennt rund zwei Milliarden
-Zuschauer und beruft sich dabei auf die offizielle Website. Die 1,2 Milliarden
-sind die häufiger wiederholte Zahl. Beide Werte sind Schätzungen ohne
-nachvollziehbare Methodik — für einen Einkäufer taugt davon keiner als harte
-Kennzahl, wohl aber die Aussage „eine der meistgesehenen Sendungen weltweit".
+**Der Widerspruch aus der ersten Fassung ist aufgelöst.** 1,2 Milliarden und
+2 Milliarden sind kein Widerspruch: 1,2 Mrd. ist „Man vs. Wild" allein,
+über 2 Mrd. die Summe über alle Formate. Die Pfadfinderzahl lautet laut
+Lizenzgeber **60 Millionen**, nicht 50 oder 57.
 
-## Glaubwürdigkeit über Pfadfinder
+Sender: NBC, ITV, Disney, Netflix, BBC, National Geographic, Channel 4,
+Channel 5, Prime, ABC, Dragon TV, Apple TV+, Discovery, Facebook.
 
-- **UK Chief Scout** von Juli 2009 bis September 2024 — der jüngste je
-  ernannte, nach Baden-Powell der am zweitlängsten amtierende
-- **Erster Chief Ambassador of World Scouting**, ernannt im November 2018
-- Die vertretene Mitgliederzahl wird mit **50 Millionen** angegeben, eine
-  Rednerprofil-Seite nennt 57 Millionen
+## Young Adventurer — die eigentliche Chance
 
-Das ist für eine Familienzielgruppe im LEH ein stärkeres Argument als jede
-Followerzahl: eine Marke, die Eltern als unbedenklich einordnen.
+Nicht die Outdoor-Marke für Erwachsene ist das Thema, sondern eine **neue
+Animationsmarke für Kinder**.
+
+- **Geschichte:** Die *Green Squad*, ein fünfköpfiges Einsatzteam im *Secret Ops
+  Squad* — einer verdeckten Rettungsorganisation, die ausschließlich von Kindern
+  geführt wird. Neuester Rekrut: ein vierzehnjähriger Bear Grylls.
+- **Zwei Filme sind fertig produziert:**
+  *Endangered* (91 Minuten, Borneo und Sumatra) und
+  *Icebreaker — Surviving Sub Zero* (96 Minuten, Sibirien und Polarkreis).
+- **Franchise-Ökosystem laut Unterlagen:** Animationsfilme, Animationsserie,
+  Live-Action-Film, Spielzeug, Bekleidung, Schuhe, Outdoor-Ausrüstung,
+  Verlagsprodukte, Gaming, Mobiltelefone, Food & Nutrition, Musik,
+  Adventure Travel, Erlebniszentren und Themenparks.
+- **Bestehende Partner:** Jack Wolfskin (globale Promotion, „Bear Grylls Jack
+  Wolfskin Discovery Team"), Luminox (Uhren).
+- **Food:** Gespräche mit großen Supermärkten laufen, Start in UK geplant.
+  Als mögliche UK-Partner nennen die Unterlagen ASDA, Tesco, Morrisons und
+  Sainsbury's. Produktlinie „Mission Food".
+- **Marktzahlen aus den Unterlagen:** europäischer Outdoor-Ausrüstungsmarkt
+  21,7 Mrd. € (2025), Prognose +7,5 % jährlich bis 2030 · globaler Markt für
+  robuste Smartphones 2,98 Mrd. $ (2023) auf 4,46 Mrd. $ (2028) · globaler
+  Spielemarkt 227 Mrd. $ (2023) auf 312 Mrd. $ (2027).
+
+**Das trifft CGT an zwei Stellen gleichzeitig:** Spielzeug und Pocket-Money
+gehören zu Epsilon, Bekleidung und Non-Food-Aktionsware zu DELTEX.
+
+## Das laufende Projekt: Lidl
+
+Es gibt bereits ein CGT-Konzept — **„Lidl × Bear Grylls, Strategic Partnership
+Concept"**, Stand Oktober 2026, als vertraulicher Diskussionsentwurf. Kern:
+gemeinsame Produktentwicklung unter der Lizenz, verbunden mit einem
+Aktionscode über die Lidl-Plus-App, der nach einem Kauf Zugang zu einem der
+Filme gibt.
+
+Daraus ist eine Pitch-Seite entstanden:
+[`../pitch/projekte/lidl-bear-grylls/`](../pitch/README.md).
+
+**Lidl Plus:** über 100 Mio. Nutzer weltweit nach Angaben von Lidl; die
+Angabe ist rund ein Jahr alt und stammt aus Presseberichten, nicht aus einem
+Geschäftsbericht. In Österreich nutzen laut Bericht über zwei Millionen
+Menschen die App regelmäßig.
+
+## Vertraulichkeit — bitte beachten
+
+Beide Unterlagen sind als **vertraulich** gekennzeichnet; die Spielzeug-Seite
+trägt zusätzlich „Confidential – not for onward transmission". Bevor Inhalte
+daraus in etwas gehen, das weitergereicht werden kann — auch eine Pitch-Seite
+mit Link —, braucht es die Freigabe des Lizenzgebers. Die bisher gebaute Seite
+trägt den Entwurfsbalken und einen Vertraulichkeitshinweis.
 
 ## Einschätzung für CGT
 
@@ -89,6 +136,13 @@ Followerzahl: eine Marke, die Eltern als unbedenklich einordnen.
 
 **Was im Weg steht:**
 
+- **Die Lidl-Mechanik hat ungeklärte Punkte.** Einkaufsschwellen,
+  Teilnahmebedingungen und vor allem der **Schutz von Kinderdaten** bei einer
+  App-gebundenen Aktion für Familien. Das gehört in eine Machbarkeitsprüfung,
+  bevor es in ein Angebot geht.
+- **Die Filmrechte für ein Promo-Fenster sind nicht bestätigt.** Das Konzept
+  formuliert es selbst als „vorbehaltlich Rechten, Territorien und technischer
+  Machbarkeit". Diese Formulierung sollte auch im Gespräch stehen bleiben.
 - **Die Marke ist nicht frei.** BGV und Beanstalk führen das Programm seit
   Jahren. CGT wäre Lizenznehmer für eine Warengruppe oder Kanalpartner, nicht
   Rechteverwerter. Das ist ein anderes Geschäftsmodell als bei Mercedes.

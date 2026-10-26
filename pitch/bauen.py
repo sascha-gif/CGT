@@ -854,10 +854,18 @@ def seite_bauen(felder, koerper, vorlage_html, sprungmarken=()):
 
 
     # Hero
+    # Bildausschnitt pro Projekt steuerbar. Voreinstellung ist die Mitte;
+    # steht das Motiv aussermittig, verschwindet es sonst am Handy im
+    # Beschnitt. Beispiel:  hero-position: 20% center
+    hero_pos = felder.get("hero-position", "").strip()
     hero_bild_html = ""
     if herobild:
-        hero_bild_html = ('<div class="hero__bild" data-parallax="0.22" '
-                          'style="background-image:url(\'%s\')"></div>' % sicher(herobild))
+        hero_bild_html = (
+            '<div class="hero__bild" data-parallax="0.22" '
+            'style="background-image:url(\'%s\')%s"></div>'
+            % (sicher(herobild),
+               (";background-position:%s" % sicher(hero_pos)) if hero_pos else "")
+        )
 
     markenlogo = felder.get("marken-logo", "").strip()
     logo_html = ""
@@ -953,7 +961,11 @@ def seite_bauen(felder, koerper, vorlage_html, sprungmarken=()):
         fuss_kontakt += '<br><a href="tel:%s">%s</a>' % (
             sicher(re.sub(r"[^\d+]", "", tel)), sicher(tel))
 
+    schema = felder.get("schema", "").strip().lower()
+    koerperklasse = ' class="schema-dunkel"' if schema in ("dunkel", "dark") else ""
+
     ersatz = {
+        "KOERPERKLASSE":   koerperklasse,
         "KOPF_ABSENDER":   kopf_absender,
         "FUSS_ANSCHRIFT":  fuss_anschrift,
         "FUSS_NAVIGATION": fuss_navigation,
