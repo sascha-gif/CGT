@@ -302,6 +302,19 @@ body.schema-dunkel::selection, body.schema-dunkel *::selection {
 
 .hero__logo { height: 46px; width: auto; margin-bottom: 30px; }
 
+/* Doppel aus Empfaenger- und Markenlogo */
+.hero__paar {
+  display: flex; align-items: center; flex-wrap: wrap;
+  gap: 14px 18px; margin-bottom: 30px;
+}
+.hero__paar .hero__logo { margin-bottom: 0; }
+.hero__logo--partner { height: 60px; border-radius: 6px; }
+.hero__mal {
+  font-family: var(--schrift); font-weight: 300;
+  font-size: 1.5rem; line-height: 1;
+  color: rgba(255,255,255,.45);
+}
+
 .hero h1 { color: #fff; margin-bottom: .25em; }
 
 .hero__claim {
@@ -622,6 +635,8 @@ th {
   transition: color .25s var(--weich), border-color .25s var(--weich);
   white-space: nowrap;
 }
+.reiter__knopf { display: inline-flex; align-items: center; gap: 9px; }
+.reiter__knopf .sinnbild { width: 17px; height: 17px; color: var(--akzent); opacity: .55; transition: opacity .25s var(--weich); }
 .reiter__knopf:hover { color: var(--tinte); }
 .reiter__schalter:focus-visible + .reiter__knopf { outline: 2px solid var(--akzent); outline-offset: 3px; }
 
@@ -887,6 +902,115 @@ th {
 }
 
 /* --------------------------------------------------------------------------
+   Sinnbilder
+   Strichzeichnungen statt Satz. Farbe kommt ueber currentColor.
+   -------------------------------------------------------------------------- */
+
+.sinnbild { width: 24px; height: 24px; display: block; flex: 0 0 auto; }
+.sinnbild--karte { width: 28px; height: 28px; }
+.karte__zeichen { display: block; color: var(--akzent); margin-bottom: 14px; }
+
+.zeichenfelder { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px 14px; margin: 30px 0; }
+.zeichenfeld {
+  display: flex; flex-direction: column; gap: 8px;
+  padding-top: 16px; border-top: 1px solid var(--linie);
+}
+.zeichenfeld .sinnbild { width: 26px; height: 26px; color: var(--akzent); }
+.zeichenfeld__titel { font-weight: 600; font-size: .95rem; line-height: 1.3; }
+.zeichenfeld__text { font-size: .84rem; color: var(--gedimmt); line-height: 1.45; }
+.abschnitt--dunkel .zeichenfeld { border-top-color: rgba(255,255,255,.18); }
+
+/* --------------------------------------------------------------------------
+   Kanaele — Plattformlogo, Zahl, Quelle
+   -------------------------------------------------------------------------- */
+
+.kanaele { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 30px 0; }
+.kanal {
+  border: 1px solid var(--linie); border-radius: var(--radius);
+  padding: 20px 16px 18px; display: flex; flex-direction: column; gap: 4px;
+  transition: border-color .3s var(--weich), transform .3s var(--weich);
+}
+.kanal:hover { border-color: var(--markenfarbe, var(--akzent)); transform: translateY(-3px); }
+.kanal__logo { color: var(--markenfarbe, var(--tinte)); margin-bottom: 12px; }
+.markenzeichen { width: 26px; height: 26px; display: block; }
+.kanal__wert {
+  font-family: var(--display); font-weight: 400; line-height: 1;
+  font-size: clamp(1.7rem, 7vw, 2.3rem); color: var(--tinte);
+}
+.kanal__name { font-size: .8rem; letter-spacing: .02em; }
+.kanal__quelle { font-size: .66rem; line-height: 1.45; color: var(--gedimmt); margin-top: 4px; }
+.kanal__quelle::before { content: "Quelle: "; }
+.abschnitt--dunkel .kanal { border-color: rgba(255,255,255,.14); }
+.abschnitt--dunkel .kanal__wert { color: #fff; }
+
+/* --------------------------------------------------------------------------
+   Laufband — Namen ziehen endlos seitlich durch
+   -------------------------------------------------------------------------- */
+
+.laufband {
+  display: flex; margin: 30px 0; overflow: hidden; overflow: clip;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+}
+.laufband__zug {
+  display: flex; flex: 0 0 auto; align-items: center;
+  animation: laufen 30s linear infinite;
+}
+.laufband:hover .laufband__zug { animation-play-state: paused; }
+.laufband__glied {
+  font-family: var(--display); font-size: 1.4rem; white-space: nowrap;
+  color: var(--gedimmt); padding-inline: 22px;
+}
+.laufband__glied::after { content: "\00b7"; margin-left: 22px; opacity: .45; }
+@keyframes laufen { to { transform: translateX(-100%); } }
+
+/* --------------------------------------------------------------------------
+   Querbahn — beim Runterscrollen laufen die Karten seitlich durch.
+   Ohne Scroll-Animationen bleibt ein Wischstreifen uebrig; siehe @supports.
+   -------------------------------------------------------------------------- */
+
+.quer { background: var(--nacht); color: #e8e3dc; }
+.quer__klebe { padding-block: 54px; }
+.quer__kopf { padding-inline: var(--rand); margin-bottom: 22px; }
+.quer__kopf .marke { color: #fff; border-bottom-color: rgba(255,255,255,.2); }
+.quer__spur {
+  display: grid; grid-auto-flow: column; grid-auto-columns: 78%;
+  gap: 14px; padding-inline: var(--rand);
+  overflow-x: auto; scroll-snap-type: x mandatory;
+  scrollbar-width: none; -ms-overflow-style: none;
+}
+.quer__spur::-webkit-scrollbar { display: none; }
+.quer__spur > * { scroll-snap-align: start; }
+.quer__balken { display: none; }
+.quer__fuss {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; padding-inline: var(--rand); margin-top: 16px;
+}
+.quer__hinweis { font-size: .76rem; letter-spacing: .05em; color: #8e867d; margin: 0; }
+.quer__steuer { display: none; gap: 10px; }
+.quer .slider__knopf { border-color: rgba(255,255,255,.3); color: #fff; }
+.quer .slider__knopf:hover { background: #fff; border-color: #fff; color: var(--nacht); }
+.quer .slider__knopf[disabled] { opacity: .3; }
+.quer .slider__knopf[disabled]:hover { background: transparent; color: #fff; border-color: rgba(255,255,255,.3); }
+
+.querkarte {
+  background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12);
+  border-radius: var(--radius); overflow: hidden;
+  display: flex; flex-direction: column;
+}
+.querkarte__bild { aspect-ratio: 4 / 3; overflow: hidden; background: #111; }
+.querkarte__bild img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform .8s var(--weich);
+}
+.querkarte:hover .querkarte__bild img { transform: scale(1.05); }
+.querkarte__text { padding: 18px 18px 22px; }
+.querkarte__text .sinnbild { color: var(--akzent); margin-bottom: 12px; }
+.querkarte__text h3 { color: #fff; font-size: 1.1rem; margin-bottom: .4em; }
+.querkarte__text p { color: rgba(255,255,255,.72); font-size: .88rem; margin-bottom: .5em; }
+.querkarte__text > *:last-child { margin-bottom: 0; }
+
+/* --------------------------------------------------------------------------
    Scroll-Animationen (JS-Variante)
    -------------------------------------------------------------------------- */
 
@@ -960,6 +1084,48 @@ th {
     from { opacity: 0; transform: translateY(18px); }
     to   { opacity: 1; transform: none; }
   }
+
+  /* Querbahn: Die Buehne ist hoeher als das Fenster. Solange sie es
+     ausfuellt, klebt der Inhalt - und die Spur wandert genau um ihre
+     Ueberlaenge nach links. Deshalb -100% + 100vw. */
+  .quer__buehne {
+    height: calc(100vh + var(--anzahl, 4) * 44vh);
+    view-timeline-name: --querlauf;
+    view-timeline-axis: block;
+  }
+  .quer__klebe {
+    position: sticky; top: 0; height: 100vh;
+    display: flex; flex-direction: column; justify-content: center;
+    padding-block: 0; overflow: clip;
+  }
+  .quer__spur {
+    width: max-content; overflow: visible; grid-auto-columns: 74vw;
+    align-items: stretch;
+    animation: querziehen linear both;
+    animation-timeline: --querlauf;
+    animation-range: contain 0% contain 100%;
+  }
+  @keyframes querziehen {
+    from { transform: translateX(0); }
+    to   { transform: translateX(calc(-100% + 100vw)); }
+  }
+  .quer__balken {
+    display: block; height: 2px; margin: 28px var(--rand) 0;
+    background: rgba(255,255,255,.14);
+  }
+  .quer__balken i {
+    display: block; height: 100%; background: var(--akzent);
+    transform-origin: 0 50%;
+    animation: fortschreiten linear both;
+    animation-timeline: --querlauf;
+    animation-range: contain 0% contain 100%;
+  }
+  .quer__fuss { display: none; }
+
+  /* Im Klebezustand fuellen die Karten das Fenster, sonst steht die Bahn
+     in zu viel Leere. Das Bild nimmt, was der Text uebrig laesst. */
+  .querkarte { height: clamp(340px, 62vh, 620px); }
+  .querkarte__bild { aspect-ratio: auto; flex: 1 1 auto; min-height: 0; }
 }
 
 /* --------------------------------------------------------------------------
@@ -971,7 +1137,9 @@ th {
   body { font-size: 18px; }
   .abschnitt { padding-block: 76px; }
   .hero { padding-bottom: 92px; }
-  .hero__logo { height: 60px; }
+  .hero__logo { height: 56px; }
+  .hero__logo--partner { height: 78px; }
+  .hero__mal { font-size: 1.9rem; }
   .hero__fuss { flex-direction: row; gap: 10px 32px; }
   .hero__runter { display: block; }
   .kopf__logo span { display: inline; }
@@ -985,11 +1153,20 @@ th {
   .knopf { flex: 0 0 auto; }
   .fakt { grid-template-columns: 260px 1fr; gap: 24px; align-items: baseline; }
   .beleg { grid-template-columns: 200px 1fr; gap: 28px; align-items: baseline; }
-  .reiter__blatt { grid-template-columns: 1fr 1fr; gap: 36px; align-items: start; }
+  .reiter__blatt--mit-bild { grid-template-columns: 1fr 1fr; gap: 36px; align-items: start; }
   .prospekt__blatt { grid-template-columns: repeat(2, 1fr); }
   .feld--doppelt { grid-template-columns: 1fr 1fr; }
   .fuss__zeile { grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; }
   .bildwand__bild img { aspect-ratio: 16/10; }
+  .kanaele { grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .zeichenfelder { grid-template-columns: repeat(3, 1fr); gap: 24px 20px; }
+  .quer__spur { grid-auto-columns: 46%; }
+  .quer__klebe { padding-block: 76px; }
+  .laufband__glied { font-size: 1.7rem; padding-inline: 28px; }
+  @supports (animation-timeline: view()) {
+    .quer__spur { grid-auto-columns: 44vw; }
+    .quer__klebe { padding-block: 0; }
+  }
 }
 
 @media (min-width: 900px) {
@@ -1002,7 +1179,11 @@ th {
   .slider__spur { grid-auto-columns: 30%; }
   .slider__steuer { display: flex; }
   .slider__hinweis { display: none; }
+  .quer__steuer { display: flex; }
+  .quer__hinweis { display: none; }
   .galerie { grid-template-columns: repeat(4, 1fr); }
+  .galerie--drei { grid-template-columns: repeat(3, 1fr); }
+  .galerie--zwei { grid-template-columns: repeat(2, 1fr); }
   .prospekt__blatt { grid-template-columns: repeat(3, 1fr); }
   .beleg { grid-template-columns: 240px 1fr; }
 
@@ -1015,6 +1196,12 @@ th {
   .bildwand__bild img { aspect-ratio: 4/5; }
   .bildwand__schritte > * + * { margin-top: 10vh; }
   .bildwand__schritte { padding-block: 6vh 14vh; }
+
+  .zeichenfelder { grid-template-columns: repeat(4, 1fr); }
+  .quer__spur { grid-auto-columns: 32%; }
+  @supports (animation-timeline: view()) {
+    .quer__spur { grid-auto-columns: 30vw; }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1043,7 +1230,21 @@ th {
       transform: none !important; clip-path: none !important;
     }
     .fortschritt { animation: none !important; width: 0; }
+    .quer__buehne { height: auto !important; }
+    .quer__klebe {
+      position: static !important; height: auto !important;
+      padding-block: 54px !important; overflow: visible;
+    }
+    .quer__spur {
+      width: auto !important; overflow-x: auto !important;
+      grid-auto-columns: 78%; animation: none !important;
+    }
+    .quer__balken { display: none !important; }
+    .quer__fuss { display: flex; }
   }
+  .laufband__zug { animation: none !important; }
+  .laufband { flex-wrap: wrap; -webkit-mask-image: none; mask-image: none; }
+  .laufband__zug[aria-hidden] { display: none; }
 }
 
 @media print {
@@ -1057,6 +1258,16 @@ th {
   [data-auftritt] { opacity: 1 !important; transform: none !important; }
   .slider__spur { grid-auto-columns: 1fr; overflow: visible; }
   .bildwand__bild { position: static !important; }
+  .quer { background: #fff !important; color: #000 !important; }
+  .quer__buehne { height: auto !important; }
+  .quer__klebe { position: static !important; height: auto !important; overflow: visible; }
+  .quer__spur { width: auto !important; display: grid; grid-auto-flow: row; overflow: visible; animation: none !important; }
+  .querkarte { border-color: #ddd; background: #fff; }
+  .querkarte__text h3, .quer__kopf .marke { color: #000 !important; }
+  .querkarte__text p { color: #333 !important; }
+  .quer__balken, .quer__fuss { display: none !important; }
+  .laufband__zug { animation: none !important; }
+  .laufband { flex-wrap: wrap; -webkit-mask-image: none; mask-image: none; }
 }
 
 </style>
@@ -1294,10 +1505,24 @@ th {
   /* ----------------------------------------------------------------- Slider
      Auf dem Handy wischt man. Am Desktop gibt es zwei Pfeile. */
   function sliderStarten() {
-    document.querySelectorAll(".slider").forEach(function (slider) {
-      var spur = slider.querySelector(".slider__spur");
-      var zurueck = slider.querySelector("[data-slider='zurueck']");
-      var vor = slider.querySelector("[data-slider='vor']");
+    var bahnen = [];
+    document.querySelectorAll(".slider").forEach(function (el) {
+      bahnen.push([el, ".slider__spur", "data-slider"]);
+    });
+    /* Die Querbahn blaettert genauso -- aber nur dort, wo der Browser die
+       Scroll-Animation nicht selbst uebernimmt. Sonst waeren die Pfeile
+       ohnehin ausgeblendet. */
+    if (!cssScrollt) {
+      document.querySelectorAll(".quer").forEach(function (el) {
+        bahnen.push([el, ".quer__spur", "data-blaettern"]);
+      });
+    }
+
+    bahnen.forEach(function (eintrag) {
+      var slider = eintrag[0];
+      var spur = slider.querySelector(eintrag[1]);
+      var zurueck = slider.querySelector("[" + eintrag[2] + "='zurueck']");
+      var vor = slider.querySelector("[" + eintrag[2] + "='vor']");
       if (!spur || !zurueck || !vor) return;
 
       function schrittweite() {
@@ -1309,7 +1534,7 @@ th {
 
       function knoepfePruefen() {
         var maximal = spur.scrollWidth - spur.clientWidth - 2;
-        var steuer = slider.querySelector(".slider__steuer");
+        var steuer = slider.querySelector(".slider__steuer, .quer__steuer");
         /* Passt alles ins Bild, braucht es keine Pfeile. */
         if (steuer) steuer.style.display = maximal > 2 ? "" : "none";
         zurueck.disabled = spur.scrollLeft <= 2;

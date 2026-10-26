@@ -180,8 +180,17 @@ def bloecke_teilen(zeilen):
                 name = kopf.split()[0].lower()
                 argument = kopf[len(name):].strip()
                 inhalt = []
+                tiefe = 1
                 i += 1
-                while i < len(zeilen) and not zeilen[i].strip().startswith(":::"):
+                while i < len(zeilen):
+                    schluss = zeilen[i].strip()
+                    if schluss.startswith(":::"):
+                        if schluss[3:].strip():
+                            tiefe += 1          # weiterer Baustein beginnt
+                        else:
+                            tiefe -= 1          # nacktes ::: schliesst
+                            if tiefe == 0:
+                                break
                     inhalt.append(zeilen[i])
                     i += 1
                 puffer_leeren()
@@ -335,6 +344,96 @@ def text_rendern(zeilen):
 # Darstellung: Bausteine (::: ... :::)
 # ===========================================================================
 
+# ===========================================================================
+# Sinnbilder und Markenzeichen
+# Strichzeichnungen im 24x24-Raster, einfarbig ueber currentColor. Kein
+# externer Dienst, keine Schriftart - die Pfade stehen hier im Code.
+# ===========================================================================
+
+SINNBILDER = {
+    "berg":       '<path d="m8 3 4 8 5-5 5 15H2L8 3z"/>',
+    "kompass":    '<circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z"/>',
+    "schild":     '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>',
+    "film":       '<rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 3v18M17 3v18M3 7.5h4M17 7.5h4M3 12h18M3 16.5h4M17 16.5h4"/>',
+    "abspielen":  '<circle cx="12" cy="12" r="10"/><path d="m10 7.8 6.5 4.2-6.5 4.2z"/>',
+    "fernseher":  '<rect width="20" height="14" x="2" y="7" rx="2"/><path d="m17 2-5 5-5-5"/>',
+    "qr":         '<rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/><path d="M14 14h3v3h-3zM20.5 14v3M14 20.5h3M20.5 20.5h.01"/>',
+    "handy":      '<rect width="13" height="20" x="5.5" y="2" rx="2.5"/><path d="M12 18h.01"/>',
+    "warenkorb":  '<circle cx="9" cy="20.5" r="1.3"/><circle cx="18" cy="20.5" r="1.3"/><path d="M2 2.5h2.6l2.7 12.1a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 2-1.5l1.7-7.2H5.4"/>',
+    "rucksack":   '<path d="M4 10.5A4.5 4.5 0 0 1 8.5 6h7a4.5 4.5 0 0 1 4.5 4.5V19a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M8.5 6V4.5A2.5 2.5 0 0 1 11 2h2a2.5 2.5 0 0 1 2.5 2.5V6M8.5 21v-4.5A1.5 1.5 0 0 1 10 15h4a1.5 1.5 0 0 1 1.5 1.5V21M9 10.5h6"/>',
+    "flasche":    '<path d="M10 2h4v3.4a3 3 0 0 0 .6 1.8l.8 1.1a4 4 0 0 1 .6 2.2V20a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-9.5a4 4 0 0 1 .6-2.2l.8-1.1A3 3 0 0 0 10 5.4z"/><path d="M8 13h8"/>',
+    "zelt":       '<path d="M3 21 13.5 3M10.5 3 21 21M3 21h18M12 12.5 16.5 21M12 12.5 7.5 21"/>',
+    "blatt":      '<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z"/><path d="M2 21c0-3 1.9-5.4 5.1-6"/>',
+    "globus":     '<circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
+    "menschen":   '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/>',
+    "buch":       '<path d="M12 7.5v13.5M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/>',
+    "stern":      '<path d="M11.5 2.6a.6.6 0 0 1 1 0l2.4 5 5.4.8a.6.6 0 0 1 .35 1l-3.9 3.8.9 5.4a.6.6 0 0 1-.87.63L12 16.7l-4.8 2.53a.6.6 0 0 1-.87-.63l.9-5.4-3.9-3.8a.6.6 0 0 1 .34-1l5.4-.8z"/>',
+    "haken":      '<circle cx="12" cy="12" r="10"/><path d="m8.5 12 2.5 2.5 4.5-5"/>',
+    "uhr":        '<circle cx="12" cy="12" r="10"/><path d="M12 6.5V12l3.5 2"/>',
+    "schnee":     '<path d="M12 2v20M4.2 7 19.8 17M19.8 7 4.2 17M12 6.2 9.3 3.5M12 6.2l2.7-2.7M12 17.8l-2.7 2.7M12 17.8l2.7 2.7"/>',
+    "feuer":      '<path d="M12 22c3.9 0 7-2.8 7-6.5 0-5-4-6.5-4-10.5-2 1-3 3-3 5-1-.5-2-2-2-3.5C7.5 8 5 10.8 5 15.5 5 19.2 8.1 22 12 22z"/>',
+    "funke":      '<path d="m12 3 1.9 4.6 4.6 1.9-4.6 1.9L12 16l-1.9-4.6L5.5 9.5l4.6-1.9z"/><path d="m19 14.6.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/>',
+    "pin":        '<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/>',
+    "pfeil":      '<path d="M4 12h15M13 6l6 6-6 6"/>',
+    "wachstum":   '<path d="M3 20.5h18M7 20.5V14M12 20.5V8.5M17 20.5v-16"/>',
+    "ziel":       '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/>',
+    "herz":       '<path d="M12 21 4.8 13.9C3.4 12.5 2 10.7 2 8.5A4.5 4.5 0 0 1 12 5.6 4.5 4.5 0 0 1 22 8.5c0 2.2-1.4 4-2.8 5.4z"/>',
+    "spiel":      '<rect width="20" height="12.5" x="2" y="5.8" rx="6.2"/><path d="M6.5 12h3.5M8.25 10.25v3.5M15 13.2h.01M17.8 10.6h.01"/>',
+    "gabel":      '<path d="M4 2v6a3 3 0 0 0 3 3 3 3 0 0 0 3-3V2M7 2v9M7 11v11M18 2c-1.6 2-2.2 4.2-2.2 7 0 2 .8 3.2 2.2 3.2V22"/>',
+    "schere":     '<circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/>',
+    "siegel":     '<circle cx="12" cy="9" r="6.5"/><path d="M8 14.5 6.5 22l5.5-2.8L17.5 22 16 14.5"/>',
+    "haus":       '<path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.5V20a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V9.5"/>',
+}
+
+# Wort-/Bildmarken der Plattformen. Pfade aus den offiziellen Markenzeichen,
+# flaechig gezeichnet (fill), deshalb getrennt von den Strichsinnbildern.
+MARKENZEICHEN = {
+    "facebook":  ('#1877F2', 'M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z'),
+    "instagram": ('#E4405F', 'M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06zm0 3.678a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm7.846-10.405a1.441 1.441 0 1 1-2.881 0 1.441 1.441 0 0 1 2.881 0z'),
+    "youtube":   ('#FF0000', 'M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z'),
+    "tiktok":    ('',        'M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z'),
+    "x":         ('',        'M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298z'),
+    "weibo":     ('#E6162D', 'M10.098 20.323c-3.977.391-7.414-1.406-7.672-4.02-.259-2.609 2.759-5.047 6.74-5.441 3.979-.394 7.413 1.404 7.671 4.018.259 2.6-2.759 5.049-6.737 5.439l-.002.004zM9.05 17.219c-.384.616-1.208.884-1.829.602-.612-.279-.793-.991-.406-1.593.379-.595 1.176-.861 1.793-.601.622.263.82.972.442 1.592zm1.27-1.627c-.141.237-.449.35-.689.257-.236-.09-.313-.354-.185-.591.138-.233.436-.348.672-.263.239.09.319.351.199.597h.003zm.207-2.962c-1.904-.493-4.052.453-4.88 2.131-.846 1.712-.024 3.611 1.894 4.235 1.986.645 4.325-.339 5.138-2.183.802-1.808-.195-3.682-2.152-4.183zm7.844-1.187c-.333-.1-.567-.167-.392-.601.383-.941.423-1.753.008-2.33-.781-1.088-2.919-1.03-5.37-.014 0 0-.769.337-.573-.271.376-1.208.32-2.222-.265-2.807-1.327-1.33-4.861.046-7.891 3.069C1.42 10.75 0 13.166 0 15.254c0 3.995 5.12 6.424 10.129 6.424 6.566 0 10.937-3.816 10.937-6.846 0-1.833-1.542-2.871-2.924-3.311l.229-.078zM19.712 5.59c.267-.291.405-.676.405-1.07 0-.447-.178-.875-.495-1.191a1.69 1.69 0 0 0-1.191-.494c-.361 0-.711.115-1 .328a.37.37 0 0 0-.089.515.37.37 0 0 0 .515.089.93.93 0 0 1 1.243.106.94.94 0 0 1 .081 1.222.37.37 0 0 0 .052.52.37.37 0 0 0 .52-.052l-.041.027zM21.76 7.27a4.03 4.03 0 0 0 .968-2.622 4.05 4.05 0 0 0-1.188-2.864A4.05 4.05 0 0 0 18.676.596a4.04 4.04 0 0 0-1.636.345.56.56 0 1 0 .452 1.025 2.93 2.93 0 0 1 1.184-.25 2.93 2.93 0 0 1 2.082.863 2.93 2.93 0 0 1 .159 3.97.56.56 0 0 0 .843.74V7.27z'),
+}
+
+
+def sinnbild(name, zusatz=""):
+    """Ein Strichsinnbild als Inline-SVG. Unbekannter Name: nichts."""
+    pfad = SINNBILDER.get((name or "").strip().lower())
+    if not pfad:
+        return ""
+    return ('<svg class="sinnbild%s" viewBox="0 0 24 24" fill="none" '
+            'stroke="currentColor" stroke-width="1.5" stroke-linecap="round" '
+            'stroke-linejoin="round" aria-hidden="true">%s</svg>'
+            % ((" " + zusatz) if zusatz else "", pfad))
+
+
+def markenzeichen(name):
+    """Plattformlogo als Inline-SVG. Rueckgabe: (html, farbe)."""
+    eintrag = MARKENZEICHEN.get((name or "").strip().lower())
+    if not eintrag:
+        return "", ""
+    farbe, pfad = eintrag
+    return ('<svg class="markenzeichen" viewBox="0 0 24 24" fill="currentColor" '
+            'aria-hidden="true"><path d="%s"/></svg>' % pfad), farbe
+
+
+def inhalt_rendern(zeilen):
+    """Wie text_rendern, nimmt aber zusaetzlich ::: Bausteine entgegen.
+    Damit darf in einer Karte oder einem Reiter wieder ein Baustein stehen."""
+    if not any(z.strip().startswith(":::") for z in zeilen):
+        return text_rendern(zeilen)
+    teile = []
+    for art, daten in bloecke_teilen(zeilen):
+        if art == "block":
+            teile.append(block_rendern(daten[0], daten[1], daten[2]))
+        elif art == "text":
+            teile.append(text_rendern(daten))
+        else:  # Abschnittsueberschrift gehoert nicht in einen Baustein
+            teile.append("<h3>%s</h3>" % inline(daten[0]))
+    return "".join(teile)
+
+
 def karten_lesen(zeilen):
     """Zerlegt den Inhalt eines Karten-/Slider-Blocks an jeder ###-Zeile."""
     karten = []
@@ -343,13 +442,14 @@ def karten_lesen(zeilen):
         if zeile.strip().startswith("### "):
             if aktuell:
                 karten.append(aktuell)
-            aktuell = {"titel": zeile.strip()[4:].strip(), "bild": "", "bildtext": "", "text": []}
+            aktuell = {"titel": zeile.strip()[4:].strip(), "bild": "",
+                       "bildtext": "", "icon": "", "text": []}
             continue
         if aktuell is None:
             continue
-        m = re.match(r"^\s*bild:\s*(.+)$", zeile, re.I)
+        m = re.match(r"^\s*(bild|icon):\s*(.+)$", zeile, re.I)
         if m:
-            aktuell["bild"] = m.group(1).strip()
+            aktuell[m.group(1).lower()] = m.group(2).strip()
             continue
         aktuell["text"].append(zeile)
     if aktuell:
@@ -368,9 +468,12 @@ def karte_html(karte, nummer=None):
     kopfzeile = ""
     if nummer is not None:
         kopfzeile = '<span class="karte__nummer">%02d</span>' % nummer
+    zeichen = sinnbild(karte.get("icon", ""), "sinnbild--karte")
+    if zeichen:
+        kopfzeile = '<span class="karte__zeichen">%s</span>%s' % (zeichen, kopfzeile)
     return (
         '<article class="karte">%s<div class="karte__text">%s<h3>%s</h3>%s</div></article>'
-        % (bild, kopfzeile, inline(karte["titel"]), text_rendern(karte["text"]))
+        % (bild, kopfzeile, inline(karte["titel"]), inhalt_rendern(karte["text"]))
     )
 
 
@@ -547,8 +650,8 @@ def block_rendern(name, argument, zeilen):
                 % (gruppe, kennung, " checked" if i == 0 else "")
             )
             knoepfe.append(
-                '<label class="reiter__knopf" for="%s">%s</label>'
-                % (kennung, inline(k["titel"]))
+                '<label class="reiter__knopf" for="%s">%s<span>%s</span></label>'
+                % (kennung, sinnbild(k.get("icon", "")), inline(k["titel"]))
             )
             bild = ""
             if k["bild"]:
@@ -560,12 +663,14 @@ def block_rendern(name, argument, zeilen):
             blaetter.append(
                 '<div class="reiter__blatt%s" data-fuer="%s">%s<div>%s</div></div>'
                 % (" reiter__blatt--mit-bild" if bild else "", kennung, bild,
-                   text_rendern(k["text"]))
+                   inhalt_rendern(k["text"]))
             )
             regeln.append('#%s:checked~[data-fuer="%s"]{display:grid}' % (kennung, kennung))
             regeln.append('#%s:checked~.reiter__leiste label[for="%s"]'
                           '{color:var(--tinte);border-color:var(--akzent)}'
                           % (kennung, kennung))
+            regeln.append('#%s:checked~.reiter__leiste label[for="%s"] '
+                          '.sinnbild{opacity:1}' % (kennung, kennung))
 
         return (
             '<div class="reiter" data-auftritt><style>%s</style>%s'
@@ -791,7 +896,7 @@ def block_rendern(name, argument, zeilen):
         inner = "".join(
             '<div class="bildwand__schritt" data-auftritt>'
             '<span class="bildwand__zahl">%02d</span><h3>%s</h3>%s</div>'
-            % (i + 1, inline(k["titel"]), text_rendern(k["text"]))
+            % (i + 1, inline(k["titel"]), inhalt_rendern(k["text"]))
             for i, k in enumerate(schritte)
         )
         return (
@@ -810,7 +915,7 @@ def block_rendern(name, argument, zeilen):
         inner = "".join(
             "<details><summary>%s</summary>"
             '<div class="aufklapp__inhalt">%s</div></details>'
-            % (inline(k["titel"]), text_rendern(k["text"]))
+            % (inline(k["titel"]), inhalt_rendern(k["text"]))
             for k in punkte
         )
         return '<div class="aufklapp" data-auftritt>%s</div>' % inner
@@ -819,6 +924,113 @@ def block_rendern(name, argument, zeilen):
     if name in ("hinweis", "vertraulich"):
         return '<p class="vertraulich" data-auftritt>%s</p>' % inline(
             " ".join(z.strip() for z in zeilen if z.strip())
+        )
+
+    # --- Social: Plattformlogo, Zahl, Quelle. Ohne Quelle keine Zahl.
+    #     Schema je Zeile:  plattform | Wert | Quelle und Datum | Handle
+    if name in ("social", "kanaele"):
+        kacheln = []
+        for idx, zeile in enumerate(zeilen):
+            teile_z = [x.strip() for x in zeile.split("|")]
+            if len(teile_z) < 3:
+                if zeile.strip():
+                    sys.stderr.write("  ! Kanal ohne Quelle \u00fcbersprungen: %s\n"
+                                     % zeile.strip()[:60])
+                continue
+            plattform, wert, quelle = teile_z[0], teile_z[1], teile_z[2]
+            handle = teile_z[3] if len(teile_z) > 3 else ""
+            logo, farbe = markenzeichen(plattform)
+            if not logo:
+                sys.stderr.write("  ! Kein Logo f\u00fcr '%s'\n" % plattform)
+                logo = sinnbild("globus")
+            stil = ("--markenfarbe:%s;" % sicher(farbe)) if farbe else ""
+            kacheln.append(
+                '<div class="kanal" data-auftritt style="%s--verzug:%dms">'
+                '<span class="kanal__logo">%s</span>'
+                '<span class="kanal__wert">%s</span>'
+                '<span class="kanal__name">%s</span>'
+                '<span class="kanal__quelle">%s</span></div>'
+                % (stil, idx * 70, logo, inline(wert),
+                   inline(handle or plattform.title()), inline(quelle))
+            )
+        if not kacheln:
+            return ""
+        return '<div class="kanaele">%s</div>' % "".join(kacheln)
+
+    # --- Sinnbilder: Zeichen statt Satz.  icon | Titel | Beisatz
+    if name in ("sinnbilder", "icons", "zeichen"):
+        felder = []
+        for idx, zeile in enumerate(zeilen):
+            if "|" not in zeile:
+                continue
+            teile_z = [x.strip() for x in zeile.split("|")]
+            schluessel, titel = teile_z[0], teile_z[1]
+            beisatz = teile_z[2] if len(teile_z) > 2 else ""
+            zeichen = sinnbild(schluessel)
+            if not zeichen:
+                sys.stderr.write("  ! Unbekanntes Sinnbild '%s'\n" % schluessel)
+            felder.append(
+                '<div class="zeichenfeld" data-auftritt style="--verzug:%dms">'
+                '%s<span class="zeichenfeld__titel">%s</span>%s</div>'
+                % (idx * 60, zeichen, inline(titel),
+                   ('<span class="zeichenfeld__text">%s</span>' % inline(beisatz))
+                   if beisatz else "")
+            )
+        if not felder:
+            return ""
+        return '<div class="zeichenfelder">%s</div>' % "".join(felder)
+
+    # --- Laufband: Namen ziehen seitlich durch. Eine Zeile je Name.
+    #     Der Zug laeuft endlos, deshalb steht die Liste zweimal da.
+    if name in ("laufband", "logoband"):
+        namen = [z.strip() for z in zeilen if z.strip()]
+        if not namen:
+            return ""
+        glied = "".join('<span class="laufband__glied">%s</span>' % inline(n)
+                        for n in namen)
+        return (
+            '<div class="laufband" data-auftritt>'
+            '<div class="laufband__zug">%s</div>'
+            '<div class="laufband__zug" aria-hidden="true">%s</div>'
+            "</div>" % (glied, glied)
+        )
+
+    # --- Querbahn: Beim Runterscrollen laufen die Karten seitlich durch.
+    #     Ohne Scroll-Animationen im Browser bleibt ein Wischstreifen uebrig.
+    if name in ("quer", "querbahn"):
+        karten = karten_lesen(zeilen)
+        if not karten:
+            return ""
+        kopf = ""
+        if argument.strip():
+            kopf = ('<div class="quer__kopf"><span class="marke">%s</span></div>'
+                    % inline(argument.strip()))
+        spur = []
+        for k in karten:
+            bild = ""
+            if k["bild"]:
+                bild = ('<div class="querkarte__bild"><img src="%s" alt="%s" '
+                        'loading="lazy" decoding="async"></div>'
+                        % (sicher(k["bild"]), sicher(k["titel"])))
+            zeichen = sinnbild(k.get("icon", ""), "sinnbild--karte")
+            spur.append(
+                '<article class="querkarte">%s<div class="querkarte__text">'
+                '%s<h3>%s</h3>%s</div></article>'
+                % (bild, zeichen, inline(k["titel"]), inhalt_rendern(k["text"]))
+            )
+        return (
+            '<section class="quer" style="--anzahl:%d">'
+            '<div class="quer__buehne"><div class="quer__klebe">%s'
+            '<div class="quer__spur">%s</div>'
+            '<div class="quer__balken"><i></i></div>'
+            '<div class="quer__fuss"><p class="quer__hinweis">Seitlich '
+            'wischen &rarr;</p><div class="quer__steuer">'
+            '<button class="slider__knopf" data-blaettern="zurueck" type="button" '
+            'aria-label="Vorheriges">&#8592;</button>'
+            '<button class="slider__knopf" data-blaettern="vor" type="button" '
+            'aria-label="N\u00e4chstes">&#8594;</button></div></div>'
+            "</div></div></section>"
+            % (len(karten), kopf, "".join(spur))
         )
 
     # Unbekannter Baustein: nicht raten, sondern als Text durchreichen.
@@ -879,7 +1091,7 @@ def koerper_bauen(bloecke):
             abschnitt_oeffnen(daten[0], daten[1])
         elif art == "block":
             name, argument, zeilen = daten
-            if name in ("parallax", "band", "kapitel"):
+            if name in ("parallax", "band", "kapitel", "quer", "querbahn"):
                 # Volle Breite: ausserhalb eines Abschnitts
                 abschnitt_schliessen()
                 teile.append(block_rendern(name, argument, zeilen))

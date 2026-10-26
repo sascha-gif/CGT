@@ -4,7 +4,7 @@ kunde:             LIDL
 titel:             Lidl × Bear Grylls
 projekt:           Eine neue Welt des Familienabenteuers
 marke:             Bear Grylls Young Adventurer
-claim:             Zwei fertige Animationsfilme, eine weltbekannte Figur — und Lidl Plus als Schlüssel. Ein Abenteuer, das Familien sehen, kaufen und erleben.
+claim:             Zwei fertige Animationsfilme, eine weltbekannte Figur — und Lidl Plus als Schlüssel.
 kanal:             Strategische Partnerschaft · Konzeptentwurf
 datum:             2026-10-26
 status:            freigegeben
@@ -28,121 +28,136 @@ abschluss-text:    Eine fokussierte Arbeitssitzung mit Ihrem Team — strategisc
 !! Was, wenn Lidl Familien zusammenbringt — mit einem Abenteuer, das sie sehen,
 kaufen und erleben können?
 
-Eine international bekannte Figur. Zwei **fertig produzierte** Animationsfilme.
-Und mit Lidl Plus ein Kanal, der aus Aufmerksamkeit einen Einkauf macht und aus
-einem Einkauf ein gemeinsames Erlebnis.
-
-Das ist kein Logo auf Ware. Es ist eine Kette: Die Geschichte weckt Interesse,
-das Produkt macht sie greifbar, das Erlebnis gibt der Familie einen Grund
-mitzumachen.
+::: sinnbilder
+schild | Eine Weltmarke | Bekannt in über 200 Ländern
+film | Zwei fertige Filme | Produziert, nicht geplant
+handy | Lidl Plus | Der Kanal ist vorhanden
+herz | Ein Erlebnis | Nicht nur ein Logo auf Ware
+:::
 
 
 ## Wer Bear Grylls ist {hell}
 
 ::: reiter
 ### Der Mann
-bild: bilder/bear-live.jpg
-Soldat der 21 SAS, Everest-Besteiger, Ehrenoberst, Nummer-1-Bestsellerautor und Fernsehabenteurer. Seit zwanzig Jahren dieselbe Rolle: der Mann, der zeigt, wie man durchkommt.
+icon: berg
+Soldat der 21 SAS. Everest-Besteiger. Nummer-1-Bestsellerautor.
 
-Von Juli 2009 bis September 2024 **Chief Scout des Vereinigten Königreichs** — der jüngste je ernannte, nach Baden-Powell der am zweitlängsten amtierende. Seit 2018 **erster Chief Ambassador of World Scouting**.
+Von 2009 bis 2024 **Chief Scout des Vereinigten Königreichs** — der jüngste je ernannte. Seit 2018 erster **Chief Ambassador of World Scouting**.
 
-Botschafter des Tusk Trust. Sein Satz unter jeder Unterschrift: *Never give up.*
+*Never give up.*
 
 ### Die Reichweite
-Über **zwei Milliarden** Fernsehzuschauer in mehr als **200 Ländern und Territorien**. **20 Millionen** verkaufte Bücher in 30 Sprachen.
+icon: globus
+Über **zwei Milliarden** Fernsehzuschauer in mehr als **200 Ländern**. **20 Millionen** verkaufte Bücher in 30 Sprachen.
 
-Ausgestrahlt wurde er unter anderem bei Netflix, BBC, Discovery, National Geographic, NBC, ITV, Disney und Apple TV+.
+### Warum Familien
+icon: menschen
+Galionsfigur für **60 Millionen Pfadfinder**. Keine Hype-Figur, sondern eine Haltung: draußen sein, nicht aufgeben, einander helfen.
 
-Die aktuellen Social-Media-Zahlen stehen im nächsten Abschnitt.
+Eltern müssen bei dieser Marke nicht überlegen, ob sie passt.
+:::
 
-### Warum das für Familien zählt
-Als Galionsfigur für **60 Millionen Pfadfinder** weltweit steht er nicht für Hype, sondern für Haltung: Draußen sein, nicht aufgeben, einander helfen.
-
-Das ist der Unterschied zu einer beliebigen Lizenzfigur. Eltern müssen bei dieser Marke nicht überlegen, ob sie dazu passt — sie kennen sie und sie vertrauen ihr.
+::: laufband
+Netflix
+BBC
+Discovery
+National Geographic
+NBC
+ITV
+Disney
+Apple TV+
+Amazon Prime
 :::
 
 
-## Was er gedreht hat
+::: quer Was er gedreht hat
+### Man vs. Wild
+bild: bilder/show-manvswild.jpg
+1,2 Mrd. Zuschauer weltweit.
 
-::: galerie drei
-![Man vs Wild — 1,2 Mrd. Zuschauer weltweit](bilder/show-manvswild.jpg)
-![Running Wild — 120 Mio. Zuschauer in den USA](bilder/show-runningwild.jpg)
-![Absolute China — drittplatzierte Sendung in China](bilder/show-china.jpg)
-![You vs Wild — 25 Mio. Abrufe in 28 Tagen, zwei Emmys](bilder/show-youvswild.jpg)
-![World's Toughest Race — zum Start Platz 1 auf Amazon Prime](bilder/show-toughestrace.jpg)
-![The Island — 110 Mio. Zuschauer in Europa](bilder/show-island.jpg)
+### Running Wild
+bild: bilder/show-runningwild.jpg
+120 Mio. Zuschauer in den USA.
+
+### Absolute China
+bild: bilder/show-china.jpg
+Drittplatzierte Sendung in China.
+
+### You vs. Wild
+bild: bilder/show-youvswild.jpg
+25 Mio. Abrufe in 28 Tagen. Zwei Emmys.
+
+### World's Toughest Race
+bild: bilder/show-toughestrace.jpg
+Zum Start Platz 1 auf Amazon Prime.
+
+### The Island
+bild: bilder/show-island.jpg
+110 Mio. Zuschauer in Europa.
+
+### Zwei für Netflix
+icon: stern
+*Celebrity Bear Hunt* und *Animals on the Loose* — beide zum Start auf **Platz 1**.
 :::
-
-Dazu zwei Netflix-Produktionen, die zum Start jeweils auf **Platz 1** standen:
-*Celebrity Bear Hunt* und *Animals on the Loose*.
 
 
 ## Die Reichweite heute {hell}
 
-!! Eine Lizenzfigur ist nur so viel wert wie die Aufmerksamkeit, die sie
-mitbringt. Diese hier bringt ein eigenes Publikum mit — jeden Tag, ohne
-Mediabudget.
+!! Reichweite muss nicht eingekauft werden. Sie ist vorhanden — jeden Tag,
+ohne Mediabudget.
 
-::: belege
-Facebook, verifizierte Seite | 13 Mio. | Facebook-Seite, abgerufen am 26.10.2026
-Instagram, verifiziertes Profil @beargrylls | 8,6 Mio. | Instagram-Profil, abgerufen am 26.10.2026
-YouTube @beargrylls, dazu 255 Videos | 635.000 | YouTube-Kanal, abgerufen am 26.10.2026
-TikTok @beargrylls, dazu 2,6 Mio. Likes | 428.900 | TikTok-Profil, abgerufen am 26.10.2026
+::: social
+facebook | 13 Mio. | Facebook-Seite, abgerufen am 26.10.2026 | Facebook
+instagram | 8,6 Mio. | Instagram-Profil, abgerufen am 26.10.2026 | @beargrylls
+youtube | 635.000 | YouTube-Kanal, abgerufen am 26.10.2026 | 255 Videos
+tiktok | 428.900 | TikTok-Profil, abgerufen am 26.10.2026 | 2,6 Mio. Likes
 :::
 
-**Vier Plattformen, nachgezählt: rund 22,7 Millionen Follower.** X und Weibo
-sind darin noch nicht enthalten. Der Lizenzgeber nennt 23 Millionen über alle
-Kanäle — die Einzelzahlen bestätigen das, statt es nur zu behaupten.
+**Nachgezählt: rund 22,7 Millionen Follower.** X und Weibo sind nicht
+enthalten. Der Lizenzgeber nennt 23 Millionen — die Einzelzahlen bestätigen
+das, statt es zu behaupten.
 
-Dazu kommt Reichweite, die keine Followerzahl abbildet: Eine einzige
-YouTube-Folge mit dem indischen Premierminister erreichte **3,6 Milliarden
-Online-Impressionen**, das offizielle Promo zu *Into the Wild* mit Akshay Kumar
-allein **24,5 Millionen Aufrufe**. Die Schwerpunkte liegen in Großbritannien,
-den USA, **Indien und China**.
 
-**Was das für eine Kampagne bedeutet:** Reichweite muss nicht eingekauft
-werden, sie ist vorhanden. Bear wäre laut Konzept über Premieren, Interviews,
-PR-Termine und seine eigenen Kanäle eingebunden — vorausgesetzt, seine
-persönliche Mitwirkung wird vertraglich gesichert.
+::: belege
+Online-Impressionen, eine YouTube-Folge mit dem indischen Premierminister | 3,6 Mrd. | Lizenzunterlagen YBG Films Ltd, 2025
+Aufrufe des Promos zu *Into the Wild* mit Akshay Kumar | 24,5 Mio. | Lizenzunterlagen YBG Films Ltd, 2025
+:::
+
+Schwerpunkte: Großbritannien, USA, **Indien und China**. Bear wäre laut
+Konzept über Premieren, Interviews und seine eigenen Kanäle eingebunden —
+vorausgesetzt, seine Mitwirkung wird vertraglich gesichert.
 
 
 ::: kapitel bilder/keyart-band.jpg
 nummer: Der Inhalt
 ## Zwei Filme sind fertig.
 
-Kein Entwicklungsprojekt, keine Absichtserklärung. Zwei abgeschlossene
-Animationsfilme, die auf einen Starttermin warten.
+Kein Entwicklungsprojekt, keine Absichtserklärung.
 :::
 
 
 ## Die Geschichte
 
-!! **Green Squad** — ein fünfköpfiges Einsatzteam in einer verdeckten
-Rettungsorganisation, die ausschließlich von Kindern geführt wird: dem
-**Secret Ops Squad**.
-
-Der neueste Rekrut ist ein vierzehnjähriger Bear Grylls. Ein eher gewöhnlicher
-Junge — unsicher, in der Schule gelangweilt —, bis er rekrutiert wird. Erzählt
-wird, wie er seinen Platz im Team findet: waghalsige Rettungen, extreme
-Schauplätze, knappes Überleben und Freundschaften, die halten.
-
-Schnell, komisch und spannend. Für Bears junge Fans die Vorgeschichte zu dem
-Mann, den sie aus dem Fernsehen kennen.
+!! **Green Squad** — ein Kinderteam in einer verdeckten Rettungsorganisation.
+Der neueste Rekrut: ein vierzehnjähriger Bear Grylls.
 
 ::: karten zwei
 ### Endangered · 91 Minuten
-Schauplatz: die Dschungel von Borneo und Sumatra. Bear tauscht das Klassenzimmer gegen den Regenwald und steht an vorderster Front gegen Abholzung und Artensterben. Tödliche Raubtiere, ein wütendes Nashorn und ein paar zu freundliche Orang-Utans.
+icon: blatt
+Borneo und Sumatra. Regenwald statt Klassenzimmer, Abholzung und Artensterben. Tödliche Raubtiere, ein wütendes Nashorn, zu freundliche Orang-Utans.
 
-Die härteste Prüfung ist eine andere: Bear muss seine Teamkameraden — und sich selbst — davon überzeugen, dass er in die Truppe gehört.
+Die härteste Prüfung: Bear muss beweisen, dass er ins Team gehört.
 
 ### Icebreaker · 96 Minuten
-Schauplatz: Sibirien und der Polarkreis. Ein abgestürztes Frachtflugzeug, Menschenleben in Gefahr und die Uhr läuft, bei Temperaturen weit unter null.
+icon: schnee
+Sibirien und Polarkreis. Ein abgestürztes Frachtflugzeug, Menschenleben in Gefahr, weit unter null.
 
-Dazu Whiteout-Stürme, Wölfe und eine Lawine. Diesmal muss die Green Squad vor allem eines: sich selbst retten.
+Whiteout-Stürme, Wölfe, eine Lawine. Diesmal muss die Green Squad sich selbst retten.
 :::
 
 !! **Der Vorschlag:** ein exklusives Ansichtsfenster für Lidl-Kundinnen und
--Kunden — vorbehaltlich Rechten, Territorien und technischer Machbarkeit.
+-Kunden — vorbehaltlich Rechten, Territorien und Machbarkeit.
 
 // VIDEO: Sobald eine Trailerdatei vorliegt, hier die beiden Schraegstriche
 // entfernen und die Datei als bilder/trailer.mp4 ablegen.
@@ -154,21 +169,21 @@ Dazu Whiteout-Stürme, Wölfe und eine Lawine. Diesmal muss die Green Squad vor 
 
 ## Der Mechanismus: Lidl Plus
 
-!! Hier entsteht der eigentliche Wert. Nicht in der Lizenz, sondern in der
-Verbindung von Regal, App und Film.
+!! Hier entsteht der Wert. Nicht in der Lizenz, sondern in der Verbindung von
+Regal, App und Film.
 
 ::: bildwand bilder/lidl-plus-foto.jpg
 ### Entdecken
-Die Kampagne im Markt: Aktionsfläche, Handzettel, Regal.
+Aktionsfläche, Handzettel, Regal.
 
 ### Kaufen
-Aktionsprodukte mitnehmen — die Schwelle entscheidet über die Wirkung.
+Aktionsprodukte mitnehmen.
 
 ### Freischalten
-QR-Code einlösen, Zugang über Lidl Plus erhalten.
+QR-Code über Lidl Plus einlösen.
 
 ### Ansehen
-Den Film zu Hause gemeinsam schauen. Kein Streamingdienst dazwischen.
+Zu Hause gemeinsam schauen. Kein Streamingdienst dazwischen.
 
 ### Wiederkommen
 Zurück in den Markt für das nächste Abenteuer.
@@ -178,59 +193,68 @@ Zurück in den Markt für das nächste Abenteuer.
 Nutzer der Lidl-Plus-App weltweit, nach Angaben von Lidl | über 100 Mio. | Lidl, zitiert in Presseberichten; Angabe rund ein Jahr alt
 :::
 
-**Was vorher zu klären ist**, und das sagen wir lieber jetzt als später:
-Einkaufsschwellen, Teilnahmebedingungen und der Schutz von Kinderdaten. Das
-gehört in die Machbarkeitsprüfung, nicht in eine Präsentation.
+**Vorher zu klären:** Einkaufsschwellen, Teilnahmebedingungen, Schutz von
+Kinderdaten. Das gehört in die Machbarkeitsprüfung.
 
 
 ## Was daraus entsteht {hell}
 
 ::: reiter
 ### Die Produkte
-Schmal starten, nicht breit. Eine eng kuratierte Kollektion schlägt ein großes Sortiment ohne Haltung.
+icon: warenkorb
+Schmal starten, nicht breit. Eine kuratierte Kollektion schlägt ein großes Sortiment ohne Haltung.
 
-- **Kinder-Explorerjacken** und praktische Familienbekleidung
-- **Rucksäcke** und **Trinkflaschen**
-- **Camping-Basics** und **Outdoor-Spiele**
-- **Ausgewählte Snacks** aus der Mission-Food-Linie
+::: sinnbilder
+rucksack | Rucksäcke | und Trinkflaschen
+schild | Explorerjacken | für Kinder und Familie
+zelt | Camping-Basics | und Outdoor-Spiele
+gabel | Mission Food | ausgewählte Snacks
+:::
 
-Jedes Produkt braucht einen klaren Preispunkt und einen glaubwürdigen Grund zu existieren. Gemeinsame Entwicklung ist ausdrücklich vorgesehen: Lidl kennt Preislagen und Fläche, die Lizenzseite bringt Figur, Bildwelt und Geschichte.
+Jedes Produkt braucht einen Preispunkt und einen Grund zu existieren. Lidl kennt Preislagen und Fläche, die Lizenzseite bringt Figur und Geschichte.
 
 ### Das Erlebnis
-Familien-Abenteuerwochenenden. Naturchallenges. Ferienaktionen. Sorgfältig gestaltete Gewinnerlebnisse.
+icon: zelt
+Familien-Abenteuerwochenenden. Naturchallenges. Ferienaktionen. Gewinnerlebnisse.
 
 Die Kampagne soll Erinnerungen schaffen, nicht Impressionen zählen.
 
-Darüber hinaus — ausdrücklich als Zusatz, nicht als Fundament — ließe sich das Thema mit bestehenden Lidl-Initiativen zu Nachhaltigkeit und Familie verbinden. Ein konkretes Programm wäre mit Ihrem CSR-Team zu entwickeln, mit messbaren Ergebnissen und belegbaren Umweltaussagen.
+Als Zusatz, nicht als Fundament: eine Verbindung zu bestehenden Lidl-Initiativen zu Nachhaltigkeit und Familie — mit Ihrem CSR-Team zu entwickeln, mit belegbaren Aussagen.
 
-### Der Geschäftsnutzen
-**Für Lidl:** Kategorieumsatz und Frequenz. Kundenbindung über Lidl Plus. Eine unverwechselbare Markenerzählung in den Schlüsselmärkten — etwas, das kein Wettbewerber einfach nachkaufen kann.
+### Der Nutzen
+icon: wachstum
+**Für Lidl:** Kategorieumsatz und Frequenz. Bindung über Lidl Plus. Eine Erzählung, die kein Wettbewerber nachkaufen kann.
 
-**Für die Rechteinhaber:** Lizenzwert, Filmreichweite und die Perspektive auf ein dauerhaftes Franchise statt einer einmaligen Aktion.
+**Für die Rechteinhaber:** Lizenzwert, Filmreichweite, die Perspektive auf ein Franchise statt einer Aktion.
 
-Gemessen wird der Pilot an inkrementellen Ergebnissen — nicht an Reichweitenzahlen in einer Abschlusspräsentation.
+Gemessen wird am inkrementellen Ergebnis — nicht an Reichweitenzahlen.
 :::
 
 
 ## Die Marke steht nicht allein
 
-::: reiter
-### Das Franchise
-Hinter den beiden Filmen steht ein ausgearbeitetes Franchise: Animationsserie, Live-Action-Film, Spielzeug und Konstruktionsspielzeug, Bekleidung und Schuhe, Outdoor-Ausrüstung, Verlagsprogramm, Gaming, robuste Smartphones, Food und Nutrition, Musik, Adventure Travel sowie Erlebniszentren und Themenparks.
+::: sinnbilder
+film | Serie und Live-Action | in Entwicklung
+spiel | Spielzeug | und Konstruktionsspielzeug
+rucksack | Bekleidung | Schuhe, Ausrüstung
+buch | Verlag und Gaming | bestehende Programme
+gabel | Food und Nutrition | Mission-Food-Linie
+pin | Parks und Erlebnisse | bestehende Standorte
+:::
 
-Für Lidl heißt das: Eine Aktion kann wachsen, statt nach einer Saison zu verpuffen.
+Für Lidl heißt das: Eine Aktion kann wachsen, statt nach einer Saison zu
+verpuffen.
 
-### Bestehende Partner
-**Jack Wolfskin** — eine globale Zusammenarbeit mit eigenem „Discovery Team". Eine deutsche Outdoor-Marke, die dieselbe Zielgruppe anspricht.
+::: karten zwei
+### Partner, die es gibt
+icon: haken
+**Jack Wolfskin** — globale Zusammenarbeit mit eigenem „Discovery Team". Deutsche Outdoor-Marke, gleiche Zielgruppe.
 
 **Luminox** — offizieller Uhrenpartner, Schweizer Abenteueruhren.
 
-Beide zeigen, dass die Marke im Handel funktioniert und Partner findet, die etwas zu verlieren haben.
-
-### Erlebnisse, die es gibt
-Die **Survival Academy** arbeitet weltweit. In Großbritannien laufen **The Bear Grylls Adventure** und das Festival **Gone Wild**. In China ist ein Themenpark in Planung.
-
-Das ist keine Idee für später, sondern eine bestehende Infrastruktur, an die sich eine Handelskampagne anhängen kann.
+### Erlebnisse, die laufen
+icon: pin
+**Survival Academy** weltweit. In Großbritannien **The Bear Grylls Adventure** und das Festival **Gone Wild**. In China ein Themenpark in Planung.
 :::
 
 ::: belege
@@ -238,9 +262,9 @@ Europäischer Markt für Outdoor-Ausrüstung, 2025 | 21,7 Mrd. € | Lizenzunter
 Globaler Markt für Fertiggerichte, Prognose 2031 | 231 Mrd. $ | Lizenzunterlagen YBG Films Ltd, 2025 (2022: 140 Mrd. £)
 :::
 
-Für die Lebensmittelschiene laufen bereits Gespräche mit großen Supermärkten;
-der Start ist in Großbritannien vorgesehen. **Wer früh einsteigt, bestimmt
-mit, wie die Marke im Handel aussieht.**
+Für die Lebensmittelschiene laufen Gespräche mit großen Supermärkten, Start in
+Großbritannien. **Wer früh einsteigt, bestimmt mit, wie die Marke im Handel
+aussieht.**
 
 
 ## Was wir vorschlagen

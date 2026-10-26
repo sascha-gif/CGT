@@ -138,7 +138,7 @@ Seite.
 
 ### Bausteine
 
-Alles zwischen `:::` und `:::`.
+Alles zwischen `:::` und `:::`. Bausteine dürfen ineinander stehen — ein `::: sinnbilder` in einem Reiter ist erlaubt. Zu schließen ist mit einem nackten `:::`, jedes `::: name` öffnet eine neue Ebene.
 
 **Kennzahlen** — zählen beim Scrollen hoch:
 ```
@@ -252,6 +252,73 @@ Sneaker-Anteil, Prognose 2025 | 29,5 % | IFH Köln, 2025
 :::
 ```
 Schema: `Aussage | Wert | Quelle und Datum`.
+
+**Social** — Plattformlogo, Zahl, Quelle. Die Logos stecken im Generator,
+es wird nichts von Facebook oder Google nachgeladen. **Ohne Quelle fällt
+die Zeile raus**, genau wie bei `belege`:
+```
+::: social
+facebook  | 13 Mio.  | Facebook-Seite, abgerufen am 26.10.2026 | Facebook
+instagram | 8,6 Mio. | Instagram-Profil, abgerufen am 26.10.2026 | @beargrylls
+youtube   | 635.000  | YouTube-Kanal, abgerufen am 26.10.2026 | 255 Videos
+tiktok    | 428.900  | TikTok-Profil, abgerufen am 26.10.2026 | 2,6 Mio. Likes
+:::
+```
+Schema: `plattform | Wert | Quelle und Datum | Beisatz`. Bekannt sind
+`facebook`, `instagram`, `youtube`, `tiktok`, `x` und `weibo`.
+
+**Sinnbilder** — Zeichen statt Satz. Dafür ist dieser Baustein da: eine
+Aufzählung, die man ansieht statt sie zu lesen:
+```
+::: sinnbilder
+schild | Eine Weltmarke | Bekannt in über 200 Ländern
+film   | Zwei fertige Filme | Produziert, nicht geplant
+handy  | Lidl Plus | Der Kanal ist vorhanden
+:::
+```
+Schema: `zeichen | Titel | Beisatz`. Welche Zeichen es gibt, steht in
+`bauen.py` unter `SINNBILDER` — derzeit rund dreißig, von `berg` und
+`rucksack` bis `warenkorb` und `wachstum`. Ein unbekannter Name wird beim
+Bauen gemeldet und die Zeile bleibt ohne Zeichen stehen.
+
+Dasselbe Zeichen lässt sich auch in eine Karte oder einen Reiter setzen —
+dort mit `icon:` neben `bild:`:
+```
+::: karten zwei
+### Endangered · 91 Minuten
+icon: blatt
+Borneo und Sumatra …
+:::
+```
+
+**Laufband** — Namen ziehen endlos seitlich durch. Gedacht für Sender,
+Partner oder Märkte, wo sonst ein Aufzählungssatz stünde:
+```
+::: laufband
+Netflix
+BBC
+Discovery
+:::
+```
+
+**Querbahn** — der große seitliche Effekt: Beim Runterscrollen bleibt der
+Abschnitt stehen und die Karten laufen quer durchs Bild. Geht über die volle
+Breite, das Argument hinter `quer` ist die Überschrift:
+```
+::: quer Was er gedreht hat
+### Man vs. Wild
+bild: bilder/show-manvswild.jpg
+1,2 Mrd. Zuschauer weltweit.
+
+### Running Wild
+bild: bilder/show-runningwild.jpg
+120 Mio. Zuschauer in den USA.
+:::
+```
+Kann ein Browser das nicht (oder hat jemand „Bewegung reduzieren“
+eingestellt), bleibt ein ganz normaler Wischstreifen mit Pfeilen übrig.
+Vier bis acht Karten sind eine gute Menge — bei zwei lohnt der Effekt nicht,
+bei zwölf wird das Scrollen lang.
 
 **Prospekt** — Simulation der Aktionsseite, damit sich ein Einkäufer das
 Produkt im eigenen Handzettel vorstellen kann. Der Händlername kommt

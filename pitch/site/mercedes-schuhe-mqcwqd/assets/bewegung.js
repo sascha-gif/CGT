@@ -160,10 +160,24 @@
   /* ----------------------------------------------------------------- Slider
      Auf dem Handy wischt man. Am Desktop gibt es zwei Pfeile. */
   function sliderStarten() {
-    document.querySelectorAll(".slider").forEach(function (slider) {
-      var spur = slider.querySelector(".slider__spur");
-      var zurueck = slider.querySelector("[data-slider='zurueck']");
-      var vor = slider.querySelector("[data-slider='vor']");
+    var bahnen = [];
+    document.querySelectorAll(".slider").forEach(function (el) {
+      bahnen.push([el, ".slider__spur", "data-slider"]);
+    });
+    /* Die Querbahn blaettert genauso -- aber nur dort, wo der Browser die
+       Scroll-Animation nicht selbst uebernimmt. Sonst waeren die Pfeile
+       ohnehin ausgeblendet. */
+    if (!cssScrollt) {
+      document.querySelectorAll(".quer").forEach(function (el) {
+        bahnen.push([el, ".quer__spur", "data-blaettern"]);
+      });
+    }
+
+    bahnen.forEach(function (eintrag) {
+      var slider = eintrag[0];
+      var spur = slider.querySelector(eintrag[1]);
+      var zurueck = slider.querySelector("[" + eintrag[2] + "='zurueck']");
+      var vor = slider.querySelector("[" + eintrag[2] + "='vor']");
       if (!spur || !zurueck || !vor) return;
 
       function schrittweite() {
@@ -175,7 +189,7 @@
 
       function knoepfePruefen() {
         var maximal = spur.scrollWidth - spur.clientWidth - 2;
-        var steuer = slider.querySelector(".slider__steuer");
+        var steuer = slider.querySelector(".slider__steuer, .quer__steuer");
         /* Passt alles ins Bild, braucht es keine Pfeile. */
         if (steuer) steuer.style.display = maximal > 2 ? "" : "none";
         zurueck.disabled = spur.scrollLeft <= 2;

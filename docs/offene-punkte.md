@@ -99,6 +99,15 @@ Das Baukastensystem steht: [`../pitch/README.md`](../pitch/README.md).
   „CGT".
 - **Wer gibt eine Pitch-Seite frei**, bevor sie an einen Einkäufer geht?
   Solange `status: entwurf` steht, zeigt die Seite einen roten Balken.
+- **26.10.2026 — Es fehlt ein brauchbares Bild von Bear Grylls selbst.**
+  Das bisher verwendete `bear-live.jpg` war ein Ausschnitt aus einer Folie:
+  Bear im Sprung, daneben die Senderlogos — an jeder Kante angeschnitten,
+  jeder Zuschnitt zerlegt ein Logo. Es ist von der Lidl-Seite entfernt; die
+  Sender stehen jetzt als Laufband da. **Sofort ausführbar:** beim
+  Lizenzgeber die Originaldatei des Decks anfordern, daraus Porträt und
+  Senderleiste in voller Auflösung ziehen. Für die Filmposter (ENDANGERED,
+  ICEBREAKER), die Mission-Food-Verpackung und die Spielzeugentwürfe gilt
+  dasselbe — die liegen bisher nur als Bildschirmfotos vor.
 
 ## Entscheidet über die Ideen ([ideen.md](ideen.md))
 
