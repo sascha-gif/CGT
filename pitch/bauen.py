@@ -382,6 +382,16 @@ SINNBILDER = {
     "gabel":      '<path d="M4 2v6a3 3 0 0 0 3 3 3 3 0 0 0 3-3V2M7 2v9M7 11v11M18 2c-1.6 2-2.2 4.2-2.2 7 0 2 .8 3.2 2.2 3.2V22"/>',
     "schere":     '<circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/>',
     "siegel":     '<circle cx="12" cy="9" r="6.5"/><path d="M8 14.5 6.5 22l5.5-2.8L17.5 22 16 14.5"/>',
+    "schuh":      '<path d="M2 16.5h19.5a1 1 0 0 0 1-1v-.9a2 2 0 0 0-1.4-1.9l-5.1-1.7a3 3 0 0 1-1.3-.9l-2.4-2.8a2 2 0 0 0-1.6-.8H6a1 1 0 0 0-1 1V13H2z"/><path d="M5 10.5h2.5M9.2 8.6l1.6 1.9"/>',
+    "dokument":   '<path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"/><path d="M14 2v5h5M9 13h6M9 17h4"/>',
+    "fabrik":     '<path d="M2 20.5h20"/><path d="M3.5 20.5V10l5.5 3.5V10l5.5 3.5V6.5h5.5v14"/><path d="M18 10.5h.01M18 14.5h.01"/>',
+    "laden":      '<path d="m3 9.5 1.2-4.9A1 1 0 0 1 5.2 4h13.6a1 1 0 0 1 1 .6L21 9.5"/><path d="M3 9.5a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M4.5 12.3V20a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1v-7.7"/>',
+    "monitor":    '<rect width="20" height="14" x="2" y="3.5" rx="2"/><path d="M8.5 21h7M12 17.5V21"/>',
+    "blitz":      '<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>',
+    "etikett":    '<path d="m20.6 13.4-7.2 7.2a2 2 0 0 1-2.8 0l-7.2-7.2a2 2 0 0 1-.6-1.5l.3-7a2 2 0 0 1 1.9-1.9l7-.3a2 2 0 0 1 1.5.6l7.1 7.1a2 2 0 0 1 0 2.8z"/><circle cx="7.6" cy="7.6" r="1.4"/>',
+    "luft":       '<path d="M3 8h10.5a3 3 0 1 0-3-3M3 12h15a3 3 0 1 1-3 3M3 16h8.5a2.5 2.5 0 1 1-2.5 2.5"/>',
+    "schloss":    '<rect width="15" height="10.5" x="4.5" y="11" rx="2"/><path d="M7.8 11V7a4.2 4.2 0 0 1 8.4 0v4"/>',
+    "stapel":     '<path d="m12 2.5 9.5 4.8-9.5 4.8-9.5-4.8z"/><path d="m2.5 12.2 9.5 4.8 9.5-4.8M2.5 17l9.5 4.8L21.5 17"/>',
     "haus":       '<path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.5V20a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V9.5"/>',
 }
 
@@ -416,6 +426,12 @@ def markenzeichen(name):
     farbe, pfad = eintrag
     return ('<svg class="markenzeichen" viewBox="0 0 24 24" fill="currentColor" '
             'aria-hidden="true"><path d="%s"/></svg>' % pfad), farbe
+
+
+def kennung_aus(titel):
+    """Aus einer Ueberschrift die Sprungmarke machen. Eine Regel, zwei
+    Verwendungen: Abschnitte und Querbahnen muessen dieselbe treffen."""
+    return re.sub(r"[^a-z0-9]+", "-", (titel or "").lower()).strip("-")[:40]
 
 
 def inhalt_rendern(zeilen):
@@ -895,8 +911,9 @@ def block_rendern(name, argument, zeilen):
             return text_rendern(zeilen)
         inner = "".join(
             '<div class="bildwand__schritt" data-auftritt>'
-            '<span class="bildwand__zahl">%02d</span><h3>%s</h3>%s</div>'
-            % (i + 1, inline(k["titel"]), inhalt_rendern(k["text"]))
+            '<span class="bildwand__zahl">%s%02d</span><h3>%s</h3>%s</div>'
+            % (sinnbild(k.get("icon", "")), i + 1, inline(k["titel"]),
+               inhalt_rendern(k["text"]))
             for i, k in enumerate(schritte)
         )
         return (
@@ -1018,8 +1035,9 @@ def block_rendern(name, argument, zeilen):
                 '%s<h3>%s</h3>%s</div></article>'
                 % (bild, zeichen, inline(k["titel"]), inhalt_rendern(k["text"]))
             )
+        marke = kennung_aus(argument)
         return (
-            '<section class="quer" style="--anzahl:%d">'
+            '<section class="quer"%s style="--anzahl:%d">'
             '<div class="quer__buehne"><div class="quer__klebe">%s'
             '<div class="quer__spur">%s</div>'
             '<div class="quer__balken"><i></i></div>'
@@ -1030,7 +1048,8 @@ def block_rendern(name, argument, zeilen):
             '<button class="slider__knopf" data-blaettern="vor" type="button" '
             'aria-label="N\u00e4chstes">&#8594;</button></div></div>'
             "</div></div></section>"
-            % (len(karten), kopf, "".join(spur))
+            % ((' id="%s"' % sicher(marke)) if marke else "",
+               len(karten), kopf, "".join(spur))
         )
 
     # Unbekannter Baustein: nicht raten, sondern als Text durchreichen.
@@ -1062,7 +1081,7 @@ def koerper_bauen(bloecke):
         for m in mods:
             if m in ("hell", "dunkel", "akzent", "versetzt"):
                 klassen.append("abschnitt--" + m)
-        kennung = re.sub(r"[^a-z0-9]+", "-", titel.lower()).strip("-")[:40]
+        kennung = kennung_aus(titel)
         if titel:
             sprungmarken.append((kennung or "abschnitt", titel))
         kopf = ""
@@ -1094,6 +1113,8 @@ def koerper_bauen(bloecke):
             if name in ("parallax", "band", "kapitel", "quer", "querbahn"):
                 # Volle Breite: ausserhalb eines Abschnitts
                 abschnitt_schliessen()
+                if name in ("quer", "querbahn") and argument.strip():
+                    sprungmarken.append((kennung_aus(argument), argument.strip()))
                 teile.append(block_rendern(name, argument, zeilen))
             else:
                 if not offen:

@@ -277,9 +277,14 @@ handy  | Lidl Plus | Der Kanal ist vorhanden
 :::
 ```
 Schema: `zeichen | Titel | Beisatz`. Welche Zeichen es gibt, steht in
-`bauen.py` unter `SINNBILDER` — derzeit rund dreißig, von `berg` und
-`rucksack` bis `warenkorb` und `wachstum`. Ein unbekannter Name wird beim
-Bauen gemeldet und die Zeile bleibt ohne Zeichen stehen.
+`bauen.py` unter `SINNBILDER` — derzeit über vierzig, von `berg`,
+`rucksack` und `schuh` bis `warenkorb`, `fabrik` und `wachstum`. Ein
+unbekannter Name wird beim Bauen gemeldet und die Zeile bleibt ohne Zeichen
+stehen.
+
+Auf dunklen Bändern wird der Akzent automatisch aufgehellt — ein dunkles
+Grün wäre auf Anthrazit nicht zu sehen. Ton und Sättigung bleiben, nur die
+Helligkeit steigt; ein ohnehin helles Orange ändert sich dadurch nicht.
 
 Dasselbe Zeichen lässt sich auch in eine Karte oder einen Reiter setzen —
 dort mit `icon:` neben `bild:`:
@@ -315,8 +320,10 @@ bild: bilder/show-runningwild.jpg
 120 Mio. Zuschauer in den USA.
 :::
 ```
-Kann ein Browser das nicht (oder hat jemand „Bewegung reduzieren“
-eingestellt), bleibt ein ganz normaler Wischstreifen mit Pfeilen übrig.
+Die Überschrift wird zugleich zur Sprungmarke, die Querbahn steht also in
+der Fussnavigation wie ein normaler Abschnitt. Kann ein Browser den Effekt
+nicht (oder hat jemand „Bewegung reduzieren“ eingestellt), bleibt ein ganz
+normaler Wischstreifen mit Pfeilen übrig.
 Vier bis acht Karten sind eine gute Menge — bei zwei lohnt der Effekt nicht,
 bei zwölf wird das Scrollen lang.
 

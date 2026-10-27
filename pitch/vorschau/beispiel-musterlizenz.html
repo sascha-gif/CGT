@@ -45,7 +45,7 @@
   --papier:  #fbf9f6;          /* Bone statt Weiß — ruhiger, teurer */
   --rein:    #ffffff;
   --sanft:   #f2ede6;
-  --nacht:   #100e0d;
+  --nacht:   #2b2724;          /* warmes Anthrazit, kein Reinschwarz */
 
   --display: "Instrument Serif", Georgia, "Times New Roman", serif;
   --schrift: "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -61,6 +61,16 @@
   --schatten-hoch: 0 2px 6px rgba(20,17,15,.06), 0 28px 70px rgba(20,17,15,.16);
 
   --weich: cubic-bezier(.2,.7,.3,1);
+
+  /* Dunkle Baender vertragen keinen dunklen Akzent - das Mercedes-Gruen
+     verschwindet auf Anthrazit. --akzent-leucht hebt nur die Helligkeit an
+     und laesst Ton und Saettigung stehen; ein ohnehin helles Orange bleibt
+     dadurch, wie es ist. Kann ein Browser das nicht, bleibt der Akzent. */
+  --akzent-leucht: var(--akzent);
+}
+
+@supports (color: oklch(from red max(l, .5) c h)) {
+  :root { --akzent-leucht: oklch(from var(--akzent) max(l, .72) c h); }
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -524,8 +534,10 @@ body.schema-dunkel::selection, body.schema-dunkel *::selection {
 .bildwand__schritte > * + * { margin-top: 44px; }
 .bildwand__schritt > h3 { font-size: 1.15rem; }
 .bildwand__schritt p { color: var(--gedimmt); }
+.bildwand__zahl .sinnbild { width: 20px; height: 20px; color: var(--akzent); }
 .bildwand__zahl {
-  display: block; font-family: var(--display);
+  display: flex; align-items: center; gap: 12px;
+  font-family: var(--display);
   font-size: 2rem; line-height: 1; color: var(--akzent);
   margin-bottom: 10px;
 }
@@ -928,6 +940,10 @@ th {
 .zeichenfeld__titel { font-weight: 600; font-size: .95rem; line-height: 1.3; }
 .zeichenfeld__text { font-size: .84rem; color: var(--gedimmt); line-height: 1.45; }
 .abschnitt--dunkel .zeichenfeld { border-top-color: rgba(255,255,255,.18); }
+.abschnitt--dunkel .zeichenfeld .sinnbild,
+.abschnitt--dunkel .karte__zeichen,
+.abschnitt--dunkel .bildwand__zahl,
+.abschnitt--dunkel .reiter__knopf .sinnbild { color: var(--akzent-leucht); }
 
 /* --------------------------------------------------------------------------
    Kanaele — Plattformlogo, Zahl, Quelle
@@ -1014,7 +1030,7 @@ th {
 }
 .querkarte:hover .querkarte__bild img { transform: scale(1.05); }
 .querkarte__text { padding: 18px 18px 22px; }
-.querkarte__text .sinnbild { color: var(--akzent); margin-bottom: 12px; }
+.querkarte__text .sinnbild { color: var(--akzent-leucht); margin-bottom: 12px; }
 .querkarte__text h3 { color: #fff; font-size: 1.1rem; margin-bottom: .4em; }
 .querkarte__text p { color: rgba(255,255,255,.72); font-size: .88rem; margin-bottom: .5em; }
 .querkarte__text > *:last-child { margin-bottom: 0; }
@@ -1123,7 +1139,7 @@ th {
     background: rgba(255,255,255,.14);
   }
   .quer__balken i {
-    display: block; height: 100%; background: var(--akzent);
+    display: block; height: 100%; background: var(--akzent-leucht);
     transform-origin: 0 50%;
     animation: fortschreiten linear both;
     animation-timeline: --querlauf;

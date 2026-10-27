@@ -74,12 +74,15 @@ komisch aussieht.
 
 ::: bildwand bilder/welt-club.jpg
 ### Qualität
+icon: siegel
 Ehrliche Materialien, präzise Verarbeitung und Details, die man beim hundertsten Tragen noch bemerkt. Der Styleguide formuliert es als Haltung: *Qualität ist kein Versprechen, sondern der Standard.*
 
 ### Stil
+icon: schuh
 Zeitlos, nie dem Trend hinterher. Die Formensprache schöpft aus einem Jahrhundert Sport und Schneiderhandwerk — übersetzt in das, was Menschen heute tragen.
 
 ### Zugehörigkeit
+icon: menschen
 Eine Welt, zu der man gehören möchte. Verkauft wird das Gefühl von Clubhaus und Sonntagsspiel — nicht nur der Schuh.
 :::
 
@@ -108,32 +111,34 @@ Kollektionen; Firmen- und Markenhistorie aus öffentlichen Quellen,
 Recherchestand 09.10.2026.
 
 
-## Das Sortiment
-
-::: slider nummeriert
+::: quer Das Sortiment
 ### Court Classic, Navy
 bild: bilder/artikel-court-navy.jpg
-Members Only. Court-Silhouette, Wildleder-Partien, Kontrastbesatz in Cognac.
+Members Only · Wildleder, Kontrastbesatz in Cognac.
 
 ### Court Classic, Racing Green
 bild: bilder/artikel-court-green.jpg
-Members Only. Heller Court-Schuh mit Fersenkappe in Racing Green.
+Members Only · Fersenkappe in Racing Green.
 
 ### Court Classic, Bone
 bild: bilder/artikel-court-cream.jpg
-Members Only. Durchgefärbter Court-Schuh in Bone mit Lederbesatz.
+Members Only · durchgefärbt, mit Lederbesatz.
 
 ### Penny Loafer, Oxblood
 bild: bilder/produkt-loafer.jpg
-Members Only. Klassischer Loafer in Oxblood, handgefinisht.
+Members Only · handgefinisht.
 
 ### Trail, Signal Orange
 bild: bilder/artikel-trail-orange.jpg
-Run Club. Trail-Profil mit tiefem Stollenbild, Mesh-Obermaterial.
+Run Club · tiefes Stollenbild, Mesh-Obermaterial.
 
 ### Runner, Bone
 bild: bilder/artikel-runner-weiss.jpg
-Run Club. Leichter Straßenläufer, voluminöse Dämpfung.
+Run Club · leichter Straßenläufer, voluminöse Dämpfung.
+
+### Zwei Preislagen tiefer
+icon: etikett
+Dieselben Schuhe rechnet der Styleguide im Volumenband ab **35 €**.
 :::
 
 
@@ -149,9 +154,11 @@ fertigen Schuh nachprüfbar, nicht nur behauptet.
 ![Loafer von oben](bilder/produkt-loafer.jpg)
 :::
 
-- **Qualität** — Premium-Wildleder und Vollnarbenleder, von Hand ausgewählt, mit präziser sichtbarer Naht
-- **Stabilität** — strapazierfähige Gummilaufsohle mit tiefem Profil, mit der Marke geprägt
-- **Atmungsaktiv** — perforiertes Obermaterial und Lederfutter
+::: sinnbilder
+siegel | Qualität | Wildleder und Vollnarbenleder, sichtbare Naht
+stapel | Stabilität | Gummilaufsohle mit tiefem Profil, geprägt
+luft | Atmungsaktiv | Perforiertes Obermaterial, Lederfutter
+:::
 
 !! **Vollständig spezifiziert ist im Styleguide bisher eine Ausführung** — der
 Court Classic in Cigar Brown. Sie zeigt das Niveau, auf dem die Kollektion
@@ -282,18 +289,23 @@ Ansprechpartner.
 
 ::: karten
 ### 01 — Lizenz
+icon: schloss
 Die Markenrechte für Ihre Warengruppe. Zwei Modelle stehen zur Wahl: eine kurze Laufzeit mit Exklusivität für einen klar umrissenen Kundenkreis, oder ein mehrjähriger Vertrag mit Mengenzusage. **Welche Warengruppen und Territorien vergeben werden, halten wir im ersten Gespräch verbindlich fest.**
 
 ### 02 — Styleguide
+icon: dokument
 Liegt fertig vor und ist Teil des Pakets. Kein Zusatzprojekt, keine Agenturrunde, kein halbes Jahr Vorlauf.
 
 ### 03 — Produktion
+icon: fabrik
 CGT nimmt geprüfte Produzenten ins Netzwerk auf und vermittelt sie. Das sichert, dass der Schuh am Ende so aussieht wie im Styleguide — und Sie müssen keinen Hersteller suchen.
 
 ### 04 — Handel
+icon: laden
 Der Weg ins Regal über DELTEX: Lebensmittelhandel, Discount, Fachhandel. Mehr dazu im nächsten Abschnitt.
 
 ### 05 — Online
+icon: monitor
 Für eigenen Shop und Marktplätze ist eine gesonderte Online-Lizenz vorgesehen — getrennt vom stationären Geschäft, damit sich beides nicht ins Gehege kommt.
 :::
 
@@ -319,11 +331,13 @@ DELTEX-Partnerübersicht vom August 2026.
 
 **So läuft eine Platzierung:**
 
-- **Limited Drops** — zeitlich und mengenmäßig begrenzt, das beschleunigt die Kaufentscheidung
-- **Exclusive SMU** — eigene Designs, Farben und Multipacks, klar getrennt vom Kernsortiment der Marke
-- **Category Entry** — Einstieg über risikoärmere Warengruppen
-- **Brand Control** — Produkt, Verpackung und Auftritt nach Markenstandard
-- **Pricing Architecture** — ein Preis-Leistungs-Angebot, das im Regal funktioniert
+::: sinnbilder
+blitz | Limited Drops | Zeitlich und mengenmäßig begrenzt
+schere | Exclusive SMU | Eigene Designs, getrennt vom Kernsortiment
+ziel | Category Entry | Einstieg über risikoärmere Warengruppen
+schild | Brand Control | Auftritt nach Markenstandard
+etikett | Pricing Architecture | Ein Preis, der im Regal funktioniert
+:::
 
 
 ## Marken, die diesen Weg schon gegangen sind {hell}
@@ -342,8 +356,21 @@ DELTEX-Partnerübersicht vom August 2026.
 | Reebok | LIDL |
 | NBA | Kaufland |
 
-Insgesamt nennt die DELTEX-Übersicht über 30 Marken im Lebensmittel- und
-Discountkanal, darunter Bench, Camp David, Ellesse, Jack & Jones, MEXX und CR7.
+Insgesamt nennt die DELTEX-Übersicht **über 30 Marken** im Lebensmittel- und
+Discountkanal, darunter:
+
+::: laufband
+Bench
+Camp David
+Ellesse
+Jack & Jones
+MEXX
+CR7
+Scotch & Soda
+Under Armour
+Reebok
+Diesel
+:::
 
 
 ## Was Einkäufer uns fragen
