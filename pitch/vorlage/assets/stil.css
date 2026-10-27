@@ -171,26 +171,35 @@ hr { border: 0; border-top: 1px solid var(--linie); margin: 48px 0; }
    stehen darunter.
    -------------------------------------------------------------------------- */
 
+/* Anthrazit statt Reinschwarz: Schwarz saugt Bilder auf und wirkt am
+   Bildschirm haerter als gedruckt. Vier Stufen, alle neutral-kuehl:
+   nacht (tiefste Baender) < papier (Seite) < sanft (helle Abschnitte)
+   < rein (abgehobene Flaechen). */
 body.schema-dunkel {
   --tinte:   #f3f1ee;
-  --gedimmt: #9d9d9d;
+  --gedimmt: #a3a3a8;
   --linie:   rgba(255,255,255,.15);
-  --papier:  #0b0b0e;
-  --rein:    #16161c;
-  --sanft:   #121217;
-  --nacht:   #000000;
+  --papier:  #1f2024;
+  --rein:    #2d2f35;
+  --sanft:   #282a2f;
+  --nacht:   #17181b;
 }
 
-body.schema-dunkel .kopf.ist-geklebt { background: rgba(11,11,14,.92); }
+body.schema-dunkel .kopf.ist-geklebt { background: rgba(31,32,36,.93); }
 body.schema-dunkel .prospekt__kopf { background: #000; }
 body.schema-dunkel .zettel { background: #fff; color: #111; }
 body.schema-dunkel .zettel h3 { color: #111; }
 body.schema-dunkel .slider__knopf:hover { background: #fff; color: #000; border-color: #fff; }
 body.schema-dunkel .abschnitt .knopf--rand { color: var(--tinte); }
 body.schema-dunkel .abschnitt .knopf--rand:hover { border-color: var(--akzent); }
-body.schema-dunkel .karte__bild { background: #000; }
+body.schema-dunkel .karte__bild { background: var(--sanft); }
 body.schema-dunkel .vertraulich { background: rgba(255,255,255,.03); }
 body.schema-dunkel .aufklapp summary { color: var(--tinte); }
+/* Die Fussgraus sind warm getoent und passen zum warmen Schwarz des
+   hellen Schemas. Auf Anthrazit wirken sie schmutzig, also neutral. */
+body.schema-dunkel .fuss { color: #9a9aa0; }
+body.schema-dunkel .fuss a { color: #d2d2d7; }
+body.schema-dunkel .fuss a:hover { color: #fff; }
 body.schema-dunkel::selection, body.schema-dunkel *::selection {
   background: var(--akzent); color: #fff;
 }
@@ -970,7 +979,7 @@ th {
   border-radius: var(--radius); overflow: hidden;
   display: flex; flex-direction: column;
 }
-.querkarte__bild { aspect-ratio: 4 / 3; overflow: hidden; background: #111; }
+.querkarte__bild { aspect-ratio: 4 / 3; overflow: hidden; background: rgba(255,255,255,.06); }
 .querkarte__bild img {
   width: 100%; height: 100%; object-fit: cover;
   transition: transform .8s var(--weich);
