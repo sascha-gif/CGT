@@ -31,6 +31,13 @@ Fristo · Getränke Quelle · HOL AB! · Trinkgut · Getränke Hoffmann
 
 Kompletter Block, ausschließlich Hard Rock, alle im Status *Offen*.
 
+> **Seit 12.11.2026 gibt es dazu eine eigene Zielliste:**
+> [getraenke-absatz.md](getraenke-absatz.md) für die Absatzseite,
+> [getraenke-distribution.md](getraenke-distribution.md) für den Weg ins Regal.
+> Dort steht auch, dass **Fristo und Teile von Trinkgut** nach Eigenangabe von
+> Getränke Hoffmann dort integriert wurden — diese beiden Adressen also
+> möglicherweise ins Leere laufen.
+
 ## Heimtier / Bau / Garten
 
 Fressnapf · OBI · DEHNER

@@ -109,6 +109,43 @@ Das Baukastensystem steht: [`../pitch/README.md`](../pitch/README.md).
   ICEBREAKER), die Mission-Food-Verpackung und die Spielzeugentwürfe gilt
   dasselbe — die liegen bisher nur als Bildschirmfotos vor.
 
+## Getränke (neu, 12.11.2026)
+
+**Sofort ausführbar, kostet ein Telefonat:**
+
+- **Distribuiert die Deltex-Unit „Getränke Vertrieb" auch Fremdmarken?** Die
+  Einheit hat rund 19 Mitarbeiter und macht laut Wissensbasis „Distribution &
+  Handel". Die Frage steht seit 11.09.2026 in [deltex.md](deltex.md) offen.
+  Lautet die Antwort ja, erübrigt sich die Suche nach einem Distributeur für
+  Deutschland weitgehend. Siehe
+  [getraenke-distribution.md](getraenke-distribution.md).
+- **Gibt es Fristo und Trinkgut als eigene Adressen noch?** Getränke Hoffmann
+  gibt an, FRISTO (Berlin/Brandenburg) und Teile von Trinkgut integriert zu
+  haben (Eigenangabe, Januar 2026). In der Themenplanung stehen beide weiter
+  als eigene Adressen, Fristo mit Frist aus 2024.
+- **Die vier Fristen aus 2024 aufräumen** — Fristo, Getränke Quelle, HOL AB!,
+  GLOBUS. Vorschlag in [hard-rock-kampagne.md](hard-rock-kampagne.md).
+
+**Nicht dokumentiert, blockiert aber jede Unterlage:**
+
+- **Was genau ist das Hard-Rock-Produkt?** „Alkoholfrei und Spirituosen" ist
+  alles, was im Repo steht. Sorten, Gebinde, EAN, Preispunkt, Mindestabnahme,
+  Pfand- und Mehrwegfragen: nichts. Dasselbe gilt für Mizu, Minions und Hello
+  Kitty.
+- **Welches Gebiet decken die Getränkelizenzen?**
+- **Wer ist bei Epsilon-Themen der Absender** — CGT, Epsilon oder beide?
+- **Heißt „Epsilon und Deltex Getränke Vertrieb werden getrennt geführt" auch,
+  dass Epsilon-Marken nicht über die Deltex-Unit laufen dürfen?** Die
+  Trennung ist bestätigt (Sascha, 11.09.2026), ihre Reichweite nicht.
+
+**Nicht recherchiert:**
+
+- **Drogerie** (dm, Rossmann, Müller) für Mizu — Filialzahlen und ob die
+  Häuser Getränke dieser Art überhaupt listen.
+- **Kino, Freizeitpark, Festival** für Hard Rock.
+- Ob **Gebr. Heinemann und Lagardère** neben Toys auch Getränke nehmen. Der
+  Kontakt besteht über Epsilon bereits.
+
 ## Entscheidet über die Ideen ([ideen.md](ideen.md))
 
 - **Wie verdient CGT heute?** Provision, Retainer, Marge oder Beteiligung — je Säule?
