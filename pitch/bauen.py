@@ -1273,8 +1273,11 @@ def seite_bauen(felder, koerper, vorlage_html, sprungmarken=()):
 
     fuss_navigation = ""
     if sprungmarken:
+        # Zehn statt acht: seit die Querbahn eine eigene Marke hat, fiel
+        # sonst der letzte Abschnitt heraus - und das ist der mit den
+        # naechsten Schritten.
         punkte = "".join('<li><a href="#%s">%s</a></li>' % (sicher(k), inline(t))
-                         for k, t in sprungmarken[:8])
+                         for k, t in sprungmarken[:10])
         fuss_navigation = ("<h4>Auf dieser Seite</h4><ul>%s</ul>" % punkte)
 
     fuss_kontakt = "<h4>Kontakt</h4>" + inline(ab_fuehrung)
