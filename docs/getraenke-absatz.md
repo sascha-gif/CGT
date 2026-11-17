@@ -18,6 +18,9 @@ Endkunden. Wer die Ware dorthin bringt, steht in
 | **Hello Kitty** | Epsilon | Fruit Juice PET 350 ml |
 
 Quelle: [marken-lizenzen.md](marken-lizenzen.md), Stand 11.09.2026.
+**Was hinter den vier Marken steckt, steht seit 17.11.2026 in**
+[getraenke-marken.md](getraenke-marken.md) — unter anderem, dass die
+unteren drei Zeilen wahrscheinlich **ein einziger Lieferant** sind.
 
 An Lizenzen fehlt es also nicht. **Was fehlt, ist eine Zielliste.** Für die
 Pet-Seite gibt es 187 Händler europaweit

@@ -13,6 +13,7 @@ Ein Thema pro Datei. Neue Dateien hier verlinken, damit die Übersicht nicht zer
 | **Mercedes-Lizenz — Modell, BLE, Styleguide** | [mercedes-lizenz.md](mercedes-lizenz.md) | 09.10.2026 |
 | **Retail-Longlist Europa — 187 Händler** | [retail-longlist.md](retail-longlist.md) | 11.09.2026 |
 | Handel — Kanäle und Adressaten | [handel.md](handel.md) | 11.09.2026 |
+| **Getränke — die vier Marken** | [getraenke-marken.md](getraenke-marken.md) | 17.11.2026 |
 | **Getränke — Absatzkanäle** | [getraenke-absatz.md](getraenke-absatz.md) | 12.11.2026 |
 | **Getränke — Distribution** | [getraenke-distribution.md](getraenke-distribution.md) | 12.11.2026 |
 | **Hard Rock — eine Kampagne statt 16 Themen** | [hard-rock-kampagne.md](hard-rock-kampagne.md) | 12.11.2026 |

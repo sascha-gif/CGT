@@ -31,6 +31,8 @@ Deltex-Business-Unit, soweit belegt.
 | **Mizu** | Epsilon | Getränke: Mate (2 Sorten), Matcha, Guarana |
 | **Minions** | Epsilon | Fruit Juice PET 350 ml |
 | **Hello Kitty** | Epsilon | Fruit Juice PET 350 ml |
+
+> **Zu den vier Getränkemarken gibt es seit 17.11.2026 ein eigenes Dossier:** [getraenke-marken.md](getraenke-marken.md). Wichtigster Befund: Mizu, Minions und Hello Kitty führen alle drei zu **einem Lieferanten** — Vitamizu Sp. z o.o., Łódź. Drei Themen in der Themenplanung, ein Lieferantengespräch. Die Zuordnung ist sehr wahrscheinlich, aber bei Epsilon zu bestätigen.
 | **Cubcoats** | eigener Partner | Kanäle: LEH/Discount, Zalando/E-Com, stationär |
 | **CR7** | Deltex Brands | läuft; aktuell: ALDI in den Vertrag aufnehmen |
 | **Otto Kern** | offen | angefragt als Lizenz für ALDI Denim |

@@ -126,6 +126,24 @@ Das Baukastensystem steht: [`../pitch/README.md`](../pitch/README.md).
 - **Die vier Fristen aus 2024 aufräumen** — Fristo, Getränke Quelle, HOL AB!,
   GLOBUS. Vorschlag in [hard-rock-kampagne.md](hard-rock-kampagne.md).
 
+**An Epsilon, klärt vier Themen auf einmal (neu 17.11.2026):**
+
+- **Ist „Mizu" die Marke von Vitamizu Sp. z o.o. aus Łódź?** Vier von vier
+  Repo-Merkmalen passen exakt auf deren Sortiment — Mate in zwei Sorten,
+  Matcha, Guarana, dazu Minions und Hello Kitty als Fruit Juice PET 350 ml.
+  Wenn ja, sind drei Themen der Themenplanung **ein Lieferantengespräch**.
+  Siehe [getraenke-marken.md](getraenke-marken.md).
+- **Umfasst die Lizenz den Lieferanten oder einzelne Figuren?** Vitamizu führt
+  außerdem **Stumble Guys, L.O.L., Spider-Man und Madagascar** — in der
+  Themenplanung steht davon nichts. Gerade Stumble Guys und L.O.L. wären
+  Pocket-Money-Themen und damit genau die Epsilon-Schiene.
+- **Welches Gebiet?** Vitamizu liefert nach eigener Angabe in 33 Länder und
+  hat Handelspartner in Polen (Big Brands Group) und den Niederlanden
+  (Beagley Copperman). Wo endet CGT?
+- **2D- oder 3D-Sticker** auf der Kids-PET-Flasche? Die Herstellerseiten
+  widersprechen sich. Bei einem Kindergetränk ist das ein Kaufargument, kein
+  Detail.
+
 **Nicht dokumentiert, blockiert aber jede Unterlage:**
 
 - **Was genau ist das Hard-Rock-Produkt?** „Alkoholfrei und Spirituosen" ist
