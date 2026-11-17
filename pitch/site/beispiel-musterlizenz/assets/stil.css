@@ -894,6 +894,18 @@ th {
   text-transform: uppercase; padding: 7px var(--rand);
 }
 
+/* Hero ohne Foto. Die volle Fensterhoehe ist auf ein Bild gerechnet; ohne
+   eines steht die obere Haelfte leer. Kuerzer, und ein Hauch Akzent von
+   unten, damit die Flaeche nicht tot wirkt. */
+.hero--schlicht { min-height: 0; padding-top: 128px; }
+.hero--schlicht .hero__schleier {
+  background:
+    radial-gradient(120% 90% at 8% 110%,
+      color-mix(in oklab, var(--akzent) 42%, transparent) 0%,
+      transparent 62%),
+    linear-gradient(180deg, rgba(0,0,0,.35) 0%, transparent 42%);
+}
+
 /* --------------------------------------------------------------------------
    Sinnbilder
    Strichzeichnungen statt Satz. Farbe kommt ueber currentColor.
@@ -992,6 +1004,7 @@ th {
 
 .querkarte {
   background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12);
+  align-self: center;
   border-radius: var(--radius); overflow: hidden;
   display: flex; flex-direction: column;
 }
@@ -1097,7 +1110,7 @@ th {
   }
   .quer__spur {
     width: max-content; overflow: visible; grid-auto-columns: 74vw;
-    align-items: stretch;
+    align-items: center;
     animation: querziehen linear both;
     animation-timeline: --querlauf;
     animation-range: contain 0% contain 100%;
@@ -1120,9 +1133,16 @@ th {
   .quer__fuss { display: none; }
 
   /* Im Klebezustand fuellen die Karten das Fenster, sonst steht die Bahn
-     in zu viel Leere. Das Bild nimmt, was der Text uebrig laesst. */
-  .querkarte { height: clamp(340px, 62vh, 620px); }
-  .querkarte__bild { aspect-ratio: auto; flex: 1 1 auto; min-height: 0; }
+     in zu viel Leere. Das Bild nimmt, was der Text uebrig laesst - aber nur
+     wo es ein Bild gibt. Eine reine Textkarte waere sonst ein hoher leerer
+     Kasten; sie bleibt klein und steht mittig. */
+  .querkarte--mit-bild { height: clamp(340px, 62vh, 620px); }
+  .querkarte--mit-bild .querkarte__bild { aspect-ratio: auto; flex: 1 1 auto; min-height: 0; }
+
+  /* Eine reine Textkarte braucht etwas Statur, sonst wirkt die Bahn im
+     grossen Band wie ein duenner Streifen. Der Text steht dabei mittig. */
+  .querkarte:not(.querkarte--mit-bild) { min-height: clamp(190px, 30vh, 300px); }
+  .querkarte:not(.querkarte--mit-bild) .querkarte__text { margin-block: auto; }
 }
 
 /* --------------------------------------------------------------------------

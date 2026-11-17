@@ -1031,9 +1031,10 @@ def block_rendern(name, argument, zeilen):
                         % (sicher(k["bild"]), sicher(k["titel"])))
             zeichen = sinnbild(k.get("icon", ""), "sinnbild--karte")
             spur.append(
-                '<article class="querkarte">%s<div class="querkarte__text">'
+                '<article class="querkarte%s">%s<div class="querkarte__text">'
                 '%s<h3>%s</h3>%s</div></article>'
-                % (bild, zeichen, inline(k["titel"]), inhalt_rendern(k["text"]))
+                % (" querkarte--mit-bild" if bild else "", bild, zeichen,
+                   inline(k["titel"]), inhalt_rendern(k["text"]))
             )
         marke = kennung_aus(argument)
         return (
@@ -1214,10 +1215,11 @@ def seite_bauen(felder, koerper, vorlage_html, sprungmarken=()):
                      % "".join("<span>%s</span>" % inline(z) for z in fusszeilen))
 
     hero = (
-        '<header class="hero">%s<div class="hero__schleier"></div>'
+        '<header class="hero%s">%s<div class="hero__schleier"></div>'
         '<div class="bahn">%s%s<h1 data-auftritt style="--verzug:80ms">%s</h1>'
         '%s%s</div><div class="hero__runter" aria-hidden="true"></div></header>'
         % (
+            "" if herobild else " hero--schlicht",
             hero_bild_html,
             logo_html,
             schild,
